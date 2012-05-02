@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E92A15BF154C000E00C96E0B /* HeroRiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A15BD154C000E00C96E0B /* HeroRiseViewController.m */; };
+		E92A15C0154C000E00C96E0B /* HeroRiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92A15BE154C000E00C96E0B /* HeroRiseViewController.xib */; };
+		E92A15CC154C0B4100C96E0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E92A15CB154C0B4100C96E0B /* Default.png */; };
+		E92A15CE154C1E1800C96E0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E92A15CD154C1E1800C96E0B /* icon.png */; };
+		E96AB63D1550607E00475346 /* BarbarianSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB63B1550607E00475346 /* BarbarianSkillDetailViewController.m */; };
+		E96AB64215507B8900475346 /* DemonHunterSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB64015507B8900475346 /* DemonHunterSkillDetailViewController.m */; };
+		E96AB64315507B8900475346 /* DemonHunterSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96AB64115507B8900475346 /* DemonHunterSkillDetailViewController.xib */; };
+		E96AB64A15507D1000475346 /* MonkSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB64815507D1000475346 /* MonkSkillDetailViewController.m */; };
+		E96AB64B15507D1000475346 /* MonkSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96AB64915507D1000475346 /* MonkSkillDetailViewController.xib */; };
+		E96AB64F15507D3400475346 /* WitchDoctorSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB64D15507D3400475346 /* WitchDoctorSkillDetailViewController.m */; };
+		E96AB65015507D3400475346 /* WitchDoctorSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96AB64E15507D3400475346 /* WitchDoctorSkillDetailViewController.xib */; };
+		E96AB65415507D5200475346 /* WizardSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB65215507D5200475346 /* WizardSkillDetailViewController.m */; };
+		E96AB65515507D5200475346 /* WizardSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96AB65315507D5200475346 /* WizardSkillDetailViewController.xib */; };
+		E97DBDBC1550148400385A36 /* bt_forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDBB1550148400385A36 /* bt_forward@2x.png */; };
+		E97DBDCC155023AF00385A36 /* avatar_bar_f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */; };
+		E97DBDCD155023AF00385A36 /* avatar_bar_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */; };
+		E97DBDCE155023AF00385A36 /* avatar_dh_f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC4155023AF00385A36 /* avatar_dh_f@2x.png */; };
+		E97DBDCF155023AF00385A36 /* avatar_dh_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC5155023AF00385A36 /* avatar_dh_m@2x.png */; };
+		E97DBDD0155023AF00385A36 /* avatar_monk_f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC6155023AF00385A36 /* avatar_monk_f@2x.png */; };
+		E97DBDD1155023AF00385A36 /* avatar_monk_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC7155023AF00385A36 /* avatar_monk_m@2x.png */; };
+		E97DBDD2155023AF00385A36 /* avatar_wd_f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC8155023AF00385A36 /* avatar_wd_f@2x.png */; };
+		E97DBDD3155023AF00385A36 /* avatar_wd_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC9155023AF00385A36 /* avatar_wd_m@2x.png */; };
+		E97DBDD4155023AF00385A36 /* avatar_wz_f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDCA155023AF00385A36 /* avatar_wz_f@2x.png */; };
+		E97DBDD5155023AF00385A36 /* avatar_wz_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDCB155023AF00385A36 /* avatar_wz_m@2x.png */; };
+		E97DBDD715502C6900385A36 /* bg_herorise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDD615502C6900385A36 /* bg_herorise@2x.png */; };
+		E97DBDD915502EE000385A36 /* bg_heroeshall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDD815502EE000385A36 /* bg_heroeshall@2x.png */; };
+		E97DBDDB1550354500385A36 /* bt_nextpage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDDA1550354400385A36 /* bt_nextpage@2x.png */; };
+		E97DBDDD155039D300385A36 /* bt_skill_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDDC155039D200385A36 /* bt_skill_s@2x.png */; };
+		E97DBDDF1550479700385A36 /* bt_pskill_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDDE1550479600385A36 /* bt_pskill_s@2x.png */; };
+		E97DBDE815504FAC00385A36 /* BarbarianSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDE715504FAC00385A36 /* BarbarianSkillDetailViewController.xib */; };
+		E980AD1B15509398003D7179 /* HeroSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E980AD1A15509398003D7179 /* HeroSkillDetailViewController.m */; };
+		E99E29FB154EF45800FFE046 /* hero_bar_f.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29F6154EF45800FFE046 /* hero_bar_f.gif */; };
+		E99E29FC154EF45800FFE046 /* hero_dh_m.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29F7154EF45800FFE046 /* hero_dh_m.gif */; };
+		E99E29FD154EF45800FFE046 /* hero_monk_f.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29F8154EF45800FFE046 /* hero_monk_f.gif */; };
+		E99E29FE154EF45800FFE046 /* hero_wd_f.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29F9154EF45800FFE046 /* hero_wd_f.gif */; };
+		E99E29FF154EF45800FFE046 /* hero_wz_m.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29FA154EF45800FFE046 /* hero_wz_m.gif */; };
+		E99E2A09154F2DCD00FFE046 /* bg_sex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99E2A08154F2DCD00FFE046 /* bg_sex@2x.png */; };
+		E99E2A0E154F34D100FFE046 /* bt_female_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99E2A0A154F34D000FFE046 /* bt_female_s@2x.png */; };
+		E99E2A0F154F34D100FFE046 /* bt_female@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99E2A0B154F34D000FFE046 /* bt_female@2x.png */; };
+		E99E2A10154F34D100FFE046 /* bt_male_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99E2A0C154F34D000FFE046 /* bt_male_s@2x.png */; };
+		E99E2A11154F34D100FFE046 /* bt_male@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99E2A0D154F34D100FFE046 /* bt_male@2x.png */; };
+		E9CFD401154B125A005D3760 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CFD400154B125A005D3760 /* UIKit.framework */; };
+		E9CFD403154B125A005D3760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CFD402154B125A005D3760 /* Foundation.framework */; };
+		E9CFD405154B125A005D3760 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CFD404154B125A005D3760 /* CoreGraphics.framework */; };
+		E9CFD40B154B125A005D3760 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9CFD409154B125A005D3760 /* InfoPlist.strings */; };
+		E9CFD40D154B125A005D3760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFD40C154B125A005D3760 /* main.m */; };
+		E9CFD411154B125A005D3760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFD410154B125A005D3760 /* AppDelegate.m */; };
+		E9CFD41A154B12C1005D3760 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CFD419154B12C1005D3760 /* Application.xib */; };
+		E9CFD424154B18EC005D3760 /* HeroesHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFD422154B18EC005D3760 /* HeroesHallViewController.m */; };
+		E9CFD425154B18EC005D3760 /* HeroesHallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CFD423154B18EC005D3760 /* HeroesHallViewController.xib */; };
+		E9D8507C154CFDCB00AD2153 /* hero_bar_m.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9D8507B154CFDCB00AD2153 /* hero_bar_m.gif */; };
+		E9D9F230154D1B2700DABCE8 /* bg_heroshall_rect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F22F154D1B2700DABCE8 /* bg_heroshall_rect@2x.png */; };
+		E9D9F244154D259000DABCE8 /* bt_hero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F242154D259000DABCE8 /* bt_hero@2x.png */; };
+		E9D9F245154D259000DABCE8 /* bt_hero_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F243154D259000DABCE8 /* bt_hero_s@2x.png */; };
+		E9D9F2BD154D302600DABCE8 /* ft_herorise_rect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F2BC154D302600DABCE8 /* ft_herorise_rect@2x.png */; };
+		E9D9F2BF154D306900DABCE8 /* tt_herorise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F2BE154D306900DABCE8 /* tt_herorise@2x.png */; };
+		E9D9F2CD154D43F700DABCE8 /* bg_topbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F2CC154D43F700DABCE8 /* bg_topbar@2x.png */; };
+		E9D9F2D1154D451100DABCE8 /* bt_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F2CF154D451100DABCE8 /* bt_back@2x.png */; };
+		E9D9F2D7154D5EAA00DABCE8 /* bt_heroeshall_create@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D9F2D6154D5EAA00DABCE8 /* bt_heroeshall_create@2x.png */; };
+		E9EFE658154FEDED00C01F3C /* HeroSkillBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EFE656154FEDED00C01F3C /* HeroSkillBoardViewController.m */; };
+		E9EFE659154FEDED00C01F3C /* HeroSkillBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EFE657154FEDED00C01F3C /* HeroSkillBoardViewController.xib */; };
+		E9EFE65B154FEEDE00C01F3C /* bg_skillboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9EFE65A154FEEDE00C01F3C /* bg_skillboard@2x.png */; };
+		E9EFE669154FF63F00C01F3C /* UINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EFE668154FF63F00C01F3C /* UINavigationController.m */; };
+		E9FD724F154E73A300CC9F39 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FD724E154E73A300CC9F39 /* QuartzCore.framework */; };
+		E9FD726B154E883F00CC9F39 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD7269154E883F00CC9F39 /* iCarousel.m */; };
+		E9FD7273154E99B600CC9F39 /* hero_dh_f.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9FD726F154E99B600CC9F39 /* hero_dh_f.gif */; };
+		E9FD7274154E99B600CC9F39 /* hero_monk_m.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9FD7270154E99B600CC9F39 /* hero_monk_m.gif */; };
+		E9FD7275154E99B600CC9F39 /* hero_wd_m.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9FD7271154E99B600CC9F39 /* hero_wd_m.gif */; };
+		E9FD7276154E99B600CC9F39 /* hero_wz_f.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9FD7272154E99B600CC9F39 /* hero_wz_f.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E92A15BC154C000E00C96E0B /* HeroRiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroRiseViewController.h; sourceTree = "<group>"; };
+		E92A15BD154C000E00C96E0B /* HeroRiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroRiseViewController.m; sourceTree = "<group>"; };
+		E92A15BE154C000E00C96E0B /* HeroRiseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroRiseViewController.xib; sourceTree = "<group>"; };
+		E92A15CB154C0B4100C96E0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E92A15CD154C1E1800C96E0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E96AB63A1550607E00475346 /* BarbarianSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarbarianSkillDetailViewController.h; sourceTree = "<group>"; };
+		E96AB63B1550607E00475346 /* BarbarianSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarbarianSkillDetailViewController.m; sourceTree = "<group>"; };
+		E96AB63F15507B8900475346 /* DemonHunterSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemonHunterSkillDetailViewController.h; sourceTree = "<group>"; };
+		E96AB64015507B8900475346 /* DemonHunterSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemonHunterSkillDetailViewController.m; sourceTree = "<group>"; };
+		E96AB64115507B8900475346 /* DemonHunterSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemonHunterSkillDetailViewController.xib; sourceTree = "<group>"; };
+		E96AB64715507D1000475346 /* MonkSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonkSkillDetailViewController.h; sourceTree = "<group>"; };
+		E96AB64815507D1000475346 /* MonkSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonkSkillDetailViewController.m; sourceTree = "<group>"; };
+		E96AB64915507D1000475346 /* MonkSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonkSkillDetailViewController.xib; sourceTree = "<group>"; };
+		E96AB64C15507D3400475346 /* WitchDoctorSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WitchDoctorSkillDetailViewController.h; sourceTree = "<group>"; };
+		E96AB64D15507D3400475346 /* WitchDoctorSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WitchDoctorSkillDetailViewController.m; sourceTree = "<group>"; };
+		E96AB64E15507D3400475346 /* WitchDoctorSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WitchDoctorSkillDetailViewController.xib; sourceTree = "<group>"; };
+		E96AB65115507D5200475346 /* WizardSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardSkillDetailViewController.h; sourceTree = "<group>"; };
+		E96AB65215507D5200475346 /* WizardSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardSkillDetailViewController.m; sourceTree = "<group>"; };
+		E96AB65315507D5200475346 /* WizardSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardSkillDetailViewController.xib; sourceTree = "<group>"; };
+		E97DBDBB1550148400385A36 /* bt_forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_forward@2x.png"; sourceTree = "<group>"; };
+		E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_bar_f@2x.png"; sourceTree = "<group>"; };
+		E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_bar_m@2x.png"; sourceTree = "<group>"; };
+		E97DBDC4155023AF00385A36 /* avatar_dh_f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_dh_f@2x.png"; sourceTree = "<group>"; };
+		E97DBDC5155023AF00385A36 /* avatar_dh_m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_dh_m@2x.png"; sourceTree = "<group>"; };
+		E97DBDC6155023AF00385A36 /* avatar_monk_f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_monk_f@2x.png"; sourceTree = "<group>"; };
+		E97DBDC7155023AF00385A36 /* avatar_monk_m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_monk_m@2x.png"; sourceTree = "<group>"; };
+		E97DBDC8155023AF00385A36 /* avatar_wd_f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_wd_f@2x.png"; sourceTree = "<group>"; };
+		E97DBDC9155023AF00385A36 /* avatar_wd_m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_wd_m@2x.png"; sourceTree = "<group>"; };
+		E97DBDCA155023AF00385A36 /* avatar_wz_f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_wz_f@2x.png"; sourceTree = "<group>"; };
+		E97DBDCB155023AF00385A36 /* avatar_wz_m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_wz_m@2x.png"; sourceTree = "<group>"; };
+		E97DBDD615502C6900385A36 /* bg_herorise@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_herorise@2x.png"; sourceTree = "<group>"; };
+		E97DBDD815502EE000385A36 /* bg_heroeshall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_heroeshall@2x.png"; sourceTree = "<group>"; };
+		E97DBDDA1550354400385A36 /* bt_nextpage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_nextpage@2x.png"; sourceTree = "<group>"; };
+		E97DBDDC155039D200385A36 /* bt_skill_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_skill_s@2x.png"; sourceTree = "<group>"; };
+		E97DBDDE1550479600385A36 /* bt_pskill_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_pskill_s@2x.png"; sourceTree = "<group>"; };
+		E97DBDE715504FAC00385A36 /* BarbarianSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarbarianSkillDetailViewController.xib; sourceTree = "<group>"; };
+		E980AD1915509398003D7179 /* HeroSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkillDetailViewController.h; sourceTree = "<group>"; };
+		E980AD1A15509398003D7179 /* HeroSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkillDetailViewController.m; sourceTree = "<group>"; };
+		E99E29F6154EF45800FFE046 /* hero_bar_f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_bar_f.gif; sourceTree = "<group>"; };
+		E99E29F7154EF45800FFE046 /* hero_dh_m.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_dh_m.gif; sourceTree = "<group>"; };
+		E99E29F8154EF45800FFE046 /* hero_monk_f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_monk_f.gif; sourceTree = "<group>"; };
+		E99E29F9154EF45800FFE046 /* hero_wd_f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_wd_f.gif; sourceTree = "<group>"; };
+		E99E29FA154EF45800FFE046 /* hero_wz_m.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_wz_m.gif; sourceTree = "<group>"; };
+		E99E2A08154F2DCD00FFE046 /* bg_sex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_sex@2x.png"; sourceTree = "<group>"; };
+		E99E2A0A154F34D000FFE046 /* bt_female_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_female_s@2x.png"; sourceTree = "<group>"; };
+		E99E2A0B154F34D000FFE046 /* bt_female@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_female@2x.png"; sourceTree = "<group>"; };
+		E99E2A0C154F34D000FFE046 /* bt_male_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_male_s@2x.png"; sourceTree = "<group>"; };
+		E99E2A0D154F34D100FFE046 /* bt_male@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_male@2x.png"; sourceTree = "<group>"; };
+		E9CFD3FC154B125A005D3760 /* DiabloIIIHeroesHall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabloIIIHeroesHall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CFD400154B125A005D3760 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9CFD402154B125A005D3760 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9CFD404154B125A005D3760 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9CFD408154B125A005D3760 /* DiabloIIIHeroesHall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiabloIIIHeroesHall-Info.plist"; sourceTree = "<group>"; };
+		E9CFD40A154B125A005D3760 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9CFD40C154B125A005D3760 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9CFD40E154B125A005D3760 /* DiabloIIIHeroesHall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiabloIIIHeroesHall-Prefix.pch"; sourceTree = "<group>"; };
+		E9CFD40F154B125A005D3760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9CFD410154B125A005D3760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9CFD419154B12C1005D3760 /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
+		E9CFD421154B18EC005D3760 /* HeroesHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroesHallViewController.h; sourceTree = "<group>"; };
+		E9CFD422154B18EC005D3760 /* HeroesHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroesHallViewController.m; sourceTree = "<group>"; };
+		E9CFD423154B18EC005D3760 /* HeroesHallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroesHallViewController.xib; sourceTree = "<group>"; };
+		E9D8507B154CFDCB00AD2153 /* hero_bar_m.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_bar_m.gif; sourceTree = "<group>"; };
+		E9D9F22F154D1B2700DABCE8 /* bg_heroshall_rect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_heroshall_rect@2x.png"; sourceTree = "<group>"; };
+		E9D9F242154D259000DABCE8 /* bt_hero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_hero@2x.png"; sourceTree = "<group>"; };
+		E9D9F243154D259000DABCE8 /* bt_hero_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_hero_s@2x.png"; sourceTree = "<group>"; };
+		E9D9F2BC154D302600DABCE8 /* ft_herorise_rect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ft_herorise_rect@2x.png"; sourceTree = "<group>"; };
+		E9D9F2BE154D306900DABCE8 /* tt_herorise@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tt_herorise@2x.png"; sourceTree = "<group>"; };
+		E9D9F2CC154D43F700DABCE8 /* bg_topbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_topbar@2x.png"; sourceTree = "<group>"; };
+		E9D9F2CF154D451100DABCE8 /* bt_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_back@2x.png"; sourceTree = "<group>"; };
+		E9D9F2D6154D5EAA00DABCE8 /* bt_heroeshall_create@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_heroeshall_create@2x.png"; sourceTree = "<group>"; };
+		E9EFE655154FEDED00C01F3C /* HeroSkillBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkillBoardViewController.h; sourceTree = "<group>"; };
+		E9EFE656154FEDED00C01F3C /* HeroSkillBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkillBoardViewController.m; sourceTree = "<group>"; };
+		E9EFE657154FEDED00C01F3C /* HeroSkillBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroSkillBoardViewController.xib; sourceTree = "<group>"; };
+		E9EFE65A154FEEDE00C01F3C /* bg_skillboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_skillboard@2x.png"; sourceTree = "<group>"; };
+		E9EFE667154FF63F00C01F3C /* UINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationController.h; sourceTree = "<group>"; };
+		E9EFE668154FF63F00C01F3C /* UINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationController.m; sourceTree = "<group>"; };
+		E9FD724E154E73A300CC9F39 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E9FD7269154E883F00CC9F39 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		E9FD726A154E883F00CC9F39 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		E9FD726F154E99B600CC9F39 /* hero_dh_f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_dh_f.gif; sourceTree = "<group>"; };
+		E9FD7270154E99B600CC9F39 /* hero_monk_m.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_monk_m.gif; sourceTree = "<group>"; };
+		E9FD7271154E99B600CC9F39 /* hero_wd_m.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_wd_m.gif; sourceTree = "<group>"; };
+		E9FD7272154E99B600CC9F39 /* hero_wz_f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_wz_f.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9CFD3F9154B125A005D3760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FD724F154E73A300CC9F39 /* QuartzCore.framework in Frameworks */,
+				E9CFD401154B125A005D3760 /* UIKit.framework in Frameworks */,
+				E9CFD403154B125A005D3760 /* Foundation.framework in Frameworks */,
+				E9CFD405154B125A005D3760 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E96AB65615507D6200475346 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFD40F154B125A005D3760 /* AppDelegate.h */,
+				E9CFD410154B125A005D3760 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E96AB65715507D9000475346 /* PrimaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFD421154B18EC005D3760 /* HeroesHallViewController.h */,
+				E9CFD422154B18EC005D3760 /* HeroesHallViewController.m */,
+				E92A15BC154C000E00C96E0B /* HeroRiseViewController.h */,
+				E92A15BD154C000E00C96E0B /* HeroRiseViewController.m */,
+				E9EFE655154FEDED00C01F3C /* HeroSkillBoardViewController.h */,
+				E9EFE656154FEDED00C01F3C /* HeroSkillBoardViewController.m */,
+			);
+			name = PrimaryViewController;
+			sourceTree = "<group>";
+		};
+		E96AB65815507DBF00475346 /* SecondaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E96AB63A1550607E00475346 /* BarbarianSkillDetailViewController.h */,
+				E96AB63B1550607E00475346 /* BarbarianSkillDetailViewController.m */,
+				E96AB63F15507B8900475346 /* DemonHunterSkillDetailViewController.h */,
+				E96AB64015507B8900475346 /* DemonHunterSkillDetailViewController.m */,
+				E96AB64715507D1000475346 /* MonkSkillDetailViewController.h */,
+				E96AB64815507D1000475346 /* MonkSkillDetailViewController.m */,
+				E96AB64C15507D3400475346 /* WitchDoctorSkillDetailViewController.h */,
+				E96AB64D15507D3400475346 /* WitchDoctorSkillDetailViewController.m */,
+				E96AB65115507D5200475346 /* WizardSkillDetailViewController.h */,
+				E96AB65215507D5200475346 /* WizardSkillDetailViewController.m */,
+			);
+			name = SecondaryViewController;
+			sourceTree = "<group>";
+		};
+		E980AD13155092B6003D7179 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E980AD1915509398003D7179 /* HeroSkillDetailViewController.h */,
+				E980AD1A15509398003D7179 /* HeroSkillDetailViewController.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		E980AD1C1550A32D003D7179 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFD419154B12C1005D3760 /* Application.xib */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E980AD1D1550A33D003D7179 /* PrimaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFD423154B18EC005D3760 /* HeroesHallViewController.xib */,
+				E92A15BE154C000E00C96E0B /* HeroRiseViewController.xib */,
+				E9EFE657154FEDED00C01F3C /* HeroSkillBoardViewController.xib */,
+			);
+			name = PrimaryViewController;
+			sourceTree = "<group>";
+		};
+		E980AD1E1550A362003D7179 /* SecondaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E97DBDE715504FAC00385A36 /* BarbarianSkillDetailViewController.xib */,
+				E96AB64115507B8900475346 /* DemonHunterSkillDetailViewController.xib */,
+				E96AB64915507D1000475346 /* MonkSkillDetailViewController.xib */,
+				E96AB64E15507D3400475346 /* WitchDoctorSkillDetailViewController.xib */,
+				E96AB65315507D5200475346 /* WizardSkillDetailViewController.xib */,
+			);
+			name = SecondaryViewController;
+			sourceTree = "<group>";
+		};
+		E980AD1F1550A483003D7179 /* Retina */ = {
+			isa = PBXGroup;
+			children = (
+				E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */,
+				E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */,
+				E97DBDC4155023AF00385A36 /* avatar_dh_f@2x.png */,
+				E97DBDC5155023AF00385A36 /* avatar_dh_m@2x.png */,
+				E97DBDC6155023AF00385A36 /* avatar_monk_f@2x.png */,
+				E97DBDC7155023AF00385A36 /* avatar_monk_m@2x.png */,
+				E97DBDC8155023AF00385A36 /* avatar_wd_f@2x.png */,
+				E97DBDC9155023AF00385A36 /* avatar_wd_m@2x.png */,
+				E97DBDCA155023AF00385A36 /* avatar_wz_f@2x.png */,
+				E97DBDCB155023AF00385A36 /* avatar_wz_m@2x.png */,
+				E97DBDDA1550354400385A36 /* bt_nextpage@2x.png */,
+				E97DBDBB1550148400385A36 /* bt_forward@2x.png */,
+				E99E2A0A154F34D000FFE046 /* bt_female_s@2x.png */,
+				E99E2A0B154F34D000FFE046 /* bt_female@2x.png */,
+				E99E2A0C154F34D000FFE046 /* bt_male_s@2x.png */,
+				E99E2A0D154F34D100FFE046 /* bt_male@2x.png */,
+				E9D9F2D6154D5EAA00DABCE8 /* bt_heroeshall_create@2x.png */,
+				E9D9F2CF154D451100DABCE8 /* bt_back@2x.png */,
+				E9D9F242154D259000DABCE8 /* bt_hero@2x.png */,
+				E9D9F243154D259000DABCE8 /* bt_hero_s@2x.png */,
+				E99E2A08154F2DCD00FFE046 /* bg_sex@2x.png */,
+				E9D9F2CC154D43F700DABCE8 /* bg_topbar@2x.png */,
+				E97DBDD615502C6900385A36 /* bg_herorise@2x.png */,
+				E9D9F22F154D1B2700DABCE8 /* bg_heroshall_rect@2x.png */,
+				E97DBDD815502EE000385A36 /* bg_heroeshall@2x.png */,
+				E9EFE65A154FEEDE00C01F3C /* bg_skillboard@2x.png */,
+				E97DBDDC155039D200385A36 /* bt_skill_s@2x.png */,
+				E97DBDDE1550479600385A36 /* bt_pskill_s@2x.png */,
+				E9D9F2BE154D306900DABCE8 /* tt_herorise@2x.png */,
+				E9D9F2BC154D302600DABCE8 /* ft_herorise_rect@2x.png */,
+			);
+			name = Retina;
+			sourceTree = "<group>";
+		};
+		E980AD201550A498003D7179 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				E92A15CD154C1E1800C96E0B /* icon.png */,
+				E92A15CB154C0B4100C96E0B /* Default.png */,
+			);
+			name = Normal;
+			sourceTree = "<group>";
+		};
+		E9CFD3F1154B125A005D3760 = {
+			isa = PBXGroup;
+			children = (
+				E9CFD406154B125A005D3760 /* DiabloIIIHeroesHall */,
+				E9CFD3FF154B125A005D3760 /* Frameworks */,
+				E9CFD3FD154B125A005D3760 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9CFD3FD154B125A005D3760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFD3FC154B125A005D3760 /* DiabloIIIHeroesHall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9CFD3FF154B125A005D3760 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD724E154E73A300CC9F39 /* QuartzCore.framework */,
+				E9CFD400154B125A005D3760 /* UIKit.framework */,
+				E9CFD402154B125A005D3760 /* Foundation.framework */,
+				E9CFD404154B125A005D3760 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9CFD406154B125A005D3760 /* DiabloIIIHeroesHall */ = {
+			isa = PBXGroup;
+			children = (
+				E9EFE65C154FF1AB00C01F3C /* BaseClass */,
+				E9CFD417154B125F005D3760 /* Class */,
+				E9CFD436154B2D88005D3760 /* Resourse */,
+				E9CFD407154B125A005D3760 /* Supporting Files */,
+			);
+			path = DiabloIIIHeroesHall;
+			sourceTree = "<group>";
+		};
+		E9CFD407154B125A005D3760 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFD408154B125A005D3760 /* DiabloIIIHeroesHall-Info.plist */,
+				E9CFD409154B125A005D3760 /* InfoPlist.strings */,
+				E9CFD40C154B125A005D3760 /* main.m */,
+				E9CFD40E154B125A005D3760 /* DiabloIIIHeroesHall-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9CFD417154B125F005D3760 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E96AB65615507D6200475346 /* AppDelegate */,
+				E96AB65715507D9000475346 /* PrimaryViewController */,
+				E96AB65815507DBF00475346 /* SecondaryViewController */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		E9CFD418154B126D005D3760 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				E980AD1C1550A32D003D7179 /* AppDelegate */,
+				E980AD1D1550A33D003D7179 /* PrimaryViewController */,
+				E980AD1E1550A362003D7179 /* SecondaryViewController */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		E9CFD436154B2D88005D3760 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFD418154B126D005D3760 /* XIB */,
+				E9EFE654154FECFE00C01F3C /* PNG */,
+				E9EFE653154FECE300C01F3C /* GIF */,
+			);
+			name = Resourse;
+			sourceTree = "<group>";
+		};
+		E9EFE653154FECE300C01F3C /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				E99E29F6154EF45800FFE046 /* hero_bar_f.gif */,
+				E99E29F7154EF45800FFE046 /* hero_dh_m.gif */,
+				E99E29F8154EF45800FFE046 /* hero_monk_f.gif */,
+				E99E29F9154EF45800FFE046 /* hero_wd_f.gif */,
+				E99E29FA154EF45800FFE046 /* hero_wz_m.gif */,
+				E9FD726F154E99B600CC9F39 /* hero_dh_f.gif */,
+				E9FD7270154E99B600CC9F39 /* hero_monk_m.gif */,
+				E9FD7271154E99B600CC9F39 /* hero_wd_m.gif */,
+				E9FD7272154E99B600CC9F39 /* hero_wz_f.gif */,
+				E9D8507B154CFDCB00AD2153 /* hero_bar_m.gif */,
+			);
+			name = GIF;
+			sourceTree = "<group>";
+		};
+		E9EFE654154FECFE00C01F3C /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				E980AD1F1550A483003D7179 /* Retina */,
+				E980AD201550A498003D7179 /* Normal */,
+			);
+			name = PNG;
+			sourceTree = "<group>";
+		};
+		E9EFE65C154FF1AB00C01F3C /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				E980AD13155092B6003D7179 /* Custom */,
+				E9EFE65D154FF1C100C01F3C /* Category */,
+				E9FD7268154E881D00CC9F39 /* iCarousel */,
+			);
+			name = BaseClass;
+			sourceTree = "<group>";
+		};
+		E9EFE65D154FF1C100C01F3C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E9EFE667154FF63F00C01F3C /* UINavigationController.h */,
+				E9EFE668154FF63F00C01F3C /* UINavigationController.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		E9FD7268154E881D00CC9F39 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD726A154E883F00CC9F39 /* iCarousel.h */,
+				E9FD7269154E883F00CC9F39 /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9CFD3FB154B125A005D3760 /* DiabloIIIHeroesHall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9CFD414154B125A005D3760 /* Build configuration list for PBXNativeTarget "DiabloIIIHeroesHall" */;
+			buildPhases = (
+				E9CFD3F8154B125A005D3760 /* Sources */,
+				E9CFD3F9154B125A005D3760 /* Frameworks */,
+				E9CFD3FA154B125A005D3760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiabloIIIHeroesHall;
+			productName = DiabloIIIHeroesHall;
+			productReference = E9CFD3FC154B125A005D3760 /* DiabloIIIHeroesHall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9CFD3F3154B125A005D3760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = E9CFD3F6154B125A005D3760 /* Build configuration list for PBXProject "DiabloIIIHeroesHall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9CFD3F1154B125A005D3760;
+			productRefGroup = E9CFD3FD154B125A005D3760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9CFD3FB154B125A005D3760 /* DiabloIIIHeroesHall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9CFD3FA154B125A005D3760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CFD40B154B125A005D3760 /* InfoPlist.strings in Resources */,
+				E9CFD41A154B12C1005D3760 /* Application.xib in Resources */,
+				E9CFD425154B18EC005D3760 /* HeroesHallViewController.xib in Resources */,
+				E92A15C0154C000E00C96E0B /* HeroRiseViewController.xib in Resources */,
+				E92A15CC154C0B4100C96E0B /* Default.png in Resources */,
+				E92A15CE154C1E1800C96E0B /* icon.png in Resources */,
+				E9D8507C154CFDCB00AD2153 /* hero_bar_m.gif in Resources */,
+				E9D9F230154D1B2700DABCE8 /* bg_heroshall_rect@2x.png in Resources */,
+				E9D9F244154D259000DABCE8 /* bt_hero@2x.png in Resources */,
+				E9D9F245154D259000DABCE8 /* bt_hero_s@2x.png in Resources */,
+				E9D9F2BD154D302600DABCE8 /* ft_herorise_rect@2x.png in Resources */,
+				E9D9F2BF154D306900DABCE8 /* tt_herorise@2x.png in Resources */,
+				E9D9F2CD154D43F700DABCE8 /* bg_topbar@2x.png in Resources */,
+				E9D9F2D1154D451100DABCE8 /* bt_back@2x.png in Resources */,
+				E9D9F2D7154D5EAA00DABCE8 /* bt_heroeshall_create@2x.png in Resources */,
+				E9FD7273154E99B600CC9F39 /* hero_dh_f.gif in Resources */,
+				E9FD7274154E99B600CC9F39 /* hero_monk_m.gif in Resources */,
+				E9FD7275154E99B600CC9F39 /* hero_wd_m.gif in Resources */,
+				E9FD7276154E99B600CC9F39 /* hero_wz_f.gif in Resources */,
+				E99E29FB154EF45800FFE046 /* hero_bar_f.gif in Resources */,
+				E99E29FC154EF45800FFE046 /* hero_dh_m.gif in Resources */,
+				E99E29FD154EF45800FFE046 /* hero_monk_f.gif in Resources */,
+				E99E29FE154EF45800FFE046 /* hero_wd_f.gif in Resources */,
+				E99E29FF154EF45800FFE046 /* hero_wz_m.gif in Resources */,
+				E99E2A09154F2DCD00FFE046 /* bg_sex@2x.png in Resources */,
+				E99E2A0E154F34D100FFE046 /* bt_female_s@2x.png in Resources */,
+				E99E2A0F154F34D100FFE046 /* bt_female@2x.png in Resources */,
+				E99E2A10154F34D100FFE046 /* bt_male_s@2x.png in Resources */,
+				E99E2A11154F34D100FFE046 /* bt_male@2x.png in Resources */,
+				E9EFE659154FEDED00C01F3C /* HeroSkillBoardViewController.xib in Resources */,
+				E9EFE65B154FEEDE00C01F3C /* bg_skillboard@2x.png in Resources */,
+				E97DBDBC1550148400385A36 /* bt_forward@2x.png in Resources */,
+				E97DBDCC155023AF00385A36 /* avatar_bar_f@2x.png in Resources */,
+				E97DBDCD155023AF00385A36 /* avatar_bar_m@2x.png in Resources */,
+				E97DBDCE155023AF00385A36 /* avatar_dh_f@2x.png in Resources */,
+				E97DBDCF155023AF00385A36 /* avatar_dh_m@2x.png in Resources */,
+				E97DBDD0155023AF00385A36 /* avatar_monk_f@2x.png in Resources */,
+				E97DBDD1155023AF00385A36 /* avatar_monk_m@2x.png in Resources */,
+				E97DBDD2155023AF00385A36 /* avatar_wd_f@2x.png in Resources */,
+				E97DBDD3155023AF00385A36 /* avatar_wd_m@2x.png in Resources */,
+				E97DBDD4155023AF00385A36 /* avatar_wz_f@2x.png in Resources */,
+				E97DBDD5155023AF00385A36 /* avatar_wz_m@2x.png in Resources */,
+				E97DBDD715502C6900385A36 /* bg_herorise@2x.png in Resources */,
+				E97DBDD915502EE000385A36 /* bg_heroeshall@2x.png in Resources */,
+				E97DBDDB1550354500385A36 /* bt_nextpage@2x.png in Resources */,
+				E97DBDDD155039D300385A36 /* bt_skill_s@2x.png in Resources */,
+				E97DBDDF1550479700385A36 /* bt_pskill_s@2x.png in Resources */,
+				E97DBDE815504FAC00385A36 /* BarbarianSkillDetailViewController.xib in Resources */,
+				E96AB64315507B8900475346 /* DemonHunterSkillDetailViewController.xib in Resources */,
+				E96AB64B15507D1000475346 /* MonkSkillDetailViewController.xib in Resources */,
+				E96AB65015507D3400475346 /* WitchDoctorSkillDetailViewController.xib in Resources */,
+				E96AB65515507D5200475346 /* WizardSkillDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9CFD3F8154B125A005D3760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CFD40D154B125A005D3760 /* main.m in Sources */,
+				E9CFD411154B125A005D3760 /* AppDelegate.m in Sources */,
+				E9CFD424154B18EC005D3760 /* HeroesHallViewController.m in Sources */,
+				E92A15BF154C000E00C96E0B /* HeroRiseViewController.m in Sources */,
+				E9FD726B154E883F00CC9F39 /* iCarousel.m in Sources */,
+				E9EFE658154FEDED00C01F3C /* HeroSkillBoardViewController.m in Sources */,
+				E9EFE669154FF63F00C01F3C /* UINavigationController.m in Sources */,
+				E96AB63D1550607E00475346 /* BarbarianSkillDetailViewController.m in Sources */,
+				E96AB64215507B8900475346 /* DemonHunterSkillDetailViewController.m in Sources */,
+				E96AB64A15507D1000475346 /* MonkSkillDetailViewController.m in Sources */,
+				E96AB64F15507D3400475346 /* WitchDoctorSkillDetailViewController.m in Sources */,
+				E96AB65415507D5200475346 /* WizardSkillDetailViewController.m in Sources */,
+				E980AD1B15509398003D7179 /* HeroSkillDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9CFD409154B125A005D3760 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9CFD40A154B125A005D3760 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9CFD412154B125A005D3760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9CFD413154B125A005D3760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9CFD415154B125A005D3760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neng/ Zhe/ (EP875B3GC9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Neng/ Zhe/ (EP875B3GC9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiabloIIIHeroesHall/DiabloIIIHeroesHall-Prefix.pch";
+				INFOPLIST_FILE = "DiabloIIIHeroesHall/DiabloIIIHeroesHall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F43B628D-5096-4DE8-A675-8260CB89A72E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F43B628D-5096-4DE8-A675-8260CB89A72E";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9CFD416154B125A005D3760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neng/ Zhe/ (EP875B3GC9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Neng/ Zhe/ (EP875B3GC9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiabloIIIHeroesHall/DiabloIIIHeroesHall-Prefix.pch";
+				INFOPLIST_FILE = "DiabloIIIHeroesHall/DiabloIIIHeroesHall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F43B628D-5096-4DE8-A675-8260CB89A72E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F43B628D-5096-4DE8-A675-8260CB89A72E";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9CFD3F6154B125A005D3760 /* Build configuration list for PBXProject "DiabloIIIHeroesHall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CFD412154B125A005D3760 /* Debug */,
+				E9CFD413154B125A005D3760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9CFD414154B125A005D3760 /* Build configuration list for PBXNativeTarget "DiabloIIIHeroesHall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CFD415154B125A005D3760 /* Debug */,
+				E9CFD416154B125A005D3760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9CFD3F3154B125A005D3760 /* Project object */;
+}
