@@ -44,6 +44,17 @@
     isHeroSkillDetailShown = visible;
 }
 
+
+- (void)setSelfViewToPassive
+{
+    
+}
+
+- (void)setSelfViewToInitiative
+{
+    
+}
+
 #pragma mark -
 #pragma mark Other methods
 
@@ -59,8 +70,9 @@
                          }
                      } 
                      completion:^(BOOL finished){
-                         UIControl *overView = (UIControl *)[[[UIApplication sharedApplication] keyWindow] viewWithTag:9618088];
-                         [overView removeFromSuperview];
+                         //设置非绘制区域是否响应时间，否则点击重置绘制区域
+                         //UIControl *overView = (UIControl *)[[[UIApplication sharedApplication] keyWindow] viewWithTag:9618088];
+                         //[overView removeFromSuperview];
                          [self setVisible:NO];
                          [delegate skillBoardDidFinishClosing];
                      }];
@@ -92,18 +104,19 @@
                          self.view.frame = newViewRect;
                      } 
                      completion:^(BOOL finished){
-                         UIControl *overView = [[UIControl alloc] init];
-                         overView.tag = 9618088;
-                         overView.backgroundColor = [UIColor clearColor];
-                         if (self.view.center.x<160.0f) {
-                             overView.frame = CGRectMake(self.view.frame.size.width, self.view.frame.origin.y, 320.0f - self.view.frame.size.width, self.view.frame.size.height);
-                         }
-                         else {
-                             overView.frame = CGRectMake(0.0f, self.view.frame.origin.y, 320.0f - self.view.frame.size.width, self.view.frame.size.height);
-                         }
-                         [overView addTarget:self action:@selector(restoreViewLocation) forControlEvents:UIControlEventTouchDown];
-                         [[[UIApplication sharedApplication] keyWindow] addSubview:overView];
-                         [overView release];
+                         //设置非绘制区域是否响应时间，否则点击重置绘制区域
+                         //UIControl *overView = [[UIControl alloc] init];
+                         //overView.tag = 9618088;
+                         //overView.backgroundColor = [UIColor clearColor];
+                         //if (self.view.center.x<160.0f) {
+                         //    overView.frame = CGRectMake(self.view.frame.size.width, self.view.frame.origin.y, 320.0f - self.view.frame.size.width, self.view.frame.size.height);
+                         //}
+                         //else {
+                         //    overView.frame = CGRectMake(0.0f, self.view.frame.origin.y, 320.0f - self.view.frame.size.width, self.view.frame.size.height);
+                         //}
+                         //[overView addTarget:self action:@selector(restoreViewLocation) forControlEvents:UIControlEventTouchDown];
+                         //[[[UIApplication sharedApplication] keyWindow] addSubview:overView];
+                         //[overView release];
                      }];
 }
 
@@ -111,6 +124,50 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"";
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = @"HeroesHall";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+	}
+    cell.backgroundColor = [UIColor clearColor];
+//    cell.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero"]] autorelease];
+//    cell.selectedBackgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero_s"]] autorelease];
+    return cell;
 }
 
 @end

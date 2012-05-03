@@ -10,4 +10,8 @@
 
 @interface WitchDoctorSkillDetailViewController : HeroSkillDetailViewController
 
+
+
+@property (retain, nonatomic) IBOutlet UIView *initiative;
+@property (retain, nonatomic) IBOutlet UIView *passive;
 @end

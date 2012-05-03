@@ -14,8 +14,9 @@
 
 @end
 
-@interface HeroSkillDetailViewController : UIViewController
+@interface HeroSkillDetailViewController : UIViewController <UIScrollViewDelegate ,UITableViewDelegate ,UITableViewDataSource>
 {
+    
     id <HeroSkillDetailDelegate> delegate;
     @public
         BOOL isHeroSkillDetailShown;
@@ -28,5 +29,7 @@
 - (void)moveToLeftSide;
 - (void)moveToRightSide;
 - (void)restoreViewLocation;
+- (void)setSelfViewToPassive;
+- (void)setSelfViewToInitiative;
 
 @end

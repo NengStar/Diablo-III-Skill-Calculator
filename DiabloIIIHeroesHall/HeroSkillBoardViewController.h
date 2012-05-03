@@ -19,8 +19,13 @@
 {
     IBOutlet UIImageView *heroAvatar;
     IBOutlet UILabel *className;
+    IBOutlet UILabel *numTwoSkill;
+    IBOutlet UILabel *numThreeSkill;
+    IBOutlet UILabel *numFourSkill;
     NSArray *imageNameArray;
     NSArray *classNameArray;
+    NSArray *skillSystemNameArray;
+    UIButton *selectedButton;
     BOOL viewControllerWillTerminate;
 @public
     NSInteger heroClass;
@@ -37,9 +42,9 @@
 @property (nonatomic, retain) WitchDoctorSkillDetailViewController *witchdoctorSkillBoard;
 @property (nonatomic, retain) WizardSkillDetailViewController *wizardSkillBoard;
 
-- (IBAction)bt_mouseLeftPressed:(UIButton *)sender;
-- (IBAction)bt_mouseRightPressed:(UIButton *)sender;
-
+- (IBAction)bt_initiativeSkillLeftPressed:(UIButton *)sender;
+- (IBAction)bt_initiativeSkillRightPressed:(UIButton *)sender;
+- (IBAction)bt_passiveSkillPressed:(UIButton *)sender;
 
 
 @end

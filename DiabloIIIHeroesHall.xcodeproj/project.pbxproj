@@ -11,6 +11,16 @@
 		E92A15C0154C000E00C96E0B /* HeroRiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92A15BE154C000E00C96E0B /* HeroRiseViewController.xib */; };
 		E92A15CC154C0B4100C96E0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E92A15CB154C0B4100C96E0B /* Default.png */; };
 		E92A15CE154C1E1800C96E0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E92A15CD154C1E1800C96E0B /* icon.png */; };
+		E94C5AC915517BC800B0F10D /* bg_skilldetailboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AC815517BC800B0F10D /* bg_skilldetailboard@2x.png */; };
+		E94C5ADA15525D7400B0F10D /* skill_bash_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD115525D7400B0F10D /* skill_bash_d.png */; };
+		E94C5ADB15525D7400B0F10D /* skill_bash_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD215525D7400B0F10D /* skill_bash_n.png */; };
+		E94C5ADC15525D7400B0F10D /* skill_bash_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD315525D7400B0F10D /* skill_bash_s.png */; };
+		E94C5ADD15525D7400B0F10D /* skill_cleave_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD415525D7400B0F10D /* skill_cleave_d.png */; };
+		E94C5ADE15525D7400B0F10D /* skill_cleave_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD515525D7400B0F10D /* skill_cleave_n.png */; };
+		E94C5ADF15525D7400B0F10D /* skill_cleave_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD615525D7400B0F10D /* skill_cleave_s.png */; };
+		E94C5AE015525D7400B0F10D /* skill_frenzy_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD715525D7400B0F10D /* skill_frenzy_d.png */; };
+		E94C5AE115525D7400B0F10D /* skill_frenzy_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD815525D7400B0F10D /* skill_frenzy_n.png */; };
+		E94C5AE215525D7400B0F10D /* skill_frenzy_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD915525D7400B0F10D /* skill_frenzy_s.png */; };
 		E96AB63D1550607E00475346 /* BarbarianSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB63B1550607E00475346 /* BarbarianSkillDetailViewController.m */; };
 		E96AB64215507B8900475346 /* DemonHunterSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB64015507B8900475346 /* DemonHunterSkillDetailViewController.m */; };
 		E96AB64315507B8900475346 /* DemonHunterSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96AB64115507B8900475346 /* DemonHunterSkillDetailViewController.xib */; };
@@ -20,6 +30,63 @@
 		E96AB65015507D3400475346 /* WitchDoctorSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96AB64E15507D3400475346 /* WitchDoctorSkillDetailViewController.xib */; };
 		E96AB65415507D5200475346 /* WizardSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AB65215507D5200475346 /* WizardSkillDetailViewController.m */; };
 		E96AB65515507D5200475346 /* WizardSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96AB65315507D5200475346 /* WizardSkillDetailViewController.xib */; };
+		E972606B1552B6BA006D5BB1 /* skill_hammeroftheancients_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E972605F1552B6B9006D5BB1 /* skill_hammeroftheancients_d.png */; };
+		E972606C1552B6BA006D5BB1 /* skill_hammeroftheancients_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260601552B6B9006D5BB1 /* skill_hammeroftheancients_n.png */; };
+		E972606D1552B6BA006D5BB1 /* skill_hammeroftheancients_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260611552B6B9006D5BB1 /* skill_hammeroftheancients_s.png */; };
+		E972606E1552B6BA006D5BB1 /* skill_rend_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260621552B6B9006D5BB1 /* skill_rend_d.png */; };
+		E972606F1552B6BA006D5BB1 /* skill_rend_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260631552B6B9006D5BB1 /* skill_rend_n.png */; };
+		E97260701552B6BA006D5BB1 /* skill_rend_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260641552B6B9006D5BB1 /* skill_rend_s.png */; };
+		E97260711552B6BA006D5BB1 /* skill_seismicslam_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260651552B6B9006D5BB1 /* skill_seismicslam_d.png */; };
+		E97260721552B6BA006D5BB1 /* skill_seismicslam_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260661552B6B9006D5BB1 /* skill_seismicslam_n.png */; };
+		E97260731552B6BA006D5BB1 /* skill_seismicslam_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260671552B6B9006D5BB1 /* skill_seismicslam_s.png */; };
+		E97260741552B6BA006D5BB1 /* skill_whirlwind_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260681552B6BA006D5BB1 /* skill_whirlwind_d.png */; };
+		E97260751552B6BA006D5BB1 /* skill_whirlwind_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260691552B6BA006D5BB1 /* skill_whirlwind_n.png */; };
+		E97260761552B6BA006D5BB1 /* skill_whirlwind_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E972606A1552B6BA006D5BB1 /* skill_whirlwind_s.png */; };
+		E97260881552BA69006D5BB1 /* skill_groundstomp_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E972607C1552BA69006D5BB1 /* skill_groundstomp_d.png */; };
+		E97260891552BA69006D5BB1 /* skill_groundstomp_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E972607D1552BA69006D5BB1 /* skill_groundstomp_n.png */; };
+		E972608A1552BA69006D5BB1 /* skill_groundstomp_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E972607E1552BA69006D5BB1 /* skill_groundstomp_s.png */; };
+		E972608B1552BA69006D5BB1 /* skill_ignorepain_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E972607F1552BA69006D5BB1 /* skill_ignorepain_d.png */; };
+		E972608C1552BA69006D5BB1 /* skill_ignorepain_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260801552BA69006D5BB1 /* skill_ignorepain_n.png */; };
+		E972608D1552BA69006D5BB1 /* skill_ignorepain_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260811552BA69006D5BB1 /* skill_ignorepain_s.png */; };
+		E972608E1552BA69006D5BB1 /* skill_leap_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260821552BA69006D5BB1 /* skill_leap_d.png */; };
+		E972608F1552BA69006D5BB1 /* skill_leap_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260831552BA69006D5BB1 /* skill_leap_n.png */; };
+		E97260901552BA69006D5BB1 /* skill_leap_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260841552BA69006D5BB1 /* skill_leap_s.png */; };
+		E97260911552BA69006D5BB1 /* skill_sprint_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260851552BA69006D5BB1 /* skill_sprint_d.png */; };
+		E97260921552BA69006D5BB1 /* skill_sprint_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260861552BA69006D5BB1 /* skill_sprint_n.png */; };
+		E97260931552BA69006D5BB1 /* skill_sprint_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260871552BA69006D5BB1 /* skill_sprint_s.png */; };
+		E97260A01552BC7A006D5BB1 /* skill_ancientspear_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260941552BC7A006D5BB1 /* skill_ancientspear_d.png */; };
+		E97260A11552BC7A006D5BB1 /* skill_ancientspear_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260951552BC7A006D5BB1 /* skill_ancientspear_n.png */; };
+		E97260A21552BC7A006D5BB1 /* skill_ancientspear_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260961552BC7A006D5BB1 /* skill_ancientspear_s.png */; };
+		E97260A31552BC7A006D5BB1 /* skill_furiouscharge_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260971552BC7A006D5BB1 /* skill_furiouscharge_d.png */; };
+		E97260A41552BC7A006D5BB1 /* skill_furiouscharge_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260981552BC7A006D5BB1 /* skill_furiouscharge_n.png */; };
+		E97260A51552BC7A006D5BB1 /* skill_furiouscharge_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260991552BC7A006D5BB1 /* skill_furiouscharge_s.png */; };
+		E97260A61552BC7A006D5BB1 /* skill_overpower_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E972609A1552BC7A006D5BB1 /* skill_overpower_d.png */; };
+		E97260A71552BC7A006D5BB1 /* skill_overpower_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E972609B1552BC7A006D5BB1 /* skill_overpower_n.png */; };
+		E97260A81552BC7A006D5BB1 /* skill_overpower_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E972609C1552BC7A006D5BB1 /* skill_overpower_s.png */; };
+		E97260A91552BC7A006D5BB1 /* skill_revenge_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E972609D1552BC7A006D5BB1 /* skill_revenge_d.png */; };
+		E97260AA1552BC7A006D5BB1 /* skill_revenge_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E972609E1552BC7A006D5BB1 /* skill_revenge_n.png */; };
+		E97260AB1552BC7A006D5BB1 /* skill_revenge_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E972609F1552BC7A006D5BB1 /* skill_revenge_s.png */; };
+		E97260B81552BE97006D5BB1 /* skill_battlerage_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260AC1552BE97006D5BB1 /* skill_battlerage_d.png */; };
+		E97260B91552BE97006D5BB1 /* skill_battlerage_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260AD1552BE97006D5BB1 /* skill_battlerage_n.png */; };
+		E97260BA1552BE97006D5BB1 /* skill_battlerage_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260AE1552BE97006D5BB1 /* skill_battlerage_s.png */; };
+		E97260BB1552BE97006D5BB1 /* skill_threateningshout_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260AF1552BE97006D5BB1 /* skill_threateningshout_d.png */; };
+		E97260BC1552BE97006D5BB1 /* skill_threateningshout_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B01552BE97006D5BB1 /* skill_threateningshout_n.png */; };
+		E97260BD1552BE97006D5BB1 /* skill_threateningshout_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B11552BE97006D5BB1 /* skill_threateningshout_s.png */; };
+		E97260BE1552BE97006D5BB1 /* skill_warcry_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B21552BE97006D5BB1 /* skill_warcry_d.png */; };
+		E97260BF1552BE97006D5BB1 /* skill_warcry_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B31552BE97006D5BB1 /* skill_warcry_n.png */; };
+		E97260C01552BE97006D5BB1 /* skill_warcry_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B41552BE97006D5BB1 /* skill_warcry_s.png */; };
+		E97260C11552BE97006D5BB1 /* skill_weaponthrow_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B51552BE97006D5BB1 /* skill_weaponthrow_d.png */; };
+		E97260C21552BE97006D5BB1 /* skill_weaponthrow_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B61552BE97006D5BB1 /* skill_weaponthrow_n.png */; };
+		E97260C31552BE97006D5BB1 /* skill_weaponthrow_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260B71552BE97006D5BB1 /* skill_weaponthrow_s.png */; };
+		E97260CD1552BF62006D5BB1 /* skill_calloftheancients_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260C41552BF62006D5BB1 /* skill_calloftheancients_d.png */; };
+		E97260CE1552BF62006D5BB1 /* skill_calloftheancients_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260C51552BF62006D5BB1 /* skill_calloftheancients_n.png */; };
+		E97260CF1552BF62006D5BB1 /* skill_calloftheancients_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260C61552BF62006D5BB1 /* skill_calloftheancients_s.png */; };
+		E97260D01552BF62006D5BB1 /* skill_earthquake_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260C71552BF62006D5BB1 /* skill_earthquake_d.png */; };
+		E97260D11552BF62006D5BB1 /* skill_earthquake_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260C81552BF62006D5BB1 /* skill_earthquake_n.png */; };
+		E97260D21552BF62006D5BB1 /* skill_earthquake_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260C91552BF62006D5BB1 /* skill_earthquake_s.png */; };
+		E97260D31552BF62006D5BB1 /* skill_wrathoftheberserker_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260CA1552BF62006D5BB1 /* skill_wrathoftheberserker_d.png */; };
+		E97260D41552BF62006D5BB1 /* skill_wrathoftheberserker_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260CB1552BF62006D5BB1 /* skill_wrathoftheberserker_n.png */; };
+		E97260D51552BF62006D5BB1 /* skill_wrathoftheberserker_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260CC1552BF62006D5BB1 /* skill_wrathoftheberserker_s.png */; };
 		E97DBDBC1550148400385A36 /* bt_forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDBB1550148400385A36 /* bt_forward@2x.png */; };
 		E97DBDCC155023AF00385A36 /* avatar_bar_f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */; };
 		E97DBDCD155023AF00385A36 /* avatar_bar_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */; };
@@ -84,6 +151,16 @@
 		E92A15BE154C000E00C96E0B /* HeroRiseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroRiseViewController.xib; sourceTree = "<group>"; };
 		E92A15CB154C0B4100C96E0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E92A15CD154C1E1800C96E0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E94C5AC815517BC800B0F10D /* bg_skilldetailboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_skilldetailboard@2x.png"; sourceTree = "<group>"; };
+		E94C5AD115525D7400B0F10D /* skill_bash_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_bash_d.png; sourceTree = "<group>"; };
+		E94C5AD215525D7400B0F10D /* skill_bash_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_bash_n.png; sourceTree = "<group>"; };
+		E94C5AD315525D7400B0F10D /* skill_bash_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_bash_s.png; sourceTree = "<group>"; };
+		E94C5AD415525D7400B0F10D /* skill_cleave_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_cleave_d.png; sourceTree = "<group>"; };
+		E94C5AD515525D7400B0F10D /* skill_cleave_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_cleave_n.png; sourceTree = "<group>"; };
+		E94C5AD615525D7400B0F10D /* skill_cleave_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_cleave_s.png; sourceTree = "<group>"; };
+		E94C5AD715525D7400B0F10D /* skill_frenzy_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_frenzy_d.png; sourceTree = "<group>"; };
+		E94C5AD815525D7400B0F10D /* skill_frenzy_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_frenzy_n.png; sourceTree = "<group>"; };
+		E94C5AD915525D7400B0F10D /* skill_frenzy_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_frenzy_s.png; sourceTree = "<group>"; };
 		E96AB63A1550607E00475346 /* BarbarianSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarbarianSkillDetailViewController.h; sourceTree = "<group>"; };
 		E96AB63B1550607E00475346 /* BarbarianSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarbarianSkillDetailViewController.m; sourceTree = "<group>"; };
 		E96AB63F15507B8900475346 /* DemonHunterSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemonHunterSkillDetailViewController.h; sourceTree = "<group>"; };
@@ -98,6 +175,63 @@
 		E96AB65115507D5200475346 /* WizardSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardSkillDetailViewController.h; sourceTree = "<group>"; };
 		E96AB65215507D5200475346 /* WizardSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardSkillDetailViewController.m; sourceTree = "<group>"; };
 		E96AB65315507D5200475346 /* WizardSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizardSkillDetailViewController.xib; sourceTree = "<group>"; };
+		E972605F1552B6B9006D5BB1 /* skill_hammeroftheancients_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_hammeroftheancients_d.png; sourceTree = "<group>"; };
+		E97260601552B6B9006D5BB1 /* skill_hammeroftheancients_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_hammeroftheancients_n.png; sourceTree = "<group>"; };
+		E97260611552B6B9006D5BB1 /* skill_hammeroftheancients_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_hammeroftheancients_s.png; sourceTree = "<group>"; };
+		E97260621552B6B9006D5BB1 /* skill_rend_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_rend_d.png; sourceTree = "<group>"; };
+		E97260631552B6B9006D5BB1 /* skill_rend_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_rend_n.png; sourceTree = "<group>"; };
+		E97260641552B6B9006D5BB1 /* skill_rend_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_rend_s.png; sourceTree = "<group>"; };
+		E97260651552B6B9006D5BB1 /* skill_seismicslam_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_seismicslam_d.png; sourceTree = "<group>"; };
+		E97260661552B6B9006D5BB1 /* skill_seismicslam_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_seismicslam_n.png; sourceTree = "<group>"; };
+		E97260671552B6B9006D5BB1 /* skill_seismicslam_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_seismicslam_s.png; sourceTree = "<group>"; };
+		E97260681552B6BA006D5BB1 /* skill_whirlwind_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_whirlwind_d.png; sourceTree = "<group>"; };
+		E97260691552B6BA006D5BB1 /* skill_whirlwind_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_whirlwind_n.png; sourceTree = "<group>"; };
+		E972606A1552B6BA006D5BB1 /* skill_whirlwind_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_whirlwind_s.png; sourceTree = "<group>"; };
+		E972607C1552BA69006D5BB1 /* skill_groundstomp_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_groundstomp_d.png; sourceTree = "<group>"; };
+		E972607D1552BA69006D5BB1 /* skill_groundstomp_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_groundstomp_n.png; sourceTree = "<group>"; };
+		E972607E1552BA69006D5BB1 /* skill_groundstomp_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_groundstomp_s.png; sourceTree = "<group>"; };
+		E972607F1552BA69006D5BB1 /* skill_ignorepain_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_ignorepain_d.png; sourceTree = "<group>"; };
+		E97260801552BA69006D5BB1 /* skill_ignorepain_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_ignorepain_n.png; sourceTree = "<group>"; };
+		E97260811552BA69006D5BB1 /* skill_ignorepain_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_ignorepain_s.png; sourceTree = "<group>"; };
+		E97260821552BA69006D5BB1 /* skill_leap_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_leap_d.png; sourceTree = "<group>"; };
+		E97260831552BA69006D5BB1 /* skill_leap_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_leap_n.png; sourceTree = "<group>"; };
+		E97260841552BA69006D5BB1 /* skill_leap_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_leap_s.png; sourceTree = "<group>"; };
+		E97260851552BA69006D5BB1 /* skill_sprint_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_sprint_d.png; sourceTree = "<group>"; };
+		E97260861552BA69006D5BB1 /* skill_sprint_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_sprint_n.png; sourceTree = "<group>"; };
+		E97260871552BA69006D5BB1 /* skill_sprint_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_sprint_s.png; sourceTree = "<group>"; };
+		E97260941552BC7A006D5BB1 /* skill_ancientspear_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_ancientspear_d.png; sourceTree = "<group>"; };
+		E97260951552BC7A006D5BB1 /* skill_ancientspear_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_ancientspear_n.png; sourceTree = "<group>"; };
+		E97260961552BC7A006D5BB1 /* skill_ancientspear_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_ancientspear_s.png; sourceTree = "<group>"; };
+		E97260971552BC7A006D5BB1 /* skill_furiouscharge_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_furiouscharge_d.png; sourceTree = "<group>"; };
+		E97260981552BC7A006D5BB1 /* skill_furiouscharge_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_furiouscharge_n.png; sourceTree = "<group>"; };
+		E97260991552BC7A006D5BB1 /* skill_furiouscharge_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_furiouscharge_s.png; sourceTree = "<group>"; };
+		E972609A1552BC7A006D5BB1 /* skill_overpower_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_overpower_d.png; sourceTree = "<group>"; };
+		E972609B1552BC7A006D5BB1 /* skill_overpower_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_overpower_n.png; sourceTree = "<group>"; };
+		E972609C1552BC7A006D5BB1 /* skill_overpower_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_overpower_s.png; sourceTree = "<group>"; };
+		E972609D1552BC7A006D5BB1 /* skill_revenge_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_revenge_d.png; sourceTree = "<group>"; };
+		E972609E1552BC7A006D5BB1 /* skill_revenge_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_revenge_n.png; sourceTree = "<group>"; };
+		E972609F1552BC7A006D5BB1 /* skill_revenge_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_revenge_s.png; sourceTree = "<group>"; };
+		E97260AC1552BE97006D5BB1 /* skill_battlerage_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_battlerage_d.png; sourceTree = "<group>"; };
+		E97260AD1552BE97006D5BB1 /* skill_battlerage_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_battlerage_n.png; sourceTree = "<group>"; };
+		E97260AE1552BE97006D5BB1 /* skill_battlerage_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_battlerage_s.png; sourceTree = "<group>"; };
+		E97260AF1552BE97006D5BB1 /* skill_threateningshout_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_threateningshout_d.png; sourceTree = "<group>"; };
+		E97260B01552BE97006D5BB1 /* skill_threateningshout_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_threateningshout_n.png; sourceTree = "<group>"; };
+		E97260B11552BE97006D5BB1 /* skill_threateningshout_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_threateningshout_s.png; sourceTree = "<group>"; };
+		E97260B21552BE97006D5BB1 /* skill_warcry_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_warcry_d.png; sourceTree = "<group>"; };
+		E97260B31552BE97006D5BB1 /* skill_warcry_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_warcry_n.png; sourceTree = "<group>"; };
+		E97260B41552BE97006D5BB1 /* skill_warcry_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_warcry_s.png; sourceTree = "<group>"; };
+		E97260B51552BE97006D5BB1 /* skill_weaponthrow_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_weaponthrow_d.png; sourceTree = "<group>"; };
+		E97260B61552BE97006D5BB1 /* skill_weaponthrow_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_weaponthrow_n.png; sourceTree = "<group>"; };
+		E97260B71552BE97006D5BB1 /* skill_weaponthrow_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_weaponthrow_s.png; sourceTree = "<group>"; };
+		E97260C41552BF62006D5BB1 /* skill_calloftheancients_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_calloftheancients_d.png; sourceTree = "<group>"; };
+		E97260C51552BF62006D5BB1 /* skill_calloftheancients_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_calloftheancients_n.png; sourceTree = "<group>"; };
+		E97260C61552BF62006D5BB1 /* skill_calloftheancients_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_calloftheancients_s.png; sourceTree = "<group>"; };
+		E97260C71552BF62006D5BB1 /* skill_earthquake_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_earthquake_d.png; sourceTree = "<group>"; };
+		E97260C81552BF62006D5BB1 /* skill_earthquake_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_earthquake_n.png; sourceTree = "<group>"; };
+		E97260C91552BF62006D5BB1 /* skill_earthquake_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_earthquake_s.png; sourceTree = "<group>"; };
+		E97260CA1552BF62006D5BB1 /* skill_wrathoftheberserker_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_wrathoftheberserker_d.png; sourceTree = "<group>"; };
+		E97260CB1552BF62006D5BB1 /* skill_wrathoftheberserker_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_wrathoftheberserker_n.png; sourceTree = "<group>"; };
+		E97260CC1552BF62006D5BB1 /* skill_wrathoftheberserker_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_wrathoftheberserker_s.png; sourceTree = "<group>"; };
 		E97DBDBB1550148400385A36 /* bt_forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_forward@2x.png"; sourceTree = "<group>"; };
 		E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_bar_f@2x.png"; sourceTree = "<group>"; };
 		E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_bar_m@2x.png"; sourceTree = "<group>"; };
@@ -180,6 +314,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E94C5ACC15525CF800B0F10D /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */,
+				E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */,
+				E97DBDC4155023AF00385A36 /* avatar_dh_f@2x.png */,
+				E97DBDC5155023AF00385A36 /* avatar_dh_m@2x.png */,
+				E97DBDC6155023AF00385A36 /* avatar_monk_f@2x.png */,
+				E97DBDC7155023AF00385A36 /* avatar_monk_m@2x.png */,
+				E97DBDC8155023AF00385A36 /* avatar_wd_f@2x.png */,
+				E97DBDC9155023AF00385A36 /* avatar_wd_m@2x.png */,
+				E97DBDCA155023AF00385A36 /* avatar_wz_f@2x.png */,
+				E97DBDCB155023AF00385A36 /* avatar_wz_m@2x.png */,
+			);
+			name = Avatar;
+			sourceTree = "<group>";
+		};
+		E94C5ACD15525D1600B0F10D /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E97DBDDA1550354400385A36 /* bt_nextpage@2x.png */,
+				E97DBDBB1550148400385A36 /* bt_forward@2x.png */,
+				E99E2A0A154F34D000FFE046 /* bt_female_s@2x.png */,
+				E99E2A0B154F34D000FFE046 /* bt_female@2x.png */,
+				E99E2A0C154F34D000FFE046 /* bt_male_s@2x.png */,
+				E99E2A0D154F34D100FFE046 /* bt_male@2x.png */,
+				E9D9F2D6154D5EAA00DABCE8 /* bt_heroeshall_create@2x.png */,
+				E9D9F2CF154D451100DABCE8 /* bt_back@2x.png */,
+				E9D9F242154D259000DABCE8 /* bt_hero@2x.png */,
+				E9D9F243154D259000DABCE8 /* bt_hero_s@2x.png */,
+				E97DBDDC155039D200385A36 /* bt_skill_s@2x.png */,
+				E97DBDDE1550479600385A36 /* bt_pskill_s@2x.png */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		E94C5ACE15525D4500B0F10D /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				E99E2A08154F2DCD00FFE046 /* bg_sex@2x.png */,
+				E9D9F2CC154D43F700DABCE8 /* bg_topbar@2x.png */,
+				E97DBDD615502C6900385A36 /* bg_herorise@2x.png */,
+				E9D9F22F154D1B2700DABCE8 /* bg_heroshall_rect@2x.png */,
+				E97DBDD815502EE000385A36 /* bg_heroeshall@2x.png */,
+				E9EFE65A154FEEDE00C01F3C /* bg_skillboard@2x.png */,
+				E94C5AC815517BC800B0F10D /* bg_skilldetailboard@2x.png */,
+			);
+			name = Background;
+			sourceTree = "<group>";
+		};
+		E94C5ACF15525D5E00B0F10D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E9D9F2BE154D306900DABCE8 /* tt_herorise@2x.png */,
+				E9D9F2BC154D302600DABCE8 /* ft_herorise_rect@2x.png */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		E94C5AD015525D6500B0F10D /* Skill */ = {
+			isa = PBXGroup;
+			children = (
+				E94C5AE315525D8200B0F10D /* Barbarian */,
+			);
+			name = Skill;
+			sourceTree = "<group>";
+		};
+		E94C5AE315525D8200B0F10D /* Barbarian */ = {
+			isa = PBXGroup;
+			children = (
+				E972605D1552B6A9006D5BB1 /* Primary */,
+				E97260771552B6BF006D5BB1 /* Secondary */,
+				E97260781552B73A006D5BB1 /* Defensive */,
+				E97260791552B76A006D5BB1 /* Might */,
+				E972607A1552B77F006D5BB1 /* Tactics */,
+				E972607B1552B789006D5BB1 /* Rage */,
+			);
+			name = Barbarian;
+			sourceTree = "<group>";
+		};
 		E96AB65615507D6200475346 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +431,114 @@
 				E96AB65215507D5200475346 /* WizardSkillDetailViewController.m */,
 			);
 			name = SecondaryViewController;
+			sourceTree = "<group>";
+		};
+		E972605D1552B6A9006D5BB1 /* Primary */ = {
+			isa = PBXGroup;
+			children = (
+				E94C5AD115525D7400B0F10D /* skill_bash_d.png */,
+				E94C5AD215525D7400B0F10D /* skill_bash_n.png */,
+				E94C5AD315525D7400B0F10D /* skill_bash_s.png */,
+				E94C5AD415525D7400B0F10D /* skill_cleave_d.png */,
+				E94C5AD515525D7400B0F10D /* skill_cleave_n.png */,
+				E94C5AD615525D7400B0F10D /* skill_cleave_s.png */,
+				E94C5AD715525D7400B0F10D /* skill_frenzy_d.png */,
+				E94C5AD815525D7400B0F10D /* skill_frenzy_n.png */,
+				E94C5AD915525D7400B0F10D /* skill_frenzy_s.png */,
+			);
+			name = Primary;
+			sourceTree = "<group>";
+		};
+		E97260771552B6BF006D5BB1 /* Secondary */ = {
+			isa = PBXGroup;
+			children = (
+				E972605F1552B6B9006D5BB1 /* skill_hammeroftheancients_d.png */,
+				E97260601552B6B9006D5BB1 /* skill_hammeroftheancients_n.png */,
+				E97260611552B6B9006D5BB1 /* skill_hammeroftheancients_s.png */,
+				E97260621552B6B9006D5BB1 /* skill_rend_d.png */,
+				E97260631552B6B9006D5BB1 /* skill_rend_n.png */,
+				E97260641552B6B9006D5BB1 /* skill_rend_s.png */,
+				E97260651552B6B9006D5BB1 /* skill_seismicslam_d.png */,
+				E97260661552B6B9006D5BB1 /* skill_seismicslam_n.png */,
+				E97260671552B6B9006D5BB1 /* skill_seismicslam_s.png */,
+				E97260681552B6BA006D5BB1 /* skill_whirlwind_d.png */,
+				E97260691552B6BA006D5BB1 /* skill_whirlwind_n.png */,
+				E972606A1552B6BA006D5BB1 /* skill_whirlwind_s.png */,
+			);
+			name = Secondary;
+			sourceTree = "<group>";
+		};
+		E97260781552B73A006D5BB1 /* Defensive */ = {
+			isa = PBXGroup;
+			children = (
+				E972607C1552BA69006D5BB1 /* skill_groundstomp_d.png */,
+				E972607D1552BA69006D5BB1 /* skill_groundstomp_n.png */,
+				E972607E1552BA69006D5BB1 /* skill_groundstomp_s.png */,
+				E972607F1552BA69006D5BB1 /* skill_ignorepain_d.png */,
+				E97260801552BA69006D5BB1 /* skill_ignorepain_n.png */,
+				E97260811552BA69006D5BB1 /* skill_ignorepain_s.png */,
+				E97260821552BA69006D5BB1 /* skill_leap_d.png */,
+				E97260831552BA69006D5BB1 /* skill_leap_n.png */,
+				E97260841552BA69006D5BB1 /* skill_leap_s.png */,
+				E97260851552BA69006D5BB1 /* skill_sprint_d.png */,
+				E97260861552BA69006D5BB1 /* skill_sprint_n.png */,
+				E97260871552BA69006D5BB1 /* skill_sprint_s.png */,
+			);
+			name = Defensive;
+			sourceTree = "<group>";
+		};
+		E97260791552B76A006D5BB1 /* Might */ = {
+			isa = PBXGroup;
+			children = (
+				E97260941552BC7A006D5BB1 /* skill_ancientspear_d.png */,
+				E97260951552BC7A006D5BB1 /* skill_ancientspear_n.png */,
+				E97260961552BC7A006D5BB1 /* skill_ancientspear_s.png */,
+				E97260971552BC7A006D5BB1 /* skill_furiouscharge_d.png */,
+				E97260981552BC7A006D5BB1 /* skill_furiouscharge_n.png */,
+				E97260991552BC7A006D5BB1 /* skill_furiouscharge_s.png */,
+				E972609A1552BC7A006D5BB1 /* skill_overpower_d.png */,
+				E972609B1552BC7A006D5BB1 /* skill_overpower_n.png */,
+				E972609C1552BC7A006D5BB1 /* skill_overpower_s.png */,
+				E972609D1552BC7A006D5BB1 /* skill_revenge_d.png */,
+				E972609E1552BC7A006D5BB1 /* skill_revenge_n.png */,
+				E972609F1552BC7A006D5BB1 /* skill_revenge_s.png */,
+			);
+			name = Might;
+			sourceTree = "<group>";
+		};
+		E972607A1552B77F006D5BB1 /* Tactics */ = {
+			isa = PBXGroup;
+			children = (
+				E97260AC1552BE97006D5BB1 /* skill_battlerage_d.png */,
+				E97260AD1552BE97006D5BB1 /* skill_battlerage_n.png */,
+				E97260AE1552BE97006D5BB1 /* skill_battlerage_s.png */,
+				E97260AF1552BE97006D5BB1 /* skill_threateningshout_d.png */,
+				E97260B01552BE97006D5BB1 /* skill_threateningshout_n.png */,
+				E97260B11552BE97006D5BB1 /* skill_threateningshout_s.png */,
+				E97260B21552BE97006D5BB1 /* skill_warcry_d.png */,
+				E97260B31552BE97006D5BB1 /* skill_warcry_n.png */,
+				E97260B41552BE97006D5BB1 /* skill_warcry_s.png */,
+				E97260B51552BE97006D5BB1 /* skill_weaponthrow_d.png */,
+				E97260B61552BE97006D5BB1 /* skill_weaponthrow_n.png */,
+				E97260B71552BE97006D5BB1 /* skill_weaponthrow_s.png */,
+			);
+			name = Tactics;
+			sourceTree = "<group>";
+		};
+		E972607B1552B789006D5BB1 /* Rage */ = {
+			isa = PBXGroup;
+			children = (
+				E97260C41552BF62006D5BB1 /* skill_calloftheancients_d.png */,
+				E97260C51552BF62006D5BB1 /* skill_calloftheancients_n.png */,
+				E97260C61552BF62006D5BB1 /* skill_calloftheancients_s.png */,
+				E97260C71552BF62006D5BB1 /* skill_earthquake_d.png */,
+				E97260C81552BF62006D5BB1 /* skill_earthquake_n.png */,
+				E97260C91552BF62006D5BB1 /* skill_earthquake_s.png */,
+				E97260CA1552BF62006D5BB1 /* skill_wrathoftheberserker_d.png */,
+				E97260CB1552BF62006D5BB1 /* skill_wrathoftheberserker_n.png */,
+				E97260CC1552BF62006D5BB1 /* skill_wrathoftheberserker_s.png */,
+			);
+			name = Rage;
 			sourceTree = "<group>";
 		};
 		E980AD13155092B6003D7179 /* Custom */ = {
@@ -261,36 +583,11 @@
 		E980AD1F1550A483003D7179 /* Retina */ = {
 			isa = PBXGroup;
 			children = (
-				E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */,
-				E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */,
-				E97DBDC4155023AF00385A36 /* avatar_dh_f@2x.png */,
-				E97DBDC5155023AF00385A36 /* avatar_dh_m@2x.png */,
-				E97DBDC6155023AF00385A36 /* avatar_monk_f@2x.png */,
-				E97DBDC7155023AF00385A36 /* avatar_monk_m@2x.png */,
-				E97DBDC8155023AF00385A36 /* avatar_wd_f@2x.png */,
-				E97DBDC9155023AF00385A36 /* avatar_wd_m@2x.png */,
-				E97DBDCA155023AF00385A36 /* avatar_wz_f@2x.png */,
-				E97DBDCB155023AF00385A36 /* avatar_wz_m@2x.png */,
-				E97DBDDA1550354400385A36 /* bt_nextpage@2x.png */,
-				E97DBDBB1550148400385A36 /* bt_forward@2x.png */,
-				E99E2A0A154F34D000FFE046 /* bt_female_s@2x.png */,
-				E99E2A0B154F34D000FFE046 /* bt_female@2x.png */,
-				E99E2A0C154F34D000FFE046 /* bt_male_s@2x.png */,
-				E99E2A0D154F34D100FFE046 /* bt_male@2x.png */,
-				E9D9F2D6154D5EAA00DABCE8 /* bt_heroeshall_create@2x.png */,
-				E9D9F2CF154D451100DABCE8 /* bt_back@2x.png */,
-				E9D9F242154D259000DABCE8 /* bt_hero@2x.png */,
-				E9D9F243154D259000DABCE8 /* bt_hero_s@2x.png */,
-				E99E2A08154F2DCD00FFE046 /* bg_sex@2x.png */,
-				E9D9F2CC154D43F700DABCE8 /* bg_topbar@2x.png */,
-				E97DBDD615502C6900385A36 /* bg_herorise@2x.png */,
-				E9D9F22F154D1B2700DABCE8 /* bg_heroshall_rect@2x.png */,
-				E97DBDD815502EE000385A36 /* bg_heroeshall@2x.png */,
-				E9EFE65A154FEEDE00C01F3C /* bg_skillboard@2x.png */,
-				E97DBDDC155039D200385A36 /* bt_skill_s@2x.png */,
-				E97DBDDE1550479600385A36 /* bt_pskill_s@2x.png */,
-				E9D9F2BE154D306900DABCE8 /* tt_herorise@2x.png */,
-				E9D9F2BC154D302600DABCE8 /* ft_herorise_rect@2x.png */,
+				E94C5AD015525D6500B0F10D /* Skill */,
+				E94C5ACC15525CF800B0F10D /* Avatar */,
+				E94C5ACD15525D1600B0F10D /* Button */,
+				E94C5ACE15525D4500B0F10D /* Background */,
+				E94C5ACF15525D5E00B0F10D /* Other */,
 			);
 			name = Retina;
 			sourceTree = "<group>";
@@ -540,6 +837,73 @@
 				E96AB64B15507D1000475346 /* MonkSkillDetailViewController.xib in Resources */,
 				E96AB65015507D3400475346 /* WitchDoctorSkillDetailViewController.xib in Resources */,
 				E96AB65515507D5200475346 /* WizardSkillDetailViewController.xib in Resources */,
+				E94C5AC915517BC800B0F10D /* bg_skilldetailboard@2x.png in Resources */,
+				E94C5ADA15525D7400B0F10D /* skill_bash_d.png in Resources */,
+				E94C5ADB15525D7400B0F10D /* skill_bash_n.png in Resources */,
+				E94C5ADC15525D7400B0F10D /* skill_bash_s.png in Resources */,
+				E94C5ADD15525D7400B0F10D /* skill_cleave_d.png in Resources */,
+				E94C5ADE15525D7400B0F10D /* skill_cleave_n.png in Resources */,
+				E94C5ADF15525D7400B0F10D /* skill_cleave_s.png in Resources */,
+				E94C5AE015525D7400B0F10D /* skill_frenzy_d.png in Resources */,
+				E94C5AE115525D7400B0F10D /* skill_frenzy_n.png in Resources */,
+				E94C5AE215525D7400B0F10D /* skill_frenzy_s.png in Resources */,
+				E972606B1552B6BA006D5BB1 /* skill_hammeroftheancients_d.png in Resources */,
+				E972606C1552B6BA006D5BB1 /* skill_hammeroftheancients_n.png in Resources */,
+				E972606D1552B6BA006D5BB1 /* skill_hammeroftheancients_s.png in Resources */,
+				E972606E1552B6BA006D5BB1 /* skill_rend_d.png in Resources */,
+				E972606F1552B6BA006D5BB1 /* skill_rend_n.png in Resources */,
+				E97260701552B6BA006D5BB1 /* skill_rend_s.png in Resources */,
+				E97260711552B6BA006D5BB1 /* skill_seismicslam_d.png in Resources */,
+				E97260721552B6BA006D5BB1 /* skill_seismicslam_n.png in Resources */,
+				E97260731552B6BA006D5BB1 /* skill_seismicslam_s.png in Resources */,
+				E97260741552B6BA006D5BB1 /* skill_whirlwind_d.png in Resources */,
+				E97260751552B6BA006D5BB1 /* skill_whirlwind_n.png in Resources */,
+				E97260761552B6BA006D5BB1 /* skill_whirlwind_s.png in Resources */,
+				E97260881552BA69006D5BB1 /* skill_groundstomp_d.png in Resources */,
+				E97260891552BA69006D5BB1 /* skill_groundstomp_n.png in Resources */,
+				E972608A1552BA69006D5BB1 /* skill_groundstomp_s.png in Resources */,
+				E972608B1552BA69006D5BB1 /* skill_ignorepain_d.png in Resources */,
+				E972608C1552BA69006D5BB1 /* skill_ignorepain_n.png in Resources */,
+				E972608D1552BA69006D5BB1 /* skill_ignorepain_s.png in Resources */,
+				E972608E1552BA69006D5BB1 /* skill_leap_d.png in Resources */,
+				E972608F1552BA69006D5BB1 /* skill_leap_n.png in Resources */,
+				E97260901552BA69006D5BB1 /* skill_leap_s.png in Resources */,
+				E97260911552BA69006D5BB1 /* skill_sprint_d.png in Resources */,
+				E97260921552BA69006D5BB1 /* skill_sprint_n.png in Resources */,
+				E97260931552BA69006D5BB1 /* skill_sprint_s.png in Resources */,
+				E97260A01552BC7A006D5BB1 /* skill_ancientspear_d.png in Resources */,
+				E97260A11552BC7A006D5BB1 /* skill_ancientspear_n.png in Resources */,
+				E97260A21552BC7A006D5BB1 /* skill_ancientspear_s.png in Resources */,
+				E97260A31552BC7A006D5BB1 /* skill_furiouscharge_d.png in Resources */,
+				E97260A41552BC7A006D5BB1 /* skill_furiouscharge_n.png in Resources */,
+				E97260A51552BC7A006D5BB1 /* skill_furiouscharge_s.png in Resources */,
+				E97260A61552BC7A006D5BB1 /* skill_overpower_d.png in Resources */,
+				E97260A71552BC7A006D5BB1 /* skill_overpower_n.png in Resources */,
+				E97260A81552BC7A006D5BB1 /* skill_overpower_s.png in Resources */,
+				E97260A91552BC7A006D5BB1 /* skill_revenge_d.png in Resources */,
+				E97260AA1552BC7A006D5BB1 /* skill_revenge_n.png in Resources */,
+				E97260AB1552BC7A006D5BB1 /* skill_revenge_s.png in Resources */,
+				E97260B81552BE97006D5BB1 /* skill_battlerage_d.png in Resources */,
+				E97260B91552BE97006D5BB1 /* skill_battlerage_n.png in Resources */,
+				E97260BA1552BE97006D5BB1 /* skill_battlerage_s.png in Resources */,
+				E97260BB1552BE97006D5BB1 /* skill_threateningshout_d.png in Resources */,
+				E97260BC1552BE97006D5BB1 /* skill_threateningshout_n.png in Resources */,
+				E97260BD1552BE97006D5BB1 /* skill_threateningshout_s.png in Resources */,
+				E97260BE1552BE97006D5BB1 /* skill_warcry_d.png in Resources */,
+				E97260BF1552BE97006D5BB1 /* skill_warcry_n.png in Resources */,
+				E97260C01552BE97006D5BB1 /* skill_warcry_s.png in Resources */,
+				E97260C11552BE97006D5BB1 /* skill_weaponthrow_d.png in Resources */,
+				E97260C21552BE97006D5BB1 /* skill_weaponthrow_n.png in Resources */,
+				E97260C31552BE97006D5BB1 /* skill_weaponthrow_s.png in Resources */,
+				E97260CD1552BF62006D5BB1 /* skill_calloftheancients_d.png in Resources */,
+				E97260CE1552BF62006D5BB1 /* skill_calloftheancients_n.png in Resources */,
+				E97260CF1552BF62006D5BB1 /* skill_calloftheancients_s.png in Resources */,
+				E97260D01552BF62006D5BB1 /* skill_earthquake_d.png in Resources */,
+				E97260D11552BF62006D5BB1 /* skill_earthquake_n.png in Resources */,
+				E97260D21552BF62006D5BB1 /* skill_earthquake_s.png in Resources */,
+				E97260D31552BF62006D5BB1 /* skill_wrathoftheberserker_d.png in Resources */,
+				E97260D41552BF62006D5BB1 /* skill_wrathoftheberserker_n.png in Resources */,
+				E97260D51552BF62006D5BB1 /* skill_wrathoftheberserker_s.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

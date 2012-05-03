@@ -8,11 +8,9 @@
 
 #import "WizardSkillDetailViewController.h"
 
-@interface WizardSkillDetailViewController ()
-
-@end
-
 @implementation WizardSkillDetailViewController
+@synthesize initiative;
+@synthesize passive;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,6 +19,31 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [initiative release];
+    [passive release];
+    [super dealloc];
+}
+
+- (void)setSelfViewToPassive
+{
+    initiative.hidden = YES;
+    passive.hidden = NO;
+    self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, passive.frame.size.width, passive.frame.size.height);
+    self.view = passive;
+    [super setSelfViewToPassive];
+}
+
+- (void)setSelfViewToInitiative
+{
+    initiative.hidden = NO;
+    passive.hidden = YES;
+    self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, initiative.frame.size.width, initiative.frame.size.height);
+    self.view = initiative;
+    [super setSelfViewToInitiative];
 }
 
 - (void)viewDidLoad

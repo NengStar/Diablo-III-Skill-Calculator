@@ -35,6 +35,7 @@
         
         imageNameArray = [[NSArray alloc] initWithObjects:@"avatar_bar_f",@"avatar_dh_f",@"avatar_monk_f",@"avatar_wd_f",@"avatar_wz_f",@"avatar_bar_m",@"avatar_dh_m",@"avatar_monk_m",@"avatar_wd_m",@"avatar_wz_m",nil];
         classNameArray = [[NSArray alloc] initWithObjects:@"Barbarian", @"Demon Hunter",@"Monk",@"Witch Doctor",@"Winzard",nil];
+        skillSystemNameArray = [[NSArray alloc] initWithObjects:@"Might",@"Tactics",@"Rage",@"Hunting",@"Devices",@"Archery",@"Techniques",@"Focus",@"Mantras",@"Terror",@"Decay",@"Voodoo",@"Force",@"Conjuration",@"Mastery",nil];
     }
     return self;
 }
@@ -43,8 +44,14 @@
 {
     [heroAvatar release];
     [className release];
+    [numTwoSkill release];
+    [numThreeSkill release];
+    [numFourSkill release];
+    
     [imageNameArray release];
     [classNameArray release];
+    [skillSystemNameArray release];
+    
     [_barbarianSkillBoard release];
     [_demonhunterSkillBoard release];
     [_monkSkillBoard release];
@@ -68,10 +75,18 @@
 
 - (void)skillBoardDidFinishClosing
 {
+    [self makeButtonUnSelected];
     if (viewControllerWillTerminate) {
         [[[[UIApplication sharedApplication] keyWindow] viewWithTag:13811150829] removeFromSuperview];
         [self.navigationController popViewControllerAnimatedWithTransition:UIViewAnimationTransitionCurlDown];
     }
+}
+
+- (void)setSkillSystemLabel
+{
+    [numTwoSkill setText:[skillSystemNameArray objectAtIndex:heroClass*3]];
+    [numThreeSkill setText:[skillSystemNameArray objectAtIndex:(heroClass*3+1)]];
+    [numFourSkill setText:[skillSystemNameArray objectAtIndex:(heroClass*3+2)]];
 }
 
 - (void)createHeroSkillDetailBoard
@@ -128,6 +143,17 @@
     }
 }
 
+- (void)makeButtonSelected:(UIButton *)button
+{
+    selectedButton = button;
+    [selectedButton setSelected:YES];
+}
+
+- (void)makeButtonUnSelected
+{
+    [selectedButton setSelected:NO];
+}
+
 
 - (void)viewDidLoad
 {
@@ -135,6 +161,7 @@
     // Do any additional setup after loading the view from its nib.
     [heroAvatar setImage:[UIImage imageNamed:[imageNameArray objectAtIndex:(heroClass+5*heroSex)]]];
     [className setText:[classNameArray objectAtIndex:heroClass]];
+    [self setSkillSystemLabel];
     [self createHeroSkillDetailBoard];
 }
 
@@ -150,11 +177,73 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)bt_mouseLeftPressed:(UIButton *)sender {
-    [currentSkillBoard moveToRightSide];
+- (IBAction)bt_initiativeSkillLeftPressed:(UIButton *)sender {
+    if (currentSkillBoard.isHeroSkillDetailShown) {
+        if ([sender isEqual:selectedButton]) {
+            
+        }
+        else {
+            if (selectedButton.tag == 88) {
+                [currentSkillBoard setSelfViewToInitiative];
+            }
+            [self makeButtonUnSelected];
+        }
+    }
+    else {
+        [currentSkillBoard setSelfViewToInitiative];
+        [currentSkillBoard moveToRightSide];
+    }
+    [self makeButtonSelected:sender];
 }
 
-- (IBAction)bt_mouseRightPressed:(UIButton *)sender {
-    [currentSkillBoard moveToLeftSide];
+- (IBAction)bt_initiativeSkillRightPressed:(UIButton *)sender {
+    if (currentSkillBoard.isHeroSkillDetailShown) {
+        if ([sender isEqual:selectedButton]) {
+            
+        }
+        else {
+            if (selectedButton.tag == 88) {
+                [currentSkillBoard setSelfViewToInitiative];
+            }
+            [self makeButtonUnSelected];
+        }
+    }
+    else {
+        [currentSkillBoard setSelfViewToInitiative];
+        [currentSkillBoard moveToLeftSide];
+    }
+    [self makeButtonSelected:sender];
 }
+
+- (IBAction)bt_passiveSkillPressed:(UIButton *)sender {    
+    if(currentSkillBoard.isHeroSkillDetailShown)
+    {
+        if ([sender isEqual:selectedButton]) {
+            
+        }
+        else {
+            if (selectedButton.tag == 66) {
+                [currentSkillBoard setSelfViewToPassive];
+            }
+            [self makeButtonUnSelected];
+        }
+    }
+    else {        
+        [currentSkillBoard setSelfViewToPassive];
+        [currentSkillBoard moveToRightSide];
+    }
+    [self makeButtonSelected:sender];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [[event allTouches] anyObject];
+    
+    if ([touch view] != heroAvatar) {
+        if (currentSkillBoard.isHeroSkillDetailShown) {
+            [currentSkillBoard restoreViewLocation];
+        }
+    }
+}
+
 @end

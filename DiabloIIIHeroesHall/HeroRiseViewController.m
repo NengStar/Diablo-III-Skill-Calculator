@@ -25,14 +25,15 @@
         self.navigationItem.leftBarButtonItem = left;
         [left release];
         
-        UIImage *riseImg = [UIImage imageNamed:@"bt_forward"];
-        UIButton *riseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [riseBtn setBackgroundImage:riseImg forState:UIControlStateNormal];
-        riseBtn.frame = CGRectMake(0, 0, riseImg.size.width, riseImg.size.height);
-        [riseBtn addTarget:self action:@selector(goRise) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:riseBtn];
-        self.navigationItem.rightBarButtonItem = right;
-        [right release];
+//        UIImage *riseImg = [UIImage imageNamed:@"bt_forward"];
+//        UIButton *riseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [riseBtn setBackgroundImage:riseImg forState:UIControlStateNormal];
+//        riseBtn.frame = CGRectMake(0, 0, riseImg.size.width, riseImg.size.height);
+//        [riseBtn addTarget:self action:@selector(goRise) forControlEvents:UIControlEventTouchUpInside];
+//        UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:riseBtn];
+//        self.navigationItem.rightBarButtonItem = right;
+//        [right release];
+        
         heroPage.currentPage = 0;
         currentClass = heroPage.currentPage;
         lastClass = currentClass;
@@ -50,7 +51,6 @@
     [self.navigationController popViewControllerAnimated:YES];
     [[[heroScroll subviews] objectAtIndex:0] loadData:nil MIMEType:nil textEncodingName:nil baseURL:nil];
     [[[heroScroll subviews] objectAtIndex:0] removeFromSuperview];
-//    [[[heroScroll subviews] objectAtIndex:0] release];
 }
 
 - (void)goRise
@@ -102,7 +102,6 @@
 {
 //    [heroRect setHidden:NO];
     [loadView stopAnimating];
-//    heroStage.frame = CGRectMake(124*currentClass, 0, 124, 186);
 }
 
 - (void)viewDidLoad
@@ -111,29 +110,12 @@
     // Do any additional setup after loading the view from its nib.
     [male setSelected:YES];
     [female setSelected:NO];
-    [heroScroll setContentSize:CGSizeMake(124*7, 186)];
+    [heroScroll setContentSize:CGSizeMake(heroScroll.frame.size.width*7, heroScroll.frame.size.height)];
     [heroScroll setContentOffset:CGPointMake(124, 0) animated:NO];
     heroRect.center = heroScroll.center;
     loadView.center = heroScroll.center;
     [self.view addSubview:loadView];
     [self.view addSubview:heroRect];
-//    for (int i = 0; i < 5; i ++) {
-//        [heroScroll addSubview:(UIWebView *)[heroClassArray objectAtIndex:i]];
-//    }
-//    UIWebView *heroStage = [[UIWebView alloc] initWithFrame:CGRectMake(currentClass*124, 0, 124, 186)];
-//    heroStage.userInteractionEnabled = NO;
-//    heroStage.scalesPageToFit = YES;
-//    heroStage.backgroundColor = [UIColor clearColor];
-//    heroStage.delegate = self;
-//    heroStage.opaque = NO;    
-//    [heroScroll addSubview:heroStage];
-//    [heroStage release];
-////    NSLog(@"viewdidload %d",[heroGifData retainCount]);
-//
-//    NSData *heroGifData = [[NSData alloc] initWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[imageNameArray objectAtIndex:(currentClass+5*currentSex)] ofType:@"gif"]]];
-////    [[heroClassArray objectAtIndex:currentClass] loadData:heroGifData MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
-//    [heroStage loadData:heroGifData MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
-//    [heroGifData release];
     [self loadGifView];
     [heroClass setText:[classNameArray objectAtIndex:currentClass]]; 
 }
@@ -148,7 +130,6 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     int page = scrollView.contentOffset.x/scrollView.frame.size.width;
-//    [heroPage setCurrentPage:(scrollView.contentOffset.x/scrollView.frame.size.width)];
     if (page < heroPage.numberOfPages+1 && page > 0) {
         [heroPage setCurrentPage:(page-1)];
     }
@@ -176,7 +157,9 @@
 }
 
 - (IBAction)maleSelected:(UIButton *)sender {
+    [male setHighlighted:YES];
     [male setSelected:YES];
+    [female setHighlighted:NO];
     [female setSelected:NO];
     currentSex = 1;
     if (currentSex != lastSex) {
@@ -187,7 +170,9 @@
 }
 
 - (IBAction)femaleSelected:(UIButton *)sender {
+    [male setHighlighted:NO];
     [male setSelected:NO];
+    [female setHighlighted:YES];
     [female setSelected:YES];
     currentSex = 0;
     if (currentSex != lastSex) {
