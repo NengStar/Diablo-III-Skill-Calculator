@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SingleSkillDetailViewController.h"
 
 @protocol HeroSkillDetailDelegate
 
@@ -18,12 +19,16 @@
 {
     
     id <HeroSkillDetailDelegate> delegate;
-    @public
-        BOOL isHeroSkillDetailShown;
+@public
+    BOOL isHeroSkillDetailShown;
+    NSInteger lastPage;
+    NSInteger skillSelectedPage;
 }
-
+@property NSInteger lastPage;
+@property NSInteger skillSelectedPage;
 @property BOOL isHeroSkillDetailShown;
 @property (nonatomic,assign)id <HeroSkillDetailDelegate> delegate;
+@property (nonatomic, retain)SingleSkillDetailViewController *singleSkillDetailViewController;
 
 - (void)setVisible:(BOOL)visible;
 - (void)moveToLeftSide;
@@ -31,5 +36,7 @@
 - (void)restoreViewLocation;
 - (void)setSelfViewToPassive;
 - (void)setSelfViewToInitiative;
+- (void)addDetailViewToKeyWindow;
+- (void)removeDetailViewFromKeyWindow;
 
 @end

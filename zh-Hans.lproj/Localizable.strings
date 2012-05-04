@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  DiabloIIIHeroesHall
+
+  Created by  on 12-5-4.
+  Copyright (c) 2012年 Neng! Star. All rights reserved.
+*/
+
+/*
+    Rune
+*/
+//rune none
+"rune_none_name" = "None";
+"rune_none_detail" = "Use skill without a rune.";
+"rune_none_image" = "";
+//bar rune
+//bash
+"rune_clobber_name" = "Clobber";
+"rune_clobber_detail" = "Unlocked at level 6\nInstead of Knockback, each hit has a 35% chance to Stun the target for 1.5 seconds.";
+"rune_clobber_image" = "";
+
+"rune_onslaught_name" = "Onslaught";
+"rune_onslaught_detail" = "Unlocked at level 13\nAdd 2 reverberations that cause 22% weapon damage per strike. Removes the chance for Knockback.";
+"rune_onslaught_image" = "";
+
+"rune_punish_name" = "Punish";
+"rune_punish_detail" = "Unlocked at level 26\nIncreases the damage of your skills by 6% for 5 seconds after using Bash. This effect stacks up to 3 times.";
+"rune_punish_image" = "";
+
+"rune_instigation_name" = "Instigation";
+"rune_instigation_detail" = "Unlocked at level 44\nGenerate 6 additional Fury per attack.";
+"rune_instigation_image" = "";
+
+"rune_pulverize_name" = "Pulverize";
+"rune_pulverize_detail" = "Unlocked at level 52\nCause a shockwave that inflicts 38% weapon damage to enemies in a 26 yard line behind the targeted enemy.";
+"rune_pulverize_image" = "";
+/*
+    Barbarian Skill
+*/
+//bash
+"bash_name" = "Bash";
+"bash_system" = "Primary";
+"bash_detail" = "Generate: 6 Fury per attack\n\nBrutally smash an enemy for 150% weapon damage with a 20% chance to Knockback.\nPrimary\n\nUnlocked at level";
+"bash_image" = "skill_bash_n";

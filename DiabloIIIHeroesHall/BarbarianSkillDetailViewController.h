@@ -10,11 +10,13 @@
 #import "HeroSkillDetailViewController.h"
 
 @interface BarbarianSkillDetailViewController : HeroSkillDetailViewController
+{
+    UIButton *selectedSkillButton;
+}
 
 #pragma board views
 @property (retain, nonatomic) IBOutlet UIView *initiative;
 @property (retain, nonatomic) IBOutlet UIView *passive;
-@property (retain, nonatomic) IBOutlet UIView *detail;
 #pragma skill views
 @property (retain, nonatomic) IBOutlet UIView *primary;
 @property (retain, nonatomic) IBOutlet UIView *secondary;
@@ -28,4 +30,10 @@
 @property (retain, nonatomic) IBOutlet UIScrollView *skillScroll;
 @property (retain, nonatomic) IBOutlet UIPageControl *skillPage;
 #pragma Localization views
+
+
+- (void)setSkillTableVisible:(BOOL)visible;
+#pragma skill button action
+- (IBAction)skillButtonPressed:(UIButton *)sender;
+
 @end

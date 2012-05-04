@@ -186,7 +186,6 @@
 						<string key="NSFrame">{{10, 98}, {136, 262}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="922678006"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -246,6 +245,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="988225756"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<reference key="IBUIImage" ref="404390929"/>
@@ -256,7 +256,6 @@
 						<string key="NSFrame">{{10, 3}, {120, 20}}</string>
 						<reference key="NSSuperview" ref="839487416"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -416,7 +415,6 @@
 						<string key="NSFrame">{{83, 23}, {25, 25}}</string>
 						<reference key="NSSuperview" ref="144993285"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="922678006"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -636,7 +634,6 @@
 						<string key="NSFrame">{{96, 23}, {25, 25}}</string>
 						<reference key="NSSuperview" ref="859630276"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="922678006"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -722,7 +719,6 @@
 						<string key="NSFrame">{{96, 23}, {25, 25}}</string>
 						<reference key="NSSuperview" ref="407377391"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="922678006"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -1078,7 +1074,6 @@
 						<string key="NSFrame">{{96, 23}, {25, 25}}</string>
 						<reference key="NSSuperview" ref="698009646"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="922678006"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -1164,7 +1159,6 @@
 						<string key="NSFrame">{{96, 23}, {25, 25}}</string>
 						<reference key="NSSuperview" ref="457874673"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="922678006"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -1475,7 +1469,6 @@
 						<string key="NSFrame">{{83, 23}, {25, 25}}</string>
 						<reference key="NSSuperview" ref="368045333"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="922678006"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -1525,32 +1518,6 @@
 				<int key="IBUITag">5</int>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUIView" id="629306559">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="114361948">
-						<reference key="NSNextResponder" ref="629306559"/>
-						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{160, 120}</string>
-						<reference key="NSSuperview" ref="629306559"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="404390929"/>
-					</object>
-				</array>
-				<string key="NSFrameSize">{160, 120}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="114361948"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<reference key="IBUIBackgroundColor" ref="922678006"/>
-				<bool key="IBUIOpaque">NO</bool>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<array class="NSMutableArray" key="connectionRecords">
@@ -1577,14 +1544,6 @@
 						<reference key="destination" ref="191373211"/>
 					</object>
 					<int key="connectionID">21</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">detail</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="629306559"/>
-					</object>
-					<int key="connectionID">147</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1681,6 +1640,204 @@
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">166</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="116516356"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">168</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="530658211"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">169</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="707302357"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">170</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="740692108"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">187</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="347451731"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">188</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="739164497"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">189</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="631365136"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">171</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="853045123"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">172</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="836112908"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">173</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="371120163"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">174</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="705613703"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">178</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="237431590"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">177</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="813385027"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">176</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="81938295"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">175</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="136491681"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">179</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="533041578"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">180</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="432022222"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">181</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="17463596"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">182</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="810424020"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">186</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="787651138"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">183</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="512734617"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">184</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">skillButtonPressed:</string>
+						<reference key="source" ref="799196193"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">185</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1881,20 +2038,6 @@
 						<reference key="parent" ref="839487416"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">91</int>
-						<reference key="object" ref="629306559"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="114361948"/>
-						</array>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">Detail</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">92</int>
-						<reference key="object" ref="114361948"/>
-						<reference key="parent" ref="629306559"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">93</int>
 						<reference key="object" ref="448230426"/>
 						<array class="NSMutableArray" key="children"/>
@@ -2086,8 +2229,6 @@
 				<string key="87.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="89.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="90.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="91.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="92.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="93.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="99.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="0.0" key="99.IBUIButtonInspectorSelectedEdgeInsetMetadataKey"/>
@@ -2097,16 +2238,26 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">167</int>
+			<int key="maxID">189</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">BarbarianSkillDetailViewController</string>
 					<string key="superclassName">HeroSkillDetailViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">skillButtonPressed:</string>
+						<string key="NS.object.0">UIButton</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">skillButtonPressed:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">skillButtonPressed:</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="defensive">UIView</string>
-						<string key="detail">UIView</string>
 						<string key="initiative">UIView</string>
 						<string key="might">UIView</string>
 						<string key="passive">UIView</string>
@@ -2122,10 +2273,6 @@
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="defensive">
 							<string key="name">defensive</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="detail">
-							<string key="name">detail</string>
 							<string key="candidateClassName">UIView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="initiative">

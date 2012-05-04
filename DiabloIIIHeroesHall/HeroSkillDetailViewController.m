@@ -9,8 +9,10 @@
 #import "HeroSkillDetailViewController.h"
 
 @implementation HeroSkillDetailViewController
+@synthesize lastPage,skillSelectedPage;
 @synthesize isHeroSkillDetailShown;
 @synthesize delegate;
+@synthesize singleSkillDetailViewController = _singleSkillDetailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,6 +25,7 @@
 
 - (void)dealloc
 {
+    [_singleSkillDetailViewController release];
     [super dealloc];
 }
 
@@ -55,11 +58,41 @@
     
 }
 
+- (void)addDetailViewToKeyWindow
+{
+    if (self.singleSkillDetailViewController.isSingleSkillDetailShown) {
+        
+    }
+    else {
+        self.singleSkillDetailViewController = [[[SingleSkillDetailViewController alloc] initWithNibName:@"SingleSkillDetailViewController" bundle:nil] autorelease];
+        self.view.center.x<160?
+        [self.singleSkillDetailViewController.view setFrame:CGRectMake(150, 45, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)]:
+        [self.singleSkillDetailViewController.view setFrame:CGRectMake(10, 45, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)];
+        [[[UIApplication sharedApplication] keyWindow] addSubview:self.singleSkillDetailViewController.view];
+        self.singleSkillDetailViewController.isSingleSkillDetailShown = YES;
+    }
+}
+
+- (void)removeDetailViewFromKeyWindow
+{
+    if (self.singleSkillDetailViewController.isSingleSkillDetailShown) {
+        [self.singleSkillDetailViewController.view removeFromSuperview];
+        self.singleSkillDetailViewController.isSingleSkillDetailShown = NO;
+    }
+}
+
+//- (void)setDetailViewShown:(BOOL)shown
+//{
+//
+//}
+
 #pragma mark -
 #pragma mark Other methods
 
 // restore view location
 - (void)restoreViewLocation {
+//    [self setDetailViewShown:NO];
+    [self removeDetailViewFromKeyWindow];
     [UIView animateWithDuration:0.3 
                      animations:^{
                          if (self.view.center.x<160.0f) {

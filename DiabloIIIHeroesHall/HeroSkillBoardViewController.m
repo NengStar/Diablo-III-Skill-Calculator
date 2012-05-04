@@ -183,6 +183,7 @@
             
         }
         else {
+            [currentSkillBoard removeDetailViewFromKeyWindow];
             if (selectedButton.tag == 88) {
                 [currentSkillBoard setSelfViewToInitiative];
             }
@@ -202,6 +203,7 @@
             
         }
         else {
+            [currentSkillBoard removeDetailViewFromKeyWindow];
             if (selectedButton.tag == 88) {
                 [currentSkillBoard setSelfViewToInitiative];
             }
@@ -222,6 +224,7 @@
             
         }
         else {
+            [currentSkillBoard removeDetailViewFromKeyWindow];
             if (selectedButton.tag == 66) {
                 [currentSkillBoard setSelfViewToPassive];
             }

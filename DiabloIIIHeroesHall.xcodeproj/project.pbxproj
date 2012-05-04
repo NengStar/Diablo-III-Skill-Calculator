@@ -87,6 +87,8 @@
 		E97260D31552BF62006D5BB1 /* skill_wrathoftheberserker_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260CA1552BF62006D5BB1 /* skill_wrathoftheberserker_d.png */; };
 		E97260D41552BF62006D5BB1 /* skill_wrathoftheberserker_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260CB1552BF62006D5BB1 /* skill_wrathoftheberserker_n.png */; };
 		E97260D51552BF62006D5BB1 /* skill_wrathoftheberserker_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E97260CC1552BF62006D5BB1 /* skill_wrathoftheberserker_s.png */; };
+		E976D87E1553BB3600FB489C /* SingleSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E976D87C1553BB3600FB489C /* SingleSkillDetailViewController.m */; };
+		E976D87F1553BB3600FB489C /* SingleSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E976D87D1553BB3600FB489C /* SingleSkillDetailViewController.xib */; };
 		E97DBDBC1550148400385A36 /* bt_forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDBB1550148400385A36 /* bt_forward@2x.png */; };
 		E97DBDCC155023AF00385A36 /* avatar_bar_f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */; };
 		E97DBDCD155023AF00385A36 /* avatar_bar_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */; };
@@ -104,6 +106,8 @@
 		E97DBDDD155039D300385A36 /* bt_skill_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDDC155039D200385A36 /* bt_skill_s@2x.png */; };
 		E97DBDDF1550479700385A36 /* bt_pskill_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDDE1550479600385A36 /* bt_pskill_s@2x.png */; };
 		E97DBDE815504FAC00385A36 /* BarbarianSkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97DBDE715504FAC00385A36 /* BarbarianSkillDetailViewController.xib */; };
+		E97F3A6215541D32009FB7C6 /* HeroSkillDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F3A6115541D32009FB7C6 /* HeroSkillDataSource.plist */; };
+		E97F3A6515542180009FB7C6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E97F3A6715542180009FB7C6 /* Localizable.strings */; };
 		E980AD1B15509398003D7179 /* HeroSkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E980AD1A15509398003D7179 /* HeroSkillDetailViewController.m */; };
 		E99E29FB154EF45800FFE046 /* hero_bar_f.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29F6154EF45800FFE046 /* hero_bar_f.gif */; };
 		E99E29FC154EF45800FFE046 /* hero_dh_m.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29F7154EF45800FFE046 /* hero_dh_m.gif */; };
@@ -232,6 +236,9 @@
 		E97260CA1552BF62006D5BB1 /* skill_wrathoftheberserker_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_wrathoftheberserker_d.png; sourceTree = "<group>"; };
 		E97260CB1552BF62006D5BB1 /* skill_wrathoftheberserker_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_wrathoftheberserker_n.png; sourceTree = "<group>"; };
 		E97260CC1552BF62006D5BB1 /* skill_wrathoftheberserker_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_wrathoftheberserker_s.png; sourceTree = "<group>"; };
+		E976D87B1553BB3600FB489C /* SingleSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleSkillDetailViewController.h; sourceTree = "<group>"; };
+		E976D87C1553BB3600FB489C /* SingleSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleSkillDetailViewController.m; sourceTree = "<group>"; };
+		E976D87D1553BB3600FB489C /* SingleSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleSkillDetailViewController.xib; sourceTree = "<group>"; };
 		E97DBDBB1550148400385A36 /* bt_forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_forward@2x.png"; sourceTree = "<group>"; };
 		E97DBDC2155023AE00385A36 /* avatar_bar_f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_bar_f@2x.png"; sourceTree = "<group>"; };
 		E97DBDC3155023AE00385A36 /* avatar_bar_m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_bar_m@2x.png"; sourceTree = "<group>"; };
@@ -249,6 +256,10 @@
 		E97DBDDC155039D200385A36 /* bt_skill_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_skill_s@2x.png"; sourceTree = "<group>"; };
 		E97DBDDE1550479600385A36 /* bt_pskill_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_pskill_s@2x.png"; sourceTree = "<group>"; };
 		E97DBDE715504FAC00385A36 /* BarbarianSkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarbarianSkillDetailViewController.xib; sourceTree = "<group>"; };
+		E97F3A6115541D32009FB7C6 /* HeroSkillDataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeroSkillDataSource.plist; sourceTree = "<group>"; };
+		E97F3A6615542180009FB7C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E97F3A6A155421A7009FB7C6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E97F3A6B155421A9009FB7C6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E980AD1915509398003D7179 /* HeroSkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkillDetailViewController.h; sourceTree = "<group>"; };
 		E980AD1A15509398003D7179 /* HeroSkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkillDetailViewController.m; sourceTree = "<group>"; };
 		E99E29F6154EF45800FFE046 /* hero_bar_f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_bar_f.gif; sourceTree = "<group>"; };
@@ -429,6 +440,8 @@
 				E96AB64D15507D3400475346 /* WitchDoctorSkillDetailViewController.m */,
 				E96AB65115507D5200475346 /* WizardSkillDetailViewController.h */,
 				E96AB65215507D5200475346 /* WizardSkillDetailViewController.m */,
+				E976D87B1553BB3600FB489C /* SingleSkillDetailViewController.h */,
+				E976D87C1553BB3600FB489C /* SingleSkillDetailViewController.m */,
 			);
 			name = SecondaryViewController;
 			sourceTree = "<group>";
@@ -576,6 +589,7 @@
 				E96AB64915507D1000475346 /* MonkSkillDetailViewController.xib */,
 				E96AB64E15507D3400475346 /* WitchDoctorSkillDetailViewController.xib */,
 				E96AB65315507D5200475346 /* WizardSkillDetailViewController.xib */,
+				E976D87D1553BB3600FB489C /* SingleSkillDetailViewController.xib */,
 			);
 			name = SecondaryViewController;
 			sourceTree = "<group>";
@@ -643,10 +657,12 @@
 		E9CFD407154B125A005D3760 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E97F3A6715542180009FB7C6 /* Localizable.strings */,
 				E9CFD408154B125A005D3760 /* DiabloIIIHeroesHall-Info.plist */,
 				E9CFD409154B125A005D3760 /* InfoPlist.strings */,
 				E9CFD40C154B125A005D3760 /* main.m */,
 				E9CFD40E154B125A005D3760 /* DiabloIIIHeroesHall-Prefix.pch */,
+				E97F3A6115541D32009FB7C6 /* HeroSkillDataSource.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -769,6 +785,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = E9CFD3F1154B125A005D3760;
 			productRefGroup = E9CFD3FD154B125A005D3760 /* Products */;
@@ -904,6 +922,9 @@
 				E97260D31552BF62006D5BB1 /* skill_wrathoftheberserker_d.png in Resources */,
 				E97260D41552BF62006D5BB1 /* skill_wrathoftheberserker_n.png in Resources */,
 				E97260D51552BF62006D5BB1 /* skill_wrathoftheberserker_s.png in Resources */,
+				E976D87F1553BB3600FB489C /* SingleSkillDetailViewController.xib in Resources */,
+				E97F3A6215541D32009FB7C6 /* HeroSkillDataSource.plist in Resources */,
+				E97F3A6515542180009FB7C6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,12 +948,24 @@
 				E96AB64F15507D3400475346 /* WitchDoctorSkillDetailViewController.m in Sources */,
 				E96AB65415507D5200475346 /* WizardSkillDetailViewController.m in Sources */,
 				E980AD1B15509398003D7179 /* HeroSkillDetailViewController.m in Sources */,
+				E976D87E1553BB3600FB489C /* SingleSkillDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E97F3A6715542180009FB7C6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E97F3A6615542180009FB7C6 /* en */,
+				E97F3A6A155421A7009FB7C6 /* zh-Hans */,
+				E97F3A6B155421A9009FB7C6 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		E9CFD409154B125A005D3760 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -940,6 +973,7 @@
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 /* End PBXVariantGroup section */
 

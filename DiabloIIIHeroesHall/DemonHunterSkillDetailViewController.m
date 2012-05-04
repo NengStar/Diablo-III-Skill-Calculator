@@ -50,6 +50,28 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    NSString *str = NSLocalizedString(@"rune_pulverize_detail", nil);
+    
+    CGSize labelSize = [str sizeWithFont:[UIFont systemFontOfSize:10.0f]
+                       constrainedToSize:CGSizeMake(160, MAXFLOAT) 
+                           lineBreakMode:UILineBreakModeCharacterWrap];   // str是要显示的字符串
+    UILabel *patternLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, labelSize.width, labelSize.height)];    
+    
+    patternLabel.text = str;
+    patternLabel.backgroundColor = [UIColor clearColor];
+    patternLabel.font = [UIFont systemFontOfSize:10.0f];
+    patternLabel.numberOfLines = 0;     // 不可少Label属性之一
+    patternLabel.lineBreakMode = UILineBreakModeCharacterWrap;    // 不可少Label属性之二
+    [self.view addSubview:patternLabel];
+    [patternLabel release];
+    
+    
+    /*
+     - (UIImage *)stretchableImageWithLeftCapWidth:(NSInteger)leftCapWidth topCapHeight:(NSInteger)topCapHeight
+     
+     - (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets     
+     */
 }
 
 - (void)viewDidUnload
