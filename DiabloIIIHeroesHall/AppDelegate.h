@@ -10,8 +10,14 @@
 #import "UINavigationController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+@public
+    NSDictionary *heroSkillDataSource;
+}
 
 @property (retain, nonatomic) IBOutlet UIWindow *window;
 @property (retain, nonatomic) IBOutlet UINavigationController *navigationController;
+
+@property (retain, nonatomic) NSDictionary *heroSkillDataSource;
 
 @end

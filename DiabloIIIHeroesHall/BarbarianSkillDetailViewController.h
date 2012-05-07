@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "HeroSkillDetailViewController.h"
+#import "AppDelegate.h"
 
-@interface BarbarianSkillDetailViewController : HeroSkillDetailViewController
+@interface BarbarianSkillDetailViewController : HeroSkillDetailViewController <UIScrollViewDelegate ,UITableViewDelegate ,UITableViewDataSource>
 {
     UIButton *selectedSkillButton;
+    NSString *selectedSkillKey;
+    UIButton *selectedPSkillButton;
+    NSString *selectedPSkillKey;
 }
-
 #pragma board views
 @property (retain, nonatomic) IBOutlet UIView *initiative;
 @property (retain, nonatomic) IBOutlet UIView *passive;
@@ -35,5 +38,6 @@
 - (void)setSkillTableVisible:(BOOL)visible;
 #pragma skill button action
 - (IBAction)skillButtonPressed:(UIButton *)sender;
+- (IBAction)pskillButtonPressed:(UIButton *)sender;
 
 @end

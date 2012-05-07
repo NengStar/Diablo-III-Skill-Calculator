@@ -9,7 +9,7 @@
 #import "HeroSkillDetailViewController.h"
 
 @implementation HeroSkillDetailViewController
-@synthesize lastPage,skillSelectedPage;
+@synthesize lastPage,skillSelectedPage,runeSelectedIndex;
 @synthesize isHeroSkillDetailShown;
 @synthesize delegate;
 @synthesize singleSkillDetailViewController = _singleSkillDetailViewController;
@@ -58,7 +58,12 @@
     
 }
 
-- (void)addDetailViewToKeyWindow
+- (void)setDefaultCell:(NSInteger)index
+{
+    
+}
+
+- (void)addDetailViewToKeyWindow:(NSString *)skillType skillKey:(NSString *)skillKey
 {
     if (self.singleSkillDetailViewController.isSingleSkillDetailShown) {
         
@@ -157,50 +162,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 6;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return nil;
-}
-
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 60.0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *CellIdentifier = @"HeroesHall";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        cell.accessoryType = UITableViewCellAccessoryNone;
-	}
-    cell.backgroundColor = [UIColor clearColor];
-//    cell.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero"]] autorelease];
-//    cell.selectedBackgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero_s"]] autorelease];
-    return cell;
 }
 
 @end

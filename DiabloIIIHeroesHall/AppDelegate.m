@@ -12,11 +12,13 @@
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
+@synthesize heroSkillDataSource = _heroSkillDataSource;
 
 - (void)dealloc
 {
     [_window release];
     [_navigationController release];
+    [_heroSkillDataSource release];
     [super dealloc];
 }
 
@@ -43,6 +45,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self customizeAppearance];
+    NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"HeroSkillDataSource" ofType:@"plist"];
+    self.heroSkillDataSource = [[[NSDictionary alloc] initWithContentsOfFile:dataPath] autorelease];
     [self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;

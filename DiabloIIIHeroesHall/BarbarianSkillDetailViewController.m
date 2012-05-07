@@ -9,7 +9,6 @@
 #import "BarbarianSkillDetailViewController.h"
 
 @implementation BarbarianSkillDetailViewController
-
 @synthesize initiative,passive;
 @synthesize primary,secondary,defensive,might,tactics,rage;
 @synthesize runeTips,runeTable,skillScroll,skillPage;
@@ -27,7 +26,6 @@
 {
     [initiative release];
     [passive release];
-//    [detail release];
     
     [primary release];
     [secondary release];
@@ -40,6 +38,7 @@
     [runeTable release];
     [skillPage release];
     [skillScroll release];
+    
     [super dealloc];
 }
 
@@ -110,19 +109,30 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    int page = scrollView.contentOffset.x/scrollView.frame.size.width;
+    int page = skillScroll.contentOffset.x/skillScroll.frame.size.width;
     skillPage.currentPage = page;
     if (lastPage!=skillPage.currentPage) {
         lastPage = skillPage.currentPage;
         [self removeDetailViewFromKeyWindow];
         if (skillSelectedPage == skillPage.currentPage) {
             // do -> skilltable load data
+
+            //[runeTable reloadData];
+            [self setDefaultCell:runeSelectedIndex];
             [self setSkillTableVisible:YES];
         }
         else {
             [self setSkillTableVisible:NO];
         }
     }
+}
+
+- (void)setDefaultCell:(NSInteger)index
+{  
+    NSIndexPath *selectedIndexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    
+    [runeTable selectRowAtIndexPath:selectedIndexPath animated:YES scrollPosition:UITableViewScrollPositionTop];
+    runeSelectedIndex = index;
 }
 
 - (IBAction)skillButtonPressed:(UIButton *)sender {
@@ -133,10 +143,146 @@
         [selectedSkillButton setSelected:NO];
         selectedSkillButton = sender;
         [selectedSkillButton setSelected:YES];
+        selectedSkillKey = selectedSkillButton.titleLabel.text;
+        skillSelectedPage = skillPage.currentPage;
+        [runeTable reloadData];
+        [self setDefaultCell:0];
+        [self setSkillTableVisible:YES];
     }
-    skillSelectedPage = skillPage.currentPage;
-    [self addDetailViewToKeyWindow];
-    // do -> skilltable load data
-    [self setSkillTableVisible:YES];
+    [self addDetailViewToKeyWindow:@"Initiative" skillKey:selectedSkillKey];
+}
+
+- (IBAction)pskillButtonPressed:(UIButton *)sender {
+    if ([selectedPSkillButton isEqual:sender]) {
+        
+    }
+    else {
+        [selectedPSkillButton setEnabled:YES];
+        selectedPSkillButton = sender;
+        [selectedPSkillButton setEnabled:NO];
+        selectedPSkillKey = selectedPSkillButton.titleLabel.text;
+    }
+    [self addDetailViewToKeyWindow:@"Passive" skillKey:selectedPSkillKey];
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    runeSelectedIndex = [indexPath row];
+    NSLog(@"...........");
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    NSLog(@"enter height");
+    NSArray *runeList = [NSArray arrayWithObjects:@".",@"a",@"Z",@"b",@"Y",@"c",nil];
+    AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+    NSDictionary *heroClass = [mainDelegate.heroSkillDataSource objectForKey:@"Barbarian"];
+    NSDictionary *skillType = [heroClass objectForKey:@"Initiative"];
+    NSDictionary *skill = [skillType objectForKey:selectedSkillKey];
+    NSDictionary *rune = [[skill objectForKey:@"runes"] objectForKey:[runeList objectAtIndex:[indexPath row]]];
+    NSString *name = NSLocalizedString([rune objectForKey:@"name"], nil); 
+    
+    NSString *detail = NSLocalizedString([rune objectForKey:@"detail"], nil);
+    
+    
+    CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+    
+    CGSize sizeName = [name sizeWithFont:[UIFont fontWithName:@"American Typewriter" size:NAME_FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    
+    CGSize sizeDetail = [detail sizeWithFont:[UIFont systemFontOfSize:DETAIL_FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    
+    CGFloat height = (sizeName.height+sizeDetail.height+CELL_CONTENT_MARGIN);
+    
+    return height + (CELL_CONTENT_MARGIN * 2);
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 6;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UILabel *lb_name = nil;
+    UILabel *lb_detail = nil;
+    UIImageView *img_rune = nil;
+    NSArray *runeList = [NSArray arrayWithObjects:@".",@"a",@"Z",@"b",@"Y",@"c",nil];
+    NSString *CellIdentifier = [runeList objectAtIndex:[indexPath row]];
+    UIImage *mash_area = [[UIImage imageNamed:@"mash_selected_area"] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5)];
+    UIImageView *mash_view = [[[UIImageView alloc] initWithImage:mash_area] autorelease];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        [cell setFrame:CGRectZero];
+        [cell setBackgroundColor:[UIColor clearColor]];
+        [cell setSelectedBackgroundView:mash_view];
+        
+        lb_name = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+        [lb_name setLineBreakMode:UILineBreakModeWordWrap];
+        [lb_name setBackgroundColor:[UIColor clearColor]];
+        [lb_name setTextColor:[UIColor colorWithRed:110.0/255.0 green:0.0 blue:0.0 alpha:1.0]];
+        [lb_name setMinimumFontSize:NAME_FONT_SIZE];
+        [lb_name setNumberOfLines:0];
+        [lb_name setFont:[UIFont fontWithName:@"American Typewriter" size:NAME_FONT_SIZE]];
+        [lb_name setTag:1];
+        
+        lb_detail = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+        [lb_detail setLineBreakMode:UILineBreakModeWordWrap];
+        [lb_detail setBackgroundColor:[UIColor clearColor]];
+        [lb_detail setMinimumFontSize:DETAIL_FONT_SIZE];
+        [lb_detail setNumberOfLines:0];
+        [lb_detail setFont:[UIFont systemFontOfSize:DETAIL_FONT_SIZE]];
+        [lb_detail setTag:2];
+        
+        img_rune = [[[UIImageView alloc] initWithFrame:CGRectZero] autorelease];
+        [img_rune setBackgroundColor:[UIColor clearColor]];
+        [img_rune setOpaque:NO];
+        [img_rune setTag:3];
+        
+        [[cell contentView] addSubview:lb_name];
+        [[cell contentView] addSubview:lb_detail];
+        [[cell contentView] addSubview:img_rune];
+        
+    }
+    
+    AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+    NSDictionary *heroClass = [mainDelegate.heroSkillDataSource objectForKey:@"Barbarian"];
+    NSDictionary *skillType = [heroClass objectForKey:@"Initiative"];
+    NSDictionary *skill = [skillType objectForKey:selectedSkillKey];
+    NSDictionary *rune = [[skill objectForKey:@"runes"] objectForKey:[runeList objectAtIndex:[indexPath row]]];
+    NSString *name = NSLocalizedString([rune objectForKey:@"name"], nil); 
+    
+    NSString *detail = NSLocalizedString([rune objectForKey:@"detail"], nil);
+    
+    NSString *image = [rune objectForKey:@"image"];
+    
+    
+    CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+    
+    CGSize sizeName = [name sizeWithFont:[UIFont fontWithName:@"American Typewriter" size:NAME_FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    
+    CGSize sizeDetail = [detail sizeWithFont:[UIFont systemFontOfSize:DETAIL_FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    
+    if (lb_name == nil)
+    {
+        lb_name = (UILabel*)[cell viewWithTag:1];
+    }
+    [lb_name setText:name];
+    [lb_name setFrame:CGRectMake(CELL_CONTENT_MARGIN, CELL_CONTENT_MARGIN, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), sizeName.height)];
+    if (lb_detail == nil)
+    {
+        lb_detail = (UILabel*)[cell viewWithTag:2];
+    }
+    [lb_detail setText:detail];
+    [lb_detail setFrame:CGRectMake(CELL_CONTENT_MARGIN, CELL_CONTENT_MARGIN*2+sizeName.height, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), sizeDetail.height)];
+    if (img_rune == nil) {
+        img_rune = (UIImageView *)[cell viewWithTag:3];
+    }
+    [img_rune setImage:[UIImage imageNamed:image]];
+    [img_rune setFrame:CGRectMake(CELL_CONTENT_WIDTH - CELL_CONTENT_MARGIN - RUNE_IMAGE_WIDTH, CELL_CONTENT_MARGIN*2, RUNE_IMAGE_WIDTH, RUNE_IMAGE_HEIGHT)];
+    
+    return cell;
 }
 @end
