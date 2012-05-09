@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailTextView.h"
 
 @interface SingleSkillDetailViewController : UIViewController
+{
+    NSString *heroClass;
+    NSString *skillType;
+    NSString *skillKey;
+    BOOL hasStory;
+}
 
 @property BOOL isSingleSkillDetailShown;
-- (IBAction)closeButtonPressed:(UIButton *)sender;
+@property(nonatomic,retain)NSString *skillType;
+@property(nonatomic,retain)NSString *skillKey;
+@property(nonatomic,retain)NSString *heroClass;
+@property BOOL hasStory;
 @end

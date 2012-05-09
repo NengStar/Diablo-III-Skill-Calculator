@@ -472,96 +472,84 @@
 "wrathoftheberserker_detail" = "Cost: 50 Fury \nCooldown: 120 seconds\n\nEnter a berserker rage which raises several attributes for 15 seconds.\n\nCritical Hit Chance: 10%\nAttack Speed: 25%\nDodge Chance: 20%\nMovement Speed: 20%\n\nRage\n\nUnlocked at level 30";
 
 //passive
-/*
- Pound of Flesh
- Increases the chance of finding a health globe by 25% and you gain 100% additional Life from health globes.
- Unlocked at level 10
- "When the sky bleeds, the crops grow tall. When our enemies bleed, we grow strong." —Chant of the Harvest
+//poundofflesh
+"poundofflesh_name" = "Poune of Flesh";
+"poundofflesh_detail" = "Increases the chance of finding a health globe by 25% and you gain 100% additional Life from health globes.\n\nUnlocked at level 10";
+"poundofflesh_story" = "\"When the sky bleeds, the crops grow tall. When our enemies bleed, we grow strong.\" —Chant of the Harvest";
  
- Ruthless
- Critical Hit Chance increased by 5%. Critical Hit Damage increased by 50%.
- Many skills and runes rely on Critical Hits to trigger their effects.
- Unlocked at level 10
- The clans each paint their warriors in their own unique way. Some celebrate the mountain, others honor the fire, but the Targos clan worships the purifying virtue of pain.
- 
- Nerves Of Steel
- Your Armor is increased by 100% of your Vitality.
- Unlocked at level 13
- "The trials begin with childhood; skinning ferocious beasts, climbing windswept cliffs and carrying weapons heavy enough to make a southern soldier weep. Is it any wonder that they never give ground?" —Sir Aric of Duncraig
- 
- Weapons Master
- Gain a bonus based on the weapon type of your main hand weapon:
- Swords/Daggers: 15% increased damage
- Maces/Axes: 10% Critical Hit Chance
- Polearms/Spears: 10% attack speed
- Mighty Weapons: 3 Fury per hit
- Unlocked at level 16
- "My men ambushed the traveler in the woods, but it was we who were surprised. Such keen senses, swift motions, flawless strikes. We never stood a chance." —Redjack the Bandit
- 
- Berserker Rage
- You inflict an additional 25% damage while at maximum Fury.
- Unlocked at level 20
- "You wouldn't like me when I'm angry." —Bannar the Berserker
- 
- Inspiring Presence
- The duration of your shouts is doubled. After using a shout you regenerate 1% of your maximum Life per second for 60 seconds.
- Your shouts are:
- ✧Battle Rage
- ✧Threatening Shout
- ✧War Cry
- Unlocked at level 20
- "The enemy poured through the gap until Warmaster Karja impaled three demons at once on our battle standard, tossing their corpses into the fray below as she roared a rallying call from high atop the battlements." —The Battle of the Starless Night
- 
- Bloodthirst
- Gain 3% of all damage done as Life.
- Unlocked at level 24
- "Compassion is weakness. To press the advantage when an opponent calls for mercy is the way of true power." —Halaberd the Conqueror
- 
- Animosity
- Increases Fury generation by 10% and maximum Fury is increased by 20.
- Fury is used to fuel your most powerful attacks.
- Unlocked at level 27
- "While most orders teach the merits of calming the seas of the soul, the guardians of Arreat have embraced the raging inner storm." —Chronicler Arlavoc
- 
- Superstition
- Reduces all non-Physical damage by 20%. Whenever you take damage from a ranged or elemental attack, you have a chance to gain 3 Fury.
- Unlocked at level 30
- "The sorcery of the west has brought us nothing but blight. Strength built these walls, and strength will hold them." —Gruchac Hammerhand
- 
- Tough as Nails
- Increases Armor by 25%.
- Thorns damage dealt increased by 50%.
- Unlocked at level 30
- After a while the scars serve as their own layer of armor.
- 
- No Escape
- Increases the damage of Ancient Spear and Weapon Throw by 10%. In addition, a Critical Hit with Ancient Spear resets the cooldown while Critical Hits with Weapon Throw have a chance to return 14 Fury.
- Unlocked at level 35
- "Run if you must, but you'll only die tired." —Ooron Goons
- 
- Relentless
- While below 20% Life, all skills cost no Fury and all damage taken is reduced by 50%.
- Unlocked at level 40
- No matter the odds some warriors simply refuse to fall.
- 
- Brawler
- As long as there are 3 enemies within 8 yards, all of your damage is increased by 30%.
- Unlocked at level 45
- "I have two blades, one for each of you." —Blademaster Kharne
- 
- Juggernaut
- The duration of control impairing effects on you are reduced by 20%. In addition, whenever a Stun, Fear, Immobilize or Charm is cast on you, you have a chance to recover 15% of your maximum Life.
- Unlocked at level 50
- "I swear to you, we put a dozen arrows into him and he just stood back up. These so-called barbarians, these madmen of the north—there is no stopping them." —Soldier of Bastion's Keep
- 
- Unforgiving
- You no longer degenerate Fury. Instead, you gain 1 Fury every 2 seconds.
- Unlocked at level 55
- "It was as if he suddenly came to know every grievous injury endured by his ancestors, and he had selected that very moment to exact their collective revenge." —Chronicler Arlavoc
- 
- Boon of Bul-Kathos
- The cooldown on your Earthquake, Call of the Ancients, and Wrath of the Berserker skills is reduced by 30 seconds.
- Unlocked at level 60
- The aid of the Immortal King shall come to those who have earned it.
-*/
+//ruthless
+"ruthless_name" = "Ruthless";
+"ruthless_detail" = "Critical Hit Chance increased by 5%.\n Critical Hit Damage increased by 50%.\n\nMany skills and runes rely on Critical Hits to trigger their effects.\n\nUnlocked at level 10";
+"ruthless_story" = "The clans each paint their warriors in their own unique way. Some celebrate the mountain, others honor the fire, but the Targos clan worships the purifying virtue of pain.";
+
+//nervesofsteel
+"nervesofsteel_name" = "Nerves Of Steel";
+"nervesofsteel_detail" = "Your Armor is increased by 100% of your Vitality.\n\nUnlocked at level 13";
+"nervesofsteel_story" = "\"The trials begin with childhood; skinning ferocious beasts, climbing windswept cliffs and carrying weapons heavy enough to make a southern soldier weep. Is it any wonder that they never give ground?\" —Sir Aric of Duncraig";
+
+//weaponsmaster
+"weaponsmaster_name" = "Weapons Master";
+"weaponsmaster_detail" = "Gain a bonus based on the weapon type of your main hand weapon:\nSwords/Daggers: 15% increased damage\nMaces/Axes: 10% Critical Hit Chance\nPolearms/Spears: 10% attack speed\nMighty Weapons: 3 Fury per hit\n\nUnlocked at level 16";
+"weaponsmaster_story" = "\"My men ambushed the traveler in the woods, but it was we who were surprised. Such keen senses, swift motions, flawless strikes. We never stood a chance.\" —Redjack the Bandit";
+
+//berserkerrage
+"berserkerrage_name" = "Berserker Rage";
+"berserkerrage_detail" = "You inflict an additional 25% damage while at maximum Fury.\n\nUnlocked at level 20";
+"berserkerrage_story" = "\"You wouldn't like me when I'm angry.\" —Bannar the Berserker";
+
+//inspiringpresence
+"inspiringpresence_name" = "Inspiring Presence";
+"inspiringpresence_detail" = "The duration of your shouts is doubled. After using a shout you regenerate 1% of your maximum Life per second for 60 seconds.\n\nYour shouts are:\n✧Battle Rage\n✧Threatening Shout\n✧War Cry\n\nUnlocked at level 20";
+"inspiringpresence_story" = "\"The enemy poured through the gap until Warmaster Karja impaled three demons at once on our battle standard, tossing their corpses into the fray below as she roared a rallying call from high atop the battlements.\" —The Battle of the Starless Night";
+
+//bloodthirst
+"bloodthirst_name" = "Bloodthirst";
+"bloodthirst_detail" = "Gain 3% of all damage done as Life.\n\nUnlocked at level 24";
+"bloodthirst_story" = "\"Compassion is weakness. To press the advantage when an opponent calls for mercy is the way of true power.\" —Halaberd the Conqueror";
+
+//animosity
+"animosity_name" = "Animosity";
+"animosity_detail" = "Increases Fury generation by 10% and maximum Fury is increased by 20.\n\nFury is used to fuel your most powerful attacks.\n\nUnlocked at level 27";
+"animosity_story" = "\"While most orders teach the merits of calming the seas of the soul, the guardians of Arreat have embraced the raging inner storm.\" —Chronicler Arlavoc";
+
+//superstition
+"superstition_name" = "Superstition";
+"superstition_detail" = "Reduces all non-Physical damage by 20%. Whenever you take damage from a ranged or elemental attack, you have a chance to gain 3 Fury.\n\nUnlocked at level 30";
+"superstition_story" = "\"The sorcery of the west has brought us nothing but blight. Strength built these walls, and strength will hold them.\" —Gruchac Hammerhand";
+
+//toughasnails
+"toughasnails_name" = "Tough as Nails";
+"toughasnails_detail" = "Increases Armor by 25%.\nThorns damage dealt increased by 50%.\n\nUnlocked at level 30";
+"toughasnails_story" = "After a while the scars serve as their own layer of armor.";
+
+//noescape
+"noescape_name" = "No Escape";
+"noescape_detail" = "Increases the damage of Ancient Spear and Weapon Throw by 10%. In addition, a Critical Hit with Ancient Spear resets the cooldown while Critical Hits with Weapon Throw have a chance to return 14 Fury.\n\nUnlocked at level 35";
+"noescape_story" = "\"Run if you must, but you'll only die tired.\" —Ooron Goons";
+
+//relentless
+"relentless_name" = "Relentless";
+"relentless_detail" = "While below 20% Life, all skills cost no Fury and all damage taken is reduced by 50%.\n\nUnlocked at level 40";
+"relentless_story" = "No matter the odds some warriors simply refuse to fall.";
+
+//brawler
+"brawler_name" = "Brawler";
+"brawler_detail" = "As long as there are 3 enemies within 8 yards, all of your damage is increased by 30%.\n\nUnlocked at level 45";
+"brawler_story" = "\"I have two blades, one for each of you.\" —Blademaster Kharne";
+
+//juggernaut
+"juggernaut_name" = "Juggernaut";
+"juggernaut_detail" = "The duration of control impairing effects on you are reduced by 20%. In addition, whenever a Stun, Fear, Immobilize or Charm is cast on you, you have a chance to recover 15% of your maximum Life.\n\nUnlocked at level 50";
+"juggernaut_story" = "\"I swear to you, we put a dozen arrows into him and he just stood back up. These so-called barbarians, these madmen of the north—there is no stopping them.\" —Soldier of Bastion's Keep";
+
+//unforgiving
+"unforgiving_name" = "Unforgiving";
+"unforgiving_detail" = "You no longer degenerate Fury. Instead, you gain 1 Fury every 2 seconds.\n\nUnlocked at level 55";
+"unforgiving_story" = "\"It was as if he suddenly came to know every grievous injury endured by his ancestors, and he had selected that very moment to exact their collective revenge.\" —Chronicler Arlavoc";
+
+//boonofbulkathos
+"boonofbulkathos_name" = "Boon of Bul-Kathos";
+"boonofbulkathos_detail" = "The cooldown on your Earthquake, Call of the Ancients, and Wrath of the Berserker skills is reduced by 30 seconds.\n\nUnlocked at level 60";
+"boonofbulkathos_story" = "The aid of the Immortal King shall come to those who have earned it.";
+
 /************************************************************************/

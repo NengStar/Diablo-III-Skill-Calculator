@@ -15,7 +15,7 @@
 				<key>detail</key>
 				<string>bash_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_bash_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -25,7 +25,7 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
@@ -34,7 +34,7 @@
 						<key>detail</key>
 						<string>rune_clobber_detail</string>
 						<key>image</key>
-						<string>rune_clobber_image</string>
+						<string>1</string>
 					</dict>
 					<key>Z</key>
 					<dict>
@@ -43,7 +43,7 @@
 						<key>detail</key>
 						<string>rune_onslaught_detail</string>
 						<key>image</key>
-						<string>rune_onslaught_image</string>
+						<string>2</string>
 					</dict>
 					<key>b</key>
 					<dict>
@@ -52,7 +52,7 @@
 						<key>detail</key>
 						<string>rune_punish_detail</string>
 						<key>image</key>
-						<string>rune_punish_image</string>
+						<string>3</string>
 					</dict>
 					<key>Y</key>
 					<dict>
@@ -61,7 +61,7 @@
 						<key>detail</key>
 						<string>rune_instigation_detail</string>
 						<key>image</key>
-						<string>rune_instigation_image</string>
+						<string>4</string>
 					</dict>
 					<key>c</key>
 					<dict>
@@ -70,20 +70,20 @@
 						<key>detail</key>
 						<string>rune_pulverize_detail</string>
 						<key>image</key>
-						<string>rune_pulverize_image</string>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>b</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>cleave_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>cleave_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>cleave_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_cleave_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -93,65 +93,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_rupture_name</string>
+						<key>detail</key>
+						<string>rune_rupture_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_reapingswing_name</string>
+						<key>detail</key>
+						<string>rune_reapingswing_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_scatteringblast_name</string>
+						<key>detail</key>
+						<string>rune_scatteringblast_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_broadsweep_name</string>
+						<key>detail</key>
+						<string>rune_broadsweep_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_gatheringstorm_name</string>
+						<key>detail</key>
+						<string>rune_gatheringstorm_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>W</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>frenzy_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>frenzy_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>frenzy_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_frenzy_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -161,65 +161,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_sidearm_name</string>
+						<key>detail</key>
+						<string>rune_sidearm_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_triumph_name</string>
+						<key>detail</key>
+						<string>rune_triumph_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_vanguard_name</string>
+						<key>detail</key>
+						<string>rune_vanguard_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_smite_name</string>
+						<key>detail</key>
+						<string>rune_smite_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_maniac_name</string>
+						<key>detail</key>
+						<string>rune_maniac_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>Z</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>hammeroftheancients_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>hammeroftheancients_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>hammeroftheancients_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_hammeroftheancients_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -229,65 +229,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_rollingthunder_name</string>
+						<key>detail</key>
+						<string>rune_rollingthunder_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_smash_name</string>
+						<key>detail</key>
+						<string>rune_smash_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_thedevilsanvil_name</string>
+						<key>detail</key>
+						<string>rune_thedevilsanvil_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_thunderstrike_name</string>
+						<key>detail</key>
+						<string>rune_thunderstrike_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_birthright_name</string>
+						<key>detail</key>
+						<string>rune_birthright_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>c</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>rend_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>rend_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>rend_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_rend_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -297,65 +297,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_ravage_name</string>
+						<key>detail</key>
+						<string>rune_ravage_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_bloodlust_name</string>
+						<key>detail</key>
+						<string>rune_bloodlust_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_lacerate_name</string>
+						<key>detail</key>
+						<string>rune_lacerate_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_mutilate_name</string>
+						<key>detail</key>
+						<string>rune_mutilate_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_bloodbath_name</string>
+						<key>detail</key>
+						<string>rune_bloodbath_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>e</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>seismicslam_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>seismicslam_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>seismicslam_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_seismicslam_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -365,65 +365,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_stagger_name</string>
+						<key>detail</key>
+						<string>rune_stagger_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_shatteredground_name</string>
+						<key>detail</key>
+						<string>rune_shatteredground_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_rumble_name</string>
+						<key>detail</key>
+						<string>rune_rumble_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_strengthfromearth_name</string>
+						<key>detail</key>
+						<string>rune_strengthfromearth_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_crackingrift_name</string>
+						<key>detail</key>
+						<string>rune_crackingrift_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>h</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>whirlwind_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>whirlwind_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>whirlwind_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_whirlwind_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -433,65 +433,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_dustdevils_name</string>
+						<key>detail</key>
+						<string>rune_dustdevils_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_hurricane_name</string>
+						<key>detail</key>
+						<string>rune_hurricane_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_bloodfunnel_name</string>
+						<key>detail</key>
+						<string>rune_bloodfunnel_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_windshear_name</string>
+						<key>detail</key>
+						<string>rune_windshear_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_volcaniceruption_name</string>
+						<key>detail</key>
+						<string>rune_volcaniceruption_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>Y</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>groundstomp_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>groundstomp_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>groundstomp_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_groundstomp_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -501,65 +501,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_deafeningcrash_name</string>
+						<key>detail</key>
+						<string>rune_deafeningcrash_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_wrenchingsmash_name</string>
+						<key>detail</key>
+						<string>rune_wrenchingsmash_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_tremblingstomp_name</string>
+						<key>detail</key>
+						<string>rune_tremblingstomp_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_footofthemountain_name</string>
+						<key>detail</key>
+						<string>rune_footofthemountain_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_avalanche_name</string>
+						<key>detail</key>
+						<string>rune_avalanche_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>X</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>leap_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>leap_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>leap_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_leap_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -569,65 +569,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_ironimpact_name</string>
+						<key>detail</key>
+						<string>rune_ironimpact_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_launch_name</string>
+						<key>detail</key>
+						<string>rune_launch_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_topplingimpact_name</string>
+						<key>detail</key>
+						<string>rune_topplingimpact_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_callofarreat_name</string>
+						<key>detail</key>
+						<string>rune_callofarreat_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_deathfromabove_name</string>
+						<key>detail</key>
+						<string>rune_deathfromabove_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>U</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>sprint_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>sprint_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>sprint_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_sprint_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -637,65 +637,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_rush_name</string>
+						<key>detail</key>
+						<string>rune_rush_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_runlikethewind_name</string>
+						<key>detail</key>
+						<string>rune_runlikethewind_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_marathon_name</string>
+						<key>detail</key>
+						<string>rune_marathon_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_gangway_name</string>
+						<key>detail</key>
+						<string>rune_gangway_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_forcedmarch_name</string>
+						<key>detail</key>
+						<string>rune_forcedmarch_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>R</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>ignorepain_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>ignorepain_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>ignorepain_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_ignorepain_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -705,65 +705,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_bravado_name</string>
+						<key>detail</key>
+						<string>rune_bravado_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_ironhide_name</string>
+						<key>detail</key>
+						<string>rune_ironhide_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_ignoranceisbliss_name</string>
+						<key>detail</key>
+						<string>rune_ignoranceisbliss_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_mobrule_name</string>
+						<key>detail</key>
+						<string>rune_mobrule_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_contemptforweakness_name</string>
+						<key>detail</key>
+						<string>rune_contemptforweakness_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>d</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>ancientspear_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>ancientspear_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>ancientspear_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_ancientspear_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -773,65 +773,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_grapplinghooks_name</string>
+						<key>detail</key>
+						<string>rune_grapplinghooks_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_skirmish_name</string>
+						<key>detail</key>
+						<string>rune_skirmish_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_dreadspear_name</string>
+						<key>detail</key>
+						<string>rune_dreadspear_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_harpoon_name</string>
+						<key>detail</key>
+						<string>rune_harpoon_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_rageflip_name</string>
+						<key>detail</key>
+						<string>rune_rageflip_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>V</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>revenge_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>revenge_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>revenge_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_revenge_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -841,65 +841,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_vengeanceismine_name</string>
+						<key>detail</key>
+						<string>rune_vengeanceismine_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_bestservedcold_name</string>
+						<key>detail</key>
+						<string>rune_bestservedcold_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_retribution_name</string>
+						<key>detail</key>
+						<string>rune_retribution_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_grudge_name</string>
+						<key>detail</key>
+						<string>rune_grudge_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_provocation_name</string>
+						<key>detail</key>
+						<string>rune_provocation_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>S</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>furiouscharge_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>furiouscharge_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>furiouscharge_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_furiouscharge_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -909,65 +909,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_batteringram_name</string>
+						<key>detail</key>
+						<string>rune_batteringram_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_mercilessassault_name</string>
+						<key>detail</key>
+						<string>rune_mercilessassault_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_stamina_name</string>
+						<key>detail</key>
+						<string>rune_stamina_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_bullrush_name</string>
+						<key>detail</key>
+						<string>rune_bullrush_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_dreadnought_name</string>
+						<key>detail</key>
+						<string>rune_dreadnought_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>Q</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>overpower_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>overpower_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>overpower_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_overpower_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -977,65 +977,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_stormofsteel_name</string>
+						<key>detail</key>
+						<string>rune_stormofsteel_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_killingspree_name</string>
+						<key>detail</key>
+						<string>rune_killingspree_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_crushingadvance_name</string>
+						<key>detail</key>
+						<string>rune_crushingadvance_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_momentum_name</string>
+						<key>detail</key>
+						<string>rune_momentum_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_revel_name</string>
+						<key>detail</key>
+						<string>rune_revel_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>f</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>weaponthrow_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>weaponthrow_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>weaponthrow_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_weaponthrow_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -1045,65 +1045,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_mightythrow_name</string>
+						<key>detail</key>
+						<string>rune_mightythrow_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_ricochet_name</string>
+						<key>detail</key>
+						<string>rune_ricochet_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_throwinghammer_name</string>
+						<key>detail</key>
+						<string>rune_throwinghammer_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_stupefy_name</string>
+						<key>detail</key>
+						<string>rune_stupefy_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_dreadbomb_name</string>
+						<key>detail</key>
+						<string>rune_dreadbomb_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>g</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>threateningshout_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>threateningshout_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>threateningshout_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_threateningshout_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -1113,65 +1113,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_intimidate_name</string>
+						<key>detail</key>
+						<string>rune_intimidate_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_falter_name</string>
+						<key>detail</key>
+						<string>rune_falter_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_grimharvest_name</string>
+						<key>detail</key>
+						<string>rune_grimharvest_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_demoralize_name</string>
+						<key>detail</key>
+						<string>rune_demoralize_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_terrify_name</string>
+						<key>detail</key>
+						<string>rune_terrify_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>i</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>battlerage_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>battlerage_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>battlerage_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_battlerage_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -1181,65 +1181,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_maraudersrage_name</string>
+						<key>detail</key>
+						<string>rune_maraudersrage_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_ferocity_name</string>
+						<key>detail</key>
+						<string>rune_ferocity_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_swordstoploughshares_name</string>
+						<key>detail</key>
+						<string>rune_swordstoploughshares_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_intothefray_name</string>
+						<key>detail</key>
+						<string>rune_intothefray_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_bloodshed_name</string>
+						<key>detail</key>
+						<string>rune_bloodshed_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>k</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>warcry_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>warcry_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>warcry_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_warcry_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -1249,65 +1249,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_hardenedwrath_name</string>
+						<key>detail</key>
+						<string>rune_hardenedwrath_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_charge_name</string>
+						<key>detail</key>
+						<string>rune_charge_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_invigorate_name</string>
+						<key>detail</key>
+						<string>rune_invigorate_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_veteranswarning_name</string>
+						<key>detail</key>
+						<string>rune_veteranswarning_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_impunity_name</string>
+						<key>detail</key>
+						<string>rune_impunity_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>T</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>earthquake_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>earthquake_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>earthquake_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_earthquake_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -1317,65 +1317,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_giantsstride_name</string>
+						<key>detail</key>
+						<string>rune_giantsstride_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_chillingearth_name</string>
+						<key>detail</key>
+						<string>rune_chillingearth_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_themountainscall_name</string>
+						<key>detail</key>
+						<string>rune_themountainscall_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_aftershocks_name</string>
+						<key>detail</key>
+						<string>rune_aftershocks_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_pathoffire_name</string>
+						<key>detail</key>
+						<string>rune_pathoffire_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>j</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>calloftheancients_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>calloftheancients_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>calloftheancients_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_calloftheancients_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -1385,65 +1385,65 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_thecouncilrises_name</string>
+						<key>detail</key>
+						<string>rune_thecouncilrises_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_dutytotheclan_name</string>
+						<key>detail</key>
+						<string>rune_dutytotheclan_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_korlicsmight_name</string>
+						<key>detail</key>
+						<string>rune_korlicsmight_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_madawcsmadness_name</string>
+						<key>detail</key>
+						<string>rune_madawcsmadness_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_talicsanger_name</string>
+						<key>detail</key>
+						<string>rune_talicsanger_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>P</key>
 			<dict>
 				<key>name</key>
-				<string>bash_name</string>
+				<string>wrathoftheberserker_name</string>
 				<key>system</key>
-				<string>bash_system</string>
+				<string>wrathoftheberserker_system</string>
 				<key>detail</key>
-				<string>bash_detail</string>
+				<string>wrathoftheberserker_detail</string>
 				<key>image</key>
-				<string>bash_image</string>
+				<string>skill_wrathoftheberserker_n</string>
 				<key>runes</key>
 				<dict>
 					<key>.</key>
@@ -1453,52 +1453,52 @@
 						<key>detail</key>
 						<string>rune_none_detail</string>
 						<key>image</key>
-						<string>rune_none_image</string>
+						<string>0</string>
 					</dict>
 					<key>a</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_arreatswail_name</string>
+						<key>detail</key>
+						<string>rune_arreatswail_detail</string>
+						<key>image</key>
+						<string>3</string>
 					</dict>
 					<key>Z</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_insanity_name</string>
+						<key>detail</key>
+						<string>rune_insanity_detail</string>
+						<key>image</key>
+						<string>2</string>
 					</dict>
 					<key>b</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_slaughter_name</string>
+						<key>detail</key>
+						<string>rune_slaughter_detail</string>
+						<key>image</key>
+						<string>5</string>
 					</dict>
 					<key>Y</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_stridinggiant_name</string>
+						<key>detail</key>
+						<string>rune_stridinggiant_detail</string>
+						<key>image</key>
+						<string>1</string>
 					</dict>
 					<key>c</key>
 					<dict>
-						<key>New item - 3</key>
-						<string></string>
-						<key>New item - 2</key>
-						<string></string>
-						<key>New item</key>
-						<string></string>
+						<key>name</key>
+						<string>rune_thriveonchaos_name</string>
+						<key>detail</key>
+						<string>rune_thriveonchaos_detail</string>
+						<key>image</key>
+						<string>4</string>
 					</dict>
 				</dict>
 			</dict>
@@ -1508,178 +1508,178 @@
 			<key>a</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>poundofflesh_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>poundofflesh_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_poundofflesh_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>poundofflesh_story</string>
 			</dict>
 			<key>Z</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>ruthless_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>ruthless_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_ruthless_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>ruthless_story</string>
 			</dict>
 			<key>b</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>nervesofsteel_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>nervesofsteel_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_nervesofsteel_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>nervesofsteel_story</string>
 			</dict>
 			<key>Y</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>weaponsmaster_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>weaponsmaster_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_weaponsmaster_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>weaponsmaster_story</string>
 			</dict>
 			<key>c</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>berserkerrage_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>berserkerrage_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_berserkerrage_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>berserkerrage_story</string>
 			</dict>
 			<key>X</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>inspiringpresence_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>inspiringpresence_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_inspiringpresence_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>inspiringpresence_story</string>
 			</dict>
 			<key>d</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>bloodthirst_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>bloodthirst_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_bloodthirst_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>bloodthirst_story</string>
 			</dict>
 			<key>W</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>animosity_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>animosity_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_animosity_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>animosity_story</string>
 			</dict>
 			<key>e</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>superstition_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>superstition_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_superstition_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>superstition_story</string>
 			</dict>
 			<key>V</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>toughasnails_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>toughasnails_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_toughasnails_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>toughasnails_story</string>
 			</dict>
 			<key>f</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>noescape_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>noescape_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_noescape_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>noescape_story</string>
 			</dict>
 			<key>U</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>relentless_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>relentless_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_relentless_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>relentless_story</string>
 			</dict>
 			<key>g</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>brawler_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>brawler_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_brawler_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>brawler_story</string>
 			</dict>
 			<key>T</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>juggernaut_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>juggernaut_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_juggernaut_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>juggernaut_story</string>
 			</dict>
 			<key>h</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>unforgiving_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>unforgiving_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_unforgiving_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>unforgiving_story</string>
 			</dict>
 			<key>S</key>
 			<dict>
 				<key>name</key>
-				<string></string>
+				<string>boonofbulkathos_name</string>
 				<key>detail</key>
-				<string>bash_name</string>
+				<string>boonofbulkathos_detail</string>
 				<key>image</key>
-				<string>bash_detail</string>
+				<string>skill_boonofbulkathos_n</string>
 				<key>story</key>
-				<string>bash_image</string>
+				<string>boonofbulkathos_story</string>
 			</dict>
 		</dict>
 	</dict>

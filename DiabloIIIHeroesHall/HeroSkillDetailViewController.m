@@ -9,7 +9,8 @@
 #import "HeroSkillDetailViewController.h"
 
 @implementation HeroSkillDetailViewController
-@synthesize lastPage,skillSelectedPage,runeSelectedIndex;
+@synthesize lastPage,skillSelectedPage,runeSelectedIndex,heroClassString,skillButtonGroupIndex,skillButtonGroupTag,pskillButtonGroupIndex,pskillButtonGroupTag;
+//@synthesize selectSkillButtonGroup,selectPSkillButtonGroup;
 @synthesize isHeroSkillDetailShown;
 @synthesize delegate;
 @synthesize singleSkillDetailViewController = _singleSkillDetailViewController;
@@ -26,6 +27,8 @@
 - (void)dealloc
 {
     [_singleSkillDetailViewController release];
+    [heroClassString release];
+//    [skillScroll release];
     [super dealloc];
 }
 
@@ -63,16 +66,37 @@
     
 }
 
-- (void)addDetailViewToKeyWindow:(NSString *)skillType skillKey:(NSString *)skillKey
+- (void)setDefaultPage:(NSInteger)page withSkillKey:(NSString *)skillKey withRuneKey:(NSString *)runeKey withButtonIndex:(NSInteger)index withTag:(NSInteger)tag
+{
+
+}
+
+- (void)setPassiveBoard:(NSString *)pskillKey withButtonIndex:(NSInteger)index withTag:(NSInteger)tag
+{
+
+}
+
+- (void)setSelectedButtonGroup:(NSMutableArray *)viewPage withTagGroup:(NSMutableArray *)tagGroup
+{
+    
+}
+
+- (void)addDetailViewToKeyWindow:(NSString *)heroClass skillType:(NSString *)skillType skillKey:(NSString *)skillKey hasStory:(BOOL)hasStory
 {
     if (self.singleSkillDetailViewController.isSingleSkillDetailShown) {
-        
+        [self.singleSkillDetailViewController.view removeFromSuperview];
+        self.singleSkillDetailViewController.isSingleSkillDetailShown = NO;
+        [self addDetailViewToKeyWindow:heroClass skillType:skillType skillKey:skillKey hasStory:hasStory];
     }
     else {
-        self.singleSkillDetailViewController = [[[SingleSkillDetailViewController alloc] initWithNibName:@"SingleSkillDetailViewController" bundle:nil] autorelease];
+        self.singleSkillDetailViewController = [[[SingleSkillDetailViewController alloc] init] autorelease];
+        self.singleSkillDetailViewController.heroClass = heroClass;
+        self.singleSkillDetailViewController.skillType = skillType;
+        self.singleSkillDetailViewController.skillKey = skillKey;
+        self.singleSkillDetailViewController.hasStory = hasStory;
         self.view.center.x<160?
-        [self.singleSkillDetailViewController.view setFrame:CGRectMake(150, 45, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)]:
-        [self.singleSkillDetailViewController.view setFrame:CGRectMake(10, 45, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)];
+        [self.singleSkillDetailViewController.view setFrame:CGRectMake(149, 100, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)]:
+        [self.singleSkillDetailViewController.view setFrame:CGRectMake(11, 100, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)];
         [[[UIApplication sharedApplication] keyWindow] addSubview:self.singleSkillDetailViewController.view];
         self.singleSkillDetailViewController.isSingleSkillDetailShown = YES;
     }
@@ -111,6 +135,7 @@
                          //设置非绘制区域是否响应时间，否则点击重置绘制区域
                          //UIControl *overView = (UIControl *)[[[UIApplication sharedApplication] keyWindow] viewWithTag:9618088];
                          //[overView removeFromSuperview];
+                         [self removeHighLightView];
                          [self setVisible:NO];
                          [delegate skillBoardDidFinishClosing];
                      }];
@@ -156,6 +181,18 @@
                          //[[[UIApplication sharedApplication] keyWindow] addSubview:overView];
                          //[overView release];
                      }];
+}
+
+- (void)removeHighLightView
+{
+    UIImageView *highlight = (UIImageView *)[selectedSkillButton viewWithTag:200809];
+    if(highlight){
+        [highlight removeFromSuperview];
+    }
+    UIImageView *highround = (UIImageView *)[selectedPSkillButton viewWithTag:908002];
+    if (highround) {
+        [highround removeFromSuperview];
+    }
 }
 
 
