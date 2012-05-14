@@ -103,13 +103,12 @@
             [selectSkillButtonGroup insertObject:button atIndex:i];
         }
     }
-    
     for (int i=6; i<9; i++) {
         UIButton *button = (UIButton *)[self.passive viewWithTag:[[tagGroup objectAtIndex:i] intValue]];
         if (button) {
             [button setSelected:YES];
-            [selectPSkillButtonGroup removeObjectAtIndex:i];
-            [selectPSkillButtonGroup insertObject:button atIndex:i];
+            [selectPSkillButtonGroup removeObjectAtIndex:i-6];
+            [selectPSkillButtonGroup insertObject:button atIndex:i-6];
         }
     }
     [self setSkillTableVisible:NO];
@@ -119,7 +118,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-//    runeSelectedIndex = 0;
+    //    runeSelectedIndex = 0;
     [skillScroll setContentSize:CGSizeMake(skillScroll.frame.size.width*6, skillScroll.frame.size.height)];
     [self addSkillViewToScroll];
     [self setSkillTableVisible:NO];
@@ -140,12 +139,15 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
+    //    NSLog(@"in scroll end\n");
     if ([scrollView isEqual:skillScroll]) {
         int page = skillScroll.contentOffset.x/skillScroll.frame.size.width;
         skillPage.currentPage = page;
+        //        NSLog(@"in compare");
         if (lastPage!=skillPage.currentPage) {
             lastPage = skillPage.currentPage;
             [self removeDetailViewFromKeyWindow];
+            //            NSLog(@"selectpage in scroll end     %d\n current page     %d\n",skillSelectedPage,skillPage.currentPage);
             if (skillSelectedPage == skillPage.currentPage&&selectedSkillButton.tag == skillButtonGroupTag) {
                 // do -> skilltable load data
                 
@@ -169,9 +171,10 @@
 
 - (void)setDefaultPage:(NSInteger)page withSkillKey:(NSString *)skillKey withRuneKey:(NSString *)runeKey withButtonIndex:(NSInteger)index withTag:(NSInteger)tag
 {
-    self.skillSelectedPage = page;
-    [self.skillScroll setContentOffset:CGPointMake(skillSelectedPage*self.skillScroll.frame.size.width, 0)];
-    self.skillPage.currentPage = skillSelectedPage;
+    skillSelectedPage = page;
+    [skillScroll setContentOffset:CGPointMake(skillSelectedPage*skillScroll.frame.size.width, 0)];
+    skillPage.currentPage = skillSelectedPage;
+    lastPage = skillPage.currentPage;
     skillButtonGroupIndex = index;
     skillButtonGroupTag = tag;
     if ([skillKey isEqualToString:@"."]) {
@@ -219,7 +222,8 @@
 - (IBAction)skillButtonPressed:(UIButton *)sender {
     NSString *selectSkillDetailKey;
     if ([selectedSkillButton isEqual:sender]) {
-
+        [self setDefaultCell:runeSelectedIndex];
+        [self setSkillTableVisible:YES];
     }
     else {
         BOOL select = YES;
@@ -246,11 +250,18 @@
             selectedSkillKey = selectedSkillButton.titleLabel.text;
             skillButtonGroupTag = selectedSkillButton.tag;
             skillSelectedPage = skillPage.currentPage;
+            //            NSLog(@"selectpage in button pressed     %d\n",skillSelectedPage);
             runeSelectedIndex = 0;
             [runeTable reloadData];
             [self setDefaultCell:runeSelectedIndex];
             [self setSkillTableVisible:YES];
             [delegate initiativeSkillSelected:heroClassString withSkillKey:selectedSkillKey withPage:[NSNumber numberWithInt:skillSelectedPage] withTag:[NSNumber numberWithInt:sender.tag]];
+            NSArray *runeList = [NSArray arrayWithObjects:@".",@"a",@"Z",@"b",@"Y",@"c",nil];
+            selectedRuneKey = [runeList objectAtIndex:runeSelectedIndex];
+            [delegate runeSelected:heroClassString withSkillKey:selectedSkillKey withRuneKey:selectedRuneKey];
+        }
+        else {
+            [self setSkillTableVisible:NO];
         }
     }
     selectSkillDetailKey = sender.titleLabel.text;

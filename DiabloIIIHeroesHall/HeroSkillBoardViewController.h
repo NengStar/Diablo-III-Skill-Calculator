@@ -14,9 +14,15 @@
 #import "MonkSkillDetailViewController.h"
 #import "WitchDoctorSkillDetailViewController.h"
 #import "WizardSkillDetailViewController.h"
+@protocol HeroSkillBoardViewDelegate
+
+-(void) didFinishSaving;
+
+@end
 
 @interface HeroSkillBoardViewController : UIViewController <HeroSkillDetailDelegate>
 {
+    id<HeroSkillBoardViewDelegate> delegate;
     IBOutlet UIImageView *heroAvatar;
     IBOutlet UILabel *className;
     //system label
@@ -66,6 +72,7 @@
     NSArray *imageNameArray;
     NSArray *classNameArray;
     NSArray *skillSystemNameArray;
+    NSArray *dataArray;
     UIButton *selectedButton;
     BOOL viewControllerWillTerminate;
     
@@ -75,10 +82,18 @@
     NSMutableArray *pages;
     NSMutableArray *tags;
 @public
+    NSInteger dataIndex;
+    NSString *dataKey;
     NSInteger heroClass;
     NSInteger heroSex;
+    NSString *heroName;
+    NSString *battleTag;
+    NSInteger server;
+    NSString *skillData;
     HeroSkillDetailViewController *currentSkillBoard;
 }
+
+@property (nonatomic,assign)id<HeroSkillBoardViewDelegate> delegate;
 
 @property NSInteger heroClass;
 @property NSInteger heroSex;
@@ -92,6 +107,8 @@
 - (IBAction)bt_initiativeSkillLeftPressed:(UIButton *)sender;
 - (IBAction)bt_initiativeSkillRightPressed:(UIButton *)sender;
 - (IBAction)bt_passiveSkillPressed:(UIButton *)sender;
+
+- (void)loadHeroData:(NSString *)data withIndex:(NSInteger)index;
 
 
 @end

@@ -13,12 +13,14 @@
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
 @synthesize heroSkillDataSource = _heroSkillDataSource;
+@synthesize savedData = _savedData;
 
 - (void)dealloc
 {
     [_window release];
     [_navigationController release];
     [_heroSkillDataSource release];
+    [_savedData release];
     [super dealloc];
 }
 
@@ -47,6 +49,21 @@
     [self customizeAppearance];
     NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"HeroSkillDataSource" ofType:@"plist"];
     self.heroSkillDataSource = [[[NSDictionary alloc] initWithContentsOfFile:dataPath] autorelease];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];//获取当前应用程序的文件目录
+    NSString *Path = [NSString stringWithFormat:@"%@/SaveData.plist",documentsDirectory];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:Path]) {
+        //文件已存在
+        NSLog(@"yes");
+        self.savedData = [[[NSMutableArray alloc] initWithContentsOfFile:Path] autorelease];
+    }
+    else {
+        //文件不存在
+        NSLog(@"no");
+        self.savedData = [[[NSMutableArray alloc] init] autorelease];
+        [self.savedData writeToFile:Path atomically:NO];
+    }
     [self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;

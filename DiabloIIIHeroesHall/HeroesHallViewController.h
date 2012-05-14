@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "UINavigationController.h"
 #import "HeroRiseViewController.h"
+#import "AppDelegate.h"
+#import "HeroSkillBoardViewController.h"
 
-@interface HeroesHallViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface HeroesHallViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,HeroSkillBoardViewDelegate>
 {
-//    NSInteger currentCell;
     IBOutlet UITableView *hallTable;
 }
 - (IBAction)createHero:(id)sender;

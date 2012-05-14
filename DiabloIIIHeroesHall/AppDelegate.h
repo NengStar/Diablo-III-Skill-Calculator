@@ -13,11 +13,13 @@
 {
 @public
     NSDictionary *heroSkillDataSource;
+    NSMutableArray *savedData;
 }
 
 @property (retain, nonatomic) IBOutlet UIWindow *window;
 @property (retain, nonatomic) IBOutlet UINavigationController *navigationController;
 
 @property (retain, nonatomic) NSDictionary *heroSkillDataSource;
+@property (retain, nonatomic) NSMutableArray *savedData;
 
 @end

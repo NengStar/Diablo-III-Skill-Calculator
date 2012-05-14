@@ -13,10 +13,13 @@
 		E911F2A6155681D90082DE9A /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E911F2A0155681D90082DE9A /* 1@2x.png */; };
 		E911F2A7155681D90082DE9A /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E911F2A1155681D90082DE9A /* 3@2x.png */; };
 		E911F2A8155681D90082DE9A /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E911F2A2155681D90082DE9A /* 2@2x.png */; };
+		E9275D15155BB6BA009B6706 /* cnvUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9275D14155BB6BA009B6706 /* cnvUILabel.m */; };
 		E92A15BF154C000E00C96E0B /* HeroRiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A15BD154C000E00C96E0B /* HeroRiseViewController.m */; };
 		E92A15C0154C000E00C96E0B /* HeroRiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92A15BE154C000E00C96E0B /* HeroRiseViewController.xib */; };
 		E92A15CC154C0B4100C96E0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E92A15CB154C0B4100C96E0B /* Default.png */; };
 		E92A15CE154C1E1800C96E0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E92A15CD154C1E1800C96E0B /* icon.png */; };
+		E92CB76D155BABAE00888B02 /* bt_pskill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92CB76C155BABAD00888B02 /* bt_pskill@2x.png */; };
+		E92CB76F155BB2B000888B02 /* line_singleskilldetailline.png in Resources */ = {isa = PBXBuildFile; fileRef = E92CB76E155BB2B000888B02 /* line_singleskilldetailline.png */; };
 		E94C5AC915517BC800B0F10D /* bg_skilldetailboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AC815517BC800B0F10D /* bg_skilldetailboard@2x.png */; };
 		E94C5ADA15525D7400B0F10D /* skill_bash_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD115525D7400B0F10D /* skill_bash_d.png */; };
 		E94C5ADD15525D7400B0F10D /* skill_cleave_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E94C5AD415525D7400B0F10D /* skill_cleave_d.png */; };
@@ -121,7 +124,6 @@
 		E9948A0F1557EC8A0028AB94 /* skill_unforgiving_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E99489EF1557EC8A0028AB94 /* skill_unforgiving_n.png */; };
 		E9948A101557EC8A0028AB94 /* skill_weaponsmaster_d.png in Resources */ = {isa = PBXBuildFile; fileRef = E99489F01557EC8A0028AB94 /* skill_weaponsmaster_d.png */; };
 		E9948A111557EC8A0028AB94 /* skill_weaponsmaster_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E99489F11557EC8A0028AB94 /* skill_weaponsmaster_n.png */; };
-		E9948A1A15580AF00028AB94 /* DetailTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9948A1915580AF00028AB94 /* DetailTextView.m */; };
 		E9948A1C15580B250028AB94 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9948A1B15580B250028AB94 /* CoreText.framework */; };
 		E996F9421558228800487C85 /* bg_singleskilldetailboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E996F9411558228800487C85 /* bg_singleskilldetailboard@2x.png */; };
 		E99E29FB154EF45800FFE046 /* hero_bar_f.gif in Resources */ = {isa = PBXBuildFile; fileRef = E99E29F6154EF45800FFE046 /* hero_bar_f.gif */; };
@@ -178,11 +180,15 @@
 		E911F2A0155681D90082DE9A /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
 		E911F2A1155681D90082DE9A /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
 		E911F2A2155681D90082DE9A /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		E9275D13155BB6BA009B6706 /* cnvUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cnvUILabel.h; sourceTree = "<group>"; };
+		E9275D14155BB6BA009B6706 /* cnvUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cnvUILabel.m; sourceTree = "<group>"; };
 		E92A15BC154C000E00C96E0B /* HeroRiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroRiseViewController.h; sourceTree = "<group>"; };
 		E92A15BD154C000E00C96E0B /* HeroRiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroRiseViewController.m; sourceTree = "<group>"; };
 		E92A15BE154C000E00C96E0B /* HeroRiseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroRiseViewController.xib; sourceTree = "<group>"; };
 		E92A15CB154C0B4100C96E0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E92A15CD154C1E1800C96E0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E92CB76C155BABAD00888B02 /* bt_pskill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_pskill@2x.png"; sourceTree = "<group>"; };
+		E92CB76E155BB2B000888B02 /* line_singleskilldetailline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_singleskilldetailline.png; sourceTree = "<group>"; };
 		E94C5AC815517BC800B0F10D /* bg_skilldetailboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_skilldetailboard@2x.png"; sourceTree = "<group>"; };
 		E94C5AD115525D7400B0F10D /* skill_bash_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_bash_d.png; sourceTree = "<group>"; };
 		E94C5AD415525D7400B0F10D /* skill_cleave_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_cleave_d.png; sourceTree = "<group>"; };
@@ -296,8 +302,6 @@
 		E99489EF1557EC8A0028AB94 /* skill_unforgiving_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_unforgiving_n.png; sourceTree = "<group>"; };
 		E99489F01557EC8A0028AB94 /* skill_weaponsmaster_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_weaponsmaster_d.png; sourceTree = "<group>"; };
 		E99489F11557EC8A0028AB94 /* skill_weaponsmaster_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skill_weaponsmaster_n.png; sourceTree = "<group>"; };
-		E9948A1815580AF00028AB94 /* DetailTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTextView.h; sourceTree = "<group>"; };
-		E9948A1915580AF00028AB94 /* DetailTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTextView.m; sourceTree = "<group>"; };
 		E9948A1B15580B250028AB94 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		E996F9411558228800487C85 /* bg_singleskilldetailboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_singleskilldetailboard@2x.png"; sourceTree = "<group>"; };
 		E99E29F6154EF45800FFE046 /* hero_bar_f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hero_bar_f.gif; sourceTree = "<group>"; };
@@ -384,6 +388,15 @@
 			name = Rune;
 			sourceTree = "<group>";
 		};
+		E9275D11155BB6A6009B6706 /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E9275D13155BB6BA009B6706 /* cnvUILabel.h */,
+				E9275D14155BB6BA009B6706 /* cnvUILabel.m */,
+			);
+			name = CustomLabel;
+			sourceTree = "<group>";
+		};
 		E94C5ACC15525CF800B0F10D /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +417,7 @@
 		E94C5ACD15525D1600B0F10D /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				E92CB76C155BABAD00888B02 /* bt_pskill@2x.png */,
 				E9CABAF71554F1EF00773ACF /* bt_skillboard_close@2x.png */,
 				E97DBDDA1550354400385A36 /* bt_nextpage@2x.png */,
 				E97DBDBB1550148400385A36 /* bt_forward@2x.png */,
@@ -439,6 +453,7 @@
 		E94C5ACF15525D5E00B0F10D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E92CB76E155BB2B000888B02 /* line_singleskilldetailline.png */,
 				E9BC3AB2155AEC85006C08D5 /* skillround_highlight.png */,
 				E9BC3AB3155AEC85006C08D5 /* skillrect_highlight.png */,
 				E9CABAF51554EF3C00773ACF /* mash_selected_area@2x.png */,
@@ -705,15 +720,6 @@
 			name = Passive;
 			sourceTree = "<group>";
 		};
-		E9948A1715580AD30028AB94 /* DetailTextView */ = {
-			isa = PBXGroup;
-			children = (
-				E9948A1815580AF00028AB94 /* DetailTextView.h */,
-				E9948A1915580AF00028AB94 /* DetailTextView.m */,
-			);
-			name = DetailTextView;
-			sourceTree = "<group>";
-		};
 		E9CFD3F1154B125A005D3760 = {
 			isa = PBXGroup;
 			children = (
@@ -826,7 +832,7 @@
 		E9EFE65C154FF1AB00C01F3C /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				E9948A1715580AD30028AB94 /* DetailTextView */,
+				E9275D11155BB6A6009B6706 /* CustomLabel */,
 				E980AD13155092B6003D7179 /* Custom */,
 				E9EFE65D154FF1C100C01F3C /* Category */,
 				E9FD7268154E881D00CC9F39 /* iCarousel */,
@@ -1046,6 +1052,8 @@
 				E9DF3CF31558D00C0088FDDC /* skill_frenzy_n.png in Resources */,
 				E9BC3AB4155AEC85006C08D5 /* skillround_highlight.png in Resources */,
 				E9BC3AB5155AEC85006C08D5 /* skillrect_highlight.png in Resources */,
+				E92CB76D155BABAE00888B02 /* bt_pskill@2x.png in Resources */,
+				E92CB76F155BB2B000888B02 /* line_singleskilldetailline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,7 +1078,7 @@
 				E96AB65415507D5200475346 /* WizardSkillDetailViewController.m in Sources */,
 				E980AD1B15509398003D7179 /* HeroSkillDetailViewController.m in Sources */,
 				E976D87E1553BB3600FB489C /* SingleSkillDetailViewController.m in Sources */,
-				E9948A1A15580AF00028AB94 /* DetailTextView.m in Sources */,
+				E9275D15155BB6BA009B6706 /* cnvUILabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

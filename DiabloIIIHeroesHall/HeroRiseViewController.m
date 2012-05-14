@@ -25,15 +25,6 @@
         self.navigationItem.leftBarButtonItem = left;
         [left release];
         
-//        UIImage *riseImg = [UIImage imageNamed:@"bt_forward"];
-//        UIButton *riseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//        [riseBtn setBackgroundImage:riseImg forState:UIControlStateNormal];
-//        riseBtn.frame = CGRectMake(0, 0, riseImg.size.width, riseImg.size.height);
-//        [riseBtn addTarget:self action:@selector(goRise) forControlEvents:UIControlEventTouchUpInside];
-//        UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:riseBtn];
-//        self.navigationItem.rightBarButtonItem = right;
-//        [right release];
-        
         heroPage.currentPage = 0;
         currentClass = heroPage.currentPage;
         lastClass = currentClass;
@@ -58,7 +49,8 @@
     HeroSkillBoardViewController *heroSkillBoard = [[HeroSkillBoardViewController alloc] initWithNibName:@"HeroSkillBoardViewController" bundle:nil];
     heroSkillBoard.heroClass = currentClass;
     heroSkillBoard.heroSex = currentSex;
-    [self.navigationController pushViewController:heroSkillBoard animatedWithTransition:UIViewAnimationTransitionCurlUp];
+    [heroSkillBoard setDelegate:[[self.navigationController viewControllers] objectAtIndex:0]];
+    [self.navigationController pushViewController:heroSkillBoard animated:YES];
     [heroSkillBoard release];
 }
 
@@ -94,13 +86,13 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-//    [heroRect setHidden:YES];
+    //    [heroRect setHidden:YES];
     [loadView startAnimating];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-//    [heroRect setHidden:NO];
+    //    [heroRect setHidden:NO];
     [loadView stopAnimating];
 }
 
@@ -183,10 +175,6 @@
 }
 
 - (IBAction)nextPage:(UIButton *)sender {
-    HeroSkillBoardViewController *heroSkillBoard = [[HeroSkillBoardViewController alloc] initWithNibName:@"HeroSkillBoardViewController" bundle:nil];
-    heroSkillBoard.heroClass = currentClass;
-    heroSkillBoard.heroSex = currentSex;
-    [self.navigationController pushViewController:heroSkillBoard animatedWithTransition:UIViewAnimationTransitionCurlUp];
-    [heroSkillBoard release];
+    [self goRise];
 }
 @end

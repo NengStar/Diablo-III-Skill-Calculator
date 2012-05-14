@@ -28,7 +28,7 @@
 {
     [_singleSkillDetailViewController release];
     [heroClassString release];
-//    [skillScroll release];
+    //    [skillScroll release];
     [super dealloc];
 }
 
@@ -68,12 +68,12 @@
 
 - (void)setDefaultPage:(NSInteger)page withSkillKey:(NSString *)skillKey withRuneKey:(NSString *)runeKey withButtonIndex:(NSInteger)index withTag:(NSInteger)tag
 {
-
+    
 }
 
 - (void)setPassiveBoard:(NSString *)pskillKey withButtonIndex:(NSInteger)index withTag:(NSInteger)tag
 {
-
+    
 }
 
 - (void)setSelectedButtonGroup:(NSMutableArray *)viewPage withTagGroup:(NSMutableArray *)tagGroup
@@ -120,7 +120,7 @@
 
 // restore view location
 - (void)restoreViewLocation {
-//    [self setDetailViewShown:NO];
+    //    [self setDetailViewShown:NO];
     [self removeDetailViewFromKeyWindow];
     [UIView animateWithDuration:0.3 
                      animations:^{

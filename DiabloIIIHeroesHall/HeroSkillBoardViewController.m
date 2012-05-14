@@ -9,6 +9,8 @@
 #import "HeroSkillBoardViewController.h"
 
 @implementation HeroSkillBoardViewController
+
+@synthesize delegate;
 @synthesize heroClass;
 @synthesize heroSex;
 
@@ -31,19 +33,21 @@
         UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
         self.navigationItem.leftBarButtonItem = left;
         [left release];
+        UIImage *forwardImg = [UIImage imageNamed:@"bt_forward"];
+        UIButton *forwardBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [forwardBtn setBackgroundImage:forwardImg forState:UIControlStateNormal];
+        forwardBtn.frame = CGRectMake(0, 0, forwardImg.size.width, forwardImg.size.height);
+        [forwardBtn addTarget:self action:@selector(saveHeroData) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:forwardBtn];
+        self.navigationItem.rightBarButtonItem = right;
+        [right release];
         viewControllerWillTerminate = NO;
-        
+        dataArray = nil;
+        dataIndex = -1;
         imageNameArray = [[NSArray alloc] initWithObjects:@"avatar_bar_f",@"avatar_dh_f",@"avatar_monk_f",@"avatar_wd_f",@"avatar_wz_f",@"avatar_bar_m",@"avatar_dh_m",@"avatar_monk_m",@"avatar_wd_m",@"avatar_wz_m",nil];
         classNameArray = [[NSArray alloc] initWithObjects:@"Barbarian", @"Demon Hunter",@"Monk",@"Witch Doctor",@"Winzard",nil];
         skillSystemNameArray = [[NSArray alloc] initWithObjects:@"Might",@"Tactics",@"Rage",@"Hunting",@"Devices",@"Archery",@"Techniques",@"Focus",@"Mantras",@"Terror",@"Decay",@"Voodoo",@"Force",@"Conjuration",@"Mastery",@"Primary",@"Secondary",@"Defensive",nil];
-        
-        
-        //init or reset
-        initiative = [[NSMutableArray alloc] initWithObjects:@".",@".",@".",@".",@".",@".", nil];
-        passive = [[NSMutableArray alloc] initWithObjects:@".",@".",@".", nil];
-        runes = [[NSMutableArray alloc] initWithObjects:@".",@".",@".",@".",@".",@".", nil];
-        pages = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:0],[NSNumber numberWithInt:1],[NSNumber numberWithInt:2],[NSNumber numberWithInt:3],[NSNumber numberWithInt:4],[NSNumber numberWithInt:5], nil];
-        tags = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1], nil];
+        [self resetBoard];
     }
     return self;
 }
@@ -124,7 +128,7 @@
     }
     else {
         [[[[UIApplication sharedApplication] keyWindow] viewWithTag:13811150829] removeFromSuperview];
-        [self.navigationController popViewControllerAnimatedWithTransition:UIViewAnimationTransitionCurlDown];
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
@@ -133,7 +137,7 @@
     [self makeButtonUnSelected];
     if (viewControllerWillTerminate) {
         [[[[UIApplication sharedApplication] keyWindow] viewWithTag:13811150829] removeFromSuperview];
-        [self.navigationController popViewControllerAnimatedWithTransition:UIViewAnimationTransitionCurlDown];
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
@@ -363,6 +367,297 @@
     [passiveSkillThreeName setText:@"Choose Skill"];
 }
 
+- (void)setInitiativeSkillImage
+{
+    [mouseLeftSkillImage setImage:nil];
+    [mouseRightSkillImage setImage:nil];
+    [numOneSkillImage setImage:nil];
+    [numTwoSkillImage setImage:nil];
+    [numThreeSkillImage setImage:nil];
+    [numFourSkillImage setImage:nil];
+}
+
+- (void)setRuneImage
+{
+    [mouseLeftRuneImage setImage:nil];
+    [mouseRightRuneImage setImage:nil];
+    [numOneRuneImage setImage:nil];
+    [numTwoRuneImage setImage:nil];
+    [numThreeRuneImage setImage:nil];
+    [numFourRuneImage setImage:nil];
+}
+
+- (void)setPassiveSkillImage
+{
+    [passiveSkillOneImage setImage:nil];
+    [passiveSkillTwoImage setImage:nil];
+    [passiveSkillThreeImage setImage:nil];
+}
+
+- (void)setDefaultData
+{
+    //    NSLog(@"in default data");
+    initiative = [[NSMutableArray alloc] initWithObjects:@".",@".",@".",@".",@".",@".", nil];
+    passive = [[NSMutableArray alloc] initWithObjects:@".",@".",@".", nil];
+    runes = [[NSMutableArray alloc] initWithObjects:@".",@".",@".",@".",@".",@".", nil];
+    pages = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:0],[NSNumber numberWithInt:1],[NSNumber numberWithInt:2],[NSNumber numberWithInt:3],[NSNumber numberWithInt:4],[NSNumber numberWithInt:5], nil];
+    tags = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1], nil];
+}
+
+- (void)resetBoard
+{
+    [self setDefaultData];
+    [self setSkillSystemLabel];
+    [self setInitiativeSkillName];
+    [self setInitiativeSkillImage];
+    [self setRuneName];
+    [self setRuneImage];
+    [self setPassiveSkillName];
+    [self setPassiveSkillImage];
+    [self setPassiveSkillName];
+    [self setPassiveSkillImage];
+}
+
+- (void)saveHeroData
+{
+    NSMutableString *skill = [[NSMutableString alloc] init];
+    for (int i=0; i<[initiative count]; i++) {
+        [skill appendFormat:(NSString *)[initiative objectAtIndex:i]];
+    }
+    [skill appendFormat:@"!"];
+    for (int i=0; i<[passive count]; i++) {
+        [skill appendFormat:(NSString *)[passive objectAtIndex:i]];
+    }
+    [skill appendFormat:@"!"];
+    for (int i=0; i<[runes count]; i++) {
+        [skill appendFormat:(NSString *)[runes objectAtIndex:i]];
+    }
+    NSDateFormatter *nsdf2=[[[NSDateFormatter alloc] init]autorelease];
+    [nsdf2 setDateStyle:NSDateFormatterShortStyle];
+    [nsdf2 setDateFormat:@"YYYYMMddHHmmssSSSS"];
+    NSString *t2=[nsdf2 stringFromDate:[NSDate date]];
+    NSString *data = [NSString stringWithFormat:@"%@|%d|%d|%@|%@|%d|%@",t2,heroClass,heroSex,@"name",@"NengStar#1141",0,skill];
+    NSLog(@"%@\n",data);
+    AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];//获取当前应用程序的文件目录
+    NSString *Path = [NSString stringWithFormat:@"%@/SaveData.plist",documentsDirectory];
+    if (dataIndex>=0) {
+        //alert view for overwrite
+        NSLog(@"replace");
+        [mainDelegate.savedData replaceObjectAtIndex:dataIndex withObject:data];
+    }
+    else {
+        NSLog(@"add");
+        [mainDelegate.savedData insertObject:data atIndex:0];
+    }
+    [mainDelegate.savedData writeToFile:Path atomically:NO];
+    [delegate didFinishSaving];
+    [skill release];
+    if(currentSkillBoard.isHeroSkillDetailShown)
+    {
+        [currentSkillBoard restoreViewLocation];
+        viewControllerWillTerminate = YES;
+    }
+    else {
+        [[[[UIApplication sharedApplication] keyWindow] viewWithTag:13811150829] removeFromSuperview];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+}
+
+- (void)loadHeroData:(NSString *)data withIndex:(NSInteger)index
+{
+    //data = @"key|class|sex|name|battletag|server|skilldata"
+    //key:time string 
+    //class:0,1,2,3,4,5  integer
+    //sex:0(female),1(male) integer
+    //name:string
+    //battletag:string
+    //server:0(na),1(eu),2(as) integer
+    //skilldata:initiative!passive!rune(ex:abcdef!abc!abcdef)
+    //    NSLog(@"in init data");
+    if (data) {
+        dataIndex = index;
+        dataArray = [data componentsSeparatedByString:@"|"];
+        dataKey = [dataArray objectAtIndex:0];
+        heroClass = [[dataArray objectAtIndex:1] intValue];
+        heroSex = [[dataArray objectAtIndex:2] intValue];
+        heroName = [dataArray objectAtIndex:3];
+        battleTag = [dataArray objectAtIndex:4];
+        server = [[dataArray objectAtIndex:5] intValue];
+        skillData = [dataArray objectAtIndex:6];
+        
+        NSArray *skillArray = [skillData componentsSeparatedByString:@"!"];
+        
+        if (skillArray) {
+            AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+            NSDictionary *class = [mainDelegate.heroSkillDataSource objectForKey:[classNameArray objectAtIndex:heroClass]];
+            NSDictionary *skillType = nil;
+            NSDictionary *skill = nil;
+            NSNumber *tag = nil;
+            
+            //initiative
+            NSString *skillString = [skillArray objectAtIndex:0];
+            if (skillString) {
+                skillType = [class objectForKey:@"Initiative"];
+                for (int i=0; i<[skillString length]; i++) {
+                    NSString *skillKey = [skillString substringWithRange:NSMakeRange(i, 1)];
+                    if (![skillKey isEqualToString:@"."]) {
+                        [initiative removeObjectAtIndex:i];
+                        [initiative insertObject:skillKey atIndex:i];
+                        skill = [skillType objectForKey:skillKey];
+                        tag = [skill objectForKey:@"tag"];
+                        [pages removeObjectAtIndex:i];
+                        [pages insertObject:[NSNumber numberWithInt:([tag intValue]/10-1)] atIndex:i];
+                        [tags removeObjectAtIndex:i];
+                        [tags insertObject:tag atIndex:i];
+                    }
+                }
+            }
+            
+            //passive
+            NSString *pskillString = [skillArray objectAtIndex:1];
+            if (pskillString) {
+                skillType = [class objectForKey:@"Passive"];
+                for (int i=0; i<[pskillString length]; i++) {
+                    NSString *pskillKey = [pskillString substringWithRange:NSMakeRange(i, 1)];
+                    if (![pskillKey isEqualToString:@"."]) {
+                        [passive removeObjectAtIndex:i];
+                        [passive insertObject:pskillKey atIndex:i];
+                        skill = [skillType objectForKey:pskillKey];
+                        tag = [skill objectForKey:@"tag"];
+                        [tags removeObjectAtIndex:(6+i)];
+                        [tags insertObject:tag atIndex:(6+i)];
+                    }
+                }
+            }
+            
+            //rune
+            NSString *runeString = [skillArray objectAtIndex:2];
+            if (runeString) {
+                for (int i=0; i<[runeString length]; i++) {
+                    NSString *runeKey = [runeString substringWithRange:NSMakeRange(i, 1)];
+                    [runes removeObjectAtIndex:i];
+                    [runes insertObject:runeKey atIndex:i];
+                }
+            }
+        }
+    }
+}
+
+- (void) setInitiativeSkillButton:(NSInteger)index withSystemName:(NSString *)system withSkillName:(NSString *)name withSkillImage:(UIImage *)image withRuneName:(NSString *)rname withRuneImage:(UIImage *)rimage
+{
+    UIColor *color = [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:210.0/255.0 alpha:1.0];
+    switch (index) {
+        case 0:
+            [mouseLeftSkill setText:system];
+            [mouseLeftSkillName setTextColor:color];
+            [mouseLeftSkillName setText:name];
+            [mouseLeftSkillImage setImage:image];
+            [mouseLeftRuneName setText:rname];
+            [mouseLeftRuneImage setImage:rimage];
+            break;
+        case 1:
+            [mouseRightSkill setText:system];
+            [mouseRightSkillName setTextColor:color];
+            [mouseRightSkillName setText:name];
+            [mouseRightSkillImage setImage:image];
+            [mouseRightRuneName setText:rname];
+            [mouseRightRuneImage setImage:rimage];
+            break;
+        case 2:
+            [numOneSkill setText:system];
+            [numOneSkillName setTextColor:color];
+            [numOneSkillName setText:name];
+            [numOneSkillImage setImage:image];
+            [numOneRuneName setText:rname];
+            [numOneRuneImage setImage:rimage];
+            break;
+        case 3:
+            [numTwoSkill setText:system];
+            [numTwoSkillName setTextColor:color];
+            [numTwoSkillName setText:name];
+            [numTwoSkillImage setImage:image];
+            [numTwoRuneName setText:rname];
+            [numTwoRuneImage setImage:rimage];
+            break;
+        case 4:
+            [numThreeSkill setText:system];
+            [numThreeSkillName setTextColor:color];
+            [numThreeSkillName setText:name];
+            [numThreeSkillImage setImage:image];
+            [numThreeRuneName setText:rname];
+            [numThreeRuneImage setImage:rimage];
+            break;
+        case 5:
+            [numFourSkill setText:system];
+            [numFourSkillName setTextColor:color];
+            [numFourSkillName setText:name];
+            [numFourSkillImage setImage:image];
+            [numFourRuneName setText:rname];
+            [numFourRuneImage setImage:rimage];
+            break;
+    }
+}
+
+- (void) setPassiveSkillButton:(NSInteger)index withSkillName:(NSString *)name withSkillImage:(UIImage *)image
+{
+    UIColor *color = [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:210.0/255.0 alpha:1.0];
+    switch (index) {
+        case 0:
+            [passiveSkillOneName setTextColor:color];
+            [passiveSkillOneName setText:name];
+            [passiveSkillOneImage setImage:image];
+            break;
+        case 1:
+            [passiveSkillTwoName setTextColor:color];
+            [passiveSkillTwoName setText:name];
+            [passiveSkillTwoImage setImage:image];
+            break;
+        case 2:
+            [passiveSkillThreeName setTextColor:color];
+            [passiveSkillThreeName setText:name];
+            [passiveSkillThreeImage setImage:image];
+            break;
+    }
+}
+
+- (void) setBoardView
+{
+    AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+    NSDictionary *class = [mainDelegate.heroSkillDataSource objectForKey:[classNameArray objectAtIndex:heroClass]];
+    NSDictionary *skillType = nil;
+    
+    skillType = [class objectForKey:@"Initiative"];
+    for (int i=0; i<[initiative count]; i++) {
+        if (![[initiative objectAtIndex:i] isEqualToString:@"."]) {
+            //skill
+            NSDictionary *skill = [skillType objectForKey:[initiative objectAtIndex:i]];
+            NSString *name = NSLocalizedString([skill objectForKey:@"name"],nil);
+            NSString *system = NSLocalizedString([skill objectForKey:@"system"],nil);
+            UIImage *image = [UIImage imageNamed:[skill objectForKey:@"image"]];
+            //rune
+            NSString *rname = nil;
+            UIImage *rimage = nil;
+            if (![[runes objectAtIndex:i] isEqualToString:@"."]) {
+                NSDictionary *rune = [[skill objectForKey:@"runes"] objectForKey:[runes objectAtIndex:i]];
+                rname = NSLocalizedString([rune objectForKey:@"name"],nil);
+                rimage = [UIImage imageNamed:[rune objectForKey:@"image"]];
+            }
+            [self setInitiativeSkillButton:i withSystemName:system withSkillName:name withSkillImage:image withRuneName:rname withRuneImage:rimage];
+        }
+    }
+    skillType = [class objectForKey:@"Passive"];
+    for (int i=0; i<[passive count]; i++) {
+        if (![[passive objectAtIndex:i] isEqualToString:@"."]) {
+            NSDictionary *skill = [skillType objectForKey:[passive objectAtIndex:i]];
+            NSString *name = NSLocalizedString([skill objectForKey:@"name"], nil);
+            UIImage *image = [UIImage imageNamed:[skill objectForKey:@"image"]];
+            [self setPassiveSkillButton:i withSkillName:name withSkillImage:image];
+        }
+    }
+}
+
 - (void)createHeroSkillDetailBoard
 {
     switch (heroClass) {
@@ -370,7 +665,7 @@
             self.barbarianSkillBoard = [[[BarbarianSkillDetailViewController alloc] initWithNibName:@"BarbarianSkillDetailViewController" bundle:nil] autorelease];
             self.barbarianSkillBoard.view.frame = CGRectMake(0, 110, self.barbarianSkillBoard.view.frame.size.width, self.barbarianSkillBoard.view.frame.size.height);
             self.barbarianSkillBoard.view.tag = 13811150829;
-            self.barbarianSkillBoard.heroClassString = @"Barbarian";
+            self.barbarianSkillBoard.heroClassString = [classNameArray objectAtIndex:heroClass];
             [self.barbarianSkillBoard setDelegate:self];
             [self.barbarianSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.barbarianSkillBoard.view];
@@ -381,7 +676,7 @@
             self.demonhunterSkillBoard = [[[DemonHunterSkillDetailViewController alloc] initWithNibName:@"DemonHunterSkillDetailViewController" bundle:nil] autorelease];
             self.demonhunterSkillBoard.view.frame = CGRectMake(0, 110, self.demonhunterSkillBoard.view.frame.size.width, self.demonhunterSkillBoard.view.frame.size.height);
             self.demonhunterSkillBoard.view.tag = 13811150829;
-            self.demonhunterSkillBoard.heroClassString = @"DemonHunter";
+            self.demonhunterSkillBoard.heroClassString = [classNameArray objectAtIndex:heroClass];
             [self.demonhunterSkillBoard setDelegate:self];
             [self.demonhunterSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.demonhunterSkillBoard.view];
@@ -391,7 +686,7 @@
             self.monkSkillBoard = [[[MonkSkillDetailViewController alloc] initWithNibName:@"MonkSkillDetailViewController" bundle:nil] autorelease];
             self.monkSkillBoard.view.frame = CGRectMake(0, 110, self.monkSkillBoard.view.frame.size.width, self.monkSkillBoard.view.frame.size.height);
             self.monkSkillBoard.view.tag = 13811150829;
-            self.monkSkillBoard.heroClassString = @"Monk";
+            self.monkSkillBoard.heroClassString = [classNameArray objectAtIndex:heroClass];
             [self.monkSkillBoard setDelegate:self];
             [self.monkSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.monkSkillBoard.view];
@@ -401,7 +696,7 @@
             self.witchdoctorSkillBoard = [[[WitchDoctorSkillDetailViewController alloc] initWithNibName:@"WitchDoctorSkillDetailViewController" bundle:nil] autorelease];
             self.witchdoctorSkillBoard.view.frame = CGRectMake(0, 110, self.witchdoctorSkillBoard.view.frame.size.width, self.witchdoctorSkillBoard.view.frame.size.height);
             self.witchdoctorSkillBoard.view.tag = 13811150829;
-            self.witchdoctorSkillBoard.heroClassString = @"WitchDoctor";
+            self.witchdoctorSkillBoard.heroClassString = [classNameArray objectAtIndex:heroClass];
             [self.witchdoctorSkillBoard setDelegate:self];
             [self.witchdoctorSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.witchdoctorSkillBoard.view];
@@ -411,7 +706,7 @@
             self.wizardSkillBoard = [[[WizardSkillDetailViewController alloc] initWithNibName:@"WizardSkillDetailViewController" bundle:nil] autorelease];
             self.wizardSkillBoard.view.frame = CGRectMake(0, 110, self.wizardSkillBoard.view.frame.size.width, self.wizardSkillBoard.view.frame.size.height);
             self.wizardSkillBoard.view.tag = 13811150829;
-            self.wizardSkillBoard.heroClassString = @"Wizard";
+            self.wizardSkillBoard.heroClassString = [classNameArray objectAtIndex:heroClass];
             [self.wizardSkillBoard setDelegate:self];
             [self.wizardSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.wizardSkillBoard.view];
@@ -437,15 +732,14 @@
 
 - (void)viewDidLoad
 {
+    //    NSLog(@"enter did");
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [heroAvatar setImage:[UIImage imageNamed:[imageNameArray objectAtIndex:(heroClass+5*heroSex)]]];
     [className setText:[classNameArray objectAtIndex:heroClass]];
-    [self setSkillSystemLabel];
-    [self setInitiativeSkillName];
-    [self setRuneName];
-    [self setPassiveSkillName];
+    [self setBoardView];
     [self createHeroSkillDetailBoard];
+    //    NSLog(@"out did");
 }
 
 - (void)viewDidUnload

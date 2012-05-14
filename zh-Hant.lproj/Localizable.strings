@@ -1,7 +1,555 @@
 /* 
-  Localizable.strings
-  DiabloIIIHeroesHall
+ Localizable.strings
+ DiabloIIIHeroesHall
+ 
+ Created by  on 12-5-4.
+ Copyright (c) 2012年 Neng! Star. All rights reserved.
+ */
 
-  Created by  on 12-5-4.
-  Copyright (c) 2012年 Neng! Star. All rights reserved.
-*/
+/********************************BARBARIAN*********************************/
+/*
+ Rune
+ */
+//rune none
+"rune_none_name" = "None";
+"rune_none_detail" = "Use skill without a rune.";
+//Barbarian rune
+//primary
+//bash
+"rune_clobber_name" = "Clobber";
+"rune_clobber_detail" = "Unlocked at level 6\nInstead of Knockback, each hit has a 35% chance to Stun the target for 1.5 seconds.";
+
+"rune_onslaught_name" = "Onslaught";
+"rune_onslaught_detail" = "Unlocked at level 13\nAdd 2 reverberations that cause 22% weapon damage per strike. Removes the chance for Knockback.";
+
+"rune_punish_name" = "Punish";
+"rune_punish_detail" = "Unlocked at level 26\nIncreases the damage of your skills by 6% for 5 seconds after using Bash. This effect stacks up to 3 times.";
+
+"rune_instigation_name" = "Instigation";
+"rune_instigation_detail" = "Unlocked at level 44\nGenerate 6 additional Fury per attack.";
+
+"rune_pulverize_name" = "Pulverize";
+"rune_pulverize_detail" = "Unlocked at level 52\nCause a shockwave that inflicts 38% weapon damage to enemies in a 26 yard line behind the targeted enemy.";
+//cleave
+"rune_rupture_name" = "Rupture";
+"rune_rupture_detail" = "Unlocked at level 9\nEnemies slain by Cleave explode, causing 85% weapon damage to all other enemies within 8 yards.";
+
+"rune_reapingswing_name" = "Reaping Swing";
+"rune_reapingswing_detail" = "Unlocked at level 18\nGenerate 3 additional Fury per enemy hit.";
+
+"rune_scatteringblast_name" = "Scattering Blast";
+"rune_scatteringblast_detail" = "Unlocked at level 30\nOn Critical Hits, knock enemies back 9 yards and inflict 60% weapon damage to enemies where they land.";
+
+"rune_broadsweep_name" = "Broad Sweep";
+"rune_broadsweep_detail" = "Unlocked at level 47\nIncrease damage to 156% weapon damage.";
+
+"rune_gatheringstorm_name" = "Gathering Storm";
+"rune_gatheringstorm_detail" = "Unlocked at level 55\nEnemies cleaved have their movement speed reduced by 80% for 1 second.";
+//frenzy
+"rune_sidearm_name" = "Sidearm";
+"rune_sidearm_detail" = "Unlocked at level 17\nEach strike has a 25% chance to throw a piercing axe at a nearby enemy that deals 110% weapon damage to all enemies in its path.";
+
+"rune_triumph_name" = "Triumph";
+"rune_triumph_detail" = "Unlocked at level 22\nKilling an enemy with Frenzy heals you for 8% of your maximum Life over 6 seconds.";
+
+"rune_vanguard_name" = "Vanguard";
+"rune_vanguard_detail" = "Unlocked at level 34\nWhile under the effects of Frenzy, you gain 15% increased movement speed.";
+
+"rune_smite_name" = "Smite";
+"rune_smite_detail" = "Unlocked at level 51\nAdd a 20% chance to call down a bolt of lightning from above, stunning your target for 1.5 seconds.";
+
+"rune_maniac_name" = "Maniac";
+"rune_maniac_detail" = "Unlocked at level 59\nEach Frenzy effect also increases your damage by 4%.";
+//secondary
+//hammeroftheancients
+"rune_rollingthunder_name" = "Rolling Thunder";
+"rune_rollingthunder_detail" = "Unlocked at level 7\nCreate a shockwave that deals 155% weapon damage to all enemies within 22 yards in front of you.";
+
+"rune_smash_name" = "Smash";
+"rune_smash_detail" = "Unlocked at level 15\nStrike a smaller area for 270% weapon damage.";
+
+"rune_thedevilsanvil_name" = "The Devil's Anvil";
+"rune_thedevilsanvil_detail" = "Unlocked at level 27\nCreate a tremor at the point of impact for 2 seconds that slows the movement speed of enemies by 60%.";
+
+"rune_thunderstrike_name" = "Thunderstrike";
+"rune_thunderstrike_detail" = "Unlocked at level 39\nWhenever you kill an enemy with Hammer of the Ancients every other enemy within 10 yards is stunned for 3 seconds.";
+
+"rune_birthright_name" = "Birthright";
+"rune_birthright_detail" = "Unlocked at level 53\nCritical Hits have a 10% chance to cause enemies to drop treasure or health globes.";
+//rend
+"rune_ravage_name" = "Ravage";
+"rune_ravage_detail" = "Unlocked at level 11\nIncrease the range of Rend to hit all enemies within 17 yards.";
+
+"rune_bloodlust_name" = "Blood Lust";
+"rune_bloodlust_detail" = "Unlocked at level 19\nGain 9% of the damage done by Rend as Life.";
+
+"rune_lacerate_name" = "Lacerate";
+"rune_lacerate_detail" = "Unlocked at level 33\nIncrease damage to 271% weapon damage as Physical over 3 seconds.";
+
+"rune_mutilate_name" = "Mutilate";
+"rune_mutilate_detail" = "Unlocked at level 45\nIncrease bleeding duration to 5 seconds.";
+
+"rune_bloodbath_name" = "Bloodbath";
+"rune_bloodbath_detail" = "Unlocked at level 56\nEnemies killed while bleeding cause all enemies within 10 yards to begin bleeding for 60% weapon damage as Physical over 3 seconds.";
+//seismicslam
+"rune_stagger_name" = "Stagger";
+"rune_stagger_detail" = "Unlocked at level 18\nAdd a 70% chance of stunning enemies for 1.5 seconds.";
+
+"rune_shatteredground_name" = "Shattered Ground";
+"rune_shatteredground_detail" = "Unlocked at level 25\nIncrease damage to 202% weapon damage and increases Knockback distance by 100%.";
+
+"rune_rumble_name" = "Rumble";
+"rune_rumble_detail" = "Unlocked at level 35\nThe ground continues to shudder after the intitial strike, damaging enemies in the area for 30% weapon damage.";
+
+"rune_strengthfromearth_name" = "Strength from Earth";
+"rune_strengthfromearth_detail" = "Unlocked at level 48\nReduce Fury cost to 15 Fury.";
+
+"rune_crackingrift_name" = "Cracking Rift";
+"rune_crackingrift_detail" = "Unlocked at level 57\nFocus the seismic shockwaves along a narrow path to inflict 255% weapon damage to targets along a 42 yard path.";
+//whirlwind
+"rune_dustdevils_name" ="Dust Devils";
+"rune_dustdevils_detail" = "Unlocked at level 24\nGenerate harsh tornadoes that inflict 40% weapon damage to enemies in their path.";
+
+"rune_hurricane_name" = "Hurricane";
+"rune_hurricane_detail" = "Unlocked at level 29\nAllows you to move at your movement speed while using Whirlwind.";
+
+"rune_bloodfunnel_name" = "Blood Funnel";
+"rune_bloodfunnel_detail" = "Unlocked at level 37\nCritical Hits restore 1.0% of your maximum Life.";
+
+"rune_windshear_name" = "Wind Shear";
+"rune_windshear_detail" = "Unlocked at level 44\nGain 1 Fury for every enemy struck.";
+
+"rune_volcaniceruption_name" = "Volcanic Eruption";
+"rune_volcaniceruption_detail" = "Unlocked at level 59\nTurns Whirlwind into a torrent of magma that inflicts 143% weapon damage as Fire.";
+//defensive
+//groundstomp
+"rune_deafeningcrash_name" = "Deafening Crash";
+"rune_deafeningcrash_detail" = "Unlocked at level 12\nEnemies in the area have their movement speed slowed by 60% for 3 seconds after they recover from being stunned.";
+
+"rune_wrenchingsmash_name" = "Wrenching Smash";
+"rune_wrenchingsmash_detail" = "Unlocked at level 18\nIncrease the area of effect to 24 yards. Enemies are pulled closer before the strike lands.";
+
+"rune_tremblingstomp_name" = "Trembling Stomp";
+"rune_tremblingstomp_detail" = "Unlocked at level 28\nEnemies in the area also take 76% weapon damage.";
+
+"rune_footofthemountain_name" = "Foot of the Mountain";
+"rune_footofthemountain_detail" = "Unlocked at level 40\nIncrease Fury gained to 30.";
+
+"rune_avalanche_name" = "Avalanche";
+"rune_avalanche_detail" = "Unlocked at level 54\nEnemies are knocked back 12 yards and inflict 55% weapon damage to enemies in the landing area.";
+//leap
+"rune_ironimpact_name" = "Iron Impact";
+"rune_ironimpact_detail" = "Unlocked at level 14\nGain 300% additional Armor for 4 seconds after landing.";
+
+"rune_launch_name" = "Launch";
+"rune_launch_detail" = "Unlocked at level 21\nJump into the air with such great force that enemies within 8 yards of the origin of the jump are also slowed by 60% for 3 seconds.";
+
+"rune_topplingimpact_name" = "Toppling Impact";
+"rune_topplingimpact_detail" = "Unlocked at level 32\nSend enemies hurtling away from where you land.";
+
+"rune_callofarreat_name" = "Call of Arreat";
+"rune_callofarreat_detail" = "Unlocked at level 44\nShockwaves burst forth from the ground increasing the radius of effect to 16 yards and pulling affected enemies towards you.";
+
+"rune_deathfromabove_name" = "Death from Above";
+"rune_deathfromabove_detail" = "Unlocked at level 60\nLand with such force that enemies have a 100% chance to be stunned for 3 seconds.";
+//sprint
+"rune_rush_name" = "Rush";
+"rune_rush_detail" = "Unlocked at level 23\nIncreases Dodge Chance by 12% while sprinting.";
+
+"rune_runlikethewind_name" = "Run Like the Wind";
+"rune_runlikethewind_detail" = "Unlocked at level 29\nTornadoes rage in your wake, each one inflicting 60% weapon damage.";
+
+"rune_marathon_name" = "Marathon";
+"rune_marathon_detail" = "Unlocked at level 38\nIncreases the movement speed bonus to 50% for 5 seconds.";
+
+"rune_gangway_name" = "Gangway";
+"rune_gangway_detail" = "Unlocked at level 46\nSlams through enemies, knocking them back and inflicting 25% weapon damage.";
+
+"rune_forcedmarch_name" = "Forced March";
+"rune_forcedmarch_detail" = "Unlocked at level 53\nIncrease the movement speed of allies within 50 yards by 20% for 3 seconds.";
+//ignorepain
+"rune_bravado_name" = "Bravado";
+"rune_bravado_detail" = "Unlocked at level 26\nWhen activated, Knockback all enemies within 12 yards and deal 50% weapon damage to them.";
+
+"rune_ironhide_name" = "Iron Hide";
+"rune_ironhide_detail" = "Unlocked at level 31\nIncreases duration to 7 seconds.";
+
+"rune_ignoranceisbliss_name" = "Ignorance is Bliss";
+"rune_ignoranceisbliss_detail" = "Unlocked at level 36\nWhile Ignore Pain is active, gain 20% of all damage dealt as Life.";
+
+"rune_mobrule_name" = "Mob Rule";
+"rune_mobrule_detail" = "Unlocked at level 43\nExtend the effect to nearby allies, reducing damage taken by 65% for 5 seconds.";
+
+"rune_contemptforweakness_name" = "Contempt for Weakness";
+"rune_contemptforweakness_detail" = "Unlocked at level 58\nReflects 50% of ignored damage back at the enemy.";
+//might
+//ancientspear
+"rune_grapplinghooks_name" = "Grappling Hooks";
+"rune_grapplinghooks_detail" = "Unlocked at level 15\nThrow 3 spears. Each spear will pull back the enemy that it hits.";
+
+"rune_skirmish_name" = "Skirmish";
+"rune_skirmish_detail" = "Unlocked at level 23\nIncreases Fury gained to 30.";
+
+"rune_dreadspear_name" = "Dread Spear";
+"rune_dreadspear_detail" = "Unlocked at level 32\nGain Life equal to 60% of the damage inflicted.";
+
+"rune_harpoon_name" = "Harpoon";
+"rune_harpoon_detail" = "Unlocked at level 39\nPierce through multiple enemies in a straight line and drag them all back.";
+
+"rune_rageflip_name" = "Rage Flip";
+"rune_rageflip_detail" = "Unlocked at level 49\nEnemies hit with Ancient Spear are pulled in the opposite direction and damage is increased to 213% weapon damage.";
+//revenge
+"rune_vengeanceismine_name" = "Vengeance Is Mine";
+"rune_vengeanceismine_detail" = "Unlocked at level 19\nGain 5 Fury and heal for 8.0% of your maximum Life for each enemy hit.";
+
+"rune_bestservedcold_name" = "Best Served Cold";
+"rune_bestservedcold_detail" = "Unlocked at level 25\nAfter using Revenge, your Critical Hit Chance is increased by 10% for 12 seconds.";
+
+"rune_retribution_name" = "Retribution";
+"rune_retribution_detail" = "Unlocked at level 36\nIncrease damage to 286% weapon damage.";
+
+"rune_grudge_name" = "Grudge";
+"rune_grudge_detail" = "Unlocked at level 41\nKnocks enemies back 24 yards whenever Revenge is used.";
+
+"rune_provocation_name" = "Provocation";
+"rune_provocation_detail" = "Unlocked at level 52\nIncreases the chance Revenge will become active to 30% each time you are hit by an attack.";
+//furiouscharge
+"rune_batteringram_name" = "Battering Ram";
+"rune_batteringram_detail" = "Unlocked at level 27\nIncrease damage at the destination to 283% weapon damage.";
+
+"rune_mercilessassault_name" = "Merciless Assault";
+"rune_mercilessassault_detail" = "Unlocked at level 33\nCooldown is reduced by 2 seconds for every target hit. This effect can reduce the cooldown by up to 10 seconds.";
+
+"rune_stamina_name" = "Stamina";
+"rune_stamina_detail" = "Unlocked at level 38\nGenerate 8 additional Fury for each target hit while charging.";
+
+"rune_bullrush_name" = "Bull Rush";
+"rune_bullrush_detail" = "Unlocked at level 47\nAny targets who are critically hit by Furious Charge will be stunned for 2.5 seconds.";
+
+"rune_dreadnought_name" = "Dreadnought";
+"rune_dreadnought_detail" = "Unlocked at level 56\nRegain 8% of your maximum Life for each target hit by Furious Charge.";
+//overpower
+"rune_stormofsteel_name" = "Storm of Steel";
+"rune_stormofsteel_detail" = "Unlocked at level 29\nThrow up to 3 axes at nearby enemies which inflict 50% weapon damage each.";
+
+"rune_killingspree_name" = "Killing Spree";
+"rune_killingspree_detail" = "Unlocked at level 34\nYour Critical Hit Chance is increased by 10% for 6 seconds.";
+
+"rune_crushingadvance_name" = "Crushing Advance";
+"rune_crushingadvance_detail" = "Unlocked at level 42\nReflect 30% of incoming melee damage for 4 seconds after Overpower is activated.";
+
+"rune_momentum_name" = "Momentum";
+"rune_momentum_detail" = "Unlocked at level 48\nGenerate 12 Fury for each enemy hit by Overpower.";
+
+"rune_revel_name" = "Revel";
+"rune_revel_detail" = "Unlocked at level 59\nHeal 8% of your maximum Life for every enemy hit.";
+//tactics
+//weaponthrow
+"rune_mightythrow_name" = "Mighty Throw";
+"rune_mightythrow_detail" = "Unlocked at level 21\nIncrease thrown weapon damage to 156% weapon damage.";
+
+"rune_ricochet_name" = "Ricochet";
+"rune_ricochet_detail" = "Unlocked at level 25\nCause the weapon to ricochet and hit up to 3 targets within 20 yards of each other.";
+
+"rune_throwinghammer_name" = "Throwing Hammer";
+"rune_throwinghammer_detail" = "Unlocked at level 33\nHurl a hammer with a 75% chance to Stun the target for 2 seconds.";
+
+"rune_stupefy_name" = "Stupefy";
+"rune_stupefy_detail" = "Unlocked at level 42\nAim for the head, gaining a 20% chance of causing your target to be Confused and attack other enemies for 6 seconds.";
+
+"rune_dreadbomb_name" = "Dread Bomb";
+"rune_dreadbomb_detail" = "Unlocked at level 54\nExpend all remaining Fury to throw a corpse which inflicts an additional 3% weapon damage for each point of Fury expended to all enemies within 12 yards of the target.";
+//threateningshout
+"rune_intimidate_name" = "Intimidate";
+"rune_intimidate_detail" = "Unlocked at level 23\nAffected enemies also have their movement speed reduced by 30%.";
+
+"rune_falter_name" = "Falter";
+"rune_falter_detail" = "Unlocked at level 28\nAffected enemies also have their attack speed reduced by 15% for 5 seconds.";
+
+"rune_grimharvest_name" = "Grim Harvest";
+"rune_grimharvest_detail" = "Unlocked at level 37\nEnemies are badly shaken and have a 15% chance to drop additional treasure.";
+
+"rune_demoralize_name" = "Demoralize";
+"rune_demoralize_detail" = "Unlocked at level 43\nAffected enemies are also taunted to attack you for 3 seconds.";
+
+"rune_terrify_name" = "Terrify";
+"rune_terrify_detail" = "Unlocked at level 57\nEnemies are severely demoralized. Each enemy has a 35% chance to flee for 2.5 seconds.";
+//battlerage
+"rune_maraudersrage_name" = "Marauder's Rage";
+"rune_maraudersrage_detail" = "Unlocked at level 26\nIncrease damage bonus to 30%.";
+
+"rune_ferocity_name" = "Ferocity";
+"rune_ferocity_detail" = "Unlocked at level 31\nWhile under the effects of Battle Rage, Critical Hits have a chance to increase the duration of Battle Rage by 2 seconds.";
+
+"rune_swordstoploughshares_name" = "Swords to Ploughshares";
+"rune_swordstoploughshares_detail" = "Unlocked at level 38\nWhile under the effects of Battle Rage, Critical Hits have up to a 5% chance to cause enemies to drop additional health globes.";
+
+"rune_intothefray_name" = "Into the Fray";
+"rune_intothefray_detail" = "Unlocked at level 46\nWhile under the effects of Battle Rage, Critical Hits have a chance to generate 15 additional Fury.";
+
+"rune_bloodshed_name" = "Bloodshed";
+"rune_bloodshed_detail" = "Unlocked at level 54\nWhile under the effects of Battle Rage, Critical Hits have a chance to cause an explosion of blood dealing 20% of the damage done to all other nearby enemies.";
+//warcry
+"rune_hardenedwrath_name" = "Hardened Wrath";
+"rune_hardenedwrath_detail" = "Unlocked at level 32\nIncreases the Armor bonus to 40%.";
+
+"rune_charge_name" = "Charge!";
+"rune_charge_detail" = "Unlocked at level 35\nIncreases Fury gained to 60.";
+
+"rune_invigorate_name" = "Invigorate";
+"rune_invigorate_detail" = "Unlocked at level 41\nIncreases maximum Life by 10% and regenerates 310 Life per second while affected by War Cry.";
+
+"rune_veteranswarning_name" = "Veteran's Warning";
+"rune_veteranswarning_detail" = "Unlocked at level 49\nWar Cry also grants a 15% bonus to Dodge Chance.";
+
+"rune_impunity_name" = "Impunity";
+"rune_impunity_detail" = "Unlocked at level 60\nAll of your resistances are increased by 50% while affected by War Cry.";
+//rage
+//earthquake
+"rune_giantsstride_name" = "Giant's Stride";
+"rune_giantsstride_detail" = "Unlocked at level 24\nSecondary tremors follow your movement and inflict 65% weapon damage as Fire.";
+
+"rune_chillingearth_name" = "Chilling Earth";
+"rune_chillingearth_detail" = "Unlocked at level 29\nCreates an icy patch, causing Earthquake's damage to turn Cold and Slow the movement of enemies by 80%.";
+
+"rune_themountainscall_name" = "The Mountain's Call";
+"rune_themountainscall_detail" = "Unlocked at level 39\nRemoves the Fury cost and reduces the cooldown to 105 seconds.";
+
+"rune_aftershocks_name" = "Aftershocks";
+"rune_aftershocks_detail" = "Unlocked at level 50\nSecondary tremors knock enemies back and inflict 65% weapon damage as Fire.";
+
+"rune_pathoffire_name" = "Path of Fire";
+"rune_pathoffire_detail" = "Unlocked at level 56\nProject secondary tremors up to 12 yards ahead of you that inflict 65% weapon damage as Fire.";
+//calloftheancients
+"rune_thecouncilrises_name" = "The Council Rises";
+"rune_thecouncilrises_detail" = "Unlocked at level 31\nThe Ancients inflict 66% weapon damage with each attack and have 100% additional Armor.";
+
+"rune_dutytotheclan_name" = "Duty to the Clan";
+"rune_dutytotheclan_detail" = "Unlocked at level 37\nIncrease duration to 20 seconds.";
+
+"rune_korlicsmight_name" = "Korlic's Might";
+"rune_korlicsmight_detail" = "Unlocked at level 45\nKorlic gains the skill Furious Charge which deals 200% of your weapon damage to all enemies in a line.";
+
+"rune_madawcsmadness_name" = "Madawc's Madness";
+"rune_madawcsmadness_detail" = "Unlocked at level 51\nMadawc gains the skill Seismic Slam which deals 180% of your weapon damage to enemies in an arc.";
+
+"rune_talicsanger_name" = "Talic's Anger";
+"rune_talicsanger_detail" = "Unlocked at level 58\nTalic gains the skill Leap which deals 250% of your weapon damage to enemies in the area of the leap.";
+//wrathoftheberserker
+"rune_arreatswail_name" = "Arreat's Wail";
+"rune_arreatswail_detail" = "Unlocked at level 36\nActivating Wrath of the Berserker knocks back all enemies within 12 yards and deals 430% weapon damage to them.";
+
+"rune_insanity_name" = "Insanity";
+"rune_insanity_detail" = "Unlocked at level 40\nWhile active your damage is also increased by 100%.";
+
+"rune_slaughter_name" = "Slaughter";
+"rune_slaughter_detail" = "Unlocked at level 46\nWhile Wrath of the Berserker is active, Critical Hits have a chance to cause an eruption of blood dealing 155% weapon damage to enemies within 15 yards.";
+
+"rune_stridinggiant_name" = "Striding Giant";
+"rune_stridinggiant_detail" = "Unlocked at level 52\nIncreases bonus to Dodge Chance to 60%.";
+
+"rune_thriveonchaos_name" = "Thrive on Chaos";
+"rune_thriveonchaos_detail" = "Unlocked at level 60\nEvery 25 Fury gained while Wrath of the Berserker is active adds 1 second to the duration of the effect.";
+
+/*
+ Barbarian Skill
+ */
+//initiative
+//primary
+//bash
+"bash_name" = "Bash";
+"bash_system" = "Primary";
+"bash_detail" = "Generate: 6 Fury per attack\n\nBrutally smash an enemy for 150% weapon damage with a 20% chance to Knockback.\n\nPrimary\n\nUnlocked at level 1";
+
+//cleave
+"cleave_name" = "Cleave";
+"cleave_system" = "Primary";
+"cleave_detail" = "Generate: 5 Fury per attack\n\nSwing your weapon in a wide arc to deal 120% weapon damage to all enemies caught in the swing.\n\nPrimary\n\nUnlocked at level 3";
+
+//frenzy
+"frenzy_name" = "Frenzy";
+"frenzy_system" = "Primary";
+"frenzy_detail" = "Generate: 3 Fury per attack\n\nSwing for 110% weapon damage. Frenzy attack speed increases by 15% with each swing. This effect can stack up to 5 times for a total bonus of 75% attack speed.\n\nPrimary\n\nUnlocked at level 11";
+
+//secondary
+//hammer of the ancients
+"hammeroftheancients_name" = "Hammer of the Ancients";
+"hammeroftheancients_system" = "Secondary";
+"hammeroftheancients_detail" = "Cost: 20 Fury\n\nCall forth a massive hammer to smash enemies directly in front of you for 200% weapon damage. Hammer of the Ancients has a 5% increased Critical Hit Chance.\n\nSecondary\n\nUnlocked at level 2";
+
+//rend
+"rend_name" = "Rend";
+"rend_system" = "Secondary";
+"rend_detail" = "Cost: 20 Fury\n\nA sweeping strike causes all nearby enemies to Bleed for 210% weapon damage as Physical over 3 seconds.\n\nSecondary\n\nUnlocked at level 5";
+
+//seismic slam
+"seismicslam_name" = "Seismic Slam";
+"seismicslam_system" = "Secondary";
+"seismicslam_detail" = "Cost: 30 Fury\n\nSlam the ground and cause a wave of destruction that deals 155% weapon damage and Knockback to targets in a 45 yard arc.\n\nSecondary\n\nUnlocked at level 12";
+
+//whirlwind
+"whirlwind_name" = "Whirlwind";
+"whirlwind_system" = "Secondary";
+"whirlwind_detail" = "Cost: 16 Fury\n\nDeliver multiple attacks to everything in your path for 110% weapon damage.\n\nSecondary\n\nUnlocked at level 20";
+
+//defensive
+//groundstomp
+"groundstomp_name" = "Ground Stomp";
+"groundstomp_system" = "Defensive";
+"groundstomp_detail" = "Generate: 15 Fury\nCooldown: 12 seconds\n\nSmash the ground, stunning all enemies within 12 yards for 4 seconds.\n\nDefensive\n\nUnlocked at level 4";
+
+//leap
+"leap_name" = "Leap";
+"leap_system" = "Defensive";
+"leap_detail" = "Generate: 15 Fury\nCooldown: 10 seconds\n\nLeap into the air, dealing 85% weapon damage to all enemies within 8 yards of your destination and slowing their movement speed by 60% for 3 seconds.\n\nDefensive\n\nUnlocked at level 8";
+
+//sprint
+"sprint_name" = "Sprint";
+"sprint_system" = "Defensive";
+"sprint_detail" = "Cost: 20 Fury\n\nIncrease movement speed by 40% for 3 seconds.\n\nDefensive\n\nUnlocked at level 16";
+
+//ignorepain
+"ignorepain_name" = "Ignore Pain";
+"ignorepain_system" = "Defensive";
+"ignorepain_detail" = "Cooldown: 30 seconds\n\nReduces all damage taken by 65% for 5 seconds.\n\nDefensive\n\nUnlocked at level 22";
+
+//might
+//ancientspear
+"ancientspear_name" = "Ancient Spear";
+"ancientspear_system" = "Might";
+"ancientspear_detail" = "Generate: 15 Fury\nCooldown: 10 seconds\n\nThrow a spear to pull an enemy back to you, briefly slowing the target's movement by 60% and dealing 185% weapon damage.\n\nMight\n\nUnlocked at level 9";
+
+//revenge
+"revenge_name" = "Revenge";
+"revenge_system" = "Might";
+"revenge_detail" = "Revenge has a 15% chance to become active each time you are hit.\n\nInflict 220% weapon damage to all nearby enemies. You heal 5.0% of your maximum Life for each enemy hit.\n\nMight\n\nUnlocked at level 13";
+
+//furiouscharge
+"furiouscharge_name" = "Furious Charge";
+"furiouscharge_system" = "Might";
+"furiouscharge_detail" = "Generate: 15 Fury\nCooldown: 10 seconds\n\nRush forward knocking back enemies and inflicting 195% weapon damage to enemies along the path of the charge.\n\nMight\n\nUnlocked at level 21";
+
+//overpower
+"overpower_name" = "Overpower";
+"overpower_system" = "Might";
+"overpower_detail" = "Cooldown: 15 seconds\n\nDeal 165% weapon damage to all targets within 9 yards. Landing a Critical Hit has a chance to lower the cooldown by 1 second.\n\nMight\n\nUnlocked at level 26";
+
+//tactics
+//weaponthrow
+"weaponthrow_name" = "Weapon Throw";
+"weaponthrow_system" = "Tactics";
+"weaponthrow_detail" = "Cost: 10 Fury\n\nHurl a throwing weapon at an enemy for 120% weapon damage and Slow the movement of the enemy by 60% for 2 seconds.\n\nTactics\n\nUnlocked at level 14";
+
+//threateningshout
+"threateningshout_name" = "Threatening Shout";
+"threateningshout_system" = "Tactics";
+"threateningshout_detail" = "Generate: 15 Fury\nCooldown: 15 seconds\n\nShout with great ferocity, reducing damage done by enemies within 25 yards by 20% for 15 seconds.\n\nTactics\n\nUnlocked at level 17";
+
+//battlerage
+"battlerage_name" = "Battle Rage";
+"battlerage_system" = "Tactics";
+"battlerage_detail" = "Cost: 20 Fury\n\nEnter a rage which increases damage by 15% and Critical Hit Chance by 3% for 30 seconds.\n\nTactics\n\nUnlocked at level 22";
+
+//warcry
+"warcry_name" = "War Cry";
+"warcry_system" = "Tactics";
+"warcry_detail" = "Generate: 30 Fury\nCooldown: 30 seconds\n\nUnleash a rallying cry to increase Armor for you and all allies within 50 yards by 20% for 60 seconds.\n\nTactics\n\nUnlocked at level 28";
+
+//Rage
+//earthquake
+"earthquake_name" = "Earth Quake";
+"earthquake_system" = "Rage";
+"earthquake_detail" = "Cost: 50 Fury\nCooldown: 120 seconds\n\nShake the ground violently, dealing 2000% weapon damage as Fire over 8 seconds to all enemies within 18 yards.\n\nRage\n\nUnlocked at level 19";
+
+//calloftheancients
+"calloftheancients_name" = "Call of the Ancients";
+"calloftheancients_system" = "Rage";
+"calloftheancients_detail" = "Cost: 50 Fury\nCooldown: 120 seconds\n\nSummon the ancient Barbarians Talic, Korlic, and Madawc to fight alongside you for 15 seconds. Each deals 60% weapon damage per swing in addition to bonus abilities.\n\n✧Talic wields a sword and shield and uses the Whirlwind skill.\n✧Korlic wields a massive polearm and uses the Cleave skill.\n✧Madawc dual-wields axes and uses the Weapon Throw skill.\n\nRage\n\nUnlocked at level 25";
+
+//wrathoftheberserker
+"wrathoftheberserker_name" = "Wrath of the Berserker";
+"wrathoftheberserker_system" = "Rage";
+"wrathoftheberserker_detail" = "Cost: 50 Fury \nCooldown: 120 seconds\n\nEnter a berserker rage which raises several attributes for 15 seconds.\n\nCritical Hit Chance: 10%\nAttack Speed: 25%\nDodge Chance: 20%\nMovement Speed: 20%\n\nRage\n\nUnlocked at level 30";
+
+//passive
+//poundofflesh
+"poundofflesh_name" = "Poune of Flesh";
+"poundofflesh_detail" = "Increases the chance of finding a health globe by 25% and you gain 100% additional Life from health globes.\n\nUnlocked at level 10";
+"poundofflesh_story" = "\"When the sky bleeds, the crops grow tall. When our enemies bleed, we grow strong.\" —Chant of the Harvest";
+
+//ruthless
+"ruthless_name" = "Ruthless";
+"ruthless_detail" = "Critical Hit Chance increased by 5%.\n Critical Hit Damage increased by 50%.\n\nMany skills and runes rely on Critical Hits to trigger their effects.\n\nUnlocked at level 10";
+"ruthless_story" = "The clans each paint their warriors in their own unique way. Some celebrate the mountain, others honor the fire, but the Targos clan worships the purifying virtue of pain.";
+
+//nervesofsteel
+"nervesofsteel_name" = "Nerves Of Steel";
+"nervesofsteel_detail" = "Your Armor is increased by 100% of your Vitality.\n\nUnlocked at level 13";
+"nervesofsteel_story" = "\"The trials begin with childhood; skinning ferocious beasts, climbing windswept cliffs and carrying weapons heavy enough to make a southern soldier weep. Is it any wonder that they never give ground?\" —Sir Aric of Duncraig";
+
+//weaponsmaster
+"weaponsmaster_name" = "Weapons Master";
+"weaponsmaster_detail" = "Gain a bonus based on the weapon type of your main hand weapon:\nSwords/Daggers: 15% increased damage\nMaces/Axes: 10% Critical Hit Chance\nPolearms/Spears: 10% attack speed\nMighty Weapons: 3 Fury per hit\n\nUnlocked at level 16";
+"weaponsmaster_story" = "\"My men ambushed the traveler in the woods, but it was we who were surprised. Such keen senses, swift motions, flawless strikes. We never stood a chance.\" —Redjack the Bandit";
+
+//berserkerrage
+"berserkerrage_name" = "Berserker Rage";
+"berserkerrage_detail" = "You inflict an additional 25% damage while at maximum Fury.\n\nUnlocked at level 20";
+"berserkerrage_story" = "\"You wouldn't like me when I'm angry.\" —Bannar the Berserker";
+
+//inspiringpresence
+"inspiringpresence_name" = "Inspiring Presence";
+"inspiringpresence_detail" = "The duration of your shouts is doubled. After using a shout you regenerate 1% of your maximum Life per second for 60 seconds.\n\nYour shouts are:\n✧Battle Rage\n✧Threatening Shout\n✧War Cry\n\nUnlocked at level 20";
+"inspiringpresence_story" = "\"The enemy poured through the gap until Warmaster Karja impaled three demons at once on our battle standard, tossing their corpses into the fray below as she roared a rallying call from high atop the battlements.\" —The Battle of the Starless Night";
+
+//bloodthirst
+"bloodthirst_name" = "Bloodthirst";
+"bloodthirst_detail" = "Gain 3% of all damage done as Life.\n\nUnlocked at level 24";
+"bloodthirst_story" = "\"Compassion is weakness. To press the advantage when an opponent calls for mercy is the way of true power.\" —Halaberd the Conqueror";
+
+//animosity
+"animosity_name" = "Animosity";
+"animosity_detail" = "Increases Fury generation by 10% and maximum Fury is increased by 20.\n\nFury is used to fuel your most powerful attacks.\n\nUnlocked at level 27";
+"animosity_story" = "\"While most orders teach the merits of calming the seas of the soul, the guardians of Arreat have embraced the raging inner storm.\" —Chronicler Arlavoc";
+
+//superstition
+"superstition_name" = "Superstition";
+"superstition_detail" = "Reduces all non-Physical damage by 20%. Whenever you take damage from a ranged or elemental attack, you have a chance to gain 3 Fury.\n\nUnlocked at level 30";
+"superstition_story" = "\"The sorcery of the west has brought us nothing but blight. Strength built these walls, and strength will hold them.\" —Gruchac Hammerhand";
+
+//toughasnails
+"toughasnails_name" = "Tough as Nails";
+"toughasnails_detail" = "Increases Armor by 25%.\nThorns damage dealt increased by 50%.\n\nUnlocked at level 30";
+"toughasnails_story" = "After a while the scars serve as their own layer of armor.";
+
+//noescape
+"noescape_name" = "No Escape";
+"noescape_detail" = "Increases the damage of Ancient Spear and Weapon Throw by 10%. In addition, a Critical Hit with Ancient Spear resets the cooldown while Critical Hits with Weapon Throw have a chance to return 14 Fury.\n\nUnlocked at level 35";
+"noescape_story" = "\"Run if you must, but you'll only die tired.\" —Ooron Goons";
+
+//relentless
+"relentless_name" = "Relentless";
+"relentless_detail" = "While below 20% Life, all skills cost no Fury and all damage taken is reduced by 50%.\n\nUnlocked at level 40";
+"relentless_story" = "No matter the odds some warriors simply refuse to fall.";
+
+//brawler
+"brawler_name" = "Brawler";
+"brawler_detail" = "As long as there are 3 enemies within 8 yards, all of your damage is increased by 30%.\n\nUnlocked at level 45";
+"brawler_story" = "\"I have two blades, one for each of you.\" —Blademaster Kharne";
+
+//juggernaut
+"juggernaut_name" = "Juggernaut";
+"juggernaut_detail" = "The duration of control impairing effects on you are reduced by 20%. In addition, whenever a Stun, Fear, Immobilize or Charm is cast on you, you have a chance to recover 15% of your maximum Life.\n\nUnlocked at level 50";
+"juggernaut_story" = "\"I swear to you, we put a dozen arrows into him and he just stood back up. These so-called barbarians, these madmen of the north—there is no stopping them.\" —Soldier of Bastion's Keep";
+
+//unforgiving
+"unforgiving_name" = "Unforgiving";
+"unforgiving_detail" = "You no longer degenerate Fury. Instead, you gain 1 Fury every 2 seconds.\n\nUnlocked at level 55";
+"unforgiving_story" = "\"It was as if he suddenly came to know every grievous injury endured by his ancestors, and he had selected that very moment to exact their collective revenge.\" —Chronicler Arlavoc";
+
+//boonofbulkathos
+"boonofbulkathos_name" = "Boon of Bul-Kathos";
+"boonofbulkathos_detail" = "The cooldown on your Earthquake, Call of the Ancients, and Wrath of the Berserker skills is reduced by 30 seconds.\n\nUnlocked at level 60";
+"boonofbulkathos_story" = "The aid of the Immortal King shall come to those who have earned it.";
+
+/************************************************************************/

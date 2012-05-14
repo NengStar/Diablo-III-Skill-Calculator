@@ -47,7 +47,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+    return [mainDelegate.savedData count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -55,9 +56,39 @@
     return 1;
 }
 
+- (NSString *)loadSelectData:(NSInteger)index
+{
+    AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+    return (NSString *)[mainDelegate.savedData objectAtIndex:index];
+}
+
+- (void)didFinishSaving
+{
+    NSLog(@"reload data");
+    [hallTable reloadData];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+        //load data
+        //if data == nil
+        //push to hero rise viewcontroller
+        //else push to heroskillboard viewcontroller
+        
+        //data = @"key|class|sex|name|battletag|server|skilldata"
+        //key:time 
+        //class:0,1,2,3,4,5
+        //sex:0(female),1(male)
+        //name:string
+        //battletag:string
+        //server:0(na),1(eu),2(as)
+        //skilldata:initiative!passive!rune(ex:abcdef!abc!abcdef)
+    
+    HeroSkillBoardViewController *heroSkillBoard = [[HeroSkillBoardViewController alloc] initWithNibName:@"HeroSkillBoardViewController" bundle:nil];
+    [heroSkillBoard setDelegate:self];
+    [heroSkillBoard loadHeroData:[self loadSelectData:[indexPath row]] withIndex:[indexPath row]];
+    [self.navigationController pushViewController:heroSkillBoard animated:YES];
+    [heroSkillBoard release];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,6 +101,25 @@
     
 }
 
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];//获取当前应用程序的文件目录
+        NSString *Path = [NSString stringWithFormat:@"%@/SaveData.plist",documentsDirectory];
+        for (int i = 0; i < [mainDelegate.savedData count]; i ++) {
+            if ([indexPath row] == i) {
+                [mainDelegate.savedData removeObjectAtIndex:i];
+                [mainDelegate.savedData writeToFile:Path atomically:NO];
+            }
+        }
+        [hallTable deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }     
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [UIImage imageNamed:@"bt_hero"].size.height;
@@ -77,15 +127,27 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *CellIdentifier = @"HeroesHall";
+    AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
+    NSString *data = (NSString *)[mainDelegate.savedData objectAtIndex:[indexPath row]];
+    NSArray *dataArray = [data componentsSeparatedByString:@"|"];
+    NSString *CellIdentifier = (NSString *)[dataArray objectAtIndex:0];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         cell.accessoryType = UITableViewCellAccessoryNone;
 	}
-        cell.backgroundColor = [UIColor clearColor];
-        cell.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero"]] autorelease];
-        cell.selectedBackgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero_s"]] autorelease];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero"]] autorelease];
+    cell.selectedBackgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bt_hero_s"]] autorelease];
+    NSArray *imageNameArray = [[NSArray alloc] initWithObjects:@"avatar_bar_f",@"avatar_dh_f",@"avatar_monk_f",@"avatar_wd_f",@"avatar_wz_f",@"avatar_bar_m",@"avatar_dh_m",@"avatar_monk_m",@"avatar_wd_m",@"avatar_wz_m",nil];
+    NSInteger class = [[dataArray objectAtIndex:1] intValue];
+    NSInteger sex = [[dataArray objectAtIndex:2] intValue];
+//    UIImage
+    UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[imageNameArray objectAtIndex:(5*sex+class)]]];
+    [image setFrame:CGRectMake(0, 3, 44, 44)];
+    [cell addSubview:image];
+    [image release];
+    [imageNameArray release];
     return cell;
 }
 
