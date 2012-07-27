@@ -13,6 +13,7 @@
 @synthesize delegate;
 @synthesize heroClass;
 @synthesize heroSex;
+@synthesize needReset;
 
 @synthesize barbarianSkillBoard = _barbarianSkillBoard;
 @synthesize demonhunterSkillBoard = _demonhunterSkillBoard;
@@ -45,7 +46,7 @@
         dataArray = nil;
         dataIndex = -1;
         imageNameArray = [[NSArray alloc] initWithObjects:@"avatar_bar_f",@"avatar_dh_f",@"avatar_monk_f",@"avatar_wd_f",@"avatar_wz_f",@"avatar_bar_m",@"avatar_dh_m",@"avatar_monk_m",@"avatar_wd_m",@"avatar_wz_m",nil];
-        classNameArray = [[NSArray alloc] initWithObjects:@"Barbarian", @"Demon Hunter",@"Monk",@"Witch Doctor",@"Winzard",nil];
+        classNameArray = [[NSArray alloc] initWithObjects:@"Barbarian", @"Demon Hunter",@"Monk",@"Witch Doctor",@"Wizard",nil];
         skillSystemNameArray = [[NSArray alloc] initWithObjects:@"Might",@"Tactics",@"Rage",@"Hunting",@"Devices",@"Archery",@"Techniques",@"Focus",@"Mantras",@"Terror",@"Decay",@"Voodoo",@"Force",@"Conjuration",@"Mastery",@"Primary",@"Secondary",@"Defensive",nil];
         [self resetBoard];
     }
@@ -422,15 +423,15 @@
 {
     NSMutableString *skill = [[NSMutableString alloc] init];
     for (int i=0; i<[initiative count]; i++) {
-        [skill appendFormat:(NSString *)[initiative objectAtIndex:i]];
+        [skill appendFormat:(NSString *)[initiative objectAtIndex:i],nil];
     }
     [skill appendFormat:@"!"];
     for (int i=0; i<[passive count]; i++) {
-        [skill appendFormat:(NSString *)[passive objectAtIndex:i]];
+        [skill appendFormat:(NSString *)[passive objectAtIndex:i],nil];
     }
     [skill appendFormat:@"!"];
     for (int i=0; i<[runes count]; i++) {
-        [skill appendFormat:(NSString *)[runes objectAtIndex:i]];
+        [skill appendFormat:(NSString *)[runes objectAtIndex:i],nil];
     }
     NSDateFormatter *nsdf2=[[[NSDateFormatter alloc] init]autorelease];
     [nsdf2 setDateStyle:NSDateFormatterShortStyle];
@@ -476,6 +477,7 @@
     //server:0(na),1(eu),2(as) integer
     //skilldata:initiative!passive!rune(ex:abcdef!abc!abcdef)
     //    NSLog(@"in init data");
+    NSLog(@"data = %@",data);
     if (data) {
         dataIndex = index;
         dataArray = [data componentsSeparatedByString:@"|"];
@@ -486,9 +488,8 @@
         battleTag = [dataArray objectAtIndex:4];
         server = [[dataArray objectAtIndex:5] intValue];
         skillData = [dataArray objectAtIndex:6];
-        
+        NSLog(@"skill = %@",skillData);
         NSArray *skillArray = [skillData componentsSeparatedByString:@"!"];
-        
         if (skillArray) {
             AppDelegate *mainDelegate = [[UIApplication sharedApplication] delegate];
             NSDictionary *class = [mainDelegate.heroSkillDataSource objectForKey:[classNameArray objectAtIndex:heroClass]];
@@ -498,6 +499,7 @@
             
             //initiative
             NSString *skillString = [skillArray objectAtIndex:0];
+            NSLog(@"iskill = %@",skillString);
             if (skillString) {
                 skillType = [class objectForKey:@"Initiative"];
                 for (int i=0; i<[skillString length]; i++) {
@@ -507,6 +509,7 @@
                         [initiative insertObject:skillKey atIndex:i];
                         skill = [skillType objectForKey:skillKey];
                         tag = [skill objectForKey:@"tag"];
+                        NSLog(@"%@",tag);
                         [pages removeObjectAtIndex:i];
                         [pages insertObject:[NSNumber numberWithInt:([tag intValue]/10-1)] atIndex:i];
                         [tags removeObjectAtIndex:i];
@@ -517,6 +520,7 @@
             
             //passive
             NSString *pskillString = [skillArray objectAtIndex:1];
+            NSLog(@"pskill = %@",pskillString);
             if (pskillString) {
                 skillType = [class objectForKey:@"Passive"];
                 for (int i=0; i<[pskillString length]; i++) {
@@ -534,6 +538,7 @@
             
             //rune
             NSString *runeString = [skillArray objectAtIndex:2];
+            NSLog(@"rune = %@",runeString);
             if (runeString) {
                 for (int i=0; i<[runeString length]; i++) {
                     NSString *runeKey = [runeString substringWithRange:NSMakeRange(i, 1)];
@@ -542,6 +547,7 @@
                 }
             }
         }
+        needReset = NO;
     }
 }
 
@@ -681,6 +687,7 @@
             [self.demonhunterSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.demonhunterSkillBoard.view];
             currentSkillBoard = self.demonhunterSkillBoard;
+            [currentSkillBoard setSelectedButtonGroup:pages withTagGroup:tags];
             break;
         case 2:
             self.monkSkillBoard = [[[MonkSkillDetailViewController alloc] initWithNibName:@"MonkSkillDetailViewController" bundle:nil] autorelease];
@@ -691,6 +698,7 @@
             [self.monkSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.monkSkillBoard.view];
             currentSkillBoard = self.monkSkillBoard;
+            [currentSkillBoard setSelectedButtonGroup:pages withTagGroup:tags];
             break;
         case 3:
             self.witchdoctorSkillBoard = [[[WitchDoctorSkillDetailViewController alloc] initWithNibName:@"WitchDoctorSkillDetailViewController" bundle:nil] autorelease];
@@ -701,6 +709,7 @@
             [self.witchdoctorSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.witchdoctorSkillBoard.view];
             currentSkillBoard = self.witchdoctorSkillBoard;
+            [currentSkillBoard setSelectedButtonGroup:pages withTagGroup:tags];
             break;
         case 4:
             self.wizardSkillBoard = [[[WizardSkillDetailViewController alloc] initWithNibName:@"WizardSkillDetailViewController" bundle:nil] autorelease];
@@ -711,6 +720,7 @@
             [self.wizardSkillBoard setVisible:NO];
             [[[UIApplication sharedApplication] keyWindow] addSubview:self.wizardSkillBoard.view];
             currentSkillBoard = self.wizardSkillBoard;
+            [currentSkillBoard setSelectedButtonGroup:pages withTagGroup:tags];
             break;
         default:
             NSLog(@"you got a heroClass num error");
@@ -735,6 +745,9 @@
     //    NSLog(@"enter did");
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if (needReset) {
+        [self resetBoard];
+    }
     [heroAvatar setImage:[UIImage imageNamed:[imageNameArray objectAtIndex:(heroClass+5*heroSex)]]];
     [className setText:[classNameArray objectAtIndex:heroClass]];
     [self setBoardView];

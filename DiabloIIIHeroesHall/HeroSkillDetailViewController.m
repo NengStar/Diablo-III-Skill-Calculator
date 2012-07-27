@@ -94,6 +94,7 @@
         self.singleSkillDetailViewController.skillType = skillType;
         self.singleSkillDetailViewController.skillKey = skillKey;
         self.singleSkillDetailViewController.hasStory = hasStory;
+        NSLog(@"%@    %@    %@",heroClass,skillType,skillKey);
         self.view.center.x<160?
         [self.singleSkillDetailViewController.view setFrame:CGRectMake(149, 100, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)]:
         [self.singleSkillDetailViewController.view setFrame:CGRectMake(11, 100, self.singleSkillDetailViewController.view.frame.size.width, self.singleSkillDetailViewController.view.frame.size.height)];
@@ -102,6 +103,9 @@
     }
 }
 
+
+#pragma mark -
+#pragma mark Other methods
 - (void)removeDetailViewFromKeyWindow
 {
     if (self.singleSkillDetailViewController.isSingleSkillDetailShown) {
@@ -114,9 +118,6 @@
 //{
 //
 //}
-
-#pragma mark -
-#pragma mark Other methods
 
 // restore view location
 - (void)restoreViewLocation {

@@ -76,10 +76,16 @@
     [skillImage setImage:[UIImage imageNamed:[skill objectForKey:@"image"]]];
     [self.view addSubview:skillImage];
     //detail
-    DetailTextView *skillDetailLabel = [[[DetailTextView alloc] initWithFrame:CGRectMake(DETAIL_CONTENT_MARGIN*2 + SKILL_IMAGE_SIZE, SKILL_NAME_RECT_HEIGHT + DETAIL_CONTENT_MARGIN, constraintWithDetail.width, skillDetailSize.height)] autorelease];
-    [skillDetailLabel setText:skillDetail WithFont:[UIFont systemFontOfSize:SKILL_DETAIL_FONT_SIZE] AndColor:[UIColor colorWithRed:190.0/255.0 green:170.0/255.0 blue:100.0/255.0 alpha:1.0]];
-    [skillDetailLabel setKeyWordTextArray:[NSArray arrayWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"%", nil] WithFont:[UIFont systemFontOfSize:SKILL_DETAIL_FONT_SIZE] AndColor:[UIColor greenColor]];
+    cnvUILabel *skillDetailLabel = [[cnvUILabel alloc] initWithFrame:CGRectMake(DETAIL_CONTENT_MARGIN*2 + SKILL_IMAGE_SIZE, SKILL_NAME_RECT_HEIGHT + DETAIL_CONTENT_MARGIN, constraintWithDetail.width, skillDetailSize.height)];
+    [skillDetailLabel setLineBreakMode:UILineBreakModeWordWrap];
+    [skillDetailLabel setNumberOfLines:0];
+    [skillDetailLabel setTextAlignment:UITextAlignmentLeft];
+    [skillDetailLabel cnv_setUILabelText:skillDetail andKeyWord:@"0123456789%"];
+    [skillDetailLabel setBackgroundColor:[UIColor clearColor]];
+    [skillDetailLabel setFont:[UIFont systemFontOfSize:SKILL_DETAIL_FONT_SIZE]];
+    [skillDetailLabel cnv_setUIlabelTextColor:[UIColor colorWithRed:190.0/255.0 green:170.0/255.0 blue:100.0/255.0 alpha:1.0] andKeyWordColor:[UIColor greenColor]];
     [self.view addSubview:skillDetailLabel];
+    [skillDetailLabel release];
     //story
     if (hasStory) {
         UILabel *storyLabel = [[[UILabel alloc] initWithFrame:CGRectMake(DETAIL_CONTENT_MARGIN, SKILL_NAME_RECT_HEIGHT + DETAIL_CONTENT_MARGIN*2 + skillDetailSize.height, constraintWithBoard.width, storySize.height)] autorelease];
@@ -94,6 +100,10 @@
         [storyLabel setTextColor:[UIColor colorWithRed:160.0/255.0 green:126.0/255.0 blue:86.0/255.0 alpha:1.0]];
         [storyLabel setText:story];
         [self.view addSubview:storyLabel];
+        UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"line_singleskilldetailline"]];
+        line.frame = CGRectMake(0, SKILL_NAME_RECT_HEIGHT + DETAIL_CONTENT_MARGIN + skillDetailSize.height, DETAIL_BOARD_WIDTH, 1);
+        [self.view addSubview:line];
+        [line release];
     }
 }
 

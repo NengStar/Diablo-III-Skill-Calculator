@@ -82,6 +82,7 @@
     NSMutableArray *pages;
     NSMutableArray *tags;
 @public
+    BOOL needReset;
     NSInteger dataIndex;
     NSString *dataKey;
     NSInteger heroClass;
@@ -97,6 +98,7 @@
 
 @property NSInteger heroClass;
 @property NSInteger heroSex;
+@property BOOL needReset;
 
 @property (nonatomic, retain) BarbarianSkillDetailViewController *barbarianSkillBoard;
 @property (nonatomic, retain) DemonHunterSkillDetailViewController *demonhunterSkillBoard;

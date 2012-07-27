@@ -30,12 +30,15 @@
 - (void)dealloc
 {
     [hallTable release];
+    [rectImage release];
     [super dealloc];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self moveIntoScreen:rectImage from:CGRectMake(0.0f, 0.0f - rectImage.frame.size.height, rectImage.frame.size.width, rectImage.frame.size.height) to:CGRectMake(0.0f, 0.0f,rectImage.frame.size.width,rectImage.frame.size.height)];
+    [self moveIntoScreen:hallTable from:CGRectMake(21.0f, 73.0f - rectImage.frame.size.height, hallTable.frame.size.width, hallTable.frame.size.height) to:CGRectMake(21.0f, 73.0f,hallTable.frame.size.width,hallTable.frame.size.height)];
 }
 
 - (void)viewDidUnload
@@ -158,6 +161,23 @@
 
 - (IBAction)createHero:(id)sender {
     [self createHero];
+}
+
+// move view to right side
+- (void)moveIntoScreen:(UIView *)view from:(CGRect)begin to:(CGRect)end{
+    view.frame = begin;
+    [self animateHomeViewToSide:view rect:end];
+}
+
+// animate home view to side rect
+- (void)animateHomeViewToSide:(UIView *)view rect:(CGRect)newViewRect {
+    [UIView animateWithDuration:0.7 
+                     animations:^{
+                         view.frame = newViewRect;
+                     } 
+                     completion:^(BOOL finished){
+                         //finished,do sth
+                     }];
 }
 
 @end

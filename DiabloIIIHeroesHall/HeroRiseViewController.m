@@ -49,6 +49,7 @@
     HeroSkillBoardViewController *heroSkillBoard = [[HeroSkillBoardViewController alloc] initWithNibName:@"HeroSkillBoardViewController" bundle:nil];
     heroSkillBoard.heroClass = currentClass;
     heroSkillBoard.heroSex = currentSex;
+    heroSkillBoard.needReset = YES;
     [heroSkillBoard setDelegate:[[self.navigationController viewControllers] objectAtIndex:0]];
     [self.navigationController pushViewController:heroSkillBoard animated:YES];
     [heroSkillBoard release];

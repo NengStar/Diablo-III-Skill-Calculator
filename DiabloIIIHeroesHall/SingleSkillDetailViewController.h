@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DetailTextView.h"
+#import "cnvUILabel.h"
 
 @interface SingleSkillDetailViewController : UIViewController
 {

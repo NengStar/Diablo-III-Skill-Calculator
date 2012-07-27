@@ -15,6 +15,7 @@
 @interface HeroesHallViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,HeroSkillBoardViewDelegate>
 {
     IBOutlet UITableView *hallTable;
+    IBOutlet UIImageView *rectImage;
 }
 - (IBAction)createHero:(id)sender;
 

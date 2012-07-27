@@ -6,550 +6,2810 @@
  Copyright (c) 2012年 Neng! Star. All rights reserved.
  */
 
-/********************************BARBARIAN*********************************/
 /*
- Rune
+ Skill System
  */
+"primary" = "主要技能";
+"secondary" = "次要技能";
+"defensive" = "防禦";
+"might" = "力量";
+"tactics" = "戰術";
+"rage" = "狂怒";
+"hunting" = "狩獵";
+"devices" = "器械";
+"archery" = "箭術";
+"techniques" = "武技";
+"focus" = "奧義";
+"mantras" = "真言";
+"terror" = "恐懼";
+"decay" = "腐敗";
+"voodoo" = "巫毒";
+"force" = "塑能";
+"conjuration" = "咒護";
+"mastery" = "奧秘";
 //rune none
-"rune_none_name" = "None";
-"rune_none_detail" = "Use skill without a rune.";
-//Barbarian rune
-//primary
-//bash
-"rune_clobber_name" = "Clobber";
-"rune_clobber_detail" = "Unlocked at level 6\nInstead of Knockback, each hit has a 35% chance to Stun the target for 1.5 seconds.";
+"rune_none_name" = "空符文";
+"rune_none_detail" = "此技能不使用符文。";
 
-"rune_onslaught_name" = "Onslaught";
-"rune_onslaught_detail" = "Unlocked at level 13\nAdd 2 reverberations that cause 22% weapon damage per strike. Removes the chance for Knockback.";
-
-"rune_punish_name" = "Punish";
-"rune_punish_detail" = "Unlocked at level 26\nIncreases the damage of your skills by 6% for 5 seconds after using Bash. This effect stacks up to 3 times.";
-
-"rune_instigation_name" = "Instigation";
-"rune_instigation_detail" = "Unlocked at level 44\nGenerate 6 additional Fury per attack.";
-
-"rune_pulverize_name" = "Pulverize";
-"rune_pulverize_detail" = "Unlocked at level 52\nCause a shockwave that inflicts 38% weapon damage to enemies in a 26 yard line behind the targeted enemy.";
-//cleave
-"rune_rupture_name" = "Rupture";
-"rune_rupture_detail" = "Unlocked at level 9\nEnemies slain by Cleave explode, causing 85% weapon damage to all other enemies within 8 yards.";
-
-"rune_reapingswing_name" = "Reaping Swing";
-"rune_reapingswing_detail" = "Unlocked at level 18\nGenerate 3 additional Fury per enemy hit.";
-
-"rune_scatteringblast_name" = "Scattering Blast";
-"rune_scatteringblast_detail" = "Unlocked at level 30\nOn Critical Hits, knock enemies back 9 yards and inflict 60% weapon damage to enemies where they land.";
-
-"rune_broadsweep_name" = "Broad Sweep";
-"rune_broadsweep_detail" = "Unlocked at level 47\nIncrease damage to 156% weapon damage.";
-
-"rune_gatheringstorm_name" = "Gathering Storm";
-"rune_gatheringstorm_detail" = "Unlocked at level 55\nEnemies cleaved have their movement speed reduced by 80% for 1 second.";
-//frenzy
-"rune_sidearm_name" = "Sidearm";
-"rune_sidearm_detail" = "Unlocked at level 17\nEach strike has a 25% chance to throw a piercing axe at a nearby enemy that deals 110% weapon damage to all enemies in its path.";
-
-"rune_triumph_name" = "Triumph";
-"rune_triumph_detail" = "Unlocked at level 22\nKilling an enemy with Frenzy heals you for 8% of your maximum Life over 6 seconds.";
-
-"rune_vanguard_name" = "Vanguard";
-"rune_vanguard_detail" = "Unlocked at level 34\nWhile under the effects of Frenzy, you gain 15% increased movement speed.";
-
-"rune_smite_name" = "Smite";
-"rune_smite_detail" = "Unlocked at level 51\nAdd a 20% chance to call down a bolt of lightning from above, stunning your target for 1.5 seconds.";
-
-"rune_maniac_name" = "Maniac";
-"rune_maniac_detail" = "Unlocked at level 59\nEach Frenzy effect also increases your damage by 4%.";
-//secondary
-//hammeroftheancients
-"rune_rollingthunder_name" = "Rolling Thunder";
-"rune_rollingthunder_detail" = "Unlocked at level 7\nCreate a shockwave that deals 155% weapon damage to all enemies within 22 yards in front of you.";
-
-"rune_smash_name" = "Smash";
-"rune_smash_detail" = "Unlocked at level 15\nStrike a smaller area for 270% weapon damage.";
-
-"rune_thedevilsanvil_name" = "The Devil's Anvil";
-"rune_thedevilsanvil_detail" = "Unlocked at level 27\nCreate a tremor at the point of impact for 2 seconds that slows the movement speed of enemies by 60%.";
-
-"rune_thunderstrike_name" = "Thunderstrike";
-"rune_thunderstrike_detail" = "Unlocked at level 39\nWhenever you kill an enemy with Hammer of the Ancients every other enemy within 10 yards is stunned for 3 seconds.";
-
-"rune_birthright_name" = "Birthright";
-"rune_birthright_detail" = "Unlocked at level 53\nCritical Hits have a 10% chance to cause enemies to drop treasure or health globes.";
-//rend
-"rune_ravage_name" = "Ravage";
-"rune_ravage_detail" = "Unlocked at level 11\nIncrease the range of Rend to hit all enemies within 17 yards.";
-
-"rune_bloodlust_name" = "Blood Lust";
-"rune_bloodlust_detail" = "Unlocked at level 19\nGain 9% of the damage done by Rend as Life.";
-
-"rune_lacerate_name" = "Lacerate";
-"rune_lacerate_detail" = "Unlocked at level 33\nIncrease damage to 271% weapon damage as Physical over 3 seconds.";
-
-"rune_mutilate_name" = "Mutilate";
-"rune_mutilate_detail" = "Unlocked at level 45\nIncrease bleeding duration to 5 seconds.";
-
-"rune_bloodbath_name" = "Bloodbath";
-"rune_bloodbath_detail" = "Unlocked at level 56\nEnemies killed while bleeding cause all enemies within 10 yards to begin bleeding for 60% weapon damage as Physical over 3 seconds.";
-//seismicslam
-"rune_stagger_name" = "Stagger";
-"rune_stagger_detail" = "Unlocked at level 18\nAdd a 70% chance of stunning enemies for 1.5 seconds.";
-
-"rune_shatteredground_name" = "Shattered Ground";
-"rune_shatteredground_detail" = "Unlocked at level 25\nIncrease damage to 202% weapon damage and increases Knockback distance by 100%.";
-
-"rune_rumble_name" = "Rumble";
-"rune_rumble_detail" = "Unlocked at level 35\nThe ground continues to shudder after the intitial strike, damaging enemies in the area for 30% weapon damage.";
-
-"rune_strengthfromearth_name" = "Strength from Earth";
-"rune_strengthfromearth_detail" = "Unlocked at level 48\nReduce Fury cost to 15 Fury.";
-
-"rune_crackingrift_name" = "Cracking Rift";
-"rune_crackingrift_detail" = "Unlocked at level 57\nFocus the seismic shockwaves along a narrow path to inflict 255% weapon damage to targets along a 42 yard path.";
-//whirlwind
-"rune_dustdevils_name" ="Dust Devils";
-"rune_dustdevils_detail" = "Unlocked at level 24\nGenerate harsh tornadoes that inflict 40% weapon damage to enemies in their path.";
-
-"rune_hurricane_name" = "Hurricane";
-"rune_hurricane_detail" = "Unlocked at level 29\nAllows you to move at your movement speed while using Whirlwind.";
-
-"rune_bloodfunnel_name" = "Blood Funnel";
-"rune_bloodfunnel_detail" = "Unlocked at level 37\nCritical Hits restore 1.0% of your maximum Life.";
-
-"rune_windshear_name" = "Wind Shear";
-"rune_windshear_detail" = "Unlocked at level 44\nGain 1 Fury for every enemy struck.";
-
-"rune_volcaniceruption_name" = "Volcanic Eruption";
-"rune_volcaniceruption_detail" = "Unlocked at level 59\nTurns Whirlwind into a torrent of magma that inflicts 143% weapon damage as Fire.";
-//defensive
-//groundstomp
-"rune_deafeningcrash_name" = "Deafening Crash";
-"rune_deafeningcrash_detail" = "Unlocked at level 12\nEnemies in the area have their movement speed slowed by 60% for 3 seconds after they recover from being stunned.";
-
-"rune_wrenchingsmash_name" = "Wrenching Smash";
-"rune_wrenchingsmash_detail" = "Unlocked at level 18\nIncrease the area of effect to 24 yards. Enemies are pulled closer before the strike lands.";
-
-"rune_tremblingstomp_name" = "Trembling Stomp";
-"rune_tremblingstomp_detail" = "Unlocked at level 28\nEnemies in the area also take 76% weapon damage.";
-
-"rune_footofthemountain_name" = "Foot of the Mountain";
-"rune_footofthemountain_detail" = "Unlocked at level 40\nIncrease Fury gained to 30.";
-
-"rune_avalanche_name" = "Avalanche";
-"rune_avalanche_detail" = "Unlocked at level 54\nEnemies are knocked back 12 yards and inflict 55% weapon damage to enemies in the landing area.";
-//leap
-"rune_ironimpact_name" = "Iron Impact";
-"rune_ironimpact_detail" = "Unlocked at level 14\nGain 300% additional Armor for 4 seconds after landing.";
-
-"rune_launch_name" = "Launch";
-"rune_launch_detail" = "Unlocked at level 21\nJump into the air with such great force that enemies within 8 yards of the origin of the jump are also slowed by 60% for 3 seconds.";
-
-"rune_topplingimpact_name" = "Toppling Impact";
-"rune_topplingimpact_detail" = "Unlocked at level 32\nSend enemies hurtling away from where you land.";
-
-"rune_callofarreat_name" = "Call of Arreat";
-"rune_callofarreat_detail" = "Unlocked at level 44\nShockwaves burst forth from the ground increasing the radius of effect to 16 yards and pulling affected enemies towards you.";
-
-"rune_deathfromabove_name" = "Death from Above";
-"rune_deathfromabove_detail" = "Unlocked at level 60\nLand with such force that enemies have a 100% chance to be stunned for 3 seconds.";
-//sprint
-"rune_rush_name" = "Rush";
-"rune_rush_detail" = "Unlocked at level 23\nIncreases Dodge Chance by 12% while sprinting.";
-
-"rune_runlikethewind_name" = "Run Like the Wind";
-"rune_runlikethewind_detail" = "Unlocked at level 29\nTornadoes rage in your wake, each one inflicting 60% weapon damage.";
-
-"rune_marathon_name" = "Marathon";
-"rune_marathon_detail" = "Unlocked at level 38\nIncreases the movement speed bonus to 50% for 5 seconds.";
-
-"rune_gangway_name" = "Gangway";
-"rune_gangway_detail" = "Unlocked at level 46\nSlams through enemies, knocking them back and inflicting 25% weapon damage.";
-
-"rune_forcedmarch_name" = "Forced March";
-"rune_forcedmarch_detail" = "Unlocked at level 53\nIncrease the movement speed of allies within 50 yards by 20% for 3 seconds.";
-//ignorepain
-"rune_bravado_name" = "Bravado";
-"rune_bravado_detail" = "Unlocked at level 26\nWhen activated, Knockback all enemies within 12 yards and deal 50% weapon damage to them.";
-
-"rune_ironhide_name" = "Iron Hide";
-"rune_ironhide_detail" = "Unlocked at level 31\nIncreases duration to 7 seconds.";
-
-"rune_ignoranceisbliss_name" = "Ignorance is Bliss";
-"rune_ignoranceisbliss_detail" = "Unlocked at level 36\nWhile Ignore Pain is active, gain 20% of all damage dealt as Life.";
-
-"rune_mobrule_name" = "Mob Rule";
-"rune_mobrule_detail" = "Unlocked at level 43\nExtend the effect to nearby allies, reducing damage taken by 65% for 5 seconds.";
-
-"rune_contemptforweakness_name" = "Contempt for Weakness";
-"rune_contemptforweakness_detail" = "Unlocked at level 58\nReflects 50% of ignored damage back at the enemy.";
-//might
-//ancientspear
-"rune_grapplinghooks_name" = "Grappling Hooks";
-"rune_grapplinghooks_detail" = "Unlocked at level 15\nThrow 3 spears. Each spear will pull back the enemy that it hits.";
-
-"rune_skirmish_name" = "Skirmish";
-"rune_skirmish_detail" = "Unlocked at level 23\nIncreases Fury gained to 30.";
-
-"rune_dreadspear_name" = "Dread Spear";
-"rune_dreadspear_detail" = "Unlocked at level 32\nGain Life equal to 60% of the damage inflicted.";
-
-"rune_harpoon_name" = "Harpoon";
-"rune_harpoon_detail" = "Unlocked at level 39\nPierce through multiple enemies in a straight line and drag them all back.";
-
-"rune_rageflip_name" = "Rage Flip";
-"rune_rageflip_detail" = "Unlocked at level 49\nEnemies hit with Ancient Spear are pulled in the opposite direction and damage is increased to 213% weapon damage.";
-//revenge
-"rune_vengeanceismine_name" = "Vengeance Is Mine";
-"rune_vengeanceismine_detail" = "Unlocked at level 19\nGain 5 Fury and heal for 8.0% of your maximum Life for each enemy hit.";
-
-"rune_bestservedcold_name" = "Best Served Cold";
-"rune_bestservedcold_detail" = "Unlocked at level 25\nAfter using Revenge, your Critical Hit Chance is increased by 10% for 12 seconds.";
-
-"rune_retribution_name" = "Retribution";
-"rune_retribution_detail" = "Unlocked at level 36\nIncrease damage to 286% weapon damage.";
-
-"rune_grudge_name" = "Grudge";
-"rune_grudge_detail" = "Unlocked at level 41\nKnocks enemies back 24 yards whenever Revenge is used.";
-
-"rune_provocation_name" = "Provocation";
-"rune_provocation_detail" = "Unlocked at level 52\nIncreases the chance Revenge will become active to 30% each time you are hit by an attack.";
-//furiouscharge
-"rune_batteringram_name" = "Battering Ram";
-"rune_batteringram_detail" = "Unlocked at level 27\nIncrease damage at the destination to 283% weapon damage.";
-
-"rune_mercilessassault_name" = "Merciless Assault";
-"rune_mercilessassault_detail" = "Unlocked at level 33\nCooldown is reduced by 2 seconds for every target hit. This effect can reduce the cooldown by up to 10 seconds.";
-
-"rune_stamina_name" = "Stamina";
-"rune_stamina_detail" = "Unlocked at level 38\nGenerate 8 additional Fury for each target hit while charging.";
-
-"rune_bullrush_name" = "Bull Rush";
-"rune_bullrush_detail" = "Unlocked at level 47\nAny targets who are critically hit by Furious Charge will be stunned for 2.5 seconds.";
-
-"rune_dreadnought_name" = "Dreadnought";
-"rune_dreadnought_detail" = "Unlocked at level 56\nRegain 8% of your maximum Life for each target hit by Furious Charge.";
-//overpower
-"rune_stormofsteel_name" = "Storm of Steel";
-"rune_stormofsteel_detail" = "Unlocked at level 29\nThrow up to 3 axes at nearby enemies which inflict 50% weapon damage each.";
-
-"rune_killingspree_name" = "Killing Spree";
-"rune_killingspree_detail" = "Unlocked at level 34\nYour Critical Hit Chance is increased by 10% for 6 seconds.";
-
-"rune_crushingadvance_name" = "Crushing Advance";
-"rune_crushingadvance_detail" = "Unlocked at level 42\nReflect 30% of incoming melee damage for 4 seconds after Overpower is activated.";
-
-"rune_momentum_name" = "Momentum";
-"rune_momentum_detail" = "Unlocked at level 48\nGenerate 12 Fury for each enemy hit by Overpower.";
-
-"rune_revel_name" = "Revel";
-"rune_revel_detail" = "Unlocked at level 59\nHeal 8% of your maximum Life for every enemy hit.";
-//tactics
-//weaponthrow
-"rune_mightythrow_name" = "Mighty Throw";
-"rune_mightythrow_detail" = "Unlocked at level 21\nIncrease thrown weapon damage to 156% weapon damage.";
-
-"rune_ricochet_name" = "Ricochet";
-"rune_ricochet_detail" = "Unlocked at level 25\nCause the weapon to ricochet and hit up to 3 targets within 20 yards of each other.";
-
-"rune_throwinghammer_name" = "Throwing Hammer";
-"rune_throwinghammer_detail" = "Unlocked at level 33\nHurl a hammer with a 75% chance to Stun the target for 2 seconds.";
-
-"rune_stupefy_name" = "Stupefy";
-"rune_stupefy_detail" = "Unlocked at level 42\nAim for the head, gaining a 20% chance of causing your target to be Confused and attack other enemies for 6 seconds.";
-
-"rune_dreadbomb_name" = "Dread Bomb";
-"rune_dreadbomb_detail" = "Unlocked at level 54\nExpend all remaining Fury to throw a corpse which inflicts an additional 3% weapon damage for each point of Fury expended to all enemies within 12 yards of the target.";
-//threateningshout
-"rune_intimidate_name" = "Intimidate";
-"rune_intimidate_detail" = "Unlocked at level 23\nAffected enemies also have their movement speed reduced by 30%.";
-
-"rune_falter_name" = "Falter";
-"rune_falter_detail" = "Unlocked at level 28\nAffected enemies also have their attack speed reduced by 15% for 5 seconds.";
-
-"rune_grimharvest_name" = "Grim Harvest";
-"rune_grimharvest_detail" = "Unlocked at level 37\nEnemies are badly shaken and have a 15% chance to drop additional treasure.";
-
-"rune_demoralize_name" = "Demoralize";
-"rune_demoralize_detail" = "Unlocked at level 43\nAffected enemies are also taunted to attack you for 3 seconds.";
-
-"rune_terrify_name" = "Terrify";
-"rune_terrify_detail" = "Unlocked at level 57\nEnemies are severely demoralized. Each enemy has a 35% chance to flee for 2.5 seconds.";
-//battlerage
-"rune_maraudersrage_name" = "Marauder's Rage";
-"rune_maraudersrage_detail" = "Unlocked at level 26\nIncrease damage bonus to 30%.";
-
-"rune_ferocity_name" = "Ferocity";
-"rune_ferocity_detail" = "Unlocked at level 31\nWhile under the effects of Battle Rage, Critical Hits have a chance to increase the duration of Battle Rage by 2 seconds.";
-
-"rune_swordstoploughshares_name" = "Swords to Ploughshares";
-"rune_swordstoploughshares_detail" = "Unlocked at level 38\nWhile under the effects of Battle Rage, Critical Hits have up to a 5% chance to cause enemies to drop additional health globes.";
-
-"rune_intothefray_name" = "Into the Fray";
-"rune_intothefray_detail" = "Unlocked at level 46\nWhile under the effects of Battle Rage, Critical Hits have a chance to generate 15 additional Fury.";
-
-"rune_bloodshed_name" = "Bloodshed";
-"rune_bloodshed_detail" = "Unlocked at level 54\nWhile under the effects of Battle Rage, Critical Hits have a chance to cause an explosion of blood dealing 20% of the damage done to all other nearby enemies.";
-//warcry
-"rune_hardenedwrath_name" = "Hardened Wrath";
-"rune_hardenedwrath_detail" = "Unlocked at level 32\nIncreases the Armor bonus to 40%.";
-
-"rune_charge_name" = "Charge!";
-"rune_charge_detail" = "Unlocked at level 35\nIncreases Fury gained to 60.";
-
-"rune_invigorate_name" = "Invigorate";
-"rune_invigorate_detail" = "Unlocked at level 41\nIncreases maximum Life by 10% and regenerates 310 Life per second while affected by War Cry.";
-
-"rune_veteranswarning_name" = "Veteran's Warning";
-"rune_veteranswarning_detail" = "Unlocked at level 49\nWar Cry also grants a 15% bonus to Dodge Chance.";
-
-"rune_impunity_name" = "Impunity";
-"rune_impunity_detail" = "Unlocked at level 60\nAll of your resistances are increased by 50% while affected by War Cry.";
-//rage
-//earthquake
-"rune_giantsstride_name" = "Giant's Stride";
-"rune_giantsstride_detail" = "Unlocked at level 24\nSecondary tremors follow your movement and inflict 65% weapon damage as Fire.";
-
-"rune_chillingearth_name" = "Chilling Earth";
-"rune_chillingearth_detail" = "Unlocked at level 29\nCreates an icy patch, causing Earthquake's damage to turn Cold and Slow the movement of enemies by 80%.";
-
-"rune_themountainscall_name" = "The Mountain's Call";
-"rune_themountainscall_detail" = "Unlocked at level 39\nRemoves the Fury cost and reduces the cooldown to 105 seconds.";
-
-"rune_aftershocks_name" = "Aftershocks";
-"rune_aftershocks_detail" = "Unlocked at level 50\nSecondary tremors knock enemies back and inflict 65% weapon damage as Fire.";
-
-"rune_pathoffire_name" = "Path of Fire";
-"rune_pathoffire_detail" = "Unlocked at level 56\nProject secondary tremors up to 12 yards ahead of you that inflict 65% weapon damage as Fire.";
-//calloftheancients
-"rune_thecouncilrises_name" = "The Council Rises";
-"rune_thecouncilrises_detail" = "Unlocked at level 31\nThe Ancients inflict 66% weapon damage with each attack and have 100% additional Armor.";
-
-"rune_dutytotheclan_name" = "Duty to the Clan";
-"rune_dutytotheclan_detail" = "Unlocked at level 37\nIncrease duration to 20 seconds.";
-
-"rune_korlicsmight_name" = "Korlic's Might";
-"rune_korlicsmight_detail" = "Unlocked at level 45\nKorlic gains the skill Furious Charge which deals 200% of your weapon damage to all enemies in a line.";
-
-"rune_madawcsmadness_name" = "Madawc's Madness";
-"rune_madawcsmadness_detail" = "Unlocked at level 51\nMadawc gains the skill Seismic Slam which deals 180% of your weapon damage to enemies in an arc.";
-
-"rune_talicsanger_name" = "Talic's Anger";
-"rune_talicsanger_detail" = "Unlocked at level 58\nTalic gains the skill Leap which deals 250% of your weapon damage to enemies in the area of the leap.";
-//wrathoftheberserker
-"rune_arreatswail_name" = "Arreat's Wail";
-"rune_arreatswail_detail" = "Unlocked at level 36\nActivating Wrath of the Berserker knocks back all enemies within 12 yards and deals 430% weapon damage to them.";
-
-"rune_insanity_name" = "Insanity";
-"rune_insanity_detail" = "Unlocked at level 40\nWhile active your damage is also increased by 100%.";
-
-"rune_slaughter_name" = "Slaughter";
-"rune_slaughter_detail" = "Unlocked at level 46\nWhile Wrath of the Berserker is active, Critical Hits have a chance to cause an eruption of blood dealing 155% weapon damage to enemies within 15 yards.";
-
-"rune_stridinggiant_name" = "Striding Giant";
-"rune_stridinggiant_detail" = "Unlocked at level 52\nIncreases bonus to Dodge Chance to 60%.";
-
-"rune_thriveonchaos_name" = "Thrive on Chaos";
-"rune_thriveonchaos_detail" = "Unlocked at level 60\nEvery 25 Fury gained while Wrath of the Berserker is active adds 1 second to the duration of the effect.";
-
+/********************************BARBARIAN*********************************/
 /*
  Barbarian Skill
  */
-//initiative
+//=================initiative==================system
 //primary
 //bash
-"bash_name" = "Bash";
-"bash_system" = "Primary";
-"bash_detail" = "Generate: 6 Fury per attack\n\nBrutally smash an enemy for 150% weapon damage with a 20% chance to Knockback.\n\nPrimary\n\nUnlocked at level 1";
+
+"bash_name" = "猛擊";
+"bash_detail" = "每次攻擊產生：6 點怒氣\n\n猛烈打擊一名敵人，對其造成 150% 武器傷害，且有 20% 機率擊退敵人。\n\n主要技能\n\n解锁于等级 1";
 
 //cleave
-"cleave_name" = "Cleave";
-"cleave_system" = "Primary";
-"cleave_detail" = "Generate: 5 Fury per attack\n\nSwing your weapon in a wide arc to deal 120% weapon damage to all enemies caught in the swing.\n\nPrimary\n\nUnlocked at level 3";
+"cleave_name" = "順劈斬";
+"cleave_detail" = "每次攻擊產生：5 點怒氣\n\n大角度揮擊武器，對所有掃中的敵人造成 120% 的武器傷害。\n\n主要技能\n\n解锁于等级 3";
 
 //frenzy
-"frenzy_name" = "Frenzy";
-"frenzy_system" = "Primary";
-"frenzy_detail" = "Generate: 3 Fury per attack\n\nSwing for 110% weapon damage. Frenzy attack speed increases by 15% with each swing. This effect can stack up to 5 times for a total bonus of 75% attack speed.\n\nPrimary\n\nUnlocked at level 11";
+"frenzy_name" = "狂亂";
+"frenzy_detail" = "每次攻擊產生：3 點怒氣\n\n奮力揮擊造成 110% 的武器傷害，每次揮擊可使狂亂的攻擊速度提高 15%。此效果最多可堆疊 5 次，總共可使攻擊速度提高 75%。\n\n主要技能\n\n解锁于等级 11";
 
 //secondary
-//hammer of the ancients
-"hammeroftheancients_name" = "Hammer of the Ancients";
-"hammeroftheancients_system" = "Secondary";
-"hammeroftheancients_detail" = "Cost: 20 Fury\n\nCall forth a massive hammer to smash enemies directly in front of you for 200% weapon damage. Hammer of the Ancients has a 5% increased Critical Hit Chance.\n\nSecondary\n\nUnlocked at level 2";
+//hammeroftheancients
+"hammeroftheancients_name" = "先祖之鎚";
+"hammeroftheancients_detail" = "消耗：20 點怒氣\n\n召喚一把巨大無比的鎚子粉碎面前的敵人，造成 200% 的武器傷害。先祖之鎚擁有額外的 5% 爆擊機率。\n\n次要技能\n\n解锁于等级 2";
 
 //rend
-"rend_name" = "Rend";
-"rend_system" = "Secondary";
-"rend_detail" = "Cost: 20 Fury\n\nA sweeping strike causes all nearby enemies to Bleed for 210% weapon damage as Physical over 3 seconds.\n\nSecondary\n\nUnlocked at level 5";
+"rend_name" = "撕裂";
+"rend_detail" = "消耗: 20 點怒氣\n\n使出掃擊，使附近所有的敵人流血，在 3 秒內造成 210% 武器傷害值的物理傷害。\n\n次要技能\n\n解锁于等级 5";
 
-//seismic slam
-"seismicslam_name" = "Seismic Slam";
-"seismicslam_system" = "Secondary";
-"seismicslam_detail" = "Cost: 30 Fury\n\nSlam the ground and cause a wave of destruction that deals 155% weapon damage and Knockback to targets in a 45 yard arc.\n\nSecondary\n\nUnlocked at level 12";
+//seismicslam
+"seismicslam_name" = "闢地猛擊";
+"seismicslam_detail" = "消耗: 30 點怒氣\n\n猛擊大地，形成一股毀滅震波，對 45 碼弧形範圍內的敵人造成 155% 的武器傷害，並將其擊退。\n\n次要技能\n\n解锁于等级 12";
 
 //whirlwind
-"whirlwind_name" = "Whirlwind";
-"whirlwind_system" = "Secondary";
-"whirlwind_detail" = "Cost: 16 Fury\n\nDeliver multiple attacks to everything in your path for 110% weapon damage.\n\nSecondary\n\nUnlocked at level 20";
+"whirlwind_name" = "旋風斬";
+"whirlwind_detail" = "消耗: 16 點怒氣\n\n連續攻擊前進路徑上的所有事物，造成 110% 武器傷害。\n\n次要技能\n\n解锁于等级 20";
 
 //defensive
 //groundstomp
-"groundstomp_name" = "Ground Stomp";
-"groundstomp_system" = "Defensive";
-"groundstomp_detail" = "Generate: 15 Fury\nCooldown: 12 seconds\n\nSmash the ground, stunning all enemies within 12 yards for 4 seconds.\n\nDefensive\n\nUnlocked at level 4";
+"groundstomp_name" = "震地踐踏";
+"groundstomp_detail" = "產生: 15 點怒氣\n冷卻時間: 12 秒\n\n重擊地面，使 12 碼內的所有敵人昏迷 4 秒。\n\n防禦\n\n解锁于等级 4";
 
 //leap
-"leap_name" = "Leap";
-"leap_system" = "Defensive";
-"leap_detail" = "Generate: 15 Fury\nCooldown: 10 seconds\n\nLeap into the air, dealing 85% weapon damage to all enemies within 8 yards of your destination and slowing their movement speed by 60% for 3 seconds.\n\nDefensive\n\nUnlocked at level 8";
+"leap_name" = "躍擊";
+"leap_detail" = "產生: 15 點怒氣\n冷卻時間: 10 秒\n\n猛力一躍，落地時對目的地 8 碼內的所有敵人造成 85% 武器傷害，並使其移動速度降低 60%，持續 3 秒。\n\n防禦\n\n解锁于等级 8";
 
 //sprint
-"sprint_name" = "Sprint";
-"sprint_system" = "Defensive";
-"sprint_detail" = "Cost: 20 Fury\n\nIncrease movement speed by 40% for 3 seconds.\n\nDefensive\n\nUnlocked at level 16";
+"sprint_name" = "衝刺";
+"sprint_detail" = "消耗: 20 點怒氣\n\n移動速度提高 40%，持續 3 秒。\n\n防禦\n\n解锁于等级 16";
 
 //ignorepain
-"ignorepain_name" = "Ignore Pain";
-"ignorepain_system" = "Defensive";
-"ignorepain_detail" = "Cooldown: 30 seconds\n\nReduces all damage taken by 65% for 5 seconds.\n\nDefensive\n\nUnlocked at level 22";
+"ignorepain_name" = "忘卻苦痛";
+"ignorepain_detail" = "冷卻時間: 30 秒\n\n受到的所有傷害減少 65%，持續 5 秒\n\n防禦\n\n解锁于等级 22";
 
 //might
 //ancientspear
-"ancientspear_name" = "Ancient Spear";
-"ancientspear_system" = "Might";
-"ancientspear_detail" = "Generate: 15 Fury\nCooldown: 10 seconds\n\nThrow a spear to pull an enemy back to you, briefly slowing the target's movement by 60% and dealing 185% weapon damage.\n\nMight\n\nUnlocked at level 9";
+"ancientspear_name" = "上古之矛";
+"ancientspear_detail" = "產生：15 點怒氣\n冷卻時間: 10 秒\n\n擲出一柄長矛將敵人拉向你，暫時使其移動速度降低 60%，並造成 185% 的武器傷害。\n\n力量\n\n解锁于等级 9";
 
 //revenge
-"revenge_name" = "Revenge";
-"revenge_system" = "Might";
-"revenge_detail" = "Revenge has a 15% chance to become active each time you are hit.\n\nInflict 220% weapon damage to all nearby enemies. You heal 5.0% of your maximum Life for each enemy hit.\n\nMight\n\nUnlocked at level 13";
+"revenge_name" = "復仇";
+"revenge_detail" = "每次被敵人擊中時，有 15% 的機率可發動復仇。\n\n對附近所有的敵人造成 220% 的武器傷害，每擊中一名敵人可獲得生命值上限 5.0% 的生命值。\n\n力量\n\n解锁于等级 13";
 
 //furiouscharge
-"furiouscharge_name" = "Furious Charge";
-"furiouscharge_system" = "Might";
-"furiouscharge_detail" = "Generate: 15 Fury\nCooldown: 10 seconds\n\nRush forward knocking back enemies and inflicting 195% weapon damage to enemies along the path of the charge.\n\nMight\n\nUnlocked at level 21";
+"furiouscharge_name" = "狂暴衝鋒";
+"furiouscharge_detail" = "產生：15 點怒氣\n冷卻時間: 10 秒\n\n向前突進，擊退沿途的敵人，並對其造成 195% 武器傷害。\n\n力量\n\n解锁于等级 21";
 
 //overpower
-"overpower_name" = "Overpower";
-"overpower_system" = "Might";
-"overpower_detail" = "Cooldown: 15 seconds\n\nDeal 165% weapon damage to all targets within 9 yards. Landing a Critical Hit has a chance to lower the cooldown by 1 second.\n\nMight\n\nUnlocked at level 26";
+"overpower_name" = "霸氣無雙";
+"overpower_detail" = "冷卻時間: 15 秒\n\n對 9 碼內的所有敵人造成 165% 的武器傷害。爆擊時有一定機率使冷卻時間縮短 1 秒。\n\n力量\n\n解锁于等级 26";
 
 //tactics
 //weaponthrow
-"weaponthrow_name" = "Weapon Throw";
-"weaponthrow_system" = "Tactics";
-"weaponthrow_detail" = "Cost: 10 Fury\n\nHurl a throwing weapon at an enemy for 120% weapon damage and Slow the movement of the enemy by 60% for 2 seconds.\n\nTactics\n\nUnlocked at level 14";
+"weaponthrow_name" = "擲刃斬";
+"weaponthrow_detail" = "消耗：10 點怒氣\n\n野蠻人向一名敵人投擲武器，對其造成 100% 的武器傷害，並使其移動速度降低 60%，持續 2 秒。\n\n戰術\n\n解锁于等级 14";
 
 //threateningshout
-"threateningshout_name" = "Threatening Shout";
-"threateningshout_system" = "Tactics";
-"threateningshout_detail" = "Generate: 15 Fury\nCooldown: 15 seconds\n\nShout with great ferocity, reducing damage done by enemies within 25 yards by 20% for 15 seconds.\n\nTactics\n\nUnlocked at level 17";
+"threateningshout_name" = "威嚇怒吼";
+"threateningshout_detail" = "產生：15 點怒氣\n冷卻時間: 15 秒\n\n發出極凶暴的怒吼，使 25 碼範圍內的敵人所造成的傷害減少 20%，持續 15 秒。\n\n戰術\n\n解锁于等级 17";
 
 //battlerage
-"battlerage_name" = "Battle Rage";
-"battlerage_system" = "Tactics";
-"battlerage_detail" = "Cost: 20 Fury\n\nEnter a rage which increases damage by 15% and Critical Hit Chance by 3% for 30 seconds.\n\nTactics\n\nUnlocked at level 22";
+"battlerage_name" = "戰鬥暴怒";
+"battlerage_detail" = "消耗：20 點怒氣\n\n進入暴怒狀態，傷害提高 15%，爆擊的機率提高 3%，持續 30 秒。\n\n戰術\n\n解锁于等级 22";
 
 //warcry
-"warcry_name" = "War Cry";
-"warcry_system" = "Tactics";
-"warcry_detail" = "Generate: 30 Fury\nCooldown: 30 seconds\n\nUnleash a rallying cry to increase Armor for you and all allies within 50 yards by 20% for 60 seconds.\n\nTactics\n\nUnlocked at level 28";
+"warcry_name" = "戰吼";
+"warcry_detail" = "產生：30 點怒氣\n冷卻時間: 30 秒\n\n發出激勵士氣的戰吼，使你和距離 50 碼內所有盟友的護甲值提高 20%，持續 60 秒。\n\n戰術\n\n解锁于等级 28";
 
 //Rage
 //earthquake
-"earthquake_name" = "Earth Quake";
-"earthquake_system" = "Rage";
-"earthquake_detail" = "Cost: 50 Fury\nCooldown: 120 seconds\n\nShake the ground violently, dealing 2000% weapon damage as Fire over 8 seconds to all enemies within 18 yards.\n\nRage\n\nUnlocked at level 19";
+"earthquake_name" = "裂地之震";
+"earthquake_detail" = "消耗：50 點怒氣\n冷卻時間: 120 秒\n\n猛烈撼動大地，在 8 秒內對 18 碼內所有的敵人造成 2000% 武器傷害值的火焰傷害。\n\n狂怒\n\n解锁于等级 19";
 
 //calloftheancients
-"calloftheancients_name" = "Call of the Ancients";
-"calloftheancients_system" = "Rage";
-"calloftheancients_detail" = "Cost: 50 Fury\nCooldown: 120 seconds\n\nSummon the ancient Barbarians Talic, Korlic, and Madawc to fight alongside you for 15 seconds. Each deals 60% weapon damage per swing in addition to bonus abilities.\n\n✧Talic wields a sword and shield and uses the Whirlwind skill.\n✧Korlic wields a massive polearm and uses the Cleave skill.\n✧Madawc dual-wields axes and uses the Weapon Throw skill.\n\nRage\n\nUnlocked at level 25";
+"calloftheancients_name" = "先祖召喚";
+"calloftheancients_detail" = "消耗：50 點怒氣\n冷卻時間: 120 秒\n\n召喚野蠻人先祖塔力克、科力克和馬道克與你並肩作戰，持續 15 秒。先祖每次攻擊可造成 60% 的武器傷害，同時還能使用額外的特殊技能。\n\n✧塔力克手持劍盾並使用旋風斬技能。\n✧科力克手持龐大的長柄武器並使用順劈斬技能。\n✧馬道克手持雙斧並使用擲刃斬技能。\n\n狂怒\n\n解锁于等级 25";
 
 //wrathoftheberserker
-"wrathoftheberserker_name" = "Wrath of the Berserker";
-"wrathoftheberserker_system" = "Rage";
-"wrathoftheberserker_detail" = "Cost: 50 Fury \nCooldown: 120 seconds\n\nEnter a berserker rage which raises several attributes for 15 seconds.\n\nCritical Hit Chance: 10%\nAttack Speed: 25%\nDodge Chance: 20%\nMovement Speed: 20%\n\nRage\n\nUnlocked at level 30";
+"wrathoftheberserker_name" = "狂戰之怒";
+"wrathoftheberserker_detail" = "消耗：50 點怒氣 \n冷卻時間: 120 秒\n\n進入狂怒狀態，可提高數項屬性，持續 15 秒。\n\n爆擊機率：提高 10%\n攻擊速度：提高 25%\n閃躲機率：提高 20%\n移動速度：提高 20%\n\狂怒\n\n解锁于等级 30";
 
-//passive
+//===============passive================level
 //poundofflesh
-"poundofflesh_name" = "Poune of Flesh";
-"poundofflesh_detail" = "Increases the chance of finding a health globe by 25% and you gain 100% additional Life from health globes.\n\nUnlocked at level 10";
-"poundofflesh_story" = "\"When the sky bleeds, the crops grow tall. When our enemies bleed, we grow strong.\" —Chant of the Harvest";
+"poundofflesh_name" = "血肉代價";
+"poundofflesh_detail" = "尋獲生命之球的機率提高 25%，從生命之球獲得的生命值提高 100%。\n\n解锁于等级 10";
+"poundofflesh_story" = "\"天降紅血，作物遽長。敵破血流，吾人漸強。\" —收成頌歌";
 
 //ruthless
-"ruthless_name" = "Ruthless";
-"ruthless_detail" = "Critical Hit Chance increased by 5%.\n Critical Hit Damage increased by 50%.\n\nMany skills and runes rely on Critical Hits to trigger their effects.\n\nUnlocked at level 10";
-"ruthless_story" = "The clans each paint their warriors in their own unique way. Some celebrate the mountain, others honor the fire, but the Targos clan worships the purifying virtue of pain.";
+"ruthless_name" = "無情暴虐";
+"ruthless_detail" = "爆擊機率提高 5%。\n 爆擊傷害提高 50%。\n\n許多技能和符文都仰賴爆擊觸發其效果。\n\n解锁于等级 10";
+"ruthless_story" = "每個部族都會以自身獨特的方式為他們的戰士塗上色彩。有的是讚揚山脈，有些是榮耀火焰，不過塔苟斯部族推崇的是疼痛的淨化力量。";
 
 //nervesofsteel
-"nervesofsteel_name" = "Nerves Of Steel";
-"nervesofsteel_detail" = "Your Armor is increased by 100% of your Vitality.\n\nUnlocked at level 13";
-"nervesofsteel_story" = "\"The trials begin with childhood; skinning ferocious beasts, climbing windswept cliffs and carrying weapons heavy enough to make a southern soldier weep. Is it any wonder that they never give ground?\" —Sir Aric of Duncraig";
+"nervesofsteel_name" = "鋼鐵膽識";
+"nervesofsteel_detail" = "你的護甲值提高，數值相當於體能的 100%。\n\n解锁于等级 13";
+"nervesofsteel_story" = "\"他們的磨練從小就開始了：狩獵兇猛野獸的皮革、攀登強風凜冽的峭壁，背著連南方士兵都扛不動的沉重兵器。這些人寧死不屈，有什麼好奇怪的嗎？\" —敦克雷格的阿瑞克爵士";
 
 //weaponsmaster
-"weaponsmaster_name" = "Weapons Master";
-"weaponsmaster_detail" = "Gain a bonus based on the weapon type of your main hand weapon:\nSwords/Daggers: 15% increased damage\nMaces/Axes: 10% Critical Hit Chance\nPolearms/Spears: 10% attack speed\nMighty Weapons: 3 Fury per hit\n\nUnlocked at level 16";
-"weaponsmaster_story" = "\"My men ambushed the traveler in the woods, but it was we who were surprised. Such keen senses, swift motions, flawless strikes. We never stood a chance.\" —Redjack the Bandit";
+"weaponsmaster_name" = "武器大師";
+"weaponsmaster_detail" = "視主手武器類型提供加成效果：\n劍/匕首：傷害提高 15%\n鎚/斧：爆擊機率提高 10%\n長柄武器/矛：攻擊速度提高 10%\n重型武器：每次擊中時獲得 3 點怒氣\n\n解锁于等级 16";
+"weaponsmaster_story" = "\"我方在樹林中伏擊旅人，但這次吃驚的反而是我們。敏銳的感覺，流暢的動作，無瑕的攻擊。我們一點機會也沒有。\" —盜匪紅傑克";
 
 //berserkerrage
-"berserkerrage_name" = "Berserker Rage";
-"berserkerrage_detail" = "You inflict an additional 25% damage while at maximum Fury.\n\nUnlocked at level 20";
-"berserkerrage_story" = "\"You wouldn't like me when I'm angry.\" —Bannar the Berserker";
+"berserkerrage_name" = "狂暴怒氣";
+"berserkerrage_detail" = "怒氣達上限時，造成的傷害增加 25% 。\n\n解锁于等级 20";
+"berserkerrage_story" = "\"你不會喜歡我生氣時的樣子。\" —狂戰士巴那爾";
 
 //inspiringpresence
-"inspiringpresence_name" = "Inspiring Presence";
-"inspiringpresence_detail" = "The duration of your shouts is doubled. After using a shout you regenerate 1% of your maximum Life per second for 60 seconds.\n\nYour shouts are:\n✧Battle Rage\n✧Threatening Shout\n✧War Cry\n\nUnlocked at level 20";
-"inspiringpresence_story" = "\"The enemy poured through the gap until Warmaster Karja impaled three demons at once on our battle standard, tossing their corpses into the fray below as she roared a rallying call from high atop the battlements.\" —The Battle of the Starless Night";
+"inspiringpresence_name" = "激勵風采";
+"inspiringpresence_detail" = "怒吼的持續時間延長一倍。使用怒吼後可使你每秒恢復生命值上限的 1%，持續 60 秒。\n\n怒吼技能：\n✧戰鬥暴怒\n✧威嚇怒吼\n✧戰吼\n\n解锁于等级 20";
+"inspiringpresence_story" = "\"在將領卡爾加以我方戰旗一次刺穿三隻惡魔，將對方屍體化為腳下的碎塊，並在城垛高處喊出集結的戰吼聲的同時，敵人從缺口處一擁而上的動作也停止了下來。\" —無星之夜戰役";
 
 //bloodthirst
-"bloodthirst_name" = "Bloodthirst";
-"bloodthirst_detail" = "Gain 3% of all damage done as Life.\n\nUnlocked at level 24";
-"bloodthirst_story" = "\"Compassion is weakness. To press the advantage when an opponent calls for mercy is the way of true power.\" —Halaberd the Conqueror";
+"bloodthirst_name" = "嗜血狂人";
+"bloodthirst_detail" = "將你造成的 3% 總傷害轉為生命值。\n\n解锁于等级 24";
+"bloodthirst_story" = "\"同情是弱者的行為。在敵人哭喊求饒時趁勢追擊，才是真正的王道。\" —征服者海拉柏";
 
 //animosity
-"animosity_name" = "Animosity";
-"animosity_detail" = "Increases Fury generation by 10% and maximum Fury is increased by 20.\n\nFury is used to fuel your most powerful attacks.\n\nUnlocked at level 27";
-"animosity_story" = "\"While most orders teach the merits of calming the seas of the soul, the guardians of Arreat have embraced the raging inner storm.\" —Chronicler Arlavoc";
+"animosity_name" = "怒意高漲";
+"animosity_detail" = "怒氣產生值提高 10%，怒氣上限提高 20 點。\n\n絕大多數的強力攻擊都要消耗怒氣方能使用。\n\n解锁于等级 27";
+"animosity_story" = "\"雖然絕大多數的團體都教誨人們沈澱心靈、保持冷靜的好處，但是亞瑞特山的守護者卻反其道而行，投向內心怒火風暴的懷抱。\" —編年史學者，阿爾拉佛克";
 
 //superstition
-"superstition_name" = "Superstition";
-"superstition_detail" = "Reduces all non-Physical damage by 20%. Whenever you take damage from a ranged or elemental attack, you have a chance to gain 3 Fury.\n\nUnlocked at level 30";
-"superstition_story" = "\"The sorcery of the west has brought us nothing but blight. Strength built these walls, and strength will hold them.\" —Gruchac Hammerhand";
+"superstition_name" = "迷信";
+"superstition_detail" = "所有受到的非物理傷害降低 20%。當你受到遠程或元素傷害時，有一定機率獲得 3 點怒氣。\n\n解锁于等级 30";
+"superstition_story" = "\"西方巫術帶給我們的，只有破滅兩字可言。建造城牆要靠氣力，守住城牆的也是氣力。\" —庫查克‧鎚手";
 
 //toughasnails
-"toughasnails_name" = "Tough as Nails";
-"toughasnails_detail" = "Increases Armor by 25%.\nThorns damage dealt increased by 50%.\n\nUnlocked at level 30";
-"toughasnails_story" = "After a while the scars serve as their own layer of armor.";
+"toughasnails_name" = "意志堅定";
+"toughasnails_detail" = "護甲值提高 25%。\n荊棘造成的傷害提高 50%。\n\n解锁于等级 30";
+"toughasnails_story" = "沒多久這些傷痕就會化為層層護甲的一部份。";
 
 //noescape
-"noescape_name" = "No Escape";
-"noescape_detail" = "Increases the damage of Ancient Spear and Weapon Throw by 10%. In addition, a Critical Hit with Ancient Spear resets the cooldown while Critical Hits with Weapon Throw have a chance to return 14 Fury.\n\nUnlocked at level 35";
-"noescape_story" = "\"Run if you must, but you'll only die tired.\" —Ooron Goons";
+"noescape_name" = "無處可逃";
+"noescape_detail" = "上古之矛和擲刃斬造成的傷害提高 10%。除此之外，上古之矛爆擊時會自動重置其冷卻時間，擲刃斬爆擊時有一定機率獲得 14 點怒氣。\n\n解锁于等级 35";
+"noescape_story" = "\"想逃就逃吧，最後也會落得力竭身亡的下場。\" —歐隆古斯";
 
 //relentless
-"relentless_name" = "Relentless";
-"relentless_detail" = "While below 20% Life, all skills cost no Fury and all damage taken is reduced by 50%.\n\nUnlocked at level 40";
-"relentless_story" = "No matter the odds some warriors simply refuse to fall.";
+"relentless_name" = "奮戰不懈";
+"relentless_detail" = "生命值低於 20% 時，所有技能消耗的怒氣降低 75%，所受傷害降低 50%。\n\n解锁于等级 40";
+"relentless_story" = "不論情勢多艱難，有些戰士就是會奮戰到底，絕不言敗。";
 
 //brawler
-"brawler_name" = "Brawler";
-"brawler_detail" = "As long as there are 3 enemies within 8 yards, all of your damage is increased by 30%.\n\nUnlocked at level 45";
-"brawler_story" = "\"I have two blades, one for each of you.\" —Blademaster Kharne";
+"brawler_name" = "爭戰者";
+"brawler_detail" = "在 8 碼內有 3 名敵人時，你造成的所有傷害提高 30%。\n\n解锁于等级 45";
+"brawler_story" = "\"來一個殺一個，來兩個殺一雙。\" —劍聖卡恩";
 
 //juggernaut
-"juggernaut_name" = "Juggernaut";
-"juggernaut_detail" = "The duration of control impairing effects on you are reduced by 20%. In addition, whenever a Stun, Fear, Immobilize or Charm is cast on you, you have a chance to recover 15% of your maximum Life.\n\nUnlocked at level 50";
-"juggernaut_story" = "\"I swear to you, we put a dozen arrows into him and he just stood back up. These so-called barbarians, these madmen of the north—there is no stopping them.\" —Soldier of Bastion's Keep";
+"juggernaut_name" = "勢不可當";
+"juggernaut_detail" = "你所受的控場效果持續時間縮短 20%。除此之外，當你受到昏迷、恐懼、定身或魅惑效果影響時，有一定機率恢復生命值上限的 15%。\n\n解锁于等级 50";
+"juggernaut_story" = "\"我發誓，我們射了幾十把箭在他身上，但他就是會再站起來繼續進攻。任何手段都擋不了這些被稱作野蠻人的北方狂人。\" —戍衛要塞的士兵";
 
 //unforgiving
-"unforgiving_name" = "Unforgiving";
-"unforgiving_detail" = "You no longer degenerate Fury. Instead, you gain 1 Fury every 2 seconds.\n\nUnlocked at level 55";
-"unforgiving_story" = "\"It was as if he suddenly came to know every grievous injury endured by his ancestors, and he had selected that very moment to exact their collective revenge.\" —Chronicler Arlavoc";
+"unforgiving_name" = "無可饒恕";
+"unforgiving_detail" = "你的怒氣不再衰竭。相反的，你每 2 秒產生 1 點怒氣。\n\n解锁于等级 55";
+"unforgiving_story" = "\"他彷彿忽然開竅了，徹底領悟到先人承受的重創，然後怒氣就在那一刻全部爆發出來，為所有人復仇。\" —編年史學者，阿爾拉佛克";
 
 //boonofbulkathos
-"boonofbulkathos_name" = "Boon of Bul-Kathos";
-"boonofbulkathos_detail" = "The cooldown on your Earthquake, Call of the Ancients, and Wrath of the Berserker skills is reduced by 30 seconds.\n\nUnlocked at level 60";
-"boonofbulkathos_story" = "The aid of the Immortal King shall come to those who have earned it.";
+"boonofbulkathos_name" = "布爾凱索的恩澤";
+"boonofbulkathos_detail" = "裂地之震、先祖召喚和狂戰之怒的冷卻時間縮短 30 秒。\n\n解锁于等级 60";
+"boonofbulkathos_story" = "不朽之王的恩澤只會降臨在努力奮戰不懈的人身上。";
 
-/************************************************************************/
+
+/*
+ Rune
+ */
+//Barbarian rune      system
+//primary
+//bash
+"rune_clobber_name" = "痛毆";
+"rune_clobber_detail" = "解锁于等级 6\n不再擊退敵人，但是每次攻擊均有 35% 機率擊昏目標，持續 1.5 秒。";
+
+"rune_onslaught_name" = "猛襲";
+"rune_onslaught_detail" = "解锁于等级 13\n追加 2 次反震，每次造成 23% 武器傷害，但不再擊退敵人。";
+
+"rune_punish_name" = "摧毀";
+"rune_punish_detail" = "解锁于等级 26\n使用猛擊後的 5 秒內可使你的技能傷害提高 6%。此效果最多可堆疊 3 次。";
+
+"rune_instigation_name" = "煽動";
+"rune_instigation_detail" = "解锁于等级 44\n每次攻擊額外產生 6 點怒氣。";
+
+"rune_pulverize_name" = "粉碎";
+"rune_pulverize_detail" = "解锁于等级 52\n引發一道衝擊波，對目標後方 26 碼直線路徑上的敵人造成 38% 武器傷害。";
+//cleave
+"rune_rupture_name" = "血肉橫飛";
+"rune_rupture_detail" = "解锁于等级 9\n被順劈斬殺死的敵人將會爆炸，對 8 碼範圍內的所有敵人造成 85% 的武器傷害。.";
+
+"rune_reapingswing_name" = "集怒之刈";
+"rune_reapingswing_detail" = "解锁于等级 18\n 每擊中一名敵人額外產生 3 點怒氣。";
+
+"rune_scatteringblast_name" = "橫掃轟擊";
+"rune_scatteringblast_detail" = "解锁于等级 30\n爆擊時掃飛敵人 9 碼，並對落地位置的敵人造成 60% 的武器傷害。";
+
+"rune_broadsweep_name" = "威猛掃擊";
+"rune_broadsweep_detail" = "解锁于等级 47\n傷害提高至 156% 武器傷害。";
+
+"rune_gatheringstorm_name" = "暴風狂掃";
+"rune_gatheringstorm_detail" = "解锁于等级 55\n被順劈斬命中的敵人移動速度降低 80%，持續 1 秒。";
+//frenzy
+"rune_sidearm_name" = "破空斧";
+"rune_sidearm_detail" = "解锁于等级 17\n每次擊中有 25% 的機率順手向周圍的敵人投擲一把利斧，對所有在其路徑上的敵人造成 110% 的武器傷害。";
+
+"rune_triumph_name" = "凱旋";
+"rune_triumph_detail" = "解锁于等级 22\n使用狂亂殺死一隻怪物後，會在 6 秒內恢復你生命值上限的 8%。";
+
+"rune_vanguard_name" = "狂亂先驅";
+"rune_vanguard_detail" = "解锁于等级 34\n在狂亂效果下的移動速度提高 15%在狂亂效果下的移動速度提高 15%";
+
+"rune_smite_name" = "天襲";
+"rune_smite_detail" = "解锁于等级 51\n額外有 20% 的機率從天空召喚一道雷電，擊昏你的目標，持續 1.5 秒。";
+
+"rune_maniac_name" = "狂人";
+"rune_maniac_detail" = "解锁于等级 59\n每次狂亂效果可使野蠻人造成的傷害同時提高 4%。";
+//secondary
+//hammeroftheancients
+"rune_rollingthunder_name" = "轟響雷鳴";
+"rune_rollingthunder_detail" = "解锁于等级 7\n產生一道衝擊波，對前方 22 碼內所有的敵人造成 155% 武器傷害。";
+
+"rune_smash_name" = "聚力猛擊";
+"rune_smash_detail" = "解锁于等级 15\n猛擊一小塊區域，造成 270% 的武器傷害。";
+
+"rune_thedevilsanvil_name" = "惡魔鐵砧";
+"rune_thedevilsanvil_detail" = "解锁于等级 27\n在衝擊地點產生震波，使敵人的移動速度降低 60%，持續 2 秒。";
+
+"rune_thunderstrike_name" = "雷霆震擊";
+"rune_thunderstrike_detail" = "解锁于等级 39\n以先祖之鎚殺死敵人時，該目標 10 碼內的所有其他敵人都會陷入昏迷，持續 3 秒。";
+
+"rune_birthright_name" = "天命之贈t";
+"rune_birthright_detail" = "解锁于等级 53\n爆擊時有 10% 的機率使敵人掉落寶物或生命之球。";
+//rend
+"rune_ravage_name" = "摧殘";
+"rune_ravage_detail" = "解锁于等级 11\n提高撕裂的效果範圍至 17 碼。";
+
+"rune_bloodlust_name" = "嗜血殺戮";
+"rune_bloodlust_detail" = "解锁于等级 19\n撕裂所造成的 9% 傷害將轉換成生命值。";
+
+"rune_lacerate_name" = "割裂";
+"rune_lacerate_detail" = "解锁于等级 33\n傷害提高至 271% 武器傷害值的物理傷害，持續 3 秒。";
+
+"rune_mutilate_name" = "肢解";
+"rune_mutilate_detail" = "解锁于等级 45\n使流血的持續時間延長至 5 秒。";
+
+"rune_bloodbath_name" = "血流成河";
+"rune_bloodbath_detail" = "解锁于等级 56\n受流血效果影響而被殺死的敵人會使附近 10 碼內所有的敵人開始流血，在 3 秒內造成 60% 武器傷害值的物理傷害。";
+//seismicslam
+"rune_stagger_name" = "踉蹌";
+"rune_stagger_detail" = "解锁于等级 18\n附加 70% 使敵人昏迷的機率，持續 1.5 秒。";
+
+"rune_shatteredground_name" = "撕裂大地";
+"rune_shatteredground_detail" = "解锁于等级 25\n傷害提高至 202% 武器傷害，並使擊退距離延長 100%。";
+
+"rune_rumble_name" = "餘震";
+"rune_rumble_detail" = "解锁于等级 35\n地面在震波掃過後仍會持續震動，對範圍內的敵人造成 30% 的武器傷害。";
+
+"rune_strengthfromearth_name" = "大地之力";
+"rune_strengthfromearth_detail" = "解锁于等级 48\n使怒氣的消耗量降低至 15 點。";
+
+"rune_crackingrift_name" = "地裂波";
+"rune_crackingrift_detail" = "解锁于等级 57\n將衝擊波集中，對 42 碼路徑上的目標造成 255% 武器傷害。";
+//whirlwind
+"rune_dustdevils_name" ="狂風沙";
+"rune_dustdevils_detail" = "解锁于等级 24\n產生散落的龍捲風，對路徑上的敵人造成 40% 的武器傷害。";
+
+"rune_hurricane_name" = "颶風轉";
+"rune_hurricane_detail" = "解锁于等级 29\n使用旋風斬時的移動速度提高至正常的奔跑速度。";
+
+"rune_bloodfunnel_name" = "集血斬";
+"rune_bloodfunnel_detail" = "解锁于等级 37\n爆擊時可恢復生命值上限的 1.0%。";
+
+"rune_windshear_name" = "烈風剪";
+"rune_windshear_detail" = "解锁于等级 44\n每擊中一名敵人可獲得 1 點怒氣。";
+
+"rune_volcaniceruption_name" = "火山爆";
+"rune_volcaniceruption_detail" = "解锁于等级 59\n將旋風斬化為岩漿洪流，造成 143% 武器傷害值的火焰傷害。";
+//defensive
+//groundstomp
+"rune_deafeningcrash_name" = "震波撞擊";
+"rune_deafeningcrash_detail" = "解锁于等级 12\n震波範圍內的敵人從昏迷中醒來之後移動速度降低 60%，持續 3 秒。";
+
+"rune_wrenchingsmash_name" = "陷地猛擊";
+"rune_wrenchingsmash_detail" = "解锁于等级 18\n使有效範圍擴大至 24 碼，並在踐踏前先將敵人拉近。";
+
+"rune_tremblingstomp_name" = "震撼踐踏";
+"rune_tremblingstomp_detail" = "解锁于等级 28\n範圍內的敵人額外受到 76% 的武器傷害。";
+
+"rune_footofthemountain_name" = "方嶽之蹬";
+"rune_footofthemountain_detail" = "解锁于等级 40\n獲得的怒氣提高至 30 點。";
+
+"rune_avalanche_name" = "地裂山崩";
+"rune_avalanche_detail" = "解锁于等级 54\n擊退敵人 9 碼，並且在落地時對周圍的敵人造成 55% 的武器傷害。";
+//leap
+"rune_ironimpact_name" = "鐵之衝擊";
+"rune_ironimpact_detail" = "解锁于等级 14\n著地之後獲得 300% 額外的護甲值，持續 4 秒。";
+
+"rune_launch_name" = "騰蛟飛升";
+"rune_launch_detail" = "解锁于等级 21\n以極大的力量躍至空中，使得起跳點周圍 8 碼內的敵人速度減緩 60%，持續 3 秒。";
+
+"rune_topplingimpact_name" = "潰敵衝擊";
+"rune_topplingimpact_detail" = "解锁于等级 32\n從你著地的落點將敵人撞飛。";
+
+"rune_callofarreat_name" = "亞瑞特呼喚";
+"rune_callofarreat_detail" = "解锁于等级 44\n沿著地面向前發出衝擊波，效果半徑擴大至 16 碼，並且將受影響的敵人拉向你。.";
+
+"rune_deathfromabove_name" = "飛來橫禍";
+"rune_deathfromabove_detail" = "解锁于等级 60\n以猛烈的力道落地，落點附近的敵人有 100% 的機率昏迷，持續 3 秒。";
+//sprint
+"rune_rush_name" = "閃身衝刺";
+"rune_rush_detail" = "解锁于等级 23\n衝刺時閃躲機率提高 12%。";
+
+"rune_runlikethewind_name" = "疾風狂奔";
+"rune_runlikethewind_detail" = "解锁于等级 29\n引發數個旋風，每個可造成 60% 武器傷害。";
+
+"rune_marathon_name" = "衝鋒陷陣";
+"rune_marathon_detail" = "解锁于等级 38\n移動速度加成提高至 50%，持續 5 秒。";
+
+"rune_gangway_name" = "怒氣貫衝";
+"rune_gangway_detail" = "解锁于等级 46\n重重撞擊敵人，擊退他們並造成 25% 的武器傷害。";
+
+"rune_forcedmarch_name" = "全面急襲";
+"rune_forcedmarch_detail" = "解锁于等级 53\n使 50 碼內盟友的移動速度提高 20%，持續 3 秒。";
+//ignorepain
+"rune_bravado_name" = "威懾八方";
+"rune_bravado_detail" = "解锁于等级 26\n啟動時擊退 12 碼內所有的敵人，並且造成 50% 武器傷害。";
+
+"rune_ironhide_name" = "刀槍不入";
+"rune_ironhide_detail" = "解锁于等级 31\n忘卻苦痛的持續時間延長至 7 秒。";
+
+"rune_ignoranceisbliss_name" = "百折不撓";
+"rune_ignoranceisbliss_detail" = "解锁于等级 36\n忘卻苦痛持續的期間，可將攻擊敵人時造成的 20% 傷害轉換成生命值。.";
+
+"rune_mobrule_name" = "恃眾凌寡";
+"rune_mobrule_detail" = "解锁于等级 43\n效果延伸至附近的盟友，使受到的傷害減少 65%，持續 5 秒。";
+
+"rune_contemptforweakness_name" = "無視弱點";
+"rune_contemptforweakness_detail" = "解锁于等级 58\n將減免傷害的 50% 反彈至攻擊者身上。";
+//might
+//ancientspear
+"rune_grapplinghooks_name" = "爪鉤";
+"rune_grapplinghooks_detail" = "解锁于等级 15\n投擲 3 根長矛。每隻長矛會將擊中的敵人拉回身邊。";
+
+"rune_skirmish_name" = "衝突";
+"rune_skirmish_detail" = "解锁于等级 23\n 獲得的怒氣提高至 30 點。";
+
+"rune_dreadspear_name" = "畏怖之矛";
+"rune_dreadspear_detail" = "解锁于等级 32\n獲得相當於技能傷害 60% 的生命值。";
+
+"rune_harpoon_name" = "魚叉";
+"rune_harpoon_detail" = "解锁于等级 39\n 貫穿一直線上的多名敵人，將他們全數拖回。";
+
+"rune_rageflip_name" = "怒拋";
+"rune_rageflip_detail" = "解锁于等级 49\n被上古之矛擊中的敵人將被拉到相反的方向，且受到的傷害增加至 213% 武器傷害。";
+//revenge
+"rune_vengeanceismine_name" = "復仇之怒";
+"rune_vengeanceismine_detail" = "解锁于等级 19\n每擊中一名敵人，可獲得 5 點怒氣並恢復生命值上限的 8.0%。";
+
+"rune_bestservedcold_name" = "冷血預謀";
+"rune_bestservedcold_detail" = "解锁于等级 25\n使用復仇之後，你的爆擊機率提高 10%，持續 12 秒。";
+
+"rune_retribution_name" = "懲戒";
+"rune_retribution_detail" = "解锁于等级 36\n傷害提高至 286% 的武器傷害。";
+
+"rune_grudge_name" = "憤恨";
+"rune_grudge_detail" = "解锁于等级 41\n使用復仇時可擊退敵人 24 碼。";
+
+"rune_provocation_name" = "挑釁";
+"rune_provocation_detail" = "解锁于等级 52\n每次野蠻人被擊中時，發動復仇的機率提高至 30%。";
+//furiouscharge
+"rune_batteringram_name" = "破城猛衝";
+"rune_batteringram_detail" = "解锁于等级 27\n對衝擊地點造成的傷害提高至 283% 武器傷害。";
+
+"rune_mercilessassault_name" = "絕情猛攻";
+"rune_mercilessassault_detail" = "解锁于等级 33\n每擊中一個目標，冷卻時間便縮短 2 秒。這個效果最多能將冷卻時間縮短 10 秒。";
+
+"rune_stamina_name" = "韌勁";
+"rune_stamina_detail" = "解锁于等级 38\n衝鋒時每擊中一個目標便額外產生 8 點怒氣。";
+
+"rune_bullrush_name" = "蠻牛衝撞";
+"rune_bullrush_detail" = "解锁于等级 47\n任何被狂暴衝鋒擊中產生爆擊的目標將會昏迷，持續 2.5 秒。";
+
+"rune_dreadnought_name" = "毀滅巨神";
+"rune_dreadnought_detail" = "解锁于等级 56\n施展狂暴衝鋒時，每擊中一名敵人可獲得生命值上限 8% 的治療效果。";
+//overpower
+"rune_stormofsteel_name" = "鋼鐵風暴";
+"rune_stormofsteel_detail" = "解锁于等级 29\n對附近的敵人投擲飛斧，最多 3 柄。每柄飛斧可造成 50% 武器傷害。";
+
+"rune_killingspree_name" = "殺意爆發";
+"rune_killingspree_detail" = "解锁于等级 34\n你的爆擊機率提高 10% ，持續 6 秒。";
+
+"rune_crushingadvance_name" = "制敵機先";
+"rune_crushingadvance_detail" = "解锁于等级 42\n發動霸氣無雙可反彈 30% 的近戰與遠程傷害，持續 4 秒。";
+
+"rune_momentum_name" = "無盡怒火";
+"rune_momentum_detail" = "解锁于等级 48\n霸氣無雙每擊中一名敵人可產生 12 點怒氣。";
+
+"rune_revel_name" = "戰意高昂";
+"rune_revel_detail" = "解锁于等级 59\n每擊中一名敵人，可恢復你生命值上限 8% 的生命值。";
+//tactics
+//weaponthrow
+"rune_mightythrow_name" = "奮力一擲";
+"rune_mightythrow_detail" = "解锁于等级 21\n使投擲武器的傷害提高至 130% 的武器傷害。";
+
+"rune_ricochet_name" = "彈跳飛刃";
+"rune_ricochet_detail" = "解锁于等级 25\n武器命中後可彈跳至 20 碼內的下一個敵人，最多可擊中 3 名目標。";
+
+"rune_throwinghammer_name" = "飛鎚";
+"rune_throwinghammer_detail" = "解锁于等级 33\n投擲一把鐵鎚，有 50% 的機率可使目標昏迷，持續 1.5 秒。";
+
+"rune_stupefy_name" = "昏頭轉向";
+"rune_stupefy_detail" = "解锁于等级 42\n瞄準敵人的頭部攻擊，有 20% 的機率使目標陷入混亂，轉而攻擊自己的同伴，持續 6 秒。";
+
+"rune_dreadbomb_name" = "擲屍爆彈";
+"rune_dreadbomb_detail" = "解锁于等级 54\n用盡所剩的怒氣投擲一具屍體，每花費一點怒氣可對目標周圍 12 碼內所有的敵人造成 3% 額外的武器傷害。";
+//threateningshout
+"rune_intimidate_name" = "恫嚇之吼";
+"rune_intimidate_detail" = "解锁于等级 23\n受影響的敵人移動速度也降低 30%。";
+
+"rune_falter_name" = "踉蹌之吼";
+"rune_falter_detail" = "解锁于等级 28\n受影響敵人的攻擊速度降低 15%，持續 5 秒。";
+
+"rune_grimharvest_name" = "掠敵之吼";
+"rune_grimharvest_detail" = "解锁于等级 37\n敵人極度恐慌顫抖，有 15% 的機率掉落額外的戰利品。";
+
+"rune_demoralize_name" = "擾敵之吼";
+"rune_demoralize_detail" = "解锁于等级 43\n受到影響的敵人也會被你嘲諷轉而攻擊你，持續 3 秒。";
+
+"rune_terrify_name" = "恐懼之吼";
+"rune_terrify_detail" = "解锁于等级 57\n使敵人意志消沉。每個敵人有 35% 的機率逃走，持續 2.5 秒。";
+//battlerage
+"rune_maraudersrage_name" = "掠奪者之怒";
+"rune_maraudersrage_detail" = "解锁于等级 26\n使傷害加成提高至 30%。";
+
+"rune_ferocity_name" = "怒不可遏";
+"rune_ferocity_detail" = "解锁于等级 31\n在戰鬥暴怒作用期間，爆擊時有一定機率使其效果的持續時間延長 2 秒。";
+
+"rune_swordstoploughshares_name" = "偃武修文";
+"rune_swordstoploughshares_detail" = "解锁于等级 38\n在戰鬥暴怒作用期間，爆擊時最高有 5% 的機率使敵人掉落額外的生命之球。";
+
+"rune_intothefray_name" = "一觸即發";
+"rune_intothefray_detail" = "解锁于等级 46\n在戰鬥暴怒持續期間內爆擊時，有一定機率額外產生 15 點怒氣。";
+
+"rune_bloodshed_name" = "血濺八方";
+"rune_bloodshed_detail" = "解锁于等级 54\n在戰鬥暴怒持續期間內爆擊時，有一定機率使目標爆裂噴血，對附近所有敵人造成該次爆擊 20% 的傷害。";
+//warcry
+"rune_hardenedwrath_name" = "怒濤填膺";
+"rune_hardenedwrath_detail" = "解锁于等级 32\n使護甲值加成提高至 40%。";
+
+"rune_charge_name" = "迎敵怒喝";
+"rune_charge_detail" = "解锁于等级 35\n獲得的怒氣提高至 60 點怒氣。";
+
+"rune_invigorate_name" = "鼓舞士氣";
+"rune_invigorate_detail" = "解锁于等级 41\n受到戰吼影響後，生命值上限提高 10% ，且每秒恢復 310 點生命值。";
+
+"rune_veteranswarning_name" = "戒備戰吼";
+"rune_veteranswarning_detail" = "解锁于等级 49\n戰吼可額外賦予 15% 閃躲機率。";
+
+"rune_impunity_name" = "頑抗戰吼";
+"rune_impunity_detail" = "解锁于等级 60\n在戰吼的效果下，使所有的抗性提高 50%。";
+//rage
+//earthquake
+"rune_giantsstride_name" = "巨人奔踏";
+"rune_giantsstride_detail" = "解锁于等级 24\n餘波將隨著野蠻人的奔踏移動而持續引發，造成 65% 武器傷害值的火焰傷害。";
+
+"rune_chillingearth_name" = "大地之寒";
+"rune_chillingearth_detail" = "解锁于等级 29\n凍結地面，使地震造成的傷害變成冰寒傷害，並使敵人的移動速度降低 80%。";
+
+"rune_themountainscall_name" = "山嶽呼喚";
+"rune_themountainscall_detail" = "解锁于等级 39\n移除怒氣消耗，並且將冷卻時間縮短至 105 秒。";
+
+"rune_aftershocks_name" = "震盪餘波";
+"rune_aftershocks_detail" = "解锁于等级 50\n發出額外的震波擊退敵人並造成 65% 武器傷害值的火焰傷害。";
+
+"rune_pathoffire_name" = "火焰奔竄";
+"rune_pathoffire_detail" = "解锁于等级 56\n朝前方 12 碼的範圍發出後續的震波，造成 65% 武器傷害值的火焰傷害。";
+//calloftheancients
+"rune_thecouncilrises_name" = "議會崛起s";
+"rune_thecouncilrises_detail" = "解锁于等级 31\n先祖每次攻擊會造成 66% 的武器傷害，並獲得 100% 的額外護甲值。";
+
+"rune_dutytotheclan_name" = "氏族之責";
+"rune_dutytotheclan_detail" = "解锁于等级 37\n持續時間延長為 20 秒。";
+
+"rune_korlicsmight_name" = "科力克之威";
+"rune_korlicsmight_detail" = "解锁于等级 45\n科力克獲得狂暴衝鋒技能，對一直線上的所有敵人造成 200% 的武器傷害。";
+
+"rune_madawcsmadness_name" = "馬道克之狂";
+"rune_madawcsmadness_detail" = "解锁于等级 51\n馬道克獲得闢地猛擊的技能，對弧形範圍內的敵人造成你 180% 的武器傷害。";
+
+"rune_talicsanger_name" = "塔力克之怒";
+"rune_talicsanger_detail" = "解锁于等级 58\n塔力克獲得躍擊的技能，對落地範圍內的敵人造成 250% 的武器傷害。";
+//wrathoftheberserker
+"rune_arreatswail_name" = "亞瑞特之嚎";
+"rune_arreatswail_detail" = "解锁于等级 36\n啟動狂戰之怒會將 12 碼內所有的敵人擊退並造成 430% 的武器傷害。";
+
+"rune_insanity_name" = "心智瘋狂";
+"rune_insanity_detail" = "解锁于等级 40\n啟動時，你所造成的傷害額外提高 100%。";
+
+"rune_slaughter_name" = "屠殺";
+"rune_slaughter_detail" = "解锁于等级 46\n狂戰之怒的持續時間內爆擊時，有一定機率引發鮮血爆濺，對 15 碼內的敵人造成 155% 武器傷害。";
+
+"rune_stridinggiant_name" = "邁步巨人";
+"rune_stridinggiant_detail" = "解锁于等级 52\n使閃躲機率加成提高至 60%。";
+
+"rune_thriveonchaos_name" = "無盡之怒";
+"rune_thriveonchaos_detail" = "解锁于等级 60\n狂戰之怒作用時每獲得 25 點怒氣，持續時間便增加 1 秒。";
+
+/*******************************DEMONHUNTER**********************************/
+//=======================initiative=======================system
+//primary
+//hungeringarrow
+"hungeringarrow_name" = "追噬箭";
+"hungeringarrow_detail" = "產生：3 點憎恨\n\n發射一支注入魔力的箭，追蹤敵人造成 115% 武器傷害，有 35% 機率可以射穿目標。\n\n主要技能\n\n解锁于等级 1";
+
+//entanglingshot
+"entanglingshot_name" = "縛影彈";
+"entanglingshot_detail" = "產生：3 點憎恨\n\n在箭矢上附加暗影能量，造成 75% 武器傷害，並且纏住最多 2 個敵人，使其移動速度降低 60%，持續 2 秒。\n\n主要技能\n\n解锁于等级 3";
+
+//bolashot
+"bolashot_name" = "縛錘彈";
+"bolashot_detail" = "產生：3 點憎恨\n\n射出一枚會爆炸的縛錘彈，綑住目標。縛錘彈會在 1 秒後爆炸，造成 130% 武器傷害值的火焰傷害，並且對 7 碼內的其他目標造成 110% 武器傷害值的火焰傷害。\n\n主要技能\n\n解锁于等级 11";
+
+//grenades
+"grenades_name" = "榴彈";
+"grenades_detail" = "產生：3 點憎恨\n\n投擲三顆榴彈，爆炸時造成 95% 武器傷害值的火焰傷害。\n\n主要技能\n\n解锁于等级 15";
+
+//secondary
+//impale
+"impale_name" = "刺穿";
+"impale_detail" = "消耗：25 點憎恨\n\n刺穿目標造成 250% 武器傷害。\n\n次要技能\n\n解锁于等级 2";
+
+//rapidfire
+"rapidfire_name" = "連射";
+"rapidfire_detail" = "發動時消耗：20 點憎恨，射擊過程中每秒額外消耗 10 點憎恨\n\n迅速射擊，造成 228% 武器傷害值的物理傷害。.\n\n次要技能\n\n解锁于等级 5";
+
+//chakram
+"chakram_name" = "戰輪";
+"chakram_detail" = "消耗：10 點憎恨\n\n發射一枚旋轉的戰輪，對其行進路徑上的敵人造成 150% 武器傷害值的物理傷害。\n\n次要技能\n\n解锁于等级 12";
+
+//elementalarrow
+"elementalarrow_name" = "元素箭";
+"elementalarrow_detail" = "消耗：10 點憎恨\n\n發射一支火焰箭，對行進路徑上的所有目標造成 155% 武器傷害值的火焰傷害。\n\n次要技能\n\n解锁于等级 20";
+
+//defensive
+//caltrops
+"caltrops_name" = "釘爪刺";
+"caltrops_detail" = "消耗：6 點戒律\n\n在地面放置釘爪刺陷阱，當敵人接近時啟動。陷阱彈出後會使 12 碼內的所有敵人行動減緩 60%。陷阱存在的持續時間為 6 秒。.\n\n防禦\n\n解锁于等级 4";
+
+//smokescreen
+"smokescreen_name" = "煙幕";
+"smokescreen_detail" = "消耗：14 點戒律\n\n消失在煙幕之後，瞬間隱形，持續 1 秒。\n\n防禦\n\n解锁于等级 8";
+
+//shadowpower
+"shadowpower_name" = "暗影之力";
+"shadowpower_detail" = "消耗：14 點戒律\n\n汲取暗影之力，將你造成的 20% 傷害轉為生命值，持續 3 秒。\n\n防禦\n\n解锁于等级 16";
+
+//hunting
+//vault
+"vault_name" = "騰躍";
+"vault_detail" = "消耗：8 點戒律\n\n靈活翻滾 35 碼。\n\n狩獵\n\n解锁于等级 9";
+
+//preparation
+"preparation_name" = "蓄勢待發";
+"preparation_detail" = "冷卻時間：45 秒\n\n立即恢復所有戒律值。\n\n狩獵\n\n解锁于等级 13";
+
+
+//companion
+"companion_name" = "戰寵";
+"companion_detail" = "消耗：10 點戒律\n\n召喚一隻掠鴉戰寵。你的掠鴉戰寵會定期地對敵人造成 30% 武器傷害值的物理傷害。\n\n狩獵\n\n解锁于等级 17";
+
+//markedfordeath
+"markedfordeath_name" = "死亡標記h";
+"markedfordeath_detail" = "消耗：3 點戒律\n\n標記目標。被標記的敵人在接下來 30 秒內受到額外的 12% 傷害。\n\n狩獵\n\n解锁于等级 21";
+
+//devices
+//evasivefire
+"evasivefire_name" = "迴避射擊";
+"evasivefire_detail" = "產生：4 點憎恨\n後空翻時消耗：4 點戒律\n\n射擊造成 125% 武器傷害。如果敵人貼近你的前方，你在射擊的同時會連帶後空翻 15 碼。\n\n器械\n\n解锁于等级 14";
+
+//fanofknives
+"fanofknives_name" = "飛舞刀刃";
+"fanofknives_detail" = "消耗：20 點憎恨\n冷卻時間：10 秒\n\n以你為中心旋轉擲出刀刃， 對 10 碼內所有敵人造成 320% 武器傷害。你的刀刃同時會使敵人移動速度降低 60%，持續 2 秒。\n\n器械\n\n解锁于等级 17";
+
+//spiketrap
+"spiketrap_name" = "尖刺陷阱";
+"spiketrap_detail" = "消耗：30 點憎恨\n\n放置陷阱，在 1.2 秒後裝置就緒，會在敵人接近時觸發。陷阱對 8 碼內的所有敵人造成 275% 武器傷害。\n\n你最多可同時設置 3 個尖刺陷阱。\n\n器械\n\n解锁于等级 17";
+
+//sentry
+"sentry_name" = "衛哨";
+"sentry_detail" = "消耗：10 點戒律\n\n在地面設置箭塔射擊附近的敵人，造成 20% 武器傷害。箭塔可持續存在 30 秒。\n\n器械\n\n解锁于等级 25";
+
+//archery
+//strafe
+"strafe_name" = "掃射";
+"strafe_detail" = "消耗：15 點憎恨\n\n朝隨機敵人射擊，造成 120% 武器傷害，同時以普通移動速度 65% 的速度前進。\n\n箭術\n\n解锁于等级 19";
+
+//multishot
+"multishot_name" = "多重射擊";
+"multishot_detail" = "消耗：40 點憎恨\n\n射出大批箭雨，對範圍內所有敵人造成 165% 武器傷害。\n\n箭術\n\n解锁于等级 22";
+
+//clusterarrow
+"clusterarrow_name" = "集束箭";
+"clusterarrow_detail" = "消耗：50 點憎恨\n\n發射一枚集束箭，爆炸造成 200% 武器傷害值的火焰傷害，同時分裂成一連串的微型炸彈，每顆炸彈再爆炸並造成額外 100% 武器傷害值的火焰傷害。\n\n箭術\n\n解锁于等级 27";
+
+//rainofvengeance
+"rainofvengeance_name" = "復仇箭雨";
+"rainofvengeance_detail" = "冷卻時間：30 秒\n\n向周圍射出大批箭雨。飛箭從天而降，對範圍內的所有敵人造成 75% 武器傷害，持續 5 秒。\n\n箭術\n\n解锁于等级 30";
+
+//=============passive=================level
+//tacticaladvantage
+"tacticaladvantage_name" = "戰略優勢";
+"tacticaladvantage_detail" = "當你使用騰躍、煙幕或迴避射擊的後空翻時，移動速度提高 60%，持續 2 秒。\n\n解锁于等级 10";
+"tacticaladvantage_story" = "總是勝之不武。";
+
+//thrillofthehunt
+"thrillofthehunt_name" = "戰慄狩獵";
+"thrillofthehunt_detail" = "每隔 10 秒，你的下次遠程攻擊會使目標定身，持續 3 秒。\n\n解锁于等级 10";
+"thrillofthehunt_story" = "\"頭三個惡魔還沒倒地就已經死了，至於其他傢伙，可就沒那麼幸運了。\" —蘭佛德隊長";
+
+//vengeance
+"vengeance_name" = "復仇心切";
+"vengeance_detail" = "你的憎恨值上限提高 25 點。此外當生命之球治療你時，還可獲得 20 點憎恨和 2 點戒律。\n\n解锁于等级 13";
+"vengeance_story" = "\"凡是會流血的東西都殺得死，慢慢磨死這傢伙吧。\" —資深狩魔獵人灰疤r";
+
+//steadyaim
+"steadyaim_name" = "沉著狙擊";
+"steadyaim_detail" = "當 10 碼範圍內沒有敵人時，造成的所有傷害提高 20%。\n\n解锁于等级 16";
+"steadyaim_story" = "\"跑得掉的話就試試看吧，惡魔。在我的箭筒中，這一大票傢伙飛得比你還快咧。\" —泰拉‧史萊克文";
+
+//culltheweak
+"culltheweak_name" = "窮追猛打";
+"culltheweak_detail" = "對被緩速的敵人造成的傷害提高 15%。\n\n解锁于等级 20";
+"culltheweak_story" = "\"你對我無助的家人有多仁慈，我就會對你多仁慈。\" —泰拉‧史萊克文";
+
+//nightstalker
+"nightstalker_name" = "暗夜潛伏者r";
+"nightstalker_detail" = "每次爆擊有一定機率恢復 1 點戒律。\n\n戒律是施展戰術和防禦技能所需的能量。\n\n解锁于等级 20";
+"nightstalker_story" = "\"你問我怎麼學會憎恨與殺戮，怎麼不帶感情地削下獵物的血肉？是你教我的。\" —泰拉‧史萊克文消滅噬罪者那羅前所說的話";
+
+//brooding
+"brooding_name" = "鬱悶沉思";
+"brooding_detail" = "只要在 3 秒內未受到任何傷害，每秒可恢復生命值上限 1%。\n\n解锁于等级 25";
+"brooding_story" = "莫忘你從何而來。";
+
+//hotpursuit
+"hotpursuit_name" = "緊追不捨";
+"hotpursuit_detail" = "當你的憎恨達上限時，移動速度提高 15%。\n\n解锁于等级 27";
+"hotpursuit_story" = "\"別逼我把你一路趕回地獄裡去，你這隻害蟲。我有個方法能快點送你回老家。\" —泰拉‧史萊克文";
+
+//archery
+"archery_name" = "箭術專精";
+"archery_detail" = "視主手武器類型提供加成效果：\n弓：傷害提高 15%\n弩：爆擊傷害提高 50%\n手弩：爆擊機率提高 10%\n\n解锁于等级 30";
+"archery_story" = "\"感受一下手中十字弓的重量。接下來…感覺風向、距離，以及目標的速度。很好，就是這樣。現在換個狀況，看看你在血染雙眼、惡魔迫在眉睫的情況下做不做得到。\" —資深狩魔獵人灰疤";
+
+//numbingtraps
+"numbingtraps_name" = "麻醉陷阱";
+"numbingtraps_detail" = "飛舞刀刃、尖刺陷阱及釘爪刺擊中敵人後，會使其移動速度降低 25%，持續 3 秒。\n\n解锁于等级 30";
+"numbingtraps_story" = "\"惡魔的身體構造十分奇異多變，有時候異於常態，但有時候又跟凡人一樣脆弱。\" —《滅敵沈思錄》";
+
+//perfectionist
+"perfectionist_name" = "完美主義者";
+"perfectionist_detail" = "所有技能的戒律消耗降低 10%。\n\n戒律是施展戰術和防禦技能所需的能量。\n\n解锁于等级 35";
+"perfectionist_story" = "陷阱一觸發就要殲滅敵人，不要心軟。遲疑只會招致大難臨頭。";
+
+//customengineering
+"customengineering_name" = "器械調校";
+"customengineering_detail" = "釘爪刺、死亡標記、尖刺陷阱及衛哨的持續時間延長 100%。\n\n解锁于等级 40";
+"customengineering_story" = "這些使用在大多數手持十字弓和陷阱上面的自動裝填器械相當精密，不易維護。得累積大量的操作經驗，才能讓這些東西好好發揮作用。";
+
+//grenadier
+"grenadier_name" = "擲彈高手";
+"grenadier_detail" = "榴彈技能的憎很產生提高 2 點，集束箭技能的憎恨消耗降低 10 點。在死亡時，你會丟出一顆巨大的榴彈，爆炸造成 450% 武器傷害值的火焰傷害。\n\n解锁于等级 45";
+"grenadier_story" = "\"別在燭光或火光旁組裝這些裝置。引火之後，在你數到三之前，至少要保持十步以上的距離。\" —鍊金術士廣的囑咐";
+
+//sharpshooter
+"sharpshooter_name" = "百步穿楊";
+"sharpshooter_detail" = "爆擊機率每秒提高 3%。此加成效果將會在你成功造成爆擊 1 秒後重置。\n\n解锁于等级 50";
+"sharpshooter_story" = "\"只要是生物就會有弱點。找到罩門，然後把箭刺進去。\" —資深狩魔獵人灰疤";
+
+//ballistics
+"ballistics_name" = "彈道修研";
+"ballistics_detail" = "導彈造成的傷害提高 50%。\n\n某些技能的符文效果可射出導彈。\n\n解锁于等级 55";
+"ballistics_story" = "\"我哪會知道這些東西是誰發明的？反正瞄準好敵人就對了，剩下的就交給這些玩意兒了。\" —資深狩魔獵人灰疤";
+
+//=============rune==============level
+//hungeringarrow
+"rune_puncturingarrow_name" = "穿刺箭";
+"rune_puncturingarrow_detail" = "解锁于等级 6\n箭矢穿透敵人的機率提高至 50%。";
+
+"rune_cinderarrow_name" = "炎熔箭";
+"rune_cinderarrow_detail" = "解锁于等级 17\n將箭矢引火，在 3 秒內造成額外 35% 武器傷害值的火焰傷害。";
+
+"rune_shattershot_name" = "分裂矢";
+"rune_shattershot_detail" = "解锁于等级 26\n若成功穿透第一個目標，箭矢會分裂成 3 支箭。";
+
+"rune_devouringarrow_name" = "吞噬箭";
+"rune_devouringarrow_detail" = "解锁于等级 42\n每貫穿一次可使該支箭矢的傷害提高 70%。.";
+
+"rune_sprayofteeth_name" = "碎骨擊h";
+"rune_sprayofteeth_detail" = "解锁于等级 52\n爆擊時目標的骨骼會迸裂飛散，對範圍內所有的敵人造成 50% 武器傷害。";
+
+//impale
+"rune_impact_name" = "猛憾衝擊";
+"rune_impact_detail" = "解锁于等级 7\n刺穿可造成擊退，並且有 65% 機率使敵人昏迷，持續 1.5 秒。";
+
+"rune_chemicalburn_name" = "灼燒藥劑";
+"rune_chemicalburn_detail" = "解锁于等级 15\n目標受到額外的流血效果影響，在 2 秒內受到 125% 武器傷害值的物理傷害。";
+
+"rune_overpenetration_name" = "強力穿透";
+"rune_overpenetration_detail" = "解锁于等级 28\n飛刀會穿透直線路徑上所有的敵人。";
+
+"rune_awareness_name" = "覺察敵勢";
+"rune_awareness_detail" = "解锁于等级 53\n擲出第一柄飛刀後，以自身為中心再度發出多把飛刃，對 10 碼內所有的敵人造成 75% 武器傷害。";
+
+"rune_grievouswounds_name" = "慘重傷害";
+"rune_grievouswounds_detail" = "解锁于等级 58\n爆擊可造成額外的 100% 武器傷害。";
+
+//entanglingshot
+"rune_chaingang_name" = "連環鎖";
+"rune_chaingang_detail" = "解锁于等级 9\n最多擊中 4 名目標。";
+
+"rune_shockcollar_name" = "電光鎖鍊";
+"rune_shockcollar_detail" = "解锁于等级 18\n以帶電的鎖鍊攻擊敵人，每秒造成額外 18% 武器傷害值的電擊傷害，持續 2 秒。";
+
+"rune_heavyburden_name" = "沉重負荷";
+"rune_heavyburden_detail" = "解锁于等级 34\n使移動速度減緩的持續時間延長至 4 秒。";
+
+"rune_justiceisserved_name" = "伸張正義";
+"rune_justiceisserved_detail" = "解锁于等级 47\n每發攻擊產生的憎恨提高至 6 點。";
+
+"rune_bountyhunter_name" = "賞金獵人";
+"rune_bountyhunter_detail" = "解锁于等级 54\n造成的 6% 傷害轉為你的生命值。";
+
+//caltrops
+"rune_hookedspines_name" = "倒鉤脊刺";
+"rune_hookedspines_detail" = "解锁于等级 12\n緩速效果提高至 80%。";
+
+"rune_torturousground_name" = "寸步難行";
+"rune_torturousground_detail" = "解锁于等级 18\n觸發陷阱後，範圍內所有的敵人定身 2 秒。";
+
+"rune_jaggedspikes_name" = "鋸齒尖刺";
+"rune_jaggedspikes_detail" = "解锁于等级 28\n範圍內的敵人每秒額外受到 45% 的武器傷害。";
+
+"rune_carvedstakes_name" = "尖削樁刺";
+"rune_carvedstakes_detail" = "解锁于等级 41\n釘爪刺的戒律消耗降低至 4 點。";
+
+"rune_baitthetrap_name" = "引君入甕";
+"rune_baitthetrap_detail" = "解锁于等级 54\n站在陷阱範圍內可獲得強化效果，使你所有攻擊的爆擊機率額外提高 10%。";
+
+//rapidfire
+"rune_witheringfire_name" = "殲敵掃射";
+"rune_witheringfire_detail" = "解锁于等级 11\n初始憎恨消耗降低至 5 點，並且引燃你的箭矢，將攻擊轉為火焰傷害。";
+
+"rune_webshot_name" = "纏網射擊t";
+"rune_webshot_detail" = "解锁于等级 19\n受影響目標移動速度降低 80%，持續 1 秒。";
+
+"rune_firesupport_name" = "火力支援";
+"rune_firesupport_detail" = "解锁于等级 32\n在連射引導過程中，每秒發射 3 枚追蹤導彈，每發可對附近目標造成 35% 武器傷害值的物理傷害。";
+
+"rune_highvelocity_name" = "高速穿透";
+"rune_highvelocity_detail" = "解锁于等级 45\n發射毒箭，有 40% 的機率穿透敵人。";
+
+"rune_bombardment_name" = "連環轟擊";
+"rune_bombardment_detail" = "解锁于等级 56\n連續射出會爆炸的榴彈，對 4 碼內所有的敵人造成 276% 武器傷害值的火焰傷害。";
+
+//smokescreen
+"rune_displacement_name" = "蔽影疾行";
+"rune_displacement_detail" = "解锁于等级e 14\n啟動後，移動速度提高 35%。";
+
+"rune_lingeringfog_name" = "煙霧瀰漫";
+"rune_lingeringfog_detail" = "解锁于等级 23\n效果持續時間延長至 1.5 秒。";
+
+"rune_breathedeep_name" = "懷恨之隱p";
+"rune_breathedeep_detail" = "解锁于等级 33\n在隱形狀態下，每秒獲得 12 點憎恨。";
+
+"rune_specialrecipe_name" = "特製隱幕";
+"rune_specialrecipe_detail" = "解锁于等级 44\n戒律消耗降低至 12 點。";
+
+"rune_chokinggas_name" = "窒息瓦斯";
+"rune_chokinggas_detail" = "解锁于等级 59\n留下一片瓦斯雲，每秒對範圍內所有敵人造成 70% 武器傷害值的物理傷害，持續 5 秒。";
+
+//vault
+"rune_actionshot_name" = "同步射擊";
+"rune_actionshot_detail" = "解锁于等级 16\n你在移動過程同時射箭，對附近目標造成 75% 武器傷害。";
+
+"rune_rattlingroll_name" = "飛身滾撞";
+"rune_rattlingroll_detail" = "解锁于等级 23\n擊退騰躍落地點 8 碼內所有敵人，並使其昏迷 1.5 秒。";
+
+"rune_tumble_name" = "連環滾翻";
+"rune_tumble_detail" = "解锁于等级 33\n使用騰躍後，6 秒內下個騰躍的戒律消耗降低 50%。";
+
+"rune_acrobatics_name" = "空翻巧技";
+"rune_acrobatics_detail" = "解锁于等级 38\n移除戒律消耗，但追加 15 秒冷卻時間。";
+
+"rune_trailofcinders_name" = "焦炎足跡";
+"rune_trailofcinders_detail" = "解锁于等级 49\n引燃火焰，對移動路徑上的所有物體造成 100% 武器傷害值的火焰傷害。";
+
+//bolashot
+"rune_volatileexplosives_name" = "猛烈爆破";
+"rune_volatileexplosives_detail" = "解锁于等级 14\n使爆炸半徑提高至 14 碼。";
+
+"rune_thunderball_name" = "霹靂彈";
+"rune_thunderball_detail" = "解锁于等级 24\n縛錘彈爆炸時造成 130% 武器傷害值的電擊傷害，並有 35% 機率可使主要目標昏迷 1.5 秒。";
+
+"rune_acidstrike_name" = "酸蝕打擊";
+"rune_acidstrike_detail" = "解锁于等级 37\n發射 3 發縛錘彈，每發造成 130% 武器傷害值的毒素傷害。這些縛錘彈不會爆炸，也不會對附近的目標造成區域性傷害。";
+
+"rune_bitterpill_name" = "無情苦果";
+"rune_bitterpill_detail" = "解锁于等级 51\n縛錘爆炸後，你有 15% 機率獲得 2 點戒律。";
+
+"rune_imminentboom_name" = "大難臨頭";
+"rune_imminentboom_detail" = "解锁于等级 57\n強化縛錘彈，對目標造成 182% 武器傷害值的秘法傷害，並且對 7 碼內所有的敵人造成 154% 武器傷害值的秘法傷害，但是引爆時間延後 2 秒。";
+
+//chakram
+"rune_twinchakrams_name" = "雙生戰輪";
+"rune_twinchakrams_detail" = "解锁于等级 18\n擲出兩枚迴旋曲進的戰輪。每枚戰輪造成 101% 武器傷害值的物理傷害。";
+
+"rune_serpentine_name" = "蛇曲毒輪";
+"rune_serpentine_detail" = "解锁于等级 26\n戰輪以平緩的曲線飛行，對路徑上經過的敵人造成 203% 武器傷害值的毒素傷害。";
+
+"rune_razordisk_name" = "利刃飛盤";
+"rune_razordisk_detail" = "解锁于等级 34\n戰輪直射至目標地點後轉為螺旋狀盤繞飛行，對路徑上所有敵人造成 165% 武器傷害值的秘法傷害。";
+
+"rune_boomerang_name" = "迴返飛輪";
+"rune_boomerang_detail" = "解锁于等级 48\n戰輪的飛行路徑變得像迴力鏢一樣，對路徑上的敵人造成 188% 武器傷害值的電擊傷害。";
+
+"rune_shurikencloud_name" = "手裡劍幕";
+"rune_shurikencloud_detail" = "解锁于等级 57\n在身旁佈下旋轉的戰輪，持續 120 秒，每秒對附近敵人造成 30% 武器傷害值的物理傷害。";
+
+//preparation
+"rune_invigoration_name" = "激昂";
+"rune_invigoration_detail" = "解锁于等级e 19\n蓄勢待發啟動時，戒律上限提高 10 點，持續 5 秒。";
+
+"rune_punishment_name" = "懲罰";
+"rune_punishment_detail" = "解锁于等级 25\n恢復所有憎恨，但需要消耗 25 點戒律。蓄勢待發沒有冷卻時間。";
+
+"rune_battlescars_name" = "戰地癒傷";
+"rune_battlescars_detail" = "解锁于等级 35\n使用蓄勢待發後可獲得 60% 生命值。";
+
+"rune_focusedmind_name" = "集中心智";
+"rune_focusedmind_detail" = "解锁于等级 44\n在 15 秒內獲得 45 點戒律，而非立刻恢復。";
+
+"rune_backupplan_name" = "未雨綢繆";
+"rune_backupplan_detail" = "解锁于等级 52\n蓄勢待發有 30% 機率不會觸發冷卻時間。";
+
+//evasivefire
+"rune_shrapnel_name" = "破片散射";
+"rune_shrapnel_detail" = "解锁于等级 21\n發射爆裂矢，對主要目標周圍 6 碼內所有的敵人造成 30% 武器傷害值的火焰傷害。";
+
+"rune_partinggift_name" = "臨別贈禮";
+"rune_partinggift_detail" = "解锁于等级 26\n發動後空翻的時候會在原地留下一枚毒爆彈，1.2 秒後爆炸，在半徑 12 碼的範圍內造成 45% 武器傷害值的毒素傷害，同時將迴避射擊轉為毒素傷害。";
+
+"rune_coveringfire_name" = "掩護射擊";
+"rune_coveringfire_detail" = "解锁于等级 34\n發射一排箭矢，最多可擊中 3 名敵人，對每個目標造成 125% 的武器傷害。";
+
+"rune_displace_name" = "移形換影";
+"rune_displace_detail" = "解锁于等级 42\n後空翻距離增加至 30 碼。";
+
+"rune_surge_name" = "電流奔湧";
+"rune_surge_detail" = "解锁于等级 53\n施展後空翻的消耗值降低至 2 點戒律，並且將迴避射擊轉為電擊傷害。";
+
+//grenades
+"rune_tinkerer_name" = "工匠手藝";
+"rune_tinkerer_detail" = "解锁于等级 22\n憎恨產生值提高至 6 點。";
+
+"rune_clustergrenades_name" = "集束榴彈";
+"rune_clustergrenades_detail" = "解锁于等级 32\n投擲集束榴彈，對 8 碼內的敵人造成 112% 武器傷害值的火焰傷害。";
+
+"rune_firebomb_name" = "火焰炸彈b";
+"rune_firebomb_detail" = "解锁于等级 40\n擲出一顆大型榴彈，造成 123% 武器傷害值的火焰傷害。";
+
+"rune_stungrenades_name" = "震撼榴彈";
+"rune_stungrenades_detail" = "解锁于等级 48\n投擲榴彈，有 25% 的機率使敵人昏迷 1.5 秒。";
+
+"rune_gasgrenades_name" = "毒氣榴彈";
+"rune_gasgrenades_detail" = "解锁于等级 60\n投擲毒氣榴彈，爆炸後造成 95% 武器傷害值的毒素傷害，並留下一團毒雲，每秒對範圍內的敵人造成額外 25% 武器傷害值的毒素傷害，持續 3 秒。";
+
+
+//shadowpower
+"rune_nightbane_name" = "誅夜滅暗";
+"rune_nightbane_detail" = "解锁于等级 21\n暗影之力持續期間，每秒額外獲得 4 點憎恨。";
+
+"rune_bloodmoon_name" = "血月之力";
+"rune_bloodmoon_detail" = "解锁于等级 29\n傷害轉為生命值的比例提高至 30%。";
+
+"rune_wellofdarkness_name" = "黑暗湧源";
+"rune_wellofdarkness_detail" = "解锁于等级 37\n戒律消耗降低至 12 點。";
+
+"rune_gloom_name" = "潛入暗影";
+"rune_gloom_detail"  = "解锁于等级 51\n在暗影之力的效果持續期間內，受到的傷害降低 65%。";
+
+"rune_shadowglide_name" = "暗影翔步";
+"rune_shadowglide_detail" = "解锁于等级 58\n在暗影之力的效果持續期間內獲得 40% 移動速度加成。";
+
+//companion
+"rune_spidercompanion_name" = "蜘蛛戰寵";
+"rune_spidercompanion_detail" = "解锁于等级 22\n召喚的戰寵由掠鴉變成蜘蛛。蜘蛛的攻擊會使目標移動速度降低 60%，持續 2 秒。.";
+
+"rune_batcompanion_name" = "蝙蝠戰寵";
+"rune_batcompanion_detail" = "解锁于等级 29\n召喚的戰寵由掠鴉變成蝙蝠。蝙蝠使你每秒獲得 3 點憎恨。";
+
+"rune_boarcompanion_name" = "野豬戰寵";
+"rune_boarcompanion_detail" = "解锁于等级 41\n召喚的戰寵由掠鴉變成野豬。野豬可攻擊周遭範圍內的所有敵人。";
+
+"rune_ferretcompanion_name" = "鼬貂戰寵";
+"rune_ferretcompanion_detail" = "解锁于等级 46\n召喚的戰寵由掠鴉變成鼬貂。鼬貂會為你收集金幣，同時使怪物掉落的金幣量提高 10%。";
+
+"rune_wolfcompanion_name" = "惡狼戰寵";
+"rune_wolfcompanion_detail" = "解锁于等级 59\n召喚的戰寵由掠鴉變成惡狼，持續 25 秒。惡狼的攻擊可造成 60% 武器傷害值的物理傷害。";
+
+//fanofknives
+"rune_cripplingrazors_name" = "致殘利刃";
+"rune_cripplingrazors_detail" = "解锁于等级 23\n使敵人緩速的效果提高至 80%，持續 2 秒。";
+
+"rune_retaliate_name" = "報復飛刃";
+"rune_retaliate_detail" = "解锁于等级 32\n身旁環繞一圈飛刀，在 10 秒內若被敵人擊中，則對所有敵人造成 464% 武器傷害。";
+
+"rune_hailofknives_name" = "狂舞刀刃";
+"rune_hailofknives_detail" = "解锁于等级 38\n提高範圍半徑，對 20 碼內所有敵人造成傷害。";
+
+"rune_fanofdaggers_name" = "飛舞匕首";
+"rune_fanofdaggers_detail" = "解锁于等级 44\n將你的飛刀注入能量，有 65% 機率使敵人昏迷，持續 2 秒。";
+
+"rune_assassinsknives_name" = "刺客刀刃";
+"rune_assassinsknives_detail" = "解锁于等级 59\n施展遠距離飛刀投擲，對 5 名額外目標造成 70% 武器傷害。";
+
+//spiketrap
+"rune_bandolier_name" = "有備無患";
+"rune_bandolier_detail" = "解锁于等级 27\n可同時放置的最大陷阱數量提高至 6 個。";
+
+"rune_stickytrap_name" = "黏著陷阱";
+"rune_stickytrap_detail" = "解锁于等级 30\n將炸彈安置在敵人身上，而非置於地面。若目標在 30 秒內死亡，炸彈會爆炸，對 8 碼內所有的敵人造成 404% 武器傷害。";
+
+"rune_longfuse_name" = "加長引信";
+"rune_longfuse_detail" = "解锁于等级 39\n啟動時間延長至 2 秒，但傷害提高至 371% 武器傷害。";
+
+"rune_lightningrod_name" = "聚雷針";
+"rune_lightningrod_detail" = "解锁于等级\n陷阱觸發後會釋出電流脈衝，最多在 3 名敵人間彈跳，造成 275% 武器傷害值的電擊傷害。";
+
+"rune_scatter_name" = "多重陷阱";
+"rune_scatter_detail" = "解锁于等级 55\n同時設置全部 3 個尖刺陷阱。";
+
+//strafe
+"rune_equilibrium_name" = "心境平和";
+"rune_equilibrium_detail" = "解锁于等级 24\n使用掃射時你的攻擊速度提高 20%。";
+
+"rune_driftingshadow_name" = "迅影流轉";
+"rune_driftingshadow_detail" = "解锁于等级 29\n在掃射過程中，移動速度提高至普通移動速度的 100%。";
+
+"rune_stingingsteel_name" = "螫刺刀刃";
+"rune_stingingsteel_detail" = "解锁于等级 37\n由射出箭矢改為投擲飛刀，在爆擊時造成額外的 100% 傷害。";
+
+"rune_rocketstorm_name" = "導彈風暴";
+"rune_rocketstorm_detail" = "解锁于等级 50\n除了普通攻擊外，同時還會發射追蹤導彈，造成 60% 武器傷害值的火焰傷害。";
+
+"rune_demolition_name" = "榴彈爆破";
+"rune_demolition_detail" = "解锁于等级 56\n發射彈力榴彈，爆炸後對 9 碼內的目標造成 144% 武器傷害。.";
+
+
+//elementalarrow
+"rune_balllightning_name" = "電球矢";
+"rune_balllightning_detail" = "解锁于等级 24\n發射一支緩慢移動的箭矢，電擊路徑上的敵人造成 155% 武器傷害值的電擊傷害。";
+
+"rune_frostarrow_name" = "冰霜箭";
+"rune_frostarrow_detail" = "解锁于等级 29\n發射一支冰霜箭，擊中目標時分裂成數支箭矢，造成 170% 武器傷害值的冰寒傷害。受影響的敵人移動速度減緩 60%，持續 1 秒。";
+
+"rune_screamingskull_name" = "尖嘯骷髏";
+"rune_screamingskull_detail" = "解锁于等级 36\n有 40% 機率發射一個顱骨，使受影響的敵人恐懼 1.5 秒。";
+
+"rune_lightningbolts_name" = "雷霆矢";
+"rune_lightningbolts_detail" = "解锁于等级 43\n發射電能箭矢，爆擊時可以擊昏敵人 1.5 秒。";
+
+"rune_nethertentacles_name" = "幽冥觸手";
+"rune_nethertentacles_detail" = "解锁于等级 59\n暗影觸手對路徑上的敵人造成 155% 武器傷害，並且將 3% 的傷害轉為你的生命值。";
+
+
+//markedfordeath
+"rune_contagion_name" = "死亡蔓延";
+"rune_contagion_detail" = "解锁于等级 27\n若目標被此技能殺死，則技能將會分散至 2 個其他附近的目標。該效果可重複連續。";
+
+"rune_valleyofdeath_name" = "死亡谷地";
+"rune_valleyofdeath_detail" = "解锁于等级 31\n在地面標記出一塊 12 碼寬的區域，持續 15 秒。區域內的敵人受到 12% 的額外傷害。";
+
+"rune_grimreaper_name" = "死神之刈";
+"rune_grimreaper_detail" = "解锁于等级 39\n對目標造成額外 12% 的傷害，並且將這些傷害分攤到 20 碼內的所有敵人身上。";
+
+"rune_mortalenemy_name" = "不共戴天";
+"rune_mortalenemy_detail" = "解锁于等级 48\n狩魔獵人對標定敵人攻擊時產生 3 點憎恨。";
+
+"rune_deathtoll_name" = "死之代償";
+"rune_deathtoll_detail" = "解锁于等级 60\n對標記目標造成傷害的 1% 轉為攻擊者的生命值。";
+
+
+//multishot
+"rune_fireatwill_name" = "自由開火";
+"rune_fireatwill_detail" = "解锁于等级 26\n憎恨消耗降低至 20 點，造成 165% 武器傷害值的電擊傷害。";
+
+"rune_burstfire_name" = "脈衝射擊";
+"rune_burstfire_detail" = "解锁于等级 31\n每次射擊都會產生一股脈衝波，對附近的敵人造成 65% 武器傷害值的秘法傷害。";
+
+"rune_suppressionfire_name" = "火力壓制e";
+"rune_suppressionfire_detail" = "解锁于等级 39\n每擊中一名敵人可獲得 1 點戒律。";
+
+"rune_fullbroadside_name" = "全線齊射";
+"rune_fullbroadside_detail" = "解锁于等级 46\n多重射擊造成的傷害提高至 214% 的武器傷害。";
+
+"rune_arsenal_name" = "多重火力";
+"rune_arsenal_detail" = "解锁于等级 55\n每次使用時，會另外對附近敵人射出 3 枚導彈，每枚造成 60% 武器傷害值的火焰傷害。";
+
+//sentry
+"rune_spitfireturret_name" = "怒炎箭塔";
+"rune_spitfireturret_detail" = "解锁于等级 28\n箭塔對附近隨機目標發射追蹤導彈，造成 8% 武器傷害值的火焰傷害。";
+
+"rune_vigilantwatcher_name" = "戒備狀態";
+"rune_vigilantwatcher_detail" = "解锁于等级 36\n使箭塔的持續時間延長至 40 秒。";
+
+"rune_chainoftorment_name" = "酷刑之鍊";
+"rune_chainoftorment_detail" = "解锁于等级 45\n在你和衛哨之間牽起一條鎖鍊，對所有接觸鎖鍊的敵人每秒造成 40% 的武器傷害。";
+
+"rune_aidstation_name" = "急救站";
+"rune_aidstation_detail" = "解锁于等级 52\n每秒治療附近盟友生命值上限 1.0%。";
+
+"rune_guardianturret_name" = "守護箭塔";
+"rune_guardianturret_detail" = "解锁于等级 60\n箭塔同時會為盟友加掛護盾，使其所受傷害降低 15%。";
+
+
+//clusterarrow
+"rune_dazzlingarrow_name" = "震撼箭";
+"rune_dazzlingarrow_detail" = "解锁于等级 33\n將傷害轉為物理傷害，並且使被炸彈擊中的敵人有 55% 機率昏迷 2 秒。";
+
+"rune_shootingstars_name" = "流星雨";
+"rune_shootingstars_detail" = "解锁于等级 36\n將炸彈改為導彈，對附近的敵人發射最多 3 枚導彈，每枚造成 175% 武器傷害值的物理傷害。";
+
+"rune_maelstrom_name" = "影能漩渦";
+"rune_maelstrom_detail" = "解锁于等级 41\n從炸彈攻擊改為釋放暗影能量，對附近敵人造成 145% 武器傷害值的物理傷害。造成傷害的 4% 轉為你的生命值。";
+
+"rune_clusterbombs_name" = "集束炸彈";
+"rune_clusterbombs_detail" = "解锁于等级 49\n向空中發射集束箭並沿著直線路徑進行轟炸，每顆炸彈在爆炸時造成 230% 武器傷害值的火焰傷害。";
+
+"rune_loadedforbear_name" = "有備而來";
+"rune_loadedforbear_detail" = "解锁于等级 58\n使引爆地點的爆炸傷害提高至 290% 武器傷害值的火焰傷害。";
+
+
+//rainofvengeance
+"rune_darkcloud_name" = "黑雲蔽日";
+"rune_darkcloud_detail" = "解锁于等级 35\n射出會自動導向的箭雨，對敵人造成 34% 武器傷害，持續 12 秒。";
+
+"rune_beastlybombs_name" = "影獸轟炸";
+"rune_beastlybombs_detail" = "解锁于等级 40\n召喚 20 隻影獸對附近敵人投擲炸彈，每發可造成 125% 武器傷害。";
+
+"rune_stampede_name" = "蜂擁潰敵";
+"rune_stampede_detail" = "解锁于等级 47\n召喚 10 隻影獸撕裂地面，每隻影獸可造成 75% 武器傷害並擊退敵人。";
+
+"rune_anathema_name" = "詛咒之影";
+"rune_anathema_detail" = "解锁于等级 54\n召喚一頭從天空投擲榴彈的影獸，造成 115% 武器傷害，持續 10 秒。";
+
+"rune_flyingstrike_name" = "影獸空襲";
+"rune_flyingstrike_detail" = "解锁于等级 60\n8 隻影獸從空中俯衝而下，每隻影獸對目標地點造成 60% 武器傷害，同時使敵人昏迷 2 秒。";
+
+
+/****************************MONK******************************/
+//=============initiative=============system
+//primary
+//fistsofthunder
+"fistsofthunder_name" = "奔雷拳";
+"fistsofthunder_detail" = "每次攻擊產生：6 點精氣\n\n以極快的速度施展連環拳打，造成 110% 武器傷害值的電擊傷害。每三擊會對前方所有的敵人造成傷害，並將其擊退一小段距離。由於攻擊速度快，此技能產生精氣值的速度高於其他精氣產生技。\n\n主要技能\n\n解锁于等级 1";
+
+//deadlyreach
+"deadlyreach_name" = "斷空波";
+"deadlyreach_detail" = "每次攻擊產生：6 點精氣\n\n施展出一道短距離的內勁，造成 110% 武器傷害。每三擊可使距離延長 25 碼。\n\n主要技能\n\n解锁于等级 3";
+
+//cripplingwave
+"cripplingwave_name" = "伏魔破";
+"cripplingwave_detail" = "每次攻擊產生：6 點精氣\n\n連續施展大幅度的橫掃攻擊，對前方所有敵人造成 110% 武器傷害。每三擊會對周圍所有敵人造成傷害並附加暈眩效果，使其移動速度降低 30%，攻擊速度降低 20%，持續 3 秒。\n\n主要技能\n\n解锁于等级 11";
+
+//wayofthehundredfists
+"wayofthehundredfists_name" = "百烈拳";
+"wayofthehundredfists_detail" = "每次攻擊產生：6 點精氣\n\n使出極速連打，對敵人造成 140% 武器傷害\n\n主要技能\n\n解锁于等级 15";
+
+//secondary
+//lashingtailkick
+"lashingtailkick_name" = "雲龍擺尾";
+"lashingtailkick_detail" = "消耗：30 點精氣\n\n施展一記致命的迴旋踢，擊退敵人並造成 200% 武器傷害。\n\n次要技能\n\n解锁于等级 2";
+
+//tempestrush
+"tempestrush_name" = "暴風奔襲";
+"tempestrush_detail" = "消耗：初始為 15 點精氣，之後額外消耗 10 點精氣。\n\n直直奔向敵人，擊退並絆住對方的腳，使其移動速度降低 60%，持續 2 秒。奔跑過程中同時造成 50% 武器傷害。\n\n次要技能n\n解锁于等级 5";
+
+//waveoflight
+"waveoflight_name" = "Wave of Light";
+"waveoflight_detail" = "Cost: 75 Spirit\n\nFocuses a wave of light that crushes enemies for 215% weapon damage as Holy, followed by an additional 45% weapon damage as Holy to all enemies in a line.\n\n次要技能\n\n解锁于等级 12";
+
+//defensive
+//blindingflash
+"blindingflash_name" = "Blinding Flash";
+"blindingflash_detail" = "Cost: 10 Spirit\nCooldown: 15 seconds\n\nCreate a flash of light that blinds all enemies within 20 yards for 3 seconds. Elite enemies recover faster, but suffer a 30% chance to miss with attacks.\n\nDefensive\n\n解锁于等级 4";
+
+//breathofheaven
+"breathofheaven_name" = "Breath of Heaven";
+"breathofheaven_detail" = "Cost: 25 Spirit\nCooldown: 15 seconds\n\nA blast of divine energy heals you and all allies within 12 yards for 6202 - 7442 Life.\n\nDefensive\n\n解锁于等级 8";
+
+//serenity
+"serenity_name" = "Serenity";
+"serenity_detail" = "Cost: 10 Spirit\nCooldown: 20 seconds\n\nYou are enveloped in a protective shield that absorbs all incoming damage for 3 seconds and grants immunity to all control impairing effects.\n\nDefensive\n\n解锁于等级 16";
+
+//innersanctuary
+"innersanctuary_name" = "Inner Sanctuary";
+"innersanctuary_detail" ="消耗：30 點精氣\nCooldown: 20 seconds\n\nCreate a runic circle of protection on the ground for 5 seconds that cannot be passed by enemies.\n\nDefensive\n\n解锁于等级 22";
+
+//techniques
+//dashingstrike
+"dashingstrike_name" = "Dashing Strike";
+"dashingstrike_detail" = "Cost: 25 Spirit\n\nQuickly dash at the targeted enemy or location, striking for 100% weapon damage and rooting the target for 1 second.\n\nTechniques\n\n解锁于等级 9";
+
+//explodingpalm
+"explodingpalm_name" = "Exploding Palm";
+"explodingpalm_detail" = "Cost: 40 Spirit\n\nCause a target to Bleed for 220% weapon damage as Physical over 3 seconds. If the target dies while bleeding, it explodes and deals 30% of the target's maximum Life as Physical damage to all nearby enemies.\n\nTechniques\n\n解锁于等级 13";
+
+//sweepingwind
+"sweepingwind_name" = "Sweeping Wind";
+"sweepingwind_detail" = "Cost: 75 Spirit\n\nSurround yourself in a vortex that continuously deals 15% weapon damage to all enemies within 10 yards. The vortex lasts 6 seconds and is refreshed each time you strike an enemy with a melee attack. Landing a Critical Hit has a chance to increase the vortex effect up to 2 times for a total of 45% weapon damage to nearby enemies.\n\nTechniques\n\n解锁于等级 21";
+
+//focus
+//cyclonestrike
+"cyclonestrike_name" = "Cyclone Strike";
+"cyclonestrike_detail" = "Cost: 50 Spirit\n\nPull all enemies within 24 yards towards you, followed by a furious blast of energy that deals 100% weapon damage as Holy.\n\nFocus\n\n解锁于等级 14";
+
+//sevensidedstrike
+"sevensidedstrike_name" = "Seven-Sided Strike";
+"sevensidedstrike_detail" = "Cost: 50 Spirit\nCooldown: 30 seconds\n\nDash rapidly between nearby enemies, dealing 777% weapon damage over 7 hits.\n\nFocus\n\n解锁于等级 17";
+
+//mystically
+"mystically_name" = "Mystic Ally";
+"mystically_detail" = "Cost: 25 Spirit\n\nSummon a mystic ally to fight alongside you until it is destroyed. The ally deals 40% of your weapon damage as Physical per swing.\n\nFocus\n\n解锁于等级 22";
+
+//mantras
+//mantraofevasion
+"mantraofevasion_name" = "Mantra of Evasion";
+"mantraofevasion_detail" = "Cost: 50 Spirit\n\nRecite a Mantra that grants you and your allies within 40 yards a 15% chance to dodge attacks for 3 minutes.\n\nFor 3 seconds after activation, a second effect grants an additional 15% chance to dodge attacks.\n\nThis is a Mantra. You can only have one Mantra active at a time.\n\nMantras\n\n解锁于等级 19";
+
+//mantraofretribution
+"mantraofretribution_name" = "Mantra of Retribution";
+"mantraofretribution_detail" = "Cost: 50 Spirit\n\nRecite a Mantra that causes you and your allies within 40 yards to reflect melee damage back at enemies, dealing Holy damage equal to 40% of the damage sustained. The effect lasts for 3 minutes.\n\nFor 3 seconds after activation, the effect on you increases to 80% of the damage sustained.\n\nThis is a Mantra. You can only have one Mantra active at a time.\n\nMantras\n\n解锁于等级 21";
+
+//mantraofhealing
+"mantraofhealing_name" = "Mantra of Healing";
+"mantraofhealing_detail" = "Cost: 50 Spirit\n\nRecite a Mantra that causes you and your allies within 40 yards to gain increased Life regeneration by 310 Life per second. The Mantra lasts 3 minutes.\n\nFor 3 seconds after activation, the effect is increased to 1240.4 Life per second.\n\nThis is a Mantra. You can only have one Mantra active at a time.\n\nMantras\n\n解锁于等级 26";
+
+//mantraofconviction
+"mantraofconviction_name" = "Mantra of Conviction";
+"mantraofconviction_detail" = "Cost: 50 Spirit\n\nRecite a Mantra that causes all enemies within 20 yards of you to take 12% additional damage. The Mantra lasts 3 minutes.\n\nFor 3 seconds after activation, the effect is increased to 24% additional damage.\n\nThis is a Mantra. You can only have one Mantra active at a time.\n\nMantras\n\n解锁于等级 30";
+
+//=============passive================level
+"fleetfooted_name" = "Fleet Footed";
+"fleetfooted_detail" = "Increases movement speed by 10%.\n\n解锁于等级 10";
+"fleetfooted_story" = "Strength out of place is no strength at all.";
+
+"resolve_name" = "Resolve";
+"resolve_detail" = "Damage you deal reduces enemy damage by 25% for 2.5 seconds.\n\n解锁于等级 10";
+"resolve_story" = "\"It is not our place to make demands of nature, nor to acquiesce to those who would. First we learn what is right, then we protect what is right.\" —Master Wughan";
+
+"exaltedsoul_name" = "Exalted Soul";
+"exaltedsoul_detail" = "Increases maximum Spirit by 100.\n\nSpirit fuels your defensive and offensive abilities.\n\n解锁于等级 13";
+"exaltedsoul_story" = "\"Endeavor to be one with the hidden truth and you will soar beyond the sky.\" —Waykeeper Tzo Krin";
+
+"transcendence_name" = "Transcendence";
+"transcendence_detail" = "Every point of Spirit spent heals you for 62.0 Life.\n\n解锁于等级 16";
+"transcendence_story" = "A life unlived is no different than death.";
+
+"chantofresonance_name" = "Chant of Resonance";
+"chantofresonance_detail" = "Duration of all Mantras increased by 7 minutes. While one of your Mantras is active you gain 2 Spirit every second.\n\n解锁于等级 20";
+"chantofresonance_story" = "The world continues on the noble path, each of us carrying another, all connected, ever onward.";
+
+"seizetheinitiative_name" = "Seize the Initiative";
+"seizetheinitiative_detail" = "Your Armor is increased by 100% of your Dexterity.\n\n解锁于等级 20";
+"seizetheinitiative_story" = "The Monks of Ivgorod are trained to move like water—flowing freely into open spaces and crashing hard against their foes.";
+
+"theguardianspath_name" = "The Guardian's Path";
+"theguardianspath_detail" = "While dual-wielding, you gain a 15% chance to dodge incoming attacks. While using a two-handed weapon, all Spirit generation is increased by 25%.\n\n解锁于等级 24";
+"theguardianspath_story" = "\"No weapon can overcome the weakness of an undisciplined mind. They can only serve as an extension of the self.\" —Waykeeper Tzo Krin";
+
+"sixthsense_name" = "Sixth Sense";
+"sixthsense_detail" = "Your dodge chance is increased by an amount equal to 30% of your Critical Hit Chance.\n\n解锁于等级 27";
+"sixthsense_story" ="The final test of the Serpent's Form takes place in \"The Pit of 12 Vipers.\" The initiates are not told about the 13th.";
+
+"pacifism_name" = "Pacifism";
+"pacifism_detail" = "While you are under a Stun, Fear or Charm effect, all damage taken is reduced by 75%.\n\n解锁于等级 30";
+"pacifism_story" = "Ascetic practices require initiates to go without food, water and sleep for months at a time. Those who survive emerge unmoved by the petty distractions of the physical world.";
+
+"beaconofytar_name" = "Beacon of Ytar";
+"beaconofytar_detail" = "Reduces all cooldowns by 15%.\n\n解锁于等级 35";
+"beaconofytar_story" = "It is only through hardship that we come to know our limits, and only through knowing our limits that we learn to shatter them.";
+
+"guidinglight_name" = "Guiding Light";
+"guidinglight_detail" = "Whenever you use a direct heal skill on another player you and the other player deal 16% more damage for 15 seconds.\n\n解锁于等级 40";
+"guidinglight_story" = "\"I thought I was done for, trampled into the snow. Suddenly I felt her hand on my shoulder. The warmth returned to my bones, and together we repelled the beasts.\" —Legends of the North";
+
+"onewitheverything_name" = "One With Everything";
+"onewitheverything_detail" = "Your resistance to all elements is equal to your highest elemental resistance.\n\n解锁于等级 45";
+"onewitheverything_story" = "Ice hunters brave months of frozen darkness. Desert traders bear relentless, scorching sun. This world is ours to endure.";
+
+"combinationstrike_name" = "Combination Strike";
+"combinationstrike_detail" = "Each different Spirit Generator ability you use increases your damage by 8% for 3 seconds.\n\n解锁于等级 50";
+"combinationstrike_story" = "Master Wughan was not merely the first to perfect the six techniques. His true accomplishment was in weaving them into a style all his own.";
+
+"neardeathexperience_name" = "Near Death Experience";
+"neardeathexperience_detail" = "When receiving fatal damage, you are instead restored to 35% of maximum Life and 35% Spirit.\n\nThis effect cannot occur more than once every 90 seconds.\n\n解锁于等级 58";
+"neardeathexperience_story" = "\"We do not see what has been done, we only see what remains to be done.\" —Mantra of the Monks of Ivgorod";
+
+//=============rune=============level
+"rune_thunderclap_name" = "雷霆一擊";
+"rune_thunderclap_detail" = "解锁于等级 6\n傳送至目標身邊，並且每次打擊都會產生一股電能衝擊波，對主要目標周圍 6 碼內所有的敵人造成 35% 武器傷害值的電擊傷害。";
+
+"rune_lightningflash_name" = "電光石火h";
+"rune_lightningflash_detail" = "解锁于等级 14\n使你的閃躲機率提高 16%，持續 2 秒。";
+
+"rune_staticcharge_name" = "靜電充能";
+"rune_staticcharge_detail" = "解锁于等级 30\n主要目標身上充滿靜電，持續 5 秒。當你用奔雷拳攻擊其他目標時，受靜電影響的目標會受到 37% 武器傷害值的電擊傷害。";
+
+"rune_quickening_name" = "迅雷活力";
+"rune_quickening_detail" = "解锁于等级 42\n爆擊可產生額外的 15 點精氣。";
+
+"rune_boundinglight_name" = "鍊光電擊";
+"rune_boundinglight_detail" = "解锁于等级 52\n每三擊釋放一道閃電鍊，但不再擊退敵人。每次電擊可造成 73% 武器傷害值的電擊傷害。";
+
+
+
+
+
+"rune_vultureclawkick_name" = "鷲爪蹴";
+"rune_vultureclawkick_detail" = "解锁于等级 7\n釋出一股火流，對附近的敵人造成 220% 武器傷害值的火焰傷害，並造成擊退效果。";
+
+"rune_sweepingarmada_name" = "橫掃千軍";
+"rune_sweepingarmada_detail" = "解锁于等级 15\n擊退敵人的距離提高 150%，而且減緩敵人的移動速度 60%，持續 2 秒。";
+
+"rune_spinningflamekick_name" = "旋焰腳";
+"rune_spinningflamekick_detail" = "解锁于等级 28\n發出一排可燒穿敵人的烈焰，對擊中的每個敵人造成 240% 武器傷害值的火焰傷害。";
+
+"rune_scorpionsting_name" = "蠍螫腿";
+"rune_scorpionsting_detail" = "解锁于等级 38\n敵人有 50% 的機率陷入昏迷，持續 1.5 秒，但取消擊退效果。";
+
+"rune_handofytar_name" = "奕塔之掌";
+"rune_handofytar_detail" = "解锁于等级 52\n攻擊遠距離的敵人，被擊中的敵人移動速度降低 80%，持續 2 秒。";
+
+
+
+
+
+
+"rune_piercingtrident_name" = "一氣三化";
+"rune_piercingtrident_detail" = "解锁于等级 9\n提高第二和第三擊的效果範圍。";
+
+"rune_keeneye_name" = "識敵慧眼";
+"rune_keeneye_detail" = "解锁于等级 18\n第三擊使武僧的護甲值提高 50%，持續 4 秒。";
+
+"rune_scatteredblows_name" = "崩散之擊";
+"rune_scatteredblows_detail" = "解锁于等级 34\n第三擊的攻擊方式改為最多可擊中 15 碼內的 6 名敵人，造成 170% 武器傷害值的電擊傷害。";
+
+"rune_strikefrombeyond_name" = "靈空之襲";
+"rune_strikefrombeyond_detail" = "解锁于等级 47\n爆擊時可產生額外的 10 點精氣。";
+
+"rune_foresight_name" = "先發制人";
+"rune_foresight_detail" = "解锁于等级 54\n第三擊可以使所有攻擊的傷害提高 18%，持續 30 秒。";
+
+
+
+
+
+"rune_selfreflection_name" = "自省之光";
+"rune_selfreflection_detail" = "解锁于等级 12\n使敵人目盲的持續時間延長至 4 秒。";
+
+"rune_blindedandconfused_name" = "炫茫之光";
+"rune_blindedandconfused_detail" = "解锁于等级 19\n使敵人目盲，並有 25% 的機率互相攻擊。";
+
+"rune_blindingecho_name" = "致盲迴光";
+"rune_blindingecho_detail" = "解锁于等级 28\n使用炫目神光 6 秒後，第二道神光會使 20 碼內的敵人目盲，持續 0.5 秒。";
+
+"rune_searinglight_name" = "灼灼烈光";
+"rune_searinglight_detail" = "解锁于等级 41\n使目盲的精英敵人攻擊失誤的機率提高至 60%。";
+
+"rune_faithinthelight_name" = "信仰之光";
+"rune_faithinthelight_detail" = "解锁于等级 55\n使用炫目神光後，在 3 秒內你所有的攻擊將額外造成 30% 武器傷害值的神聖傷害。";
+
+
+
+
+"rune_northernbreeze_name" = "北風揚兮";
+"rune_northernbreeze_detail" = "解锁于等级 11\n暴風橫掃引導時的消耗值降低至 8 點精氣。.";
+
+"rune_tailwind_name" = "順風而行";
+"rune_tailwind_detail" = "解锁于等级 20\n暴風橫掃的移動速度提高 25%。";
+
+"rune_flurry_name" = "亂風襲敵";
+"rune_flurry_detail" = "解锁于等级 33\n提高絆住對方腳步的效果，使敵人的移動速度降低 80%。";
+
+"rune_slipstream_name" = "護身氣流";
+"rune_slipstream_detail" = "解锁于等级 45\n奔跑時所受到的傷害減少 25%。";
+
+"rune_bluster_name" = "勁風狂飆";
+"rune_bluster_detail" = "解锁于等级 56\n若敵人被擊退，在技能效果持續時間內造成的傷害降低 20%。.";
+
+
+
+
+
+"rune_circleofscorn_name" = "Circle of Scorn";
+"rune_circleofscorn_detail" = "解锁于等级 14\nBreath of Heaven also sears enemies for 80% weapon damage as Holy.";
+
+"rune_circleoflife_name" = "Circle of Life";
+"rune_circleoflife_detail" = "解锁于等级 21\nIncreases the healing power of Breath of Heaven to 8063 - 9675 Life.";
+
+"rune_blazingwrath_name" = "Blazing Wrath";
+"rune_blazingwrath_detail" = "解锁于等级 32\nBreath of Heaven increases the damage of your attacks by 15% for 45 seconds.";
+
+"rune_infusedwithlight_name" = "Infused with Light";
+"rune_infusedwithlight_detail" = "解锁于等级 44\nGain 6 additional Spirit from Spirit generating attacks for 5 seconds after using Breath of Heaven.";
+
+"rune_penitentflame_name" = "Penitent Flame";
+"rune_penitentflame_detail" = "解锁于等级 59\nEnemies exposed to Breath of Heaven run away in Fear for 1.5 seconds.";
+
+
+
+
+
+"rune_wayofthefallingstar_name" = "Way of the Falling Star";
+"rune_wayofthefallingstar_detail" = "解锁于等级 15\nAfter striking an enemy, your movement speed is increased 25% for 3 seconds.";
+
+"rune_flyingsidekick_name" = "Flying Side Kick";
+"rune_flyingsidekick_detail" = "解锁于等级 23\nPerform a flying kick that has a 60% chance to Stun your target for 1.5 seconds.";
+
+"rune_quicksilver_name" = "Quicksilver";
+"rune_quicksilver_detail" = "解锁于等级 32\nReduces the cost of Dashing Strike to 10 Spirit.";
+
+"rune_soaringskull_name" = "Soaring Skull";
+"rune_soaringskull_detail" = "解锁于等级 39\nLaunch yourself through the air and slow all enemies along your path by 60% for 2 seconds.";
+
+"rune_blindingspeed_name" = "Blinding Speed";
+"rune_blindingspeed_detail" = "解锁于等级 49\nReceive a 20% increased chance to Dodge for 3 seconds.";
+
+
+
+
+
+"rune_mangle_name" = "千割碎";
+"rune_mangle_detail" = "解锁于等级 17\n傷害提高至 143% 的武器傷害。";
+
+"rune_concussion_name" = "震盪擊";
+"rune_concussion_detail" = "解锁于等级 26\n被伏魔破擊中的敵人所造成的傷害降低 20%，持續 3 秒。";
+
+"rune_risingtide_name" = "回湧潮";
+"rune_risingtide_detail" = "解锁于等级 36\n爆擊可產生額外的 5 點精氣。";
+
+"rune_tsunami_name" = "海嘯衝";
+"rune_tsunami_detail" = "解锁于等级 51\n伏魔破的第三擊範圍擴大至 17 碼，減緩移動速度的效果提高至 60%。";
+
+"rune_breakingwave_name" = "破防震";
+"rune_breakingwave_detail" = "解锁于等级 57\n被伏魔破擊中的目標遭到攻擊時，受到的傷害都額外提高 10% ，持續 3 秒。";
+
+
+
+
+
+"rune_walloflight_name" = "Wall of Light";
+"rune_walloflight_detail" = "解锁于等级 18\nIncreases damage of the initial strike to 312% weapon damage as Holy.";
+
+"rune_explosivelight_name" = "Explosive Light";
+"rune_explosivelight_detail" = "解锁于等级 25\nRelease bursts of energy that deal 285% weapon damage as Holy to nearby enemies.";
+
+"rune_empoweredwave_name" = "Empowered Wave";
+"rune_empoweredwave_detail" = "解锁于等级 35\nReduces the cost of Wave of Light to 40 Spirit.";
+
+"rune_blindinglight_name" = "Blinding Light";
+"rune_blindinglight_detail" = "解锁于等级 49\nCritical Hits Stun enemies for 3 seconds.";
+
+"rune_pillaroftheancients_name" = "Pillar of the Ancients";
+"rune_pillaroftheancients_detail" = "解锁于等级 57\nSummon an ancient pillar that deals 210% weapon damage followed by an additional 210% weapon damage after 2 seconds.";
+
+
+
+
+
+"rune_thefleshisweak_name" = "The Flesh is Weak";
+"rune_thefleshisweak_detail" = "解锁于等级 18\nAlso causes the target to take 12% additional damage for 3 seconds.";
+
+"rune_strongspirit_name" = "Strong Spirit";
+"rune_strongspirit_detail" = "解锁于等级 25\nIf the target explodes after bleeding, gain 5 Spirit for each enemy caught in the blast.";
+
+"rune_creepingdemise_name" = "Creeping Demise";
+"rune_creepingdemise_detail" = "解锁于等级 36\nAlso reduces your target's movement speed by 80%.";
+
+"rune_impendingdoom_name" = "Impending Doom";
+"rune_impendingdoom_detail" = "解锁于等级 44\nIncreases the duration of the Bleed effect to deal 220% weapon damage as Physical over 6 seconds.";
+
+"rune_essenceburn_name" = "Essence Burn";
+"rune_essenceburn_detail" = "解锁于等级 51\nInstead of bleeding, the target will burn for 250% weapon damage as Fire over 3 seconds. If the target dies while burning, it explodes causing all nearby enemies to burn for 60% weapon damage as Fire over 3 seconds. This effect can happen multiple times.";
+
+
+
+
+
+"rune_eyeofthestorm_name" = "Eye of the Storm";
+"rune_eyeofthestorm_detail" = "解锁于等级 21\nReduces the Spirit cost of Cyclone Strike to 30 Spirit.";
+
+"rune_implosion_name" = "Implosion";
+"rune_implosion_detail" = "解锁于等级 25\nIncreases the distance enemies will be pulled towards you to 34 yards.";
+
+"rune_sunburst_name" = "Sunburst";
+"rune_sunburst_detail" = "解锁于等级 34\nChanges the blast into an explosion of fire that has a 35% chance to Fear enemies for 1.5 seconds.";
+
+"rune_wallofwind_name" = "Wall of Wind";
+"rune_wallofwind_detail" = "解锁于等级 41\nAfter using Cyclone Strike, gain a 20% chance to dodge attacks for 3 seconds.";
+
+"rune_soothingbreeze_name" = "Soothing Breeze";
+"rune_soothingbreeze_detail" = "解锁于等级 55\nCyclone Strike heals you and all allies within 24 yards for 1240 Life.";
+
+
+
+
+
+"rune_handsoflightning_name" = "迅雷手";
+"rune_handsoflightning_detail" = "解锁于等级 24\n使第二擊的打擊次數從 7 次提高至 10 次。";
+
+"rune_blazingfists_name" = "奔熾拳";
+"rune_blazingfists_detail" = "解锁于等级 32\n爆擊時，武僧的攻擊和移動速度提高 5%。該效果持續 5 秒，最多可堆疊 3 次。";
+
+"rune_fistsoffury_name" = "百怒拳";
+"rune_fistsoffury_detail" = "解锁于等级 40\n受影響的目標每秒會受到額外 10% 武器傷害值的神聖傷害，持續 5 秒。此外，第一擊追加短距離的突進效果。";
+
+"rune_spiritedsalvo_name" = "烈氣拳";
+"rune_spiritedsalvo_detail" = "解锁于等级 48\n每次啟動百烈拳，有 15% 的機率額外產生 15 點精氣。";
+
+"rune_windforceflurry_name" = "勁風鑽";
+"rune_windforceflurry_detail" = "解锁于等级 60\n第三擊可產生一股勁風，對正前方的敵人造成 250% 武器傷害值的物理傷害。";
+
+
+
+
+"rune_peacefulrepose_name" = "Peaceful Repose";
+"rune_peacefulrepose_detail" = "解锁于等级 23\nWhen activated, Serenity heals you for 6202 - 7752 Life.";
+
+"rune_reapwhatissown_name" = "Reap What Is Sown";
+"rune_reapwhatissown_detail" = "解锁于等级 29\nWhen Serenity ends, the shield explodes, dealing 30% of the damage absorbed by Serenity as Holy damage to enemies within 20 yards. The damage to each enemy cannot exceed 100% of your maximum Life.";
+
+"rune_tranquility_name" = "Tranquility";
+"rune_tranquility_detail" = "解锁于等级 39\nExtends the protective shield to allies within 45 yards for 1 seconds, and makes them immune to control impairing effects like Slow and Frozen.";
+
+"rune_ascension_name" = "Ascension";
+"rune_ascension_detail" = "解锁于等级 47\nIncreases the duration of Serenity to 4 seconds.";
+
+"rune_instantkarma_name" = "Instant Karma";
+"rune_instantkarma_detail" = "解锁于等级 54\nWhile Serenity is active, 50% of all projectiles and melee attacks are reflected back at the attacker.";
+
+
+
+
+
+"rune_suddenassault_name" = "Sudden Assault";
+"rune_suddenassault_detail" = "解锁于等级 23\nTeleport to the target, increasing damage done to 1007% weapon damage over 7 strikes.";
+
+"rune_severalsidedstrike_name" = "Several-Sided Strike";
+"rune_severalsidedstrike_detail" = "解锁于等级 29\nIncreases the number of strikes to 9.";
+
+"rune_pandemonium_name" = "Pandemonium";
+"rune_pandemonium_detail" = "解锁于等级 37\nEnemies hit by Seven-Sided Strike have a 25% chance to be stunned for 7 seconds by each hit.";
+
+"rune_sustainedattack_name" = "Sustained Attack";
+"rune_sustainedattack_detail" = "解锁于等级 43\nReduces the cooldown of Seven-Sided Strike by 7 seconds.";
+
+"rune_fulminatingonslaught_name" = "Fulminating Onslaught";
+"rune_fulminatingonslaught_detail" = "解锁于等级 60\nEach strike explodes, dealing 111% weapon damage as Holy in a 7 yard radius around the target.";
+
+
+
+
+"rune_hardtarget_name" = "Hard Target";
+"rune_hardtarget_detail" = "解锁于等级 24\nMantra of Evasion also increases Armor by 20%.";
+
+"rune_divineprotection_name" = "Divine Protection";
+"rune_divineprotection_detail" = "解锁于等级 33\nWhen you or an ally under the effect of Mantra of Evasion is reduced below 25% Life, a shield of protection forms around that target, reducing damage taken by 80% for 3 seconds.\nEach target can be protected at most once every 90 seconds by this effect.";
+
+"rune_windthroughthereeds_name" = "Wind through the Reeds";
+"rune_windthroughthereeds_detail" = "解锁于等级 40\nMantra of Evasion also increases movement speed by 5%.";
+
+"rune_perseverance_name" = "Perseverance";
+"rune_perseverance_detail" = "解锁于等级 50\nMantra of Evasion also reduces the duration of all control impairing effects like Slow or Frozen by 20%.";
+
+"rune_backlash_name" = "Backlash";
+"rune_backlash_detail" = "解锁于等级 58\nSuccessfully dodging an attack has a chance to create a burst of flame dealing 35% weapon damage as Fire to all nearby enemies.";
+
+
+
+
+
+"rune_retaliation_name" = "Retaliation";
+"rune_retaliation_detail" = "解锁于等级 28\nIncreases the amount of damage reflected by the Mantra to 60%. The Mantra will now reflect ranged damage as well as melee damage.";
+
+"rune_transgression_name" = "Transgression";
+"rune_transgression_detail" = "解锁于等级 36\nIncreases attack speed for you and your allies by 8%.";
+
+"rune_indignation_name" = "Indignation";
+"rune_indignation_detail" = "解锁于等级 41\nWhen taking damage from the Mantra of Retribution, enemies have a 10% chance to be stunned for 2 seconds.";
+
+"rune_againstallodds_name" = "Against All Odds";
+"rune_againstallodds_detail" = "解锁于等级 56\nWhen reflecting damage done to you, Mantra of Retribution has a chance to restore 3 Spirit.";
+
+"rune_collateraldamage_name" = "Collateral Damage";
+"rune_collateraldamage_detail" = "解锁于等级 59\nAn attacker that is damaged by Mantra of Retribution has a 30% chance to suffer a feedback blast, dealing 45% weapon damage as Holy to itself and nearby enemies.";
+
+
+
+
+
+"rune_masterofwind_name" = "Master of Wind";
+"rune_masterofwind_detail" = "解锁于等级 27\nIncreases the duration of the vortex to 10 seconds.";
+
+"rune_bladestorm_name" = "Blade Storm";
+"rune_bladestorm_detail" = "解锁于等级 33\nIntensify the vortex, increasing the damage per stack to 20% weapon damage. This increases the damage with 3 stacks to 60% weapon damage.";
+
+"rune_firestorm_name" = "Fire Storm";
+"rune_firestorm_detail" = "解锁于等级 38\nIncreases the radius of the vortex to 14 yards and changes the damage dealt to Fire.";
+
+"rune_innerstorm_name" = "Inner Storm";
+"rune_innerstorm_detail" = "解锁于等级 46\nAs long as your vortex is at the maximum stack count, you gain 3 Spirit per second.";
+
+"rune_cyclone_name" = "Cyclone";
+"rune_cyclone_detail" = "解锁于等级 56\nWhile your vortex is at the maximum stack count, Critical Hits have a chance to spawn a lightning tornado that periodically electrocutes nearby enemies for 20% weapon damage as Lightning. Each spawned lightning tornado lasts 3 seconds.";
+
+
+
+
+"rune_safehaven_name" = "Safe Haven";
+"rune_safehaven_detail" = "解锁于等级 26\nYou and your allies standing in the area of effect of Inner Sanctuary regenerate 1550 Life per second.";
+
+"rune_sanctifiedground_name" = "Sanctified Ground";
+"rune_sanctifiedground_detail" = "解锁于等级 31\nWhen Inner Sanctuary expires, it becomes sanctified ground for 6 seconds, slowing the movement of all enemies that move through it by 60%.";
+
+"rune_consecration_name" = "Consecration";
+"rune_consecration_detail" = "解锁于等级 37\nIncreases the duration of Inner Sanctuary to 7 seconds.";
+
+"rune_circleofprotection_name" = "Circle of Protection";
+"rune_circleofprotection_detail" = "解锁于等级 43\nYou and your allies standing in the area of effect of Inner Sanctuary take 35% less damage.";
+
+"rune_forbiddenpalace_name" = "Forbidden Palace";
+"rune_forbiddenpalace_detail" = "解锁于等级 58\nYou and your allies standing in the area of effect of Inner Sanctuary deal 10% additional damage.";
+
+
+
+
+
+"rune_waterally_name" = "Water Ally";
+"rune_waterally_detail" = "解锁于等级 27\nImbue the ally with the essence of water. The ally gains the ability to perform a wave attack that deals 120% of your weapon damage as Physical and slows the movement of affected targets by 30% for 2 seconds.";
+
+"rune_fireally_name" = "Fire Ally";
+"rune_fireally_detail" = "解锁于等级 31\nImbue the ally with the essence of fire. The ally gains the ability to unleash a flaming kick for 80% weapon damage as Fire plus an additional 40% of your weapon damage per second as Fire for 2 seconds to all enemies in a straight line.";
+
+"rune_airally_name" = "Air Ally";
+"rune_airally_detail" = "解锁于等级 39\nImbue the ally with the essence of air. Every attack made by the ally has a 2% chance to generate 100 Spirit for you. In addition, the ally is surrounded in a torrent of wind that deals 10% of your weapon damage per second as Physical to all nearby enemies.";
+
+"rune_eternalally_name" = "Eternal Ally";
+"rune_eternalally_detail" = "解锁于等级 46\nImbue the ally with the essence of life. When the ally dies, it has a 50% chance to be reborn after 5 seconds. In addition, the physical damage of the ally's basic attack is increased to 44% of your weapon damage per swing.";
+
+"rune_earthally_name" = "Earth Ally";
+"rune_earthally_detail" = "解锁于等级 53\nImbue the ally with the essence of earth. Maximum Life for you and the ally is increased by 10%. The ally also gains the ability to create a wave of earth, dealing 60% of your weapon damage as Physical to a single enemy and forcing that enemy to attack the ally for 3 seconds.";
+
+
+
+
+
+"rune_sustenance_name" = "Sustenance";
+"rune_sustenance_detail" = "解锁于等级 31\nIncreases the Life regeneration granted by Mantra of Healing to 620 Life per second.";
+
+"rune_circularbreathing_name" = "Circular Breathing";
+"rune_circularbreathing_detail" = "解锁于等级 38\nMantra of Healing also regenerates 3 Spirit per second.";
+
+"rune_boonofprotection_name" = "Boon of Protection";
+"rune_boonofprotection_detail" = "解锁于等级 42\nMantra of Healing shrouds you and your allies with a mystical shield for 2 seconds that absorbs up to 15% of each target's maximum Life in damage.";
+
+"rune_heavenlybody_name" = "Heavenly Body";
+"rune_heavenlybody_detail" = "解锁于等级 48\nMantra of Healing also increases Vitality by 10%.";
+
+"rune_timeofneed_name" = "Time of Need";
+"rune_timeofneed_detail" = "解锁于等级 53\nMantra of Healing also increases resistances to all damage types by 20%.";
+
+
+
+
+"rune_overawe_name" = "Overawe";
+"rune_overawe_detail" = "解锁于等级 35\nIncreases the strength of Mantra of Conviction so that enemies take 24% additional damage and 48% for the first 3 seconds.";
+
+"rune_intimidation_name" = "Intimidation";
+"rune_intimidation_detail" = "解锁于等级 44\nEnemies affected by Mantra of Conviction deal 10% less damage.";
+
+"rune_dishearten_name" = "Dishearten";
+"rune_dishearten_detail" = "解锁于等级 47\nSlows the movement of enemies within 20 yards by 30%.";
+
+"rune_reclamation_name" = "Reclamation";
+"rune_reclamation_detail" = "解锁于等级 55\nYou and your allies have a 30% chance to be healed for 279 - 341 Life when using melee attacks on an enemy under the effects of Mantra of Conviction.";
+
+"rune_submission_name" = "Submission";
+"rune_submission_detail" = "解锁于等级 60\nEnemies affected by Mantra of Conviction take 12% weapon damage per second as Holy.";
+
+
+
+/*****************************WITCHDOCTOR****************************/
+//=============initiative==============level
+"poisondart_name" = "Poison Dart";
+"poisondart_detail" = "Cost: 10 Mana\n\nShoot a deadly Poison Dart that deals 100% weapon damage as Poison and an additional 40% weapon damage as Poison over 2 seconds.\n\nPrimary\n\n解锁于等级 1";
+
+"graspofthedead_name" = "Grasp of the Dead";
+"graspofthedead_detail" = "Cost: 122 Mana\nCooldown: 8 seconds\n\nGhoulish hands reach out from the ground, slowing enemy movement by 60% and dealing 20% weapon damage as Physical for 8 seconds.\n\nSecondary\n\n解锁于等级 2";
+
+"corpsespiders_name" = "Corpse Spiders";
+"corpsespiders_detail" = "Cost: 5 Mana\n\nThrow a jar with 4 spiders that attack nearby enemies for 16% weapon damage as Physical before dying.\n\nPrimary\n\n解锁于等级 3";
+
+"summonzombiedogs_name" = "Summon Zombie Dogs";
+"summonzombiedogs_detail" = "Cost: 49 Mana\nCooldown: 60 seconds\n\nSummon 3 Zombie Dogs from the depths to fight by your side. Each dog deals 9% of your weapon damage as Physical per hit.\n\nDefensive\n\n解锁于等级 4";
+
+"firebats_name" = "Firebats";
+"firebats_detail" = "Cost: 122 Mana\n\nCall forth a swarm of fiery bats to burn enemies in front of you for 150% weapon damage as Fire.\n\nSecondary\n\n解锁于等级 5";
+
+"horrify_name" = "Horrify";
+"horrify_detail" = "Cost: 37 Mana\nCooldown: 20 seconds\n\nDon a spectral mask that horrifies all enemies within 12 yards, causing them to run in Fear for 4 seconds.\n\nDefensive\n\n解锁于等级 8";
+
+"soulharvest_name" = "Soul Harvest";
+"soulharvest_detail" = "Cost: 59 Mana\nCooldown: 15 seconds\n\nFeed on the life force of up to 5 enemies within 16 yards. Gain 130 Intelligence for each affected enemy. This effect lasts 30 seconds.\n\nTerror\n\n解锁于等级 9";
+
+"plagueoftoads_name" = "Plague of Toads";
+"plagueoftoads_detail" = "Cost: 34 Mana\n\nRelease a handful of toads that deal 130% weapon damage as Poison to enemies they come in contact with.\n\nPrimary\n\n解锁于等级 11";
+
+"haunt_name" = "Haunt";
+"haunt_detail" = "Cost: 98 Mana\n\nHaunt an enemy with a spirit, dealing 575% weapon damage as Arcane over 12 seconds. If the target dies, the spirit will haunt another nearby enemy.\n\nSecondary\n\n解锁于等级 12";
+
+"sacrifice_name" = "Sacrifice";
+"sacrifice_detail" = "Banish your Zombie Dogs and cause them to explode, each dealing 275% of your weapon damage as Physical to all enemies within 12 yards.\n\nTerror\n\n解锁于等级 13";
+
+"zombiecharger_name" = "Zombie Charger";
+"zombiecharger_detail" = "Cost: 140 Mana\n\nCall forth a reckless, suicidal zombie that deals 205% weapon damage as Poison to all enemies in its path before decomposing.\n\nDecay\n\n解锁于等级 14";
+
+"spiritwalk_name" = "Spirit Walk";
+"spiritwalk_detail" = "Cost: 49 Mana\nCooldown: 15 seconds\n\nLeave your physical body and enter the spirit realm for 2 seconds. While in the spirit realm, your movement is unhindered.\n\nYour link to the spirit realm will end if your physical body sustains 50% of your maximum Life in damage.\n\nDefensive\n\n解锁于等级 16";
+
+"spiritbarrage_name" = "Spirit Barrage";
+"spiritbarrage_detail" = "Cost: 108 Mana\n\nBombard a target with a spirit blast that deals 190% weapon damage as Physical.\n\nDecay\n\n解锁于等级 17";
+
+"gargantuan_name" = "Gargantuan";
+"gargantuan_detail" = "Cost: 147 Mana\nCooldown: 60 seconds\n\nSummon a Gargantuan zombie to fight for you. The Gargantuan attacks for 25% of your weapon damage as Physical.\n\nVoodoo\n\n解锁于等级 19";
+
+"firebomb_name" = "Firebomb";
+"firebomb_detail" = "Cost: 10 Mana\n\nLob an explosive skull that deals 85% weapon damage as Fire to all enemies within 8 yards.\n\nPrimary\n\n解锁于等级 21";
+
+"locustswarm_name" = "Locust Swarm";
+"locustswarm_detail" = "Cost: 196 Mana\n\nUnleash a plague of locusts that swarms an enemy, dealing 360% weapon damage as Poison over 8 seconds. The locusts will jump to additional nearby enemies.\n\nSecondary\n\n解锁于等级 21";
+
+"acidcloud_name" = "Acid Cloud";
+"acidcloud_detail" = "Cost: 172 Mana\n\nCause acid to rain down, dealing an initial 100% weapon damage as Poison, followed by 75% weapon damage as Poison over 3 seconds to enemies who remain in the area.\n\nDecay\n\n解锁于等级 22";
+
+"hex_name" = "Hex";
+"hex_detail" = "Cost: 49 Mana\nCooldown: 15 seconds\n\nSummon a Fetish Shaman for 12 seconds that will hex enemies into chickens. Hexed enemies are unable to perform offensive actions and take 10% additional damage.\n\nDefensive\n\n解锁于等级 22";
+
+"massconfusion_name" = "Mass Confusion";
+"massconfusion_detail" = "Cost: 74 Mana\nCooldown: 60 seconds\n\nIncite paranoia in enemies, confusing them and causing some to fight for you for 12 seconds.\n\nTerror\n\n解锁于等级 22";
+
+"bigbadvoodoo_name" = "Big Bad Voodoo";
+"bigbadvoodoo_detail" = "Cooldown: 120 seconds\n\nConjure a Fetish that begins a ritual dance that increases the attack speed and movement speed of all nearby allies by 20% for 20 seconds.\n\nVoodoo\n\n解锁于等级 25";
+
+"wallofzombies_name" = "Wall of Zombies";
+"wallofzombies_detail" = "Cost: 103 Mana\nCooldown: 25 seconds\n\nRaise a line of zombies from the ground that attacks nearby enemies for 80% weapon damage as Physical for 5 seconds.\n\nDecay\n\n解锁于等级 28";
+
+"fetisharmy_name" = "Fetish Army";
+"fetisharmy_detail" = "Cooldown: 120 seconds\n\nSummon an army of dagger-wielding Fetishes to fight by your side for 20 seconds. The Fetishes attack for 20% of your weapon damage as Physical.\n\nVoodoo\n\n解锁于等级 30";
+
+//=============passive===============level
+"circleoflife_name" = "Circle of Life";
+"circleoflife_detail" = "Whenever an enemy dies within 12 yards, there is a 5% chance that a Zombie Dog will automatically emerge. The range of this effect is increased by items that increase your gold pickup radius.\n\n解锁于等级 10";
+"circleoflife_story" = "\"The heads hanging in the village had their eyes sewn shut with thick thread. Whatever wicked magic held the frightful hound-beasts together was considerably stronger.\" —Abner Lockridge";
+
+"junglefortitude_name" = "Jungle Fortitude";
+"junglefortitude_detail" = "Reduces all damage taken by you and your pets by 20%.\n\n解锁于等级 10";
+"junglefortitude_story" = "To be one with the jungle is to take what you need and endure what you must.";
+
+"spiritualattunement_name" = "Spiritual Attunement";
+"spiritualattunement_detail" = "Maximum Mana is increased by 20%. Regenerate 1% of your maximum Mana per second.\n\nMana is the fuel you use to cast offensive and defensive skills.\n\n解锁于等级 13";
+"spiritualattunement_story" = "\"The pool is deep and still, cool and silent. Now a fountain, now a whirlpool. Drink and be renewed.\" —Runic carvings on the Shallow Stone";
+
+"gruesomefeast_name" = "Gruesome Feast";
+"gruesomefeast_detail" = "Whenever you are healed by a health globe, you gain 10% of your maximum Mana and 10% Intelligence for 10 seconds. The Intelligence bonus can stack up to 5 times.\n\n解锁于等级 16";
+"gruesomefeast_story" = "\"We are all connected in life and in death. Partake of the spirits of the dead and flourish like the jungle that grows wild after the fire.\" —Shadewalker Zunimassa";
+
+"badmedicine_name" = "Bad Medicine";
+"badmedicine_detail" = "Whenever you deal Poison damage to an enemy, their damage is reduced by 20% for 3 seconds.\n\n解锁于等级 20";
+"badmedicine_story" = "\"Their mastery of paralytic agents is astounding. The jungle, they say, provides ample demonstration of its wonders.\" —Abner Lockridge";
+
+"bloodritual_name" = "Blood Ritual";
+"bloodritual_detail" = "15% of Mana costs are paid with Life. In addition, you regenerate 1% of your maximum Life per second.\n\n解锁于等级 20";
+"bloodritual_story" = "\"To give of one's self... Is there any greater gift?\" —Final words spoken at the Ritual of Blood";
+
+"zombiehandler_name" = "Zombie Handler";
+"zombiehandler_detail" = "You can have 4 Zombie Dogs summoned at one time. The health of your Zombie Dogs and Gargantuan is increased by 20%.\n\n解锁于等级 24";
+"zombiehandler_story" = "The dead are willing minions. Death to them is not unknown, therefore need not be feared.";
+
+"piercetheveil_name" = "Pierce the Veil";
+"piercetheveil_detail" = "All of your damage is increased by 20%, but your Mana costs are increased by 30%.\n\n解锁于等级 27";
+"piercetheveil_story" = "\"The spirits take their toll. Best to be ready to pay.\" —Shadewalker Zunimassa";
+
+"fetishsycophants_name" = "Fetish Sycophants";
+"fetishsycophants_detail" = "Whenever you cast a physical realm spell, you have a 3% chance to summon a dagger-wielding Fetish to fight by your side for 60 seconds.\n\nPhysical realm spells are:\n✧Poison Dart\n✧Plague of Toads\n✧Zombie Charger\n✧Corpse Spiders\n✧Firebats\n✧Firebomb\n✧Locust Swarm\n✧Acid Cloud\n✧Wall of Zombies\n\n解锁于等级 30";
+"fetishsycophants_story" = "The denizens of the Unformed Land are mischievous and drawn to power, always seeking to intrude upon our world, but too fickle to stay for long.";
+
+"spiritvessel_name" = "Spirit Vessel";
+"spiritvessel_detail" = "Reduces the cooldown of your Horrify, Spirit Walk, and Soul Harvest spells by 2 seconds. In addition, the next time you receive fatal damage, you automatically enter the spirit realm for 3 seconds and heal to 10% of your maximum Life. This effect cannot occur more than once every 90 seconds.\n\n解锁于等级 30";
+"spiritvessel_story" = "Everyone dies. Sometimes we must return to finish what we started.";
+
+"rushofessence_name" = "Rush of Essence";
+"rushofessence_detail" = "Spirit spells return 30% of their Mana cost over 10 seconds.\n\nSpirit spells are:\n✧Haunt\n✧Horrify\n✧Mass Confusion\n✧Soul Harvest\n✧Spirit Barrage\n✧Spirit Walk\n\n解锁于等级 36";
+"rushofessence_story" = "All spirits must move onward if they wish to return to their origins. There is no going back.";
+
+"visionquest_name" = "Vision Quest";
+"visionquest_detail" = "Any time you have 4 or more skills on cooldown, your Mana regeneration is increased by 300%.\n\n解锁于等级 40";
+"visionquest_story" = "\"You sense but do not see. Walk beside yourself in the Unformed Land. Walk until you find yourself again, or wander lost forever.\" —Chant of Ordeal";
+
+"fierceloyalty_name" = "Fierce Loyalty";
+"fierceloyalty_detail" = "All your pets get 100% of the benefit of your Thorns and Life regeneration items.\n\n解锁于等级 45";
+"fierceloyalty_story" = "Establish dominance. They will obey.";
+
+"graveinjustice_name" = "Grave Injustice";
+"graveinjustice_detail" = "Whenever an enemy dies within 8 yards, regain 1% of your maximum Life and Mana and the cooldown on all of your abilities is reduced by 1 second. This range is extended by items that increase your gold pickup radius.\n\n解锁于等级 50";
+"graveinjustice_story" = "Only a fool tries to cheat death. The wise offer a fair trade.";
+
+"tribalrites_name" = "Tribal Rites";
+"tribalrites_detail" = "The cooldowns of your Fetish Army, Big Bad Voodoo, and Hex abilities are reduced by 25%.\n\n解锁于等级 55";
+"tribalrites_story" = "\"Befriend those who come from the Unformed Land, and they will befriend you.\" —Zuwadza of the Tribe of the Five Hills";
+
+//=============rune================level
+"rune_splinters_name" = "Splinters";
+"rune_splinters_detail" = "解锁于等级 6\nShoot 3 Poison Darts that deal 60% weapon damage as Poison each.";
+
+"rune_numbingdart_name" = "Numbing Dart";
+"rune_numbingdart_detail" = "解锁于等级 13\nToxins in the Poison Dart reduce the target's movement speed by 60% for 2 seconds.";
+
+"rune_spineddart_name" = "Spined Dart";
+"rune_spineddart_detail" = "解锁于等级 25\nGain 24 Mana every time a Poison Dart hits an enemy.";
+
+"rune_flamingdart_name" = "Flaming Dart";
+"rune_flamingdart_detail" = "解锁于等级 43\nIgnite the dart so that it deals 160% weapon damage as Fire at once.";
+
+"rune_snaketotheface_name" = "Snake to the Face";
+"rune_snaketotheface_detail" = "解锁于等级 52\nTransform your Poison Dart into a snake that has a 30% chance to Stun the enemy for 1.5 seconds.";
+
+
+
+
+"rune_unbreakablegrasp_name" = "Unbreakable Grasp";
+"rune_unbreakablegrasp_detail" = "解锁于等级 7\nIncreases the Slow amount to 80%.";
+
+"rune_gropingeels_name" = "Groping Eels";
+"rune_gropingeels_detail" = "解锁于等级 15\nIncreases the damage done to 26% weapon damage as Physical.";
+
+"rune_deathislife_name" = "Death Is Life";
+"rune_deathislife_detail" = "解锁于等级 25\nEnemies who die while in the area of Grasp of the Dead have a 5% chance to produce a health globe.";
+
+"rune_desperategrasp_name" = "Desperate Grasp";
+"rune_desperategrasp_detail" = "解锁于等级 28\nReduces the cooldown of Grasp of the Dead to 6 seconds.";
+
+"rune_rainofcorpses_name" = "Rain of Corpses";
+"rune_rainofcorpses_detail" = "解锁于等级 53\nCorpses fall from the sky, dealing 80% weapon damage as Physical over 8 seconds to nearby enemies.";
+
+
+
+
+"rune_leapingspiders_name" = "Leaping Spiders";
+"rune_leapingspiders_detail" = "解锁于等级 9\nSummon jumping spiders that leap up to 25 yards to reach their target and attack for 19% weapon damage as Physical.";
+
+"rune_spiderqueen_name" = "Spider Queen";
+"rune_spiderqueen_detail" = "解锁于等级 18\nSummon a spider queen that births spiderlings, dealing 16% weapon damage as Poison to enemies in the area. Lasts 15 seconds.\nYou may only have one spider queen summoned at a time.";
+
+"rune_widowmakers_name" = "Widowmakers";
+"rune_widowmakers_detail" = "解锁于等级 33\nSummon widowmaker spiders that return 3 Mana to you per hit.";
+
+"rune_medusaspiders_name" = "Medusa Spiders";
+"rune_medusaspiders_detail" = "解锁于等级 45\nSummon paralyzing spiders that have a 25% chance to Slow enemies' movement by 60% with every attack.";
+
+"rune_blazingspiders_name" = "Blazing Spiders";
+"rune_blazingspiders_detail" = "解锁于等级 55\nSummon fire spiders that deal 21% weapon damage as Fire.";
+
+
+
+
+"rune_rabiddogs_name" = "Rabid Dogs";
+"rune_rabiddogs_detail" = "解锁于等级 12\nYour Zombie Dogs gain an infectious bite that deals 9% of your weapon damage as Poison over 3 seconds.";
+
+"rune_finalgift_name" = "Final Gift";
+"rune_finalgift_detail" = "解锁于等级 19\nYour Zombie Dogs have a 15% chance to leave behind a health globe when they die.";
+
+"rune_lifelink_name" = "Life Link";
+"rune_lifelink_detail" = "解锁于等级 28\nYour Zombie Dogs absorb 10% of all damage done to you.";
+
+"rune_burningdogs_name" = "Burning Dogs";
+"rune_burningdogs_detail" = "解锁于等级 40\nYour Zombie Dogs burst into flames, burning nearby enemies for 2% of your weapon damage as Fire.";
+
+"rune_leechingbeasts_name" = "Leeching Beasts";
+"rune_leechingbeasts_detail" = "解锁于等级 54\nYour Zombie Dogs gain 50% of damage they deal as Life, half of which heals you.";
+
+
+
+
+
+"rune_direbats_name" = "Dire Bats";
+"rune_direbats_detail" = "解锁于等级 11\nSummon fewer but larger bats that travel up to 40 yards and hit for 220% weapon damage as Fire.";
+
+"rune_vampirebats_name" = "Vampire Bats";
+"rune_vampirebats_detail" = "解锁于等级 19\nGain 2.5% of damage done by the bats as Life.";
+
+"rune_plaguebats_name" = "Plague Bats";
+"rune_plaguebats_detail" = "解锁于等级 29\nDiseased bats fly towards the enemy and infect them. Damage is slow at first, but can increase over time to a maximum of 225% weapon damage as Poison.";
+
+"rune_hungrybats_name" = "Hungry Bats";
+"rune_hungrybats_detail" = "解锁于等级 45\nRapidly summon bats that seek out nearby enemies for 280% weapon damage as Fire.";
+
+"rune_cloudofbats_name" = "Cloud of Bats";
+"rune_cloudofbats_detail" = "解锁于等级 56\nCall forth a swirl of bats that damage nearby enemies for 195% weapon damage as Fire. The damage of the bats increases by 10% every second, up to a maximum of 50%.";
+
+
+
+
+
+"rune_phobia_name" = "Phobia";
+"rune_phobia_detail" = "解锁于等级 14\nIncreases the duration horrified enemies run in Fear to 6 seconds.";
+
+"rune_stalker_name" = "Stalker";
+"rune_stalker_detail" = "解锁于等级 21\nIncreases movement speed by 20% for 4 seconds after casting Horrify.";
+
+"rune_faceofdeath_name" = "Face of Death";
+"rune_faceofdeath_detail" = "解锁于等级 34\nIncreases the radius of Horrify to 24 yards.";
+
+"rune_frighteningaspect_name" = "Frightening Aspect";
+"rune_frighteningaspect_detail" = "解锁于等级 44\nGain 100% additional Armor for 8 seconds after casting Horrify.";
+
+"rune_ruthlessterror_name" = "Ruthless Terror";
+"rune_ruthlessterror_detail" = "解锁于等级 56\nGain 27 Mana for every horrified enemy.";
+
+
+
+
+
+"rune_swallowyoursoul_name" = "Swallow Your Soul";
+"rune_swallowyoursoul_detail" = "解锁于等级 15\nGain 39 Mana for every enemy harvested.";
+
+"rune_siphon_name" = "Siphon";
+"rune_siphon_detail" = "解锁于等级 21\nGain 2171 Life for every enemy harvested.";
+
+"rune_languish_name" = "Languish";
+"rune_languish_detail" = "解锁于等级 32\nReduces the movement speed of harvested enemies by 60% for 3 seconds.";
+
+"rune_soultowaste_name" = "Soul to Waste";
+"rune_soultowaste_detail" = "解锁于等级 39\nIncrease the duration of Soul Harvest's effect to 60 seconds.";
+
+"rune_vengefulspirit_name" = "Vengeful Spirit";
+"rune_vengefulspirit_detail" = "解锁于等级 49\nHarvested enemies also take 70% weapon damage as Physical.";
+
+
+
+
+
+"rune_explosivetoads_name" = "Explosive Toads";
+"rune_explosivetoads_detail" = "解锁于等级 17\nMutate to fire bullfrogs that explode for 169% weapon damage as Fire.";
+
+"rune_toadofhugeness_name" = "Toad of Hugeness";
+"rune_toadofhugeness_detail" = "解锁于等级 24\nSummon a giant toad that swallows enemies whole for up to 5 seconds, digesting for 20% of your weapon damage per second as Physical. Adds a 5 second cooldown to Plague of Toads.";
+
+"rune_rainoftoads_name" = "Rain of Toads";
+"rune_rainoftoads_detail" = "解锁于等级 35\nCause toads to rain from the sky that deal 130% weapon damage as Poison to enemies in the area over 2 seconds.";
+
+"rune_addlingtoads_name" = "Addling Toads";
+"rune_addlingtoads_detail" = "解锁于等级 51\nMutate to yellow frogs that deal 130% weapon damage as Poison and have a 15% chance to Confuse affected enemies for 4 seconds.";
+
+"rune_toadaffinity_name" = "Toad Affinity";
+"rune_toadaffinity_detail" = "解锁于等级 54\nRemoves the Mana cost of Plague of Toads.";
+
+
+
+
+
+"rune_consumingspirit_name" = "Consuming Spirit";
+"rune_consumingspirit_detail" = "解锁于等级 18\nThe spirit returns 155 Life per second.";
+//bug
+"rune_resentfulspirit_name" = "Resentful Spirit";
+"rune_resentfulspirit_detail" = "解锁于等级 23\nSummon a vengeful spirit that does 0% weapon damage as Arcane over 0 seconds.";
+
+"rune_lingeringspirit_name" = "Lingering Spirit";
+"rune_lingeringspirit_detail" = "解锁于等级 35\nIf there are no targets left, the spirit will linger for up to 10 seconds looking for new enemies.";
+
+"rune_graspingspirit_name" = "Grasping Spirit";
+"rune_graspingspirit_detail" = "解锁于等级 48\nSlow the movement of haunted targets by 30%.";
+
+"rune_drainingspirit_name" = "Draining Spirit";
+"rune_drainingspirit_detail" = "解锁于等级 57\nThe spirit returns 10.2 Mana per second.";
+
+
+
+
+
+"rune_blackblood_name" = "Black Blood";
+"rune_blackblood_detail" = "解锁于等级 18\nIchor erupts from the corpses of the Zombie Dogs and Slows enemies by 60% for 8 seconds.";
+
+"rune_nextofkin_name" = "Next of Kin";
+"rune_nextofkin_detail" = "解锁于等级 24\nEach Zombie Dog you sacrifice has a 35% chance to resurrect as a new Zombie Dog.";
+
+"rune_pride_name" = "Pride";
+"rune_pride_detail" = "解锁于等级 36\nRegain 294 Mana for each Zombie Dog you sacrifice.";
+
+"rune_forthemaster_name" = "For the Master";
+"rune_forthemaster_detail" = "解锁于等级 41\nGain 6202 Life for each Zombie Dog you sacrifice.";
+
+"rune_provokethepack_name" = "Provoke the Pack";
+"rune_provokethepack_detail" = "解锁于等级 51\nEach sacrificed Zombie Dog increases your damage by 5% for 30 seconds.";
+
+
+
+
+
+
+"rune_leperouszombie_name" = "Leperous Zombie";
+"rune_leperouszombie_detail" = "解锁于等级 21\nThe Zombie Charger leaves behind a cloud of noxious vapors that deals 25% weapon damage as Poison to enemies caught in it.";
+
+"rune_undeath_name" = "Undeath";
+"rune_undeath_detail" = "解锁于等级 27\nIf the Zombie Charger kills any enemies, it will reanimate and charge nearby enemies for 205% weapon damage as Poison. This effect can repeat up to 2 times.";
+
+"rune_waveofzombies_name" = "Wave of Zombies";
+"rune_waveofzombies_detail" = "解锁于等级 33\nSummon 3 Zombie Chargers that each deal 72% weapon damage as Poison.";
+
+"rune_explosivebeast_name" = "Explosive Beast";
+"rune_explosivebeast_detail" = "解锁于等级 42\nSummon an explosive Zombie Dog that streaks toward your target before exploding, dealing 236% weapon damage as Fire to all enemies within 9 yards.";
+
+"rune_zombiebears_name" = "Zombie Bears";
+"rune_zombiebears_detail" = "解锁于等级 54\nSummon zombie bears that stampede towards your target. Each bear deals 236% weapon damage as Poison to enemies in the area.";
+
+
+
+
+
+"rune_jaunt_name" = "Jaunt";
+"rune_jaunt_detail" = "解锁于等级 23\nIncreases the duration of Spirit Walk to 3 seconds.";
+
+"rune_honoredguest_name" = "Honored Guest";
+"rune_honoredguest_detail" = "解锁于等级 29\nGain 15% of your maximum Mana every second while Spirit Walk is active.";
+
+"rune_umbralshock_name" = "Umbral Shock";
+"rune_umbralshock_detail" = "解锁于等级 38\nWhen Spirit Walk ends, your physical body erupts for 85% weapon damage as Fire to all enemies within 10 yards.";
+
+"rune_severance_name" = "Severance";
+"rune_severance_detail" = "解锁于等级 47\nDamage enemies you walk through in spirit form for 100% weapon damage as Physical.";
+
+"rune_healingjourney_name" = "Healing Journey";
+"rune_healingjourney_detail" = "解锁于等级 53\nGain 7% of your maximum Life every second while Spirit Walk.";
+
+
+
+
+
+
+"rune_thespiritiswilling_name" = "The Spirit Is Willing";
+"rune_thespiritiswilling_detail" = "解锁于等级 23\nGain 44 Mana every time Spirit Barrage hits.";
+
+"rune_wellofsouls_name" = "Well of Souls";
+"rune_wellofsouls_detail" = "解锁于等级 32\nAn additional 3 spirits seek out other targets and deal 30% weapon damage as Physical.";
+
+"rune_phantasm_name" = "Phantasm";
+"rune_phantasm_detail" = "解锁于等级 37\nSummon a spectre for 5 seconds that deals 45% weapon damage as Physical to all enemies within 10 yards.";
+
+"rune_phlebotomize_name" = "Phlebotomize";
+"rune_phlebotomize_detail" = "解锁于等级 44\nRegain 3% of damage dealt with Spirit Barrage as Life.";
+
+"rune_manitou_name" = "Manitou";
+"rune_manitou_detail" = "解锁于等级 59\nSummon a spectre for 20 seconds that hovers over you, unleashing spirit bolts at nearby enemies for 28% weapon damage as Physical.";
+
+
+
+
+
+"rune_humongoid_name" = "Humongoid";
+"rune_humongoid_detail" = "解锁于等级 22\nThe Gargantuan gains the Cleave ability, allowing its attacks to hit multiple targets for 32% of your weapon damage as Physical.";
+
+"rune_restlessgiant_name" = "Restless Giant";
+"rune_restlessgiant_detail" = "解锁于等级 29\nWhen the Gargantuan encounters an elite enemy or is near 5 enemies, it enrages for 15 seconds gaining:\n✧20% movement speed\n✧35% attack speed\n✧200% Physical damage\n\nThis effect cannot occur more than once every 120 seconds. Elite enemies include champions, rares, bosses, and other players.";
+
+"rune_wrathfulprotector_name" = "Wrathful Protector";
+"rune_wrathfulprotector_detail" = "解锁于等级 39\nSummon a more powerful Gargantuan that only lasts for 15 seconds. The Gargantuan's fists burn with fire, dealing 55% of your weapon damage as Fire and knocking enemies back.";
+
+"rune_bigstinker_name" = "Big Stinker";
+"rune_bigstinker_detail" = "解锁于等级 48\nThe Gargantuan is surrounded by a poison cloud that deals 15% weapon damage as Poison per second to nearby enemies.";
+
+"rune_bruiser_name" = "Bruiser";
+"rune_bruiser_detail" = "解锁于等级 56\nThe Gargantuan gains the ability to periodically slam enemies, dealing 100% of your weapon damage as Physical and stunning them for 3 seconds.";
+
+
+
+
+
+"rune_flashfire_name" = "Flash Fire";
+"rune_flashfire_detail" = "解锁于等级 28\nRather than exploding for area damage, each Firebomb can bounce to up to 6 additional targets. Damage is reduced by 15% per bounce.";
+
+"rune_rollthebones_name" = "Roll the Bones";
+"rune_rollthebones_detail" = "解锁于等级 31\nAllows the skull to bounce up to 2 times.";
+
+"rune_firepit_name" = "Fire Pit";
+"rune_firepit_detail" = "解锁于等级 38\nThe explosion creates a pool of fire that deals 8% weapon damage per second as Fire for 3 seconds.";
+
+"rune_pyrogeist_name" = "Pyrogeist";
+"rune_pyrogeist_detail" = "解锁于等级 47\nCreate a column of flame that spews fire at the closest enemy for 140% weapon damage as Fire over 3 seconds.";
+
+"rune_ghostbomb_name" = "Ghost Bomb";
+"rune_ghostbomb_detail" = "解锁于等级 60\nIn addition to the base explosion, the skull creates a larger blast that deals an additional 20% weapon damage as Fire to all enemies within 28 yards.";
+
+
+
+
+
+"rune_pestilence_name" = "Pestilence";
+"rune_pestilence_detail" = "解锁于等级 27\nLocust Swarm has a 100% chance to jump to two additional targets instead of one.";
+
+"rune_devouringswarm_name" = "Devouring Swarm";
+"rune_devouringswarm_detail" = "解锁于等级 33\nGain 37 Mana for every enemy affected by the swarm.";
+
+"rune_cloudofinsects_name" = "Cloud of Insects";
+"rune_cloudofinsects_detail" = "解锁于等级 37\nIncreases the duration of the swarm to 10 seconds.";
+
+"rune_diseasedswarm_name" = "Diseased Swarm";
+"rune_diseasedswarm_detail" = "解锁于等级 42\nEnemies killed by Locust Swarm leave behind a cloud of locusts that deal 25% weapon damage as Poison. This cloud of locusts lingers for 3 seconds.";
+
+"rune_searinglocusts_name" = "Searing Locusts";
+"rune_searinglocusts_detail" = "解锁于等级 59\nEngulf the target with burning locusts that deal 468% weapon damage as Fire over 8 seconds.";
+
+
+
+
+
+"rune_acidrain_name" = "Acid Rain";
+"rune_acidrain_detail" = "解锁于等级 26\nIncreases the initial area of effect of Acid Cloud to 24 yards.";
+
+"rune_lobblobbomb_name" = "Lob Blob Bomb";
+"rune_lobblobbomb_detail" = "解锁于等级 30\nThe acid on the ground forms into a slime that irradiates nearby enemies for 25% weapon damage as Poison. The slime dissipates after 5 seconds.";
+
+"rune_slowburn_name" = "Slow Burn";
+"rune_slowburn_detail" = "解锁于等级 39\nIncreases the duration of the acid pools left behind to 6 seconds.";
+
+"rune_kissofdeath_name" = "Kiss of Death";
+"rune_kissofdeath_detail" = "解锁于等级 46\nSpit a cloud of acid that inflicts 110% weapon damage as Poison, followed by 82% weapon damage as Poison to enemies who remain in the area.";
+
+"rune_corpsebomb_name" = "Corpse Bomb";
+"rune_corpsebomb_detail" = "解锁于等级 55\nRaise a corpse from the ground that explodes for 200% weapon damage as Poison to enemies in the area.";
+
+
+
+
+
+"rune_hedgemagic_name" = "Hedge Magic";
+"rune_hedgemagic_detail" = "解锁于等级 26\nThe Fetish Shaman will periodically heal allies for 1861 Life.";
+
+"rune_jinx_name" = "Jinx";
+"rune_jinx_detail" = "解锁于等级 31\nHexed targets take 20% additional damage.";
+
+"rune_angrychicken_name" = "Angry Chicken";
+"rune_angrychicken_detail" = "解锁于等级 36\nTransform into an angry chicken for up to 5 seconds that can explode for 215% weapon damage as Physical to all enemies within 12 yards.";
+
+"rune_painfultransformation_name" = "Painful Transformation";
+"rune_painfultransformation_detail" = "解锁于等级 43\nHex causes the target to Bleed for 12% weapon damage as Physical.";
+
+"rune_unstableform_name" = "Unstable Form";
+"rune_unstableform_detail" = "解锁于等级 58\nHexed targets explode when killed, dealing 135% weapon damage as Poison to all enemies within 8 yards.";
+
+
+
+
+
+"rune_unstablerealm_name" = "Unstable Realm";
+"rune_unstablerealm_detail" = "解锁于等级 26\nReduces the cooldown of Mass Confusion to 45 seconds.";
+
+"rune_devolution_name" = "Devolution";
+"rune_devolution_detail" = "解锁于等级 34\nEnemies killed while Confused have a 50% chance of spawning a Zombie Dog.";
+
+"rune_masshysteria_name" = "Mass Hysteria";
+"rune_masshysteria_detail" = "解锁于等级 43\nUp to 6 enemies who aren't Confused are Stunned for 3 seconds.";
+
+"rune_paranoia_name" = "Paranoia";
+"rune_paranoia_detail" = "解锁于等级 46\nAll enemies in the area of Mass Confusion take 20% additional damage for 12 seconds.";
+
+"rune_masshallucination_name" = "Mass Hallucination";
+"rune_masshallucination_detail" = "解锁于等级 54\nAmid the confusion, a giant spirit rampages through enemies, dealing 22% weapon damage per second as Physical to enemies it passes through.";
+
+
+
+
+
+"rune_jungledrums_name" = "Jungle Drums";
+"rune_jungledrums_detail" = "解锁于等级 31\nIncreases the duration of the ritual to 30 seconds.";
+
+"rune_raindance_name" = "Rain Dance";
+"rune_raindance_detail" = "解锁于等级 37\nThe ritual restores 122 Mana per second while standing in the ritual area.";
+
+"rune_slamdance_name" = "Slam Dance";
+"rune_slamdance_detail" = "解锁于等级 44\nThe Fetish increases the damage of all nearby allies by 30%.";
+
+"rune_ghosttrance_name" = "Ghost Trance";
+"rune_ghosttrance_detail" = "解锁于等级 50\nThe ritual heals all nearby allies for 5% of their maximum Life per second.";
+
+"rune_boogieman_name" = "Boogie Man";
+"rune_boogieman_detail" = "解锁于等级 58\nEnemies who die in the ritual area have a 50% chance to resurrect as a Zombie Dog.";
+
+
+
+
+"rune_barricade_name" = "Barricade";
+"rune_barricade_detail" = "解锁于等级 32\nIncreases the width of the Wall of Zombies. The zombies will attack for 80% weapon damage as Physical.";
+
+"rune_unrelentinggrip_name" = "Unrelenting Grip";
+"rune_unrelentinggrip_detail" = "解锁于等级 35\nYour Wall of Zombies will Slow the movement of enemies by 60% for 5 seconds.";
+
+"rune_creepers_name" = "Creepers";
+"rune_creepers_detail" = "解锁于等级 41\nUp to 3 zombies will emerge from the ground and attack nearby enemies for 25% of your weapon damage as Physical per attack.";
+
+"rune_pileon_name" = "Pile On";
+"rune_pileon_detail" = "解锁于等级 49\nSummon a tower of zombies that falls over, dealing 765% weapon damage as Physical to any enemies it hits and knocks them back.";
+
+"rune_deadrush_name" = "Dead Rush";
+"rune_deadrush_detail" = "解锁于等级 60\nZombies crawl out of the ground and run in all directions, dealing 445% weapon damage as Physical to nearby enemies.";
+
+
+
+
+"rune_fetishambush_name" = "Fetish Ambush";
+"rune_fetishambush_detail" = "解锁于等级 34\nEach Fetish deals 250% weapon damage as Physical to any nearby enemy as it is summoned.";
+
+"rune_devotedfollowing_name" = "Devoted Following";
+"rune_devotedfollowing_detail" = "解锁于等级 40\nDecreases the cooldown of Fetish Army to 90 seconds.";
+
+"rune_legionofdaggers_name" = "Legion of Daggers";
+"rune_legionofdaggers_detail" = "解锁于等级 46\nIncreases number of dagger-wielding Fetishes summoned by 3.";
+
+"rune_tikitorchers_name" = "Tiki Torchers";
+"rune_tikitorchers_detail" = "解锁于等级 52\nSummon an additional 2 Fetish casters who breathe fire in a cone in front of them that deals 15% of your weapon damage as Fire.";
+
+"rune_headhunters_name" = "Head Hunters";
+"rune_headhunters_detail" = "解锁于等级 60\nSummon an additional 2 Hunter Fetishes that shoot blowdarts at enemies, dealing 20% of your weapon damage as Poison.";
+
+
+
+
+/***************************WIZARD****************************/
+//=============initiative===============level
+"magicmissile_name" = "Magic Missile";
+"magicmissile_detail" = "This is a Signature spell. Signature spells are free to cast.\n\nLaunch a missile of magic energy, causing 110% weapon damage as Arcane.\n\nPrimary\n\n解锁于等级 1";
+
+"rayoffrost_name" = "Ray of Frost";
+"rayoffrost_detail" = "Cost: 20 Arcane Power\n\nProject a beam of frozen ice that blasts 215% weapon damage as Cold to the first enemy it hits, slowing the target's movement by 30% for 3 seconds.\n\nSecondary\n\n解锁于等级 2";
+
+"shockpulse_name" = "Shock Pulse";
+"shockpulse_detail" = "This is a Signature spell. Signature spells are free to cast.\n\nRelease a medium range pulse of 3 unpredictable charges of electricity that deal 105% weapon damage as Lightning.\n\nPrimary\n\n解锁于等级 3";
+
+"frostnova_name" = "Frost Nova";
+"frostnova_detail" = "Cooldown: 12 seconds\n\nBlast nearby enemies with an explosion of ice and freeze them for 3 seconds.\n\nDefensive\n\n解锁于等级 4";
+
+"arcaneorb_name" = "Arcane Orb";
+"arcaneorb_detail" = "Cost: 35 Arcane Power\n\nHurl an orb of pure energy that explodes when it hits, dealing 175% weapon damage as Arcane to all enemies within 10 yards.\n\nSecondary\n\n解锁于等级 5";
+
+"diamondskin_name" = "Diamond Skin";
+"diamondskin_detail" = "Cooldown: 15 seconds\n\nTransform your skin to diamond for 6 seconds, absorbing up to 10853 damage from incoming attacks.\n\nDefensive\n\n解锁于等级 8";
+
+"waveofforce_name" = "Wave of Force";
+"waveofforce_detail" = "Cost: 25 Arcane Power\nCooldown: 15 seconds\n\nDischarge a wave of pure energy that repels projectiles and knocks back nearby enemies. This also slows the movement of enemies by 60% and deals 200% weapon damage as Physical.\n\nForce\n\n解锁于等级 9";
+
+"spectralblade_name" = "Spectral Blade";
+"spectralblade_detail" = "This is a Signature spell. Signature spells are free to cast.\n\nSummon a spectral blade that strikes all enemies in your path for 135% weapon damage.\n\nPrimary\n\n解锁于等级 11";
+
+"arcanetorrent_name" = "Arcane Torrent";
+"arcanetorrent_detail" = "Cost: 20 Arcane Power\n\nHurl a barrage of arcane projectiles that deal 175% weapon damage as Arcane to all enemies near the impact location.\n\nSecondary\n\n解锁于等级 12";
+
+"energytwister_name" = "Energy Twister";
+"energytwister_detail" = "Cost: 35 Arcane Power\n\nUnleash a twister of pure energy that deals 360% weapon damage as Arcane over 6 seconds to everything in its path.\n\nForce\n\n解锁于等级 13";
+
+"icearmor_name" = "Ice Armor";
+"icearmor_detail" = "Cost: 25 Arcane Power\n\nSurround yourself in a barrier of ice. Melee attackers are either Chilled or Frozen for 2 seconds. Lasts 120 seconds.\n\nThis is an Armor spell. Only one Armor spell can be active at a time.\n\nConjuration\n\n解锁于等级 14";
+
+"electrocute_name" = "Electrocute";
+"electrocute_detail" = "This is a Signature spell. Signature spells are free to cast.\n\nLightning arcs from your fingertips, dealing 80% weapon damage as Lightning. The lightning can jump, hitting up to 2 additional enemies.\n\nPrimary\n\n解锁于等级 15";
+
+"slowtime_name" = "Slow Time";
+"slowtime_detail" = "Cooldown: 20 seconds\n\nInvoke a bubble of warped time and space for 8 seconds, reducing enemy attack speed by 20% and movement speed by 30%. This bubble also slows the movement of enemy projectiles by 90%.\n\nDefensive\n\n解锁于等级 16";
+
+"stormarmor_name" = "Storm Armor";
+"stormarmor_detail" = "Cost: 25 Arcane Power\n\nBathe yourself in electrical energy, shocking ranged and melee attackers for 70% weapon damage as Lightning. Lasts 120 seconds.\n\nThis is an Armor spell. Only one Armor spell can be active at a time.\n\nConjuration\n\n解锁于等级 17";
+
+"explosiveblast_name" = "Explosive Blast";
+"explosiveblast_detail" = "Cost: 20 Arcane Power\nCooldown: 6 seconds\n\nGather an infusion of energy around you that explodes after 1.5 seconds, causing 225% weapon damage as Physical to all enemies within 12 yards.\n\nMastery\n\n解锁于等级 19";
+
+"magicweapon_name" = "Magic Weapon";
+"magicweapon_detail" = "Cost: 25 Arcane Power\n\nImbue your weapon with magical energy, granting it 10% increased damage. Lasts 5 minutes.\n\nConjuration\n\n解锁于等级 20";
+
+"disintegrate_name" ="Disintegrate";
+"disintegrate_detail" = "Cost: 20 Arcane Power\n\nThrust a beam of pure energy forward, dealing 155% weapon damage as Arcane and disintegrating enemies it kills.\n\nSecondary\n\n解锁于等级 21";
+
+"hydra_name" = "Hydra";
+"hydra_detail" = "Cost: 15 Arcane Power\n\nSummon a multi-headed Hydra for 15 seconds that attacks enemies with bolts of fire dealing 28% weapon damage as Fire. You may only have one Hydra active at a time.\n\nForce\n\n解锁于等级 21";
+
+"familiar_name" = "Familiar";
+"familiar_detail" = "Cost: 20 Arcane Power\n\nSummon a companion that will attack your targets for 20% weapon damage as Arcane. This companion cannot be targeted or damaged by enemies and lasts for 5 minutes.\n\nConjuration\n\n解锁于等级 22";
+
+"teleport_name" = "Teleport";
+"teleport_detail" = "Cost: 15 Arcane Power\nCooldown: 16 seconds\n\nTeleport through the ether to the selected location up to 35 yards away.\n\nDefensive\n\n解锁于等级 22";
+
+"meteor_name" = "Meteor";
+"meteor_detail" = "Cost: 60 Arcane Power\n\nSummon an immense Meteor that plummets from the sky, causing 200% weapon damage as Fire to all enemies it crashes into. The ground it hits is scorched with molten fire that deals 60% weapon damage as Fire over 3 seconds.\n\nForce\n\n解锁于等级 25";
+
+"mirrorimage_name" = "Mirror Image";
+"mirrorimage_detail" = "Cooldown: 15 seconds\n\nSummon 2 illusionary duplicates of yourself that last for 7 seconds and have 25% of your Life. The images may cast some of the same spells as you, but those spells deal no damage.\n\nMastery\n\n解锁于等级 25";
+
+"blizzard_name" = "Blizzard";
+"blizzard_detail" = "Cost: 45 Arcane Power\n\nCall down shards of ice to pelt an area, dealing 210% weapon damage as Cold to all enemies in the area over 6 seconds. Multiple casts in the same area do not stack.\n\nForce\n\n解锁于等级 27";
+
+"energyarmor_name" = "Energy Armor";
+"energyarmor_detail" = "Cost: 25 Arcane Power\n\nFocus your energies, increasing your Armor by 65% but decreasing your maximum Arcane Power by 20. Lasts 120 seconds.\n\nThis is an Armor spell. Only one Armor spell can be active at a time.\n\nConjuration\n\n解锁于等级 28";
+
+"archon_name" = "Archon";
+"archon_detail" = "Cost: 25 Arcane Power\nCooldown: 120 seconds\n\nTransform into a being of pure Arcane energy for 15 seconds. While in Archon form, your normal abilities are replaced by powerful Archon abilities, and your Armor and resistances are increased by 40%. Every enemy killed while in Archon form adds 1 second to the duration of Archon.\n\nMastery\n\n解锁于等级 30";
+
+
+//=============passive================
+"blur_name" = "Blur";
+"blur_detail" = "Decreases melee damage taken by 20%.\n\n解锁于等级 10";
+"blur_story" = "Truly powerful Wizards have been known to turn their magic inward, transmuting the very composition of their own bodies for boundless energy and catlike reflexes.";
+
+"powerhungry_name" = "Power Hungry";
+"powerhungry_detail" = "Gain 30 Arcane Power whenever you are healed by a health globe.\n\n解锁于等级 10";
+"powerhungry_story" = "\"It just doesn't sit right with me. Some of the things these so-called wizards do... They border on necromancy. Or worse! It's just not proper magic.\" —Venerable Sorcerer Fob Dunar";
+
+"evocation_name" = "Evocation";
+"evocation_detail" = "Reduces all cooldowns by 15%.\n\n解锁于等级 13";
+"evocation_story" = "So long have you focused on twisting reality to your will that time itself seeks to appease you.";
+
+"glasscannon_name" = "Glass Cannon";
+"glasscannon_detail" = "Increases all damage done by 15%, but decreases Armor and resistances by 10%.\n\n解锁于等级 16";
+"glasscannon_story" = "\"How will I survive? I don't intend to get hit in the first place. If you even touch me, it's because I allowed it.\" —Maloth, renegade wizard";
+
+"prodigy_name" = "Prodigy";
+"prodigy_detail" = "When you deal damage with a Signature spell, you gain 4 Arcane Power.\n\nThe following skills are Signature spells:\n✧Magic Missile\n✧Shock Pulse\n✧Spectral Blade\n✧Electrocute\n\n解锁于等级 20";
+"prodigy_story" = "\"Heavy steel armor may turn aside a blade, but let's see how well it works against lightning!\" —Larra Stormlash's infamous faux pas at the Royal Westmarch Joust";
+
+"astralpresence_name" = "Astral Presence";
+"astralpresence_detail" = "Increases your maximum Arcane Power by 20 and Arcane Power regeneration by 2 per second.\n\n解锁于等级 24";
+"astralpresence_story" = "\"Feel the power in the veil that surrounds us—a thunder cloud ready to burst... a volcano about to erupt. Harness it, and you will be invincible.\" —Adria";
+
+"illusionist_name" = "Illusionist";
+"illusionist_detail" = "Whenever you suffer more than 15% of your Life in a single hit, the cooldowns on Mirror Image and Teleport are automatically reset.\n\n解锁于等级 27";
+"illusionist_story" = "\"To be where you are not is the wisest of strategies.\" —Grand Archmage Ralhys";
+
+"coldblooded_name" = "Cold Blooded";
+"coldblooded_detail" = "Cold damage dealt to chilled and frozen targets is increased by 20%.\n\n解锁于等级 30";
+"coldblooded_story" = "\"Feel your blood run cold as the water of the Frozen Sea, and know that I can shatter you with a touch.\" —The Ice Queen's Tale";
+
+"conflagration_name" = "Conflagration";
+"conflagration_detail" = "Fire damage dealt to enemies applies a burning effect, increasing all damage done to them by 10% for 3 seconds.\n\n解锁于等级 34";
+"conflagration_story" = "\"The red hot armor seared their flesh and boiled their blood as they tried desperately to pry it from smoldering bodies. We finished the defenseless creatures as an act of mercy.\" —Tales of Caldeum, Volume XII";
+
+"paralysis_name" = "Paralysis";
+"paralysis_detail" = "Lightning damage dealt to enemies has up to a 8% chance to Stun the target for 2 seconds.\n\n解锁于等级 37";
+"paralysis_story" = "\"Some people are shocked by my mastery of magic.\" —Larra Stormlash";
+
+"galvanizingward_name" = "Galvanizing Ward";
+"galvanizingward_detail" = "Increases the duration of your Armor spells by 120 seconds. As long as an Armor spell is active, you gain 310 Life per second.\n\nThe following skills are improved:\n✧Energy Armor\n✧Ice Armor\n✧Storm Armor\n\n解锁于等级 40";
+"galvanizingward_story" = "\"Power begets power. The excess energy from one spell is absorbed by the other, and so the effect is sustained.\" —Excerpt from Grand Master Clavaught's Lecture on Synergistic Effects in Esoteric Arcane Spheres";
+
+"temporalflux_name" = "Temporal Flux";
+"temporalflux_detail" = "Whenever you deal Arcane damage, enemies are slowed by 30% for 2 seconds.\n\n解锁于等级 45";
+"temporalflux_story" = "\"The energies of time and arcane power are jealous consorts. If you caress the one, you neglect the other at great risk.\" —Ennead Sage Resko";
+
+"criticalmass_name" = "Critical Mass";
+"criticalmass_detail" = "Critical Hits have a chance to reduce the cooldown of your spells by 1 second.\n\n解锁于等级 50";
+"criticalmass_story" = "\"As the blast obliterated the walls, she spun the energy of the shockwave into a new spell and hurled it at her stupefied foes.\" —The Harrowing of Korlean's Stronghold";
+
+"arcanedynamo_name" = "Arcane Dynamo";
+"arcanedynamo_detail" = "When you deal damage with a Signature spell you may gain a Flash of Insight. After 5 Flashes of Insight, your next non-Signature spell deals 75% additional damage.\n\nThe following skills are Signature spells:\n✧Magic Missile\n✧Shock Pulse\n✧Spectral Blade\n✧Electrocute\n\n解锁于等级 55";
+"arcanedynamo_story" = "Dare not to invoke the wrath of a Wizard. You are nothing more than a loose coalescence of dust before their ire, easily scattered at a whim.";
+
+"unstableanomaly_name" = "Unstable Anomaly";
+"unstableanomaly_detail" = "When reduced below 20% Life, release a shockwave that knocks all enemies back. This effect cannot occur more than once every 60 seconds.\n\n解锁于等级 60";
+"unstableanomaly_story" = "\"It takes perfect concentration for a Wizard to dance on the edge of infinity. Never be the one to break that concentration.\" —One-Eye Whipple";
+
+
+
+//=============rune==============level
+"rune_chargedblast_name" = "Charged Blast";
+"rune_chargedblast_detail" = "解锁于等级 6\nIncreases the damage of Magic Missile to 143% weapon damage as Arcane.";
+
+"rune_split_name" = "Split";
+"rune_split_detail" = "解锁于等级 13\nFire 3 missiles that each deal 50% weapon damage as Arcane.";
+
+"rune_penetratingblast_name" = "Penetrating Blast";
+"rune_penetratingblast_detail" = "解锁于等级 31\nMissiles have a 70% chance to pierce through their target and hit additional enemies.";
+
+"rune_attunement_name" = "Attunement";
+"rune_attunement_detail" = "解锁于等级 42\nWhenever Magic Missile hits a target you gain 4 Arcane Power.";
+
+"rune_seeker_name" = "Seeker";
+"rune_seeker_detail" = "解锁于等级 52\nMissiles track the nearest enemy and their damage is increased to 121% weapon damage as Arcane.";
+
+
+
+
+"rune_numb_name" = "Numb";
+"rune_numb_detail" = "解锁于等级 7\nIncrease the amount the target's movement is slowed to 60% for 3 seconds.";
+
+"rune_snowblast_name" = "Snow Blast";
+"rune_snowblast_detail" = "解锁于等级 15\nUsing continuously on a single target increases damage over 1.5 seconds to inflict a maximum of 280% weapon damage as Cold.";
+
+"rune_coldblood_name" = "Cold Blood";
+"rune_coldblood_detail" = "解锁于等级 28\nReduce casting cost to 0 Arcane Power.";
+
+"rune_sleetstorm_name" = "Sleet Storm";
+"rune_sleetstorm_detail" = "解锁于等级 38\nCreate a swirling storm around you, dealing 215% weapon damage as Cold to all enemies caught within it.";
+
+"rune_blackice_name" = "Black Ice";
+"rune_blackice_detail" = "解锁于等级 53\nEnemies killed with Ray of Frost leave behind a patch of ice that deals 193% weapon damage as Cold to enemies moving through it over 3 seconds.";
+
+
+
+
+
+"rune_explosivebolts_name" = "Explosive Bolts";
+"rune_explosivebolts_detail" = "解锁于等级 9\nSlain enemies explode, dealing 70% weapon damage as Lightning to every enemy within 10 yards.";
+
+"rune_firebolts_name" = "Fire Bolts";
+"rune_firebolts_detail" = "解锁于等级 18\nCast bolts of fire that each deal 137% weapon damage as Fire.";
+
+"rune_piercingorb_name" = "Piercing Orb";
+"rune_piercingorb_detail" = "解锁于等级 33\nMerge the bolts in a a single giant orb that oscillates forward dealing 105% weapon damage as Lightning to everything it hits.";
+
+"rune_lightningaffinity_name" = "Lightning Affinity";
+"rune_lightningaffinity_detail" = "解锁于等级 47\nEvery target hit by a pulse restores 2 Arcane Power.";
+
+"rune_livinglightning_name" = "Living Lightning";
+"rune_livinglightning_detail" = "解锁于等级 54\nConjure a being of lightning that drifts forward, electrocuting nearby enemies for 37% weapon damage as Lightning.";
+
+
+
+
+
+
+"rune_shatter_name" = "Shatter";
+"rune_shatter_detail" = "解锁于等级 12\nA frozen enemy that is killed has a 50% chance of releasing another Frost Nova.";
+
+"rune_coldsnap_name" = "Cold Snap";
+"rune_coldsnap_detail" = "解锁于等级 18\nReduce cooldown of Frost Nova to 9 seconds.";
+
+"rune_frozenmist_name" = "Frozen Mist";
+"rune_frozenmist_detail" = "解锁于等级 28\nFrost Nova no longer freezes enemies, but instead leaves behind a mist of frost that deals 160% weapon damage as Cold over 8 seconds.";
+
+"rune_deepfreeze_name" = "Deep Freeze";
+"rune_deepfreeze_detail" = "解锁于等级 41\nIf Frost Nova hits at least 5 targets, you gain a 15% bonus to Critical Hit Chance for 12 seconds.";
+
+"rune_bonechill_name" = "Bone Chill";
+"rune_bonechill_detail" = "解锁于等级 51\nEnemies take 15% more damage while frozen or chilled by Frost Nova.";
+
+
+
+
+
+"rune_obliteration_name" = "Obliteration";
+"rune_obliteration_detail" = "解锁于等级 11\nIncrease the damage of the explosion to deal 228% weapon damage as Arcane.";
+
+"rune_arcaneorbit_name" = "Arcane Orbit";
+"rune_arcaneorbit_detail" = "解锁于等级 20\nCreate 4 Arcane Orbs that orbit you, exploding for 70% weapon damage as Arcane when enemies get close.";
+
+"rune_arcanenova_name" = "Arcane Nova";
+"rune_arcanenova_detail" = "解锁于等级 32\nModify the orb to deal 175% weapon damage as Arcane to all enemies within 20 yards.";
+
+"rune_tapthesource_name" = "Tap the Source";
+"rune_tapthesource_detail" = "解锁于等级 45\nReduce casting cost to 20 Arcane Power.";
+
+"rune_celestialorb_name" = "Celestial Orb";
+"rune_celestialorb_detail" = "解锁于等级 55\nThe orb will pierce through targets, damaging any enemy it passes through.";
+
+
+
+
+"rune_crystalshell_name" = "Crystal Shell";
+"rune_crystalshell_detail" = "解锁于等级 14\nIncreases the maximum amount of damage absorbed to 21707 damage.";
+
+"rune_prism_name" = "Prism";
+"rune_prism_detail" = "解锁于等级 20\nReduces Arcane Power cost of all spells by 7 while Diamond Skin is active.";
+
+"rune_mirrorskin_name" = "Mirror Skin";
+"rune_mirrorskin_detail" = "解锁于等级 32\nReflects 50% of damage absorbed back at the attacker.";
+
+"rune_enduringskin_name" = "Enduring Skin";
+"rune_enduringskin_detail" = "解锁于等级 44\nIncreases the duration of Diamond Skin to 8 seconds.";
+
+"rune_diamondshards_name" = "Diamond Shards";
+"rune_diamondshards_detail" = "解锁于等级 56\nWhen Diamond Skin wears off, diamond shards explode in all directions dealing 155% weapon damage as Physical to nearby enemies.";
+
+
+
+
+"rune_impactfulwave_name" = "Impactful Wave";
+"rune_impactfulwave_detail" = "解锁于等级 15\nIncreases the distance enemies are knocked back and Stuns all affected enemies for 2 seconds.";
+
+"rune_forceaffinity_name" = "Force Affinity";
+"rune_forceaffinity_detail" = "解锁于等级 22\nReduce casting cost to 15 Arcane Power and the cooldown is reduced to 12 seconds.";
+
+"rune_forcefulwave_name" = "Forceful Wave";
+"rune_forcefulwave_detail" = "解锁于等级 32\nIncreases damage to 260% weapon damage as Physical, but reduces Knockback.";
+
+"rune_teleportingwave_name" = "Teleporting Wave";
+"rune_teleportingwave_detail" = "解锁于等级 39\nEnemies caught in the Wave of Force have a 100% chance to be randomly teleported.";
+
+"rune_explodingwave_name" = "Exploding Wave";
+"rune_explodingwave_detail" = "解锁于等级 49\nEnemies hit have a 40% chance to cause a smaller Wave of Force that deals 100% weapon damage as Physical and knocks back enemies caught in its wake.";
+
+
+
+
+
+"rune_deepcuts_name" = "Deep Cuts";
+"rune_deepcuts_detail" = "解锁于等级 19\nEnemies hit by the blade will Bleed for an additional 35% weapon damage over 3 seconds.";
+
+"rune_impactfulblades_name" = "Impactful Blades";
+"rune_impactfulblades_detail" = "解锁于等级 24\nHits have a 5% chance to cause Knockback and Slow the movement of enemies by 60% for 1 second.";
+
+"rune_siphoningblade_name" = "Siphoning Blade";
+"rune_siphoningblade_detail" = "解锁于等级 35\nEvery enemy hit grants 1 Arcane Power.";
+
+"rune_healingblades_name" = "Healing Blades";
+"rune_healingblades_detail" = "解锁于等级 51\nWhenever the blades do critical damage, you are healed for 8% of the damage done.";
+
+"rune_thrownblade_name" = "Thrown Blade";
+"rune_thrownblade_detail" = "解锁于等级 57\nExtends the reach of Spectral Blade to 20 yards.";
+
+
+
+
+
+"rune_disruption_name" = "Disruption";
+"rune_disruption_detail" = "解锁于等级 18\nTargets hit by Arcane Torrent become disrupted for 6 seconds, causing them to take 15% additional damage from any attacks that deal Arcane damage.";
+
+"rune_deathblossom_name" = "Death Blossom";
+"rune_deathblossom_detail" = "解锁于等级 25\nUnleash a torrent of power beyond your control. You no longer direct where the projectiles go, but their damage is increased to 670% weapon damage as Arcane.";
+
+"rune_arcanemines_name" = "Arcane Mines";
+"rune_arcanemines_detail" = "解锁于等级 34\nInstead of firing projectiles, lay Arcane mines that arm after 2 seconds. These mines explode when an enemy approaches, dealing 150% weapon damage as Arcane. Enemies caught in the explosion have their movement and attack speeds reduced by 30% for 3 seconds.";
+
+"rune_powerstone_name" = "Power Stone";
+"rune_powerstone_detail" = "解锁于等级 49\nEvery missile hit has a 2% chance to leave behind a Power Stone that grants Arcane Power when picked up.";
+
+"rune_cascade_name" = "Cascade";
+"rune_cascade_detail" = "解锁于等级 57\nEnemies killed by Arcane Torrent have a 100% chance to fire a new missile at a nearby enemy dealing 175% weapon damage as Arcane.";
+
+
+
+
+
+"rune_mistralbreeze_name" = "Mistral Breeze";
+"rune_mistralbreeze_detail" = "解锁于等级 19\nReduces casting cost of Energy Twister to 20 Arcane Power.";
+
+"rune_galeforce_name" = "Gale Force";
+"rune_galeforce_detail" = "解锁于等级 24\nIncreases the damage of Energy Twister to 468% weapon damage as Arcane.";
+
+"rune_ragingstorm_name" = "Raging Storm";
+"rune_ragingstorm_detail" = "解锁于等级 36\nWhen two Energy Twisters collide, they merge into a tornado with increased area of effect that causes 360% weapon damage as Arcane over 6 seconds.";
+
+"rune_wickedwind_name" = "Wicked Wind";
+"rune_wickedwind_detail" = "解锁于等级 41\nTwisters no longer travel but spin in place, dealing 252% weapon damage as Arcane over 6 seconds to everything caught in them.";
+
+"rune_stormchaser_name" = "Storm Chaser";
+"rune_stormchaser_detail" = "解锁于等级 52\nCasting Energy Twister grants you a Wind Charge. You can store up to 3 Wind Charges at a time. Casting a Signature spell releases all Wind Charges as a giant Energy Twister that deals 75% weapon damage as Arcane per Wind Charge.\nThe following skills are Signature spells:\n✧Magic Missile\n✧Shock Pulse\n✧Spectral Blade\n✧Electrocute";
+
+
+
+
+
+"rune_chillingaura_name" = "Chilling Aura";
+"rune_chillingaura_detail" = "解锁于等级 21\nLower the temperature of the air around you. Nearby enemies are chilled, slowing their movement speed by 30%.";
+
+"rune_crystallize_name" = "Crystallize";
+"rune_crystallize_detail" = "解锁于等级 31\nWhenever you are struck by a melee attack, your Armor is increased by 15% for 30 seconds. This effect can stack up to 3 times.";
+
+"rune_jaggedice_name" = "Jagged Ice";
+"rune_jaggedice_detail" = "解锁于等级 42\nMelee attackers also take 100% weapon damage as Cold.";
+
+"rune_icereflect_name" = "Ice Reflect";
+"rune_icereflect_detail" = "解锁于等级 49\nMelee attacks have a 25% chance to create a Frost Nova centered on the attacker, dealing 75% weapon damage as Cold.";
+
+"rune_frozenstorm_name" = "Frozen Storm";
+"rune_frozenstorm_detail" = "解锁于等级 53\nA whirling storm of ice builds around you that deals 30% weapon damage as Cold over 3 seconds after casting Ice Armor.";
+
+
+
+
+
+"rune_chainlightning_name" = "Chain Lightning";
+"rune_chainlightning_detail" = "解锁于等级 22\nIncreases the maximum number of enemies that can be electrocuted to 6.";
+
+"rune_forkedlightning_name" = "Forked Lightning";
+"rune_forkedlightning_detail" = "解锁于等级 29\nCritical Hits release 4 charged bolts in random directions, dealing 46% weapon damage as Lightning to any targets hit.";
+
+"rune_lightningblast_name" = "Lightning Blast";
+"rune_lightningblast_detail" = "解锁于等级 36\nCreate streaks of lightning that pierce through targets, hitting all enemies for 80% weapon damage as Lightning.";
+
+"rune_surgeofpower_name" = "Surge of Power";
+"rune_surgeofpower_detail" = "解锁于等级 44\nGain 1 Arcane Power for every enemy hit by Electrocute.";
+
+"rune_arclightning_name" = "Arc Lightning";
+"rune_arclightning_detail" = "解锁于等级 59\nBlast a cone of lightning that causes 80% weapon damage as Lightning to all affected targets.";
+
+
+
+
+
+
+"rune_miasma_name" = "Miasma";
+"rune_miasma_detail" = "解锁于等级 23\nSlow Time effects cling to enemies for 3 seconds after they have left the bubble.";
+
+"rune_timewarp_name" = "Time Warp";
+"rune_timewarp_detail" = "解锁于等级 29\nEnemies caught in the bubble of warped time take 20% more damage.";
+
+"rune_timeshell_name" = "Time Shell";
+"rune_timeshell_detail" = "解锁于等级 39\nReduces the area Slow Time affects to 10 yards, but increases the potency of the movement speed reduction to 80%.";
+
+"rune_perpetuity_name" = "Perpetuity";
+"rune_perpetuity_detail" = "解锁于等级 47\nReduces the cooldown of Slow Time to 16 seconds.";
+
+"rune_stretchtime_name" = "Stretch Time";
+"rune_stretchtime_detail" = "解锁于等级 53\nTime is sped up for any allies standing in the area, increasing their attack speed by 10%.";
+
+
+
+
+
+"rune_reactivearmor_name" = "Reactive Armor";
+"rune_reactivearmor_detail" = "解锁于等级 23\nWhenever you are hit, you have a chance to be enveloped with a lightning shield for 6 seconds that shocks nearby enemies for 50% weapon damage as Lightning.";
+
+"rune_powerofthestorm_name" = "Power of the Storm";
+"rune_powerofthestorm_detail" = "解锁于等级 33\nReduce the Arcane Power cost of all skills by 3 while Storm Armor is active.";
+
+"rune_strikeback_name" = "Strike Back";
+"rune_strikeback_detail" = "解锁于等级 37\nIncrease the damage of the shock to 91% weapon damage as Lightning.";
+
+"rune_scramble_name" = "Scramble";
+"rune_scramble_detail" = "解锁于等级 43\nIncreases your movement speed by 25% for 3 seconds whenever you are hit by melee or ranged attacks.";
+
+"rune_shockingaspect_name" = "Shocking Aspect";
+"rune_shockingaspect_detail" = "解锁于等级 58\nCritical Hits have a chance to electrocute a nearby enemy for 35% weapon damage as Lightning.";
+
+
+
+
+
+"rune_unleashed_name" = "Unleashed";
+"rune_unleashed_detail" = "解锁于等级 24\nReduces the casting cost of Explosive Blast to 10 Arcane Power.";
+
+"rune_timebomb_name" = "Time Bomb";
+"rune_timebomb_detail" = "解锁于等级 29\nExplosive Blast detonates from the point it was originally cast after 2.5 seconds for 292% weapon damage as Physical.";
+
+"rune_shortfuse_name" = "Short Fuse";
+"rune_shortfuse_detail" = "解锁于等级 39\nImmediately release the energy of Explosive Blast for 225% weapon damage as Physical.";
+
+"rune_obliterate_name" = "Obliterate";
+"rune_obliterate_detail" = "解锁于等级 50\nIncreases the explosion radius to 18 yards for 225% weapon damage as Physical.";
+
+"rune_chainreaction_name" = "Chain Reaction";
+"rune_chainreaction_detail" = "解锁于等级 56\nA chain of 3 consecutive explosions cascade off you, each causing 97% weapon damage as Physical.";
+
+
+
+
+
+"rune_electrify_name" = "Electrify";
+"rune_electrify_detail" = "解锁于等级 27\nAttacks have a chance to cause lightning to arc to 3 nearby enemies, dealing 10% weapon damage as Lightning.";
+
+"rune_forceweapon_name" = "Force Weapon";
+"rune_forceweapon_detail" = "解锁于等级 35\nIncreases the damage bonus of Magic Weapon to 15% damage, and gives up to a 2% chance to Knockback any enemies hit.";
+
+"rune_conduit_name" = "Conduit";
+"rune_conduit_detail" = "解锁于等级 38\nAttacks have a chance to restore 1 Arcane Power.";
+
+"rune_venom_name" = "Venom";
+"rune_venom_detail" = "解锁于等级 46\nAttacks poison enemies, dealing 15% weapon damage as Poison over 3 seconds.";
+
+"rune_bloodmagic_name" = "Blood Magic";
+"rune_bloodmagic_detail" = "解锁于等级 55\nAttacks recover 1.5% of damage caused as Life.";
+
+
+
+
+
+"rune_convergence_name" = "Convergence";
+"rune_convergence_detail" = "解锁于等级 26\nIncrease the width of the beam allowing it to hit more enemies.";
+
+"rune_chaosnexus_name" = "Chaos Nexus";
+"rune_chaosnexus_detail" = "解锁于等级 30\nWhen casting the beam you become charged with energy that spits out at nearby enemies doing 40% weapon damage as Arcane.";
+
+"rune_volatility_name" = "Volatility";
+"rune_volatility_detail" = "解锁于等级 39\nEnemies killed by the beam have a 35% chance to explode causing 395% weapon damage as Arcane to all enemies within 8 yards.";
+
+"rune_entropy_name" = "Entropy";
+"rune_entropy_detail" = "解锁于等级 48\nThe beam fractures into a short-ranged cone that deals 178% weapon damage as Arcane.";
+
+"rune_intensify_name" = "Intensify";
+"rune_intensify_detail" = "解锁于等级 59\nDamage increases slowly over time to inflict a maximum of 202% weapon damage as Arcane.";
+
+
+
+
+
+
+"rune_arcanehydra_name" = "Arcane Hydra";
+"rune_arcanehydra_detail" = "解锁于等级 26\nSummon an Arcane Hydra that spits Arcane Orbs, which explode on impact, causing 28% weapon damage as Arcane to enemies near the explosion.";
+
+"rune_lightninghydra_name" = "Lightning Hydra";
+"rune_lightninghydra_detail" = "解锁于等级 33\nSummon a Lightning Hydra that electrocutes enemies for 34% weapon damage as Lightning.";
+
+"rune_venomhydra_name" = "Venom Hydra";
+"rune_venomhydra_detail" = "解锁于等级 38\nSummon a poison breathing Hydra that leaves a pool of acid that causes 18% weapon damage per second as Poison to enemies who remain in the pool.";
+
+"rune_frosthydra_name" = "Frost Hydra";
+"rune_frosthydra_detail" = "解锁于等级 46\nSummon a Frost Hydra that breathes a short range cone of frost, causing 31% weapon damage as Cold to all enemies in the cone.";
+
+"rune_mammothhydra_name" = "Mammoth Hydra";
+"rune_mammothhydra_detail" = "解锁于等级 56\nSummon a Mammoth Hydra that breathes a river of flame at nearby enemies, dealing 22% weapon damage per second as Fire to enemies caught on the burning ground.";
+
+
+
+
+
+"rune_sparkflint_name" = "Sparkflint";
+"rune_sparkflint_detail" = "解锁于等级 30\nSummon a fiery Familiar that increases the damage of all attacks by 12% while Familiar is active.";
+
+"rune_dartling_name" = "Dartling";
+"rune_dartling_detail" = "解锁于等级 40\nSummon a lightning Familiar whose projectiles have a 100% chance to pierce through enemies.";
+
+"rune_ancientguardian_name" = "Ancient Guardian";
+"rune_ancientguardian_detail" = "解锁于等级 44\nSummon a protective Familiar. When you are below 35% Life the Familiar will fully absorb damage from 1 attack every 6 seconds.";
+
+"rune_arcanot_name" = "Arcanot";
+"rune_arcanot_detail" = "解锁于等级 50\nWhile the Familiar is active, you regenerate 2 Arcane Power per second.";
+
+"rune_cannoneer_name" = "Cannoneer";
+"rune_cannoneer_detail" = "解锁于等级 57\nThe Familiar's projectiles explode on impact, dealing 20% weapon damage as Arcane to all enemies within 6 yards.";
+
+
+
+
+
+
+"rune_safepassage_name" = "Safe Passage";
+"rune_safepassage_detail" = "解锁于等级 26\nFor 4 seconds after you Teleport, you will take 30% less damage.";
+
+"rune_wormhole_name" = "Wormhole";
+"rune_wormhole_detail" = "解锁于等级 31\nAfter casting Teleport, there is a 1 second delay before the cooldown begins, allowing you to Teleport again.";
+
+"rune_reversal_name" = "Reversal";
+"rune_reversal_detail" = "解锁于等级 37\nCasting Teleport again within 8 seconds will instantly return you to your original location.";
+
+"rune_fracture_name" = "Fracture";
+"rune_fracture_detail" = "解锁于等级 43\nSummon 2 decoys for 8 seconds after teleporting.";
+
+"rune_calamity_name" = "Calamity";
+"rune_calamity_detail" = "解锁于等级 59\nCasts a low power Wave of Force upon arrival, dealing 75% weapon damage as Physical to all nearby enemies.";
+
+
+
+
+
+
+"rune_moltenimpact_name" = "Molten Impact";
+"rune_moltenimpact_detail" = "解锁于等级 29\nIncreases the damage of the Meteor impact to 260% weapon damage as Fire and the molten fire to 78% weapon damage as Fire over 3 seconds.";
+
+"rune_starpact_name" = "Star Pact";
+"rune_starpact_detail" = "解锁于等级 34\nReduces the casting cost of Meteor to 35 Arcane Power.";
+
+"rune_meteorshower_name" = "Meteor Shower";
+"rune_meteorshower_detail" = "解锁于等级 43\nUnleash a volley of 7 smaller Meteors that each strike for 80% weapon damage as Fire.";
+
+"rune_comet_name" = "Comet";
+"rune_comet_detail" = "解锁于等级 48\nTransforms the Meteor to ice that deals 240% weapon damage as Cold. The impact site is covered in a freezing mist that deals 72% weapon damage as Cold and Slows enemy movement by 60% over 3 seconds.";
+
+"rune_liquefy_name" = "Liquefy";
+"rune_liquefy_detail" = "解锁于等级 58\nIf the initial impact of the Meteor causes a Critical Hit, the molten fire duration is increased to 8 seconds.";
+
+
+
+
+
+
+"rune_simulacrum_name" = "Simulacrum";
+"rune_simulacrum_detail" = "解锁于等级 31\nIncrease the Life of your Mirror Images to 100% of your own.";
+
+"rune_duplicates_name" = "Duplicates";
+"rune_duplicates_detail" = "解锁于等级 37\nSummon 5 Mirror Images that have 25% of your Life each.";
+
+"rune_mockingdemise_name" = "Mocking Demise";
+"rune_mockingdemise_detail" = "解锁于等级 45\nWhen a Mirror Image is destroyed, it explodes, doing 45% weapon damage as Physical and has a 50% chance to Stun for 2 seconds.";
+
+"rune_extensionofwill_name" = "Extension of Will";
+"rune_extensionofwill_detail" = "解锁于等级 51\nThe duration of your Mirror Images is increased to 10 seconds and their Life is increased to 29% of your Life.";
+
+"rune_mirrormimics_name" = "Mirror Mimics";
+"rune_mirrormimics_detail" = "解锁于等级 58\nSpells cast by your Mirror Images will do 10% of the damage of your own spells.";
+
+
+
+
+
+
+"rune_graspingchill_name" = "Grasping Chill";
+"rune_graspingchill_detail" = "解锁于等级 35\nAfter the Blizzard ends, the ground is covered in a low lying mist for 3 seconds that Slows the movement speed of enemies by 60%.";
+
+"rune_frozensolid_name" = "Frozen Solid";
+"rune_frozensolid_detail" = "解锁于等级 42\nEnemies caught in the Blizzard have a 20% chance to be Frozen for 3 seconds.";
+
+"rune_snowbound_name" = "Snowbound";
+"rune_snowbound_detail" = "解锁于等级 47\nReduces the casting cost of Blizzard to 20 Arcane Power.";
+
+"rune_starkwinter_name" = "Stark Winter";
+"rune_starkwinter_detail" = "解锁于等级 54\nIncreases the size of Blizzard to cover 22 yards, dealing 210% weapon damage as Cold over 6 seconds.";
+
+"rune_unrelentingstorm_name" = "Unrelenting Storm";
+"rune_unrelentingstorm_detail" = "解锁于等级 60\nIncreases the duration of Blizzard to deal 280% weapon damage as Cold over 8 seconds.";
+
+
+
+
+
+
+"rune_absorption_name" = "Absorption";
+"rune_absorption_detail" = "解锁于等级 32\nYou have a chance to gain 4 Arcane Power whenever you are hit by a ranged or melee attack.";
+
+"rune_pinpointbarrier_name" = "Pinpoint Barrier";
+"rune_pinpointbarrier_detail" = "解锁于等级 41\nIncreases your chance to critically hit by 5% while Energy Armor is active.";
+
+"rune_energytap_name" = "Energy Tap";
+"rune_energytap_detail" = "解锁于等级 48\nRather than decreasing your maximum Arcane Power, Energy Armor increases it by 20 while it is active.";
+
+"rune_forcearmor_name" = "Force Armor";
+"rune_forcearmor_detail" = "解锁于等级 54\nWhile Energy Armor is active, incoming attacks that would deal more than 35% of your maximum Life are reduced to deal 35% of your maximum Life instead.";
+
+"rune_prismaticarmor_name" = "Prismatic Armor";
+"rune_prismaticarmor_detail" = "解锁于等级 60\nIncreases all of your resistances by 40% while Energy Armor is active.";
+
+
+
+
+
+
+"rune_arcanedestruction_name" = "Arcane Destruction";
+"rune_arcanedestruction_detail" = "解锁于等级 36\nAn explosion erupts around you when you transform, causing 450% weapon damage as Arcane to all enemies within 15 yards.";
+
+"rune_teleport_name" = "Teleport";
+"rune_teleport_detail" = "解锁于等级 40\nArchon form can now cast Teleport with a cooldown of 10 seconds.";
+
+"rune_purepower_name" = "Pure Power";
+"rune_purepower_detail" = "解锁于等级 46\nDecreases the cooldown of Archon to 100 seconds.";
+
+"rune_slowtime_name" = "Slow Time";
+"rune_slowtime_detail" = "解锁于等级 52\nArchon form can cast Slow Time that lasts for 8 seconds.";
+
+"rune_improvedarchon_name" = "Improved Archon";
+"rune_improvedarchon_detail" = "解锁于等级 60\nIncreases the damage of all Archon abilities by 25%.";
+
