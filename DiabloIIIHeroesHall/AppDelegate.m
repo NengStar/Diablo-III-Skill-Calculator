@@ -30,7 +30,7 @@
     //set the background image for *all* UINavigationBars为所有导航栏设置背景图片
     [[UINavigationBar appearance]setBackgroundImage:bg_bar forBarMetrics:UIBarMetricsDefault];
     
-//    //customize the title text for *all* UINavigationBars为所有导航栏设置标题文本
+    //customize the title text for *all* UINavigationBars为所有导航栏设置标题文本
     [[UINavigationBar appearance]setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
       [UIColor colorWithRed:243.0/255.0 green:171.0/255.0 blue:86.0/255.0 alpha:1.0],
@@ -49,22 +49,23 @@
     [self customizeAppearance];
     NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"HeroSkillDataSource" ofType:@"plist"];
     self.heroSkillDataSource = [[[NSDictionary alloc] initWithContentsOfFile:dataPath] autorelease];
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];//获取当前应用程序的文件目录
     NSString *Path = [NSString stringWithFormat:@"%@/SaveData.plist",documentsDirectory];
     if ([[NSFileManager defaultManager] fileExistsAtPath:Path]) {
         //文件已存在
-        NSLog(@"yes");
+        NSLog(@"local user saved data found");
         self.savedData = [[[NSMutableArray alloc] initWithContentsOfFile:Path] autorelease];
     }
     else {
         //文件不存在
-        NSLog(@"no");
+        NSLog(@"local user saved data not found");
         self.savedData = [[[NSMutableArray alloc] init] autorelease];
         [self.savedData writeToFile:Path atomically:NO];
     }
-    [self.window addSubview:self.navigationController.view];
+//    viewController = [[[UIViewController alloc] init] autorelease];
+    self.window.rootViewController = self.navigationController;
+//    [self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

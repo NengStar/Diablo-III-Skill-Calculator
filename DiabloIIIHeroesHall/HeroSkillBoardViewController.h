@@ -75,6 +75,7 @@
     NSArray *dataArray;
     UIButton *selectedButton;
     BOOL viewControllerWillTerminate;
+    BOOL viewControllerWillPopToRoot;
     
     NSMutableArray *initiative;
     NSMutableArray *passive;

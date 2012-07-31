@@ -43,6 +43,7 @@
         self.navigationItem.rightBarButtonItem = right;
         [right release];
         viewControllerWillTerminate = NO;
+        viewControllerWillPopToRoot = NO;
         dataArray = nil;
         dataIndex = -1;
         imageNameArray = [[NSArray alloc] initWithObjects:@"avatar_bar_f",@"avatar_dh_f",@"avatar_monk_f",@"avatar_wd_f",@"avatar_wz_f",@"avatar_bar_m",@"avatar_dh_m",@"avatar_monk_m",@"avatar_wd_m",@"avatar_wz_m",nil];
@@ -139,6 +140,10 @@
     if (viewControllerWillTerminate) {
         [[[[UIApplication sharedApplication] keyWindow] viewWithTag:13811150829] removeFromSuperview];
         [self.navigationController popViewControllerAnimated:YES];
+    }
+    if (viewControllerWillPopToRoot) {
+        [[[[UIApplication sharedApplication] keyWindow] viewWithTag:13811150829] removeFromSuperview];
+        [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
 
@@ -458,7 +463,7 @@
     if(currentSkillBoard.isHeroSkillDetailShown)
     {
         [currentSkillBoard restoreViewLocation];
-        viewControllerWillTerminate = YES;
+        viewControllerWillPopToRoot = YES;
     }
     else {
         [[[[UIApplication sharedApplication] keyWindow] viewWithTag:13811150829] removeFromSuperview];

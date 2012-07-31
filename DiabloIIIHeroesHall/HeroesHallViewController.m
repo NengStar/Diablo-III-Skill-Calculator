@@ -136,6 +136,7 @@
     NSString *CellIdentifier = (NSString *)[dataArray objectAtIndex:0];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
+        NSLog(@"========nil========");
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         cell.accessoryType = UITableViewCellAccessoryNone;
 	}

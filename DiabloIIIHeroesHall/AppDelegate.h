@@ -14,6 +14,7 @@
 @public
     NSDictionary *heroSkillDataSource;
     NSMutableArray *savedData;
+//    UIViewController *viewController;
 }
 
 @property (retain, nonatomic) IBOutlet UIWindow *window;
