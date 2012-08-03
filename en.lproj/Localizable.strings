@@ -6,6 +6,17 @@
  Copyright (c) 2012年 Neng! Star. All rights reserved.
  */
 
+
+/*
+ Class System
+ */
+
+"Barbarian" = "Barbarian";
+"Demon Hunter" = "Demon Hunter";
+"Monk" = "Monk";
+"Witch Doctor" = "Witch Doctor";
+"Wizard" = "Wizard";
+
 /*
  Skill System
  */
@@ -124,7 +135,7 @@
 
 //calloftheancients
 "calloftheancients_name" = "Call of the Ancients";
-"calloftheancients_detail" = "Cost: 50 Fury\nCooldown: 120 seconds\n\nSummon the ancient Barbarians Talic, Korlic, and Madawc to fight alongside you for 15 seconds. Each deals 60% weapon damage per swing in addition to bonus abilities.\n\n✧Talic wields a sword and shield and uses the Whirlwind skill.\n✧Korlic wields a massive polearm and uses the Cleave skill.\n✧Madawc dual-wields axes and uses the Weapon Throw skill.\n\nRage\n\nUnlocked at level 25";
+"calloftheancients_detail" = "Cost: 50 Fury\nCooldown: 120 seconds\n\nSummon the ancient Barbarians Talic, Korlic, and Madawc to fight alongside you for 15 seconds. Each deals 60% weapon damage per swing in addition to bonus abilities.\n\n◇Talic wields a sword and shield and uses the Whirlwind skill.\n◇Korlic wields a massive polearm and uses the Cleave skill.\n◇Madawc dual-wields axes and uses the Weapon Throw skill.\n\nRage\n\nUnlocked at level 25";
 
 //wrathoftheberserker
 "wrathoftheberserker_name" = "Wrath of the Berserker";
@@ -158,7 +169,7 @@
 
 //inspiringpresence
 "inspiringpresence_name" = "Inspiring Presence";
-"inspiringpresence_detail" = "The duration of your shouts is doubled. After using a shout you regenerate 1% of your maximum Life per second for 60 seconds.\n\nYour shouts are:\n✧Battle Rage\n✧Threatening Shout\n✧War Cry\n\nUnlocked at level 20";
+"inspiringpresence_detail" = "The duration of your shouts is doubled. After using a shout you regenerate 1% of your maximum Life per second for 60 seconds.\n\nYour shouts are:\n◇Battle Rage\n◇Threatening Shout\n◇War Cry\n\nUnlocked at level 20";
 "inspiringpresence_story" = "\"The enemy poured through the gap until Warmaster Karja impaled three demons at once on our battle standard, tossing their corpses into the fray below as she roared a rallying call from high atop the battlements.\" —The Battle of the Starless Night";
 
 //bloodthirst
@@ -1192,7 +1203,7 @@
 
 //mantraofhealing
 "mantraofhealing_name" = "Mantra of Healing";
-"mantraofhealing_detail" = "Cost: 50 Spirit\n\nRecite a Mantra that causes you and your allies within 40 yards to gain increased Life regeneration by 310 Life per second. The Mantra lasts 3 minutes.\n\nFor 3 seconds after activation, the effect is increased to 1240.4 Life per second.\n\nThis is a Mantra. You can only have one Mantra active at a time.\n\nMantras\n\nUnlocked at level 26";
+"mantraofhealing_detail" = "Cost: 50 Spirit\n\nRecite a Mantra that causes you and your allies within 40 yards to gain increased Life regeneration by 310 Life per second. The Mantra lasts 3 minutes.\n\nFor 3 seconds after activation Mantra of Healing shrouds you and your allies with a mystical shield that absorbs up to 930 damage.\n\nThis is a Mantra. You can only have one Mantra active at a time.\n\nMantras\n\nUnlocked at level 26";
 
 //mantraofconviction
 "mantraofconviction_name" = "Mantra of Conviction";
@@ -1621,7 +1632,7 @@
 "rune_circularbreathing_detail" = "Unlocked at level 38\nMantra of Healing also regenerates 3 Spirit per second.";
 
 "rune_boonofprotection_name" = "Boon of Protection";
-"rune_boonofprotection_detail" = "Unlocked at level 42\nMantra of Healing shrouds you and your allies with a mystical shield for 2 seconds that absorbs up to 15% of each target's maximum Life in damage.";
+"rune_boonofprotection_detail" = "Unlocked at level 42\nMantra of Healing also heals 186 Life when hitting an enemy.";
 
 "rune_heavenlybody_name" = "Heavenly Body";
 "rune_heavenlybody_detail" = "Unlocked at level 48\nMantra of Healing also increases Vitality by 10%.";
@@ -1751,7 +1762,7 @@
 "piercetheveil_story" = "\"The spirits take their toll. Best to be ready to pay.\" —Shadewalker Zunimassa";
 
 "fetishsycophants_name" = "Fetish Sycophants";
-"fetishsycophants_detail" = "Whenever you cast a physical realm spell, you have a 3% chance to summon a dagger-wielding Fetish to fight by your side for 60 seconds.\n\nPhysical realm spells are:\n✧Poison Dart\n✧Plague of Toads\n✧Zombie Charger\n✧Corpse Spiders\n✧Firebats\n✧Firebomb\n✧Locust Swarm\n✧Acid Cloud\n✧Wall of Zombies\n\nUnlocked at level 30";
+"fetishsycophants_detail" = "Whenever you cast a physical realm spell, you have a 3% chance to summon a dagger-wielding Fetish to fight by your side for 60 seconds.\n\nPhysical realm spells are:\n◇Poison Dart\n◇Plague of Toads\n◇Zombie Charger\n◇Corpse Spiders\n◇Firebats\n◇Firebomb\n◇Locust Swarm\n◇Acid Cloud\n◇Wall of Zombies\n\nUnlocked at level 30";
 "fetishsycophants_story" = "The denizens of the Unformed Land are mischievous and drawn to power, always seeking to intrude upon our world, but too fickle to stay for long.";
 
 "spiritvessel_name" = "Spirit Vessel";
@@ -1759,7 +1770,7 @@
 "spiritvessel_story" = "Everyone dies. Sometimes we must return to finish what we started.";
 
 "rushofessence_name" = "Rush of Essence";
-"rushofessence_detail" = "Spirit spells return 30% of their Mana cost over 10 seconds.\n\nSpirit spells are:\n✧Haunt\n✧Horrify\n✧Mass Confusion\n✧Soul Harvest\n✧Spirit Barrage\n✧Spirit Walk\n\nUnlocked at level 36";
+"rushofessence_detail" = "Spirit spells return 30% of their Mana cost over 10 seconds.\n\nSpirit spells are:\n◇Haunt\n◇Horrify\n◇Mass Confusion\n◇Soul Harvest\n◇Spirit Barrage\n◇Spirit Walk\n\nUnlocked at level 36";
 "rushofessence_story" = "All spirits must move onward if they wish to return to their origins. There is no going back.";
 
 "visionquest_name" = "Vision Quest";
@@ -1932,7 +1943,7 @@
 "rune_consumingspirit_detail" = "Unlocked at level 18\nThe spirit returns 155 Life per second.";
 //bug
 "rune_resentfulspirit_name" = "Resentful Spirit";
-"rune_resentfulspirit_detail" = "Unlocked at level 23\nSummon a vengeful spirit that does 0% weapon damage as Arcane over 0 seconds.";
+"rune_resentfulspirit_detail" = "Unlocked at level 23\nSummon a vengeful spirit that does 288% weapon damage as Arcane over 0 seconds.";
 
 "rune_lingeringspirit_name" = "Lingering Spirit";
 "rune_lingeringspirit_detail" = "Unlocked at level 35\nIf there are no targets left, the spirit will linger for up to 10 seconds looking for new enemies.";
@@ -2029,7 +2040,7 @@
 "rune_humongoid_detail" = "Unlocked at level 22\nThe Gargantuan gains the Cleave ability, allowing its attacks to hit multiple targets for 32% of your weapon damage as Physical.";
 
 "rune_restlessgiant_name" = "Restless Giant";
-"rune_restlessgiant_detail" = "Unlocked at level 29\nWhen the Gargantuan encounters an elite enemy or is near 5 enemies, it enrages for 15 seconds gaining:\n✧20% movement speed\n✧35% attack speed\n✧200% Physical damage\n\nThis effect cannot occur more than once every 120 seconds. Elite enemies include champions, rares, bosses, and other players.";
+"rune_restlessgiant_detail" = "Unlocked at level 29\nWhen the Gargantuan encounters an elite enemy or is near 5 enemies, it enrages for 15 seconds gaining:\n◇20% movement speed\n◇35% attack speed\n◇200% Physical damage\n\nThis effect cannot occur more than once every 120 seconds. Elite enemies include champions, rares, bosses, and other players.";
 
 "rune_wrathfulprotector_name" = "Wrathful Protector";
 "rune_wrathfulprotector_detail" = "Unlocked at level 39\nSummon a more powerful Gargantuan that only lasts for 15 seconds. The Gargantuan's fists burn with fire, dealing 55% of your weapon damage as Fire and knocking enemies back.";
@@ -2289,7 +2300,7 @@
 "glasscannon_story" = "\"How will I survive? I don't intend to get hit in the first place. If you even touch me, it's because I allowed it.\" —Maloth, renegade wizard";
 
 "prodigy_name" = "Prodigy";
-"prodigy_detail" = "When you deal damage with a Signature spell, you gain 4 Arcane Power.\n\nThe following skills are Signature spells:\n✧Magic Missile\n✧Shock Pulse\n✧Spectral Blade\n✧Electrocute\n\nUnlocked at level 20";
+"prodigy_detail" = "When you deal damage with a Signature spell, you gain 4 Arcane Power.\n\nThe following skills are Signature spells:\n◇Magic Missile\n◇Shock Pulse\n◇Spectral Blade\n◇Electrocute\n\nUnlocked at level 20";
 "prodigy_story" = "\"Heavy steel armor may turn aside a blade, but let's see how well it works against lightning!\" —Larra Stormlash's infamous faux pas at the Royal Westmarch Joust";
 
 "astralpresence_name" = "Astral Presence";
@@ -2313,7 +2324,7 @@
 "paralysis_story" = "\"Some people are shocked by my mastery of magic.\" —Larra Stormlash";
 
 "galvanizingward_name" = "Galvanizing Ward";
-"galvanizingward_detail" = "Increases the duration of your Armor spells by 120 seconds. As long as an Armor spell is active, you gain 310 Life per second.\n\nThe following skills are improved:\n✧Energy Armor\n✧Ice Armor\n✧Storm Armor\n\nUnlocked at level 40";
+"galvanizingward_detail" = "Increases the duration of your Armor spells by 120 seconds. As long as an Armor spell is active, you gain 310 Life per second.\n\nThe following skills are improved:\n◇Energy Armor\n◇Ice Armor\n◇Storm Armor\n\nUnlocked at level 40";
 "galvanizingward_story" = "\"Power begets power. The excess energy from one spell is absorbed by the other, and so the effect is sustained.\" —Excerpt from Grand Master Clavaught's Lecture on Synergistic Effects in Esoteric Arcane Spheres";
 
 "temporalflux_name" = "Temporal Flux";
@@ -2325,7 +2336,7 @@
 "criticalmass_story" = "\"As the blast obliterated the walls, she spun the energy of the shockwave into a new spell and hurled it at her stupefied foes.\" —The Harrowing of Korlean's Stronghold";
 
 "arcanedynamo_name" = "Arcane Dynamo";
-"arcanedynamo_detail" = "When you deal damage with a Signature spell you may gain a Flash of Insight. After 5 Flashes of Insight, your next non-Signature spell deals 75% additional damage.\n\nThe following skills are Signature spells:\n✧Magic Missile\n✧Shock Pulse\n✧Spectral Blade\n✧Electrocute\n\nUnlocked at level 55";
+"arcanedynamo_detail" = "When you deal damage with a Signature spell you may gain a Flash of Insight. After 5 Flashes of Insight, your next non-Signature spell deals 75% additional damage.\n\nThe following skills are Signature spells:\n◇Magic Missile\n◇Shock Pulse\n◇Spectral Blade\n◇Electrocute\n\nUnlocked at level 55";
 "arcanedynamo_story" = "Dare not to invoke the wrath of a Wizard. You are nothing more than a loose coalescence of dust before their ire, easily scattered at a whim.";
 
 "unstableanomaly_name" = "Unstable Anomaly";
@@ -2517,7 +2528,7 @@
 "rune_wickedwind_detail" = "Unlocked at level 41\nTwisters no longer travel but spin in place, dealing 252% weapon damage as Arcane over 6 seconds to everything caught in them.";
 
 "rune_stormchaser_name" = "Storm Chaser";
-"rune_stormchaser_detail" = "Unlocked at level 52\nCasting Energy Twister grants you a Wind Charge. You can store up to 3 Wind Charges at a time. Casting a Signature spell releases all Wind Charges as a giant Energy Twister that deals 75% weapon damage as Arcane per Wind Charge.\nThe following skills are Signature spells:\n✧Magic Missile\n✧Shock Pulse\n✧Spectral Blade\n✧Electrocute";
+"rune_stormchaser_detail" = "Unlocked at level 52\nCasting Energy Twister grants you a Wind Charge. You can store up to 3 Wind Charges at a time. Casting a Signature spell releases all Wind Charges as a giant Energy Twister that deals 75% weapon damage as Arcane per Wind Charge.\nThe following skills are Signature spells:\n◇Magic Missile\n◇Shock Pulse\n◇Spectral Blade\n◇Electrocute";
 
 
 

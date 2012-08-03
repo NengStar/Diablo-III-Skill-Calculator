@@ -754,7 +754,7 @@
         [self resetBoard];
     }
     [heroAvatar setImage:[UIImage imageNamed:[imageNameArray objectAtIndex:(heroClass+5*heroSex)]]];
-    [className setText:[classNameArray objectAtIndex:heroClass]];
+    [className setText:NSLocalizedString([classNameArray objectAtIndex:heroClass],nil)];
     [self setBoardView];
     [self createHeroSkillDetailBoard];
     //    NSLog(@"out did");

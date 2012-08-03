@@ -31,7 +31,7 @@
         currentSex = 1;
         lastSex = currentSex;
         imageNameArray = [[NSArray alloc] initWithObjects:@"hero_bar_f",@"hero_dh_f",@"hero_monk_f",@"hero_wd_f",@"hero_wz_f",@"hero_bar_m",@"hero_dh_m",@"hero_monk_m",@"hero_wd_m",@"hero_wz_m",nil];
-        classNameArray = [[NSArray alloc] initWithObjects:@"Barbarian", @"Demon Hunter",@"Monk",@"Witch Doctor",@"Winzard",nil];
+        classNameArray = [[NSArray alloc] initWithObjects:@"Barbarian", @"Demon Hunter",@"Monk",@"Witch Doctor",@"Wizard",nil];
         self.title = @"CHOOSE YOUR HERO";
     }
     return self;
@@ -110,7 +110,7 @@
     [self.view addSubview:loadView];
     [self.view addSubview:heroRect];
     [self loadGifView];
-    [heroClass setText:[classNameArray objectAtIndex:currentClass]]; 
+    [heroClass setText:NSLocalizedString([classNameArray objectAtIndex:currentClass],nil)]; 
 }
 
 - (void)viewDidUnload
@@ -141,7 +141,7 @@
     [[[heroScroll subviews] objectAtIndex:0] removeFromSuperview];
     [self loadGifView];
     lastClass = currentClass;
-    [heroClass setText:[classNameArray objectAtIndex:currentClass]];
+    [heroClass setText:NSLocalizedString([classNameArray objectAtIndex:currentClass],nil)];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
