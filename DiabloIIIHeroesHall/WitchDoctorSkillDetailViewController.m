@@ -51,6 +51,18 @@
     [super dealloc];
 }
 
+- (NSInteger)getTheNumOfUsedSlots
+{
+    NSInteger num = 0;
+    for (int i=0; i<[selectPSkillButtonGroup count]; i++) {
+        UIButton *button = (UIButton *)[selectPSkillButtonGroup objectAtIndex:i];
+        if (button.tag!=-1) {
+            num++;
+        }
+    }
+    return num;
+}
+
 - (void)setSkillTableVisible:(BOOL)visible
 {
     [runeTips setHidden:visible];
@@ -63,6 +75,7 @@
     passive.hidden = NO;
     self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, passive.frame.size.width, 270);
     self.view = passive;
+    [numOfSlot setText:[NSString stringWithFormat:@"%d",[self getTheNumOfUsedSlots]]];
 }
 
 - (void)setSelfViewToInitiative
@@ -297,14 +310,7 @@
             [selectPSkillButtonGroup insertObject:selectedPSkillButton atIndex:pskillButtonGroupIndex];
             selectedPSkillKey = selectedPSkillButton.titleLabel.text;
             [delegate passiveSkillSelected:heroClassString withPSkillKey:selectedPSkillKey withTag:[NSNumber numberWithInt:sender.tag]];
-            NSInteger num = 0;
-            for (int i=0; i<[selectPSkillButtonGroup count]; i++) {
-                UIButton *button = (UIButton *)[selectPSkillButtonGroup objectAtIndex:i];
-                if (button.tag!=-1) {
-                    num++;
-                }
-            }
-            [numOfSlot setText:[NSString stringWithFormat:@"%d",num]];
+            [numOfSlot setText:[NSString stringWithFormat:@"%d",[self getTheNumOfUsedSlots]]];
         }
     }
     selectPSkillDetailKey = sender.titleLabel.text;
